@@ -6,6 +6,8 @@
 
 - [Appetizers](./ch00-00-appetizers.md)
 
+# Drinks
+
 - [Drinks](./ch01-00-drinks.md)
 
 # Main Courses
