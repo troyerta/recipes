@@ -13,6 +13,7 @@
 # Main Courses
 
 - [Main Courses](./ch02-00-mains.md)
+  - [Butter Chicken](./ch02-01-butter-chicken.md)
 
 # Desserts
 
