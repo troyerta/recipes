@@ -9,31 +9,52 @@ Yield: 4 servings<br>
 
 ## Marinade:
 
-- 1 pound boneless, skinless chicken thighs, cut into roughly 1-inch cubes<br>
-- 1/4 cup full-fat plain yogurt<br>
-- 1 tablespoon olive oil<br>
-- 1 tablespoon ginger garlic paste<br>
-- 1 teaspoon dried coriander<br>
-- 1 teaspoon Paprika<br>
-- 1 teaspoon cumin<br>
-- Salt to taste<br>
+1 pound boneless, skinless chicken thighs, cut into roughly 1-inch cubes<br>
+
+1/4 cup full-fat plain yogurt<br>
+
+1 tablespoon olive oil<br>
+
+1 tablespoon ginger garlic paste<br>
+
+1 teaspoon dried coriander<br>
+
+1 teaspoon Paprika<br>
+
+1 teaspoon cumin<br>
+
+Salt to taste<br>
 
 ## Sauce:
 
-- 8 to 10 whole almonds<br>
-- 8 to 10 whole cashews<br>
-- 2 tablespoons unsalted butter, divided<br>
-- 1/2 tablespoon ginger paste<br>
-- 1/2 tablespoon garlic paste<br>
-- 1 teaspoon sugar<br>
-- 1 (15-ounce) can canned diced tomatoes<br>
-- 2 tablespoons dried coriander<br>
-- 1 1/2 teaspoons ground Garam Masala<br>
-- 1/2 teaspoon ground Paprika<br>
-- 1/2 teaspoon salt<br>
-- 1 cup water<br>
-- 1/4 cup heavy cream<br>
-- 1/2 tablespoon Kasuri Methi<br>
+
+8 to 10 whole almonds<br>
+
+8 to 10 whole cashews<br>
+
+2 tablespoons unsalted butter, divided<br>
+
+1/2 tablespoon ginger paste<br>
+
+1/2 tablespoon garlic paste<br>
+
+1 teaspoon sugar<br>
+
+1 (15-ounce) can canned diced tomatoes<br>
+
+2 tablespoons dried coriander<br>
+
+1 1/2 teaspoons ground Garam Masala<br>
+
+1/2 teaspoon ground Paprika<br>
+
+1/2 teaspoon salt<br>
+
+1 cup water<br>
+
+1/4 cup heavy cream<br>
+
+1/2 tablespoon Kasuri Methi<br>
 
 ## Procedure:
 

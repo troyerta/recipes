@@ -1,0 +1,2 @@
+
+[         ] - Make a recipe template that a python script write to a new page created by mdbook
