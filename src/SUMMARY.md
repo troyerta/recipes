@@ -15,6 +15,7 @@
 - [Main Courses](./ch02-00-mains.md)
   - [Butter Chicken](./ch02-01-butter-chicken.md)
   - [Slow Cooker Mongolian Beef](./ch02-02-slow-cooker-mongolian-beef.md)
+  - [Thai Coconut Soup](./ch02-03-thai-coconut-soup.md)
 
 # Desserts
 
