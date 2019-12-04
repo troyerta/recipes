@@ -44,3 +44,6 @@ green onions for garnish
 
 - Serve over rice, garnished with sesame seeds and green onions
 
+## References and Acknowledgments
+
+[Reddit/GifRecipes](https://www.reddit.com/r/GifRecipes/comments/41p26n/slow_cooker_mongolian_beef/)

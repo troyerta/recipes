@@ -1,6 +1,6 @@
 # Summary
 
-[Summary](./ch00-00-title.md)
+[About](./ch00-00-title.md)
 
 # Appetizers
 
