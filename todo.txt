@@ -1,2 +1,3 @@
 
 [         ] - Make a recipe template that a python script write to a new page created by mdbook
+[         ] - Add tags to make recipes more searchable - example "-tAsian"
