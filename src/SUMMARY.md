@@ -34,6 +34,7 @@
   - [Butter Chicken 2](./ch02-18-butter-chicken-2.md)
   - [Tandori Chicken Soup](./ch02-19-tandori-chicken-soup.md)
   - [Tikka Masala 1](./ch02-20-tikka-masala-1.md)
+  - [Slow Cooker Chicken Tandoori](./ch02-21-slow-cooker-chicken-tandoori.md)
 
 # Desserts
 

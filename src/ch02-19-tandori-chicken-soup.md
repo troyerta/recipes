@@ -36,22 +36,31 @@
 2 - tbsp, Cornstarch
 
 ## Method
+
 ---
 Mix the coconut milk and ketchup.
+
 ---
 Use just enough to marinate chicken breasts. Reserve remainder.
+
 ---
 Cook the chicken in a preheated 350 degrees F oven to 145F.
+
 ---
 Then broil to done, 165F, to blacken slightly.
+
 ---
 While chicken is cooking, sauté the onion, garlic, celery and ginger in hot oil.
+
 ---
 Stir in the cumin, onion powder and garlic powder. Continue to sauté until the flavors have bloomed.
+
 ---
 Add the water, chicken base and remainder of the ketchup and coconut mixture and tomato puree.
+
 ---
 Bring to a boil. Add the diced, cooked chicken. Simmer 20 minutes.
+
 ---
 Tighten to desired consistency with a water and cornstarch slurry.
 
