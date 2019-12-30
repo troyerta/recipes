@@ -32,21 +32,23 @@ Salt to taste<br>
 
 8 to 10 whole cashews<br>
 
-2 tablespoons unsalted butter, divided<br>
+2 tablespoons unsalted butter - divided in 1.5 and 0.5 tablespoon parts<br>
 
 1/2 tablespoon ginger paste<br>
 
-1/2 tablespoon garlic paste<br>
+1/2 tablespoon garlic paste (crush some minced garlic if paste is unavailable)<br>
 
 1 teaspoon sugar<br>
 
-1 (15-ounce) can canned diced tomatoes<br>
+1 (15-ounce) can canned diced tomatoes (or tomato sauce for an easier time)<br>
 
 2 tablespoons dried coriander<br>
 
 1 1/2 teaspoons ground Garam Masala<br>
 
 1/2 teaspoon ground Paprika<br>
+
+1/2 teaspoon ground red chilli powder<br>
 
 1/2 teaspoon salt<br>
 
@@ -77,7 +79,7 @@ Salt to taste<br>
 
     Stir in the tomato and cook for 8 to 10 minutes on medium high heat, until all the extra liquid is cooked off. The sauce should be a loose, paste-like consistency.
 
-    Add coriander, garam masala, Kashmiri Lal Mirch, and salt. Stir and cook on medium heat for 2 to 3 minutes. Turn off the heat.
+    Add coriander, garam masala, paprika, red chilli powder, and salt. Stir and cook on medium heat for 2 to 3 minutes. Turn off the heat.
 ---
 5. Puree the sauce with the nuts: Transfer the paste to a blender or the bowl of a food processor.
 
