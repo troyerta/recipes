@@ -42,7 +42,7 @@ Salt to taste<br>
 
 1 (15-ounce) can canned diced tomatoes (or tomato sauce for an easier time)<br>
 
-2 tablespoons dried coriander<br>
+2 tablespoons ground coriander<br>
 
 1 1/2 teaspoons ground Garam Masala<br>
 
