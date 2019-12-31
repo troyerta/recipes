@@ -1,0 +1,94 @@
+#!/usr/bin/env python3
+
+import sys
+import os
+import re
+import subprocess
+
+'''
+This script needs to handle several tasks:
+- Generating new recipes pages from a template
+- Building the book
+  - Updating the section title pages with Links to the child pages
+- Viewing changes
+- Saving changes (making commits)
+- Pushing to the repo
+'''
+
+cmds = [ "new", "build", "save", "upload", "help" ]
+
+new_help_msg = "\nAfter adding a new recipe entry in src/SUMMARY.md, run the following to generate the actual file:\n\n\
+$ ./recipes build\n\n\
+Then you can copy/paste the contents of src/template.md to the newly generated file!\n"
+
+build_help_msg = "\nThis is the equivalent to running ./mdbook build, which checks for errors\n\
+html generation. Mdbook also reads the src/SUMMARY.md file for any new recipe entries. If the file entry\n\
+does not yet exist, it will create it for you during this step."
+
+save_help_msg = "Make sure all new files are saved, then run\n\n\r\
+$ ./recipes save src/file1.md src/file2.md src/etc.md\n\n\
+Then type a nice message describing your changes in the popup text editor.\n\n\
+Type it on a single line, using less than 54 characters.\n\n\
+Finally, ctrl+s and ctrl+q will commit your changes!"
+
+
+
+# Link example:
+# [Reddit/GifRecipes](https://www.reddit.com/r/GifRecipes/comments/41p26n/slow_cooker_mongolian_beef/)
+# https://troyerta.github.io/recipes/ch02-02-slow-cooker-mongolian-beef.html
+
+def workerFunction():
+    if len(sys.argv) <= 1 or sys.argv[1] not in cmds:
+        print("Please use one of the available commands:", cmds)
+        sys.exit()
+    arg = sys.argv[1]
+
+    if arg == cmds[0]:
+        print( new_help_msg )
+
+    elif arg == cmds[1]:
+        if len(sys.argv) > 2 and sys.argv[2] == "help":
+            print( build_help_msg )
+            sys.exit()
+        p1 = subprocess.Popen( ['mdbook', 'build'] )
+        p1.wait()
+
+    elif arg == cmds[2]:
+        if len(sys.argv) > 2 and sys.argv[2] == "help":
+            print( save_help_msg )
+            sys.exit()
+        print("Staging tracked file(s)..")
+        addd_cmd = ['git', 'addd']
+        p1 = subprocess.Popen( addd_cmd )
+        p1.wait()
+        if len(sys.argv) > 2:
+            print("Committing new file(s)..")
+            fi = sys.argv[2:]
+            print(fi)
+            add_cmd = ['git', 'add']
+            [add_cmd.append( fil ) for fil in fi]
+            print( add_cmd )
+            p1 = subprocess.Popen( add_cmd )
+            p1.wait()
+
+        p1 = subprocess.Popen( ['git', 'ci' ] )
+        p1.wait()
+
+    elif arg == cmds[3]:
+        if len(sys.argv) > 2 and sys.argv[2] == "help":
+            print("Uploading help")
+            sys.exit()
+        print("uploading to repository..")
+        p1 = subprocess.Popen( ['git', 'push', 'origin', 'HEAD:master' ] )
+        p1.wait()
+        print("Done!")
+
+    elif arg == cmds[4]:
+        if len(sys.argv) > 2 and sys.argv[2] == "help":
+            print("This command is not very useful yet!")
+            sys.exit()
+        print("This command is not very useful yet!")
+
+
+if __name__ == "__main__":
+    workerFunction()
