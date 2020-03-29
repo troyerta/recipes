@@ -36,6 +36,12 @@
   - [Tikka Masala 1](./ch02-20-tikka-masala-1.md)
   - [Slow Cooker Chicken Tandoori](./ch02-21-slow-cooker-chicken-tandoori.md)
   - [Ultimate Butter Chicken](./ch02-22-ultimate-butter-chicken.md)
+  - [Kimchi Fried Rice](./ch02-23-kimchi-fried-rice.md)
+  - [Lemon Garlic Chicken](./ch02-24-lemon-garlic-chicken.md)
+  - [Japanese Raman Broth](./ch02-25-japanese-raman-broth.md)
+  - [Shredded Beef Ragu Pasta](./ch02-26-shredded-beef-ragu-pasta.md)
+  - [Sichuan Style Braised Beef Noodle Soup](./ch02-27-sichuan-style-braised-beef-noodle-soup.md)
+  - [Ginger Sweet Potato Lentil Stew](./ch02-28-ginger-sweet-potato-lentil-stew.md)
 
 # Desserts
 

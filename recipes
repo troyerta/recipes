@@ -3,6 +3,7 @@
 import sys
 import os
 import re
+import shutil
 import subprocess
 
 '''
@@ -37,6 +38,64 @@ Finally, ctrl+s and ctrl+q will commit your changes!"
 # [Reddit/GifRecipes](https://www.reddit.com/r/GifRecipes/comments/41p26n/slow_cooker_mongolian_beef/)
 # https://troyerta.github.io/recipes/ch02-02-slow-cooker-mongolian-beef.html
 
+SRC_PATH = "src/"
+SUMMARY_PATH = "src/SUMMARY.md"
+TEMPLATE_PATH = "src/template_blank.md"
+
+def process_link( link, chapter, section ):
+    print("processing", link )
+
+    # Get recipe name:
+    recipe_name = input("Recipe title: ")
+
+    # Make target filename
+    filename = SRC_PATH + "ch0" + str(chapter) + "-" + str(section) + "-" + re.sub(' ', '-', recipe_name.lower() ) + ".md"
+    print(filename)
+
+    shutil.copy(TEMPLATE_PATH, filename)
+
+    # Read in the file
+    with open(filename, 'r') as file :
+        filedata = file.read()
+
+    # Replace the target string
+    filedata = filedata.replace('RecipeTitle', recipe_name)
+    filedata = filedata.replace('Link Text', recipe_name)
+    filedata = filedata.replace('https://www.website.com/Recipes/recipe/', link.strip())
+
+    # Write the file out again
+    with open(filename, 'w') as file:
+        file.write(filedata)
+
+    return recipe_name, filename
+
+def run_batch_from_file( filepath, chapter, starting_section ):
+    with open(filepath) as f:
+        links = f.readlines()
+
+        recipe_list = list()
+        file_list = list()
+
+        section = int(starting_section)
+        # For each link, get a recipe name, copy the template using the recipe name, and fill in other meaningful data with
+        # useful stuff - like the recipe link
+        for link in links:
+            recipe, recipe_file = process_link( link, chapter, section )
+            section += 1
+            recipe_list.append( recipe )
+            file_list.append( recipe_file )
+
+        print("")
+
+        for recipe in recipe_list:
+            print("- Add " + recipe + " recipe" )
+        print("")
+
+        for idx, title in enumerate(recipe_list, start=0):
+            print("  - [" + title + "](./" + os.path.basename( file_list[idx] ) + ")" )
+        print("")
+
+
 def workerFunction():
     if len(sys.argv) <= 1 or sys.argv[1] not in cmds:
         print("Please use one of the available commands:", cmds)
@@ -44,51 +103,53 @@ def workerFunction():
     arg = sys.argv[1]
 
     if arg == cmds[0]:
-        print( new_help_msg )
+        # print( new_help_msg )
+        print("Running batch job..")
+        # cmd[1] is the batch file of jobs, and cmd[2] is the chapter, and cmd[3] is the starting section
+        run_batch_from_file( sys.argv[2], sys.argv[3], sys.argv[4] )
 
-    elif arg == cmds[1]:
-        if len(sys.argv) > 2 and sys.argv[2] == "help":
-            print( build_help_msg )
-            sys.exit()
-        p1 = subprocess.Popen( ['mdbook', 'build'] )
-        p1.wait()
+    # elif arg == cmds[1]:
+    #     if len(sys.argv) > 2 and sys.argv[2] == "help":
+    #         print( build_help_msg )
+    #         sys.exit()
+    #     p1 = subprocess.Popen( ['mdbook', 'build'] )
+    #     p1.wait()
 
-    elif arg == cmds[2]:
-        if len(sys.argv) > 2 and sys.argv[2] == "help":
-            print( save_help_msg )
-            sys.exit()
-        print("Staging tracked file(s)..")
-        addd_cmd = ['git', 'addd']
-        p1 = subprocess.Popen( addd_cmd )
-        p1.wait()
-        if len(sys.argv) > 2:
-            print("Committing new file(s)..")
-            fi = sys.argv[2:]
-            print(fi)
-            add_cmd = ['git', 'add']
-            [add_cmd.append( fil ) for fil in fi]
-            print( add_cmd )
-            p1 = subprocess.Popen( add_cmd )
-            p1.wait()
+    # elif arg == cmds[2]:
+    #     if len(sys.argv) > 2 and sys.argv[2] == "help":
+    #         print( save_help_msg )
+    #         sys.exit()
+    #     print("Staging tracked file(s)..")
+    #     addd_cmd = ['git', 'addd']
+    #     p1 = subprocess.Popen( addd_cmd )
+    #     p1.wait()
+    #     if len(sys.argv) > 2:
+    #         print("Committing new file(s)..")
+    #         fi = sys.argv[2:]
+    #         print(fi)
+    #         add_cmd = ['git', 'add']
+    #         [add_cmd.append( fil ) for fil in fi]
+    #         print( add_cmd )
+    #         p1 = subprocess.Popen( add_cmd )
+    #         p1.wait()
 
-        p1 = subprocess.Popen( ['git', 'ci' ] )
-        p1.wait()
+    #     p1 = subprocess.Popen( ['git', 'ci' ] )
+    #     p1.wait()
 
-    elif arg == cmds[3]:
-        if len(sys.argv) > 2 and sys.argv[2] == "help":
-            print("Uploading help")
-            sys.exit()
-        print("uploading to repository..")
-        p1 = subprocess.Popen( ['git', 'push', 'origin', 'HEAD:master' ] )
-        p1.wait()
-        print("Done!")
+    # elif arg == cmds[3]:
+    #     if len(sys.argv) > 2 and sys.argv[2] == "help":
+    #         print("Uploading help")
+    #         sys.exit()
+    #     print("uploading to repository..")
+    #     p1 = subprocess.Popen( ['git', 'push', 'origin', 'HEAD:master' ] )
+    #     p1.wait()
+    #     print("Done!")
 
-    elif arg == cmds[4]:
-        if len(sys.argv) > 2 and sys.argv[2] == "help":
-            print("This command is not very useful yet!")
-            sys.exit()
-        print("This command is not very useful yet!")
-
+    # elif arg == cmds[4]:
+    #     if len(sys.argv) > 2 and sys.argv[2] == "help":
+    #         print("This command is not very useful yet!")
+    #         sys.exit()
+    #     print("This command is not very useful yet!")
 
 if __name__ == "__main__":
     workerFunction()
