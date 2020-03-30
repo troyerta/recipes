@@ -1,6 +1,4 @@
-# Recipe Name
-
-Lemon Garlic Chicken
+# Lemon Garlic Chicken
 
 ## Overview
 

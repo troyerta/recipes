@@ -1,6 +1,4 @@
-# Recipe Name
-
-Kimchi Fried Rice
+# Kimchi Fried Rice
 
 ## Overview
 

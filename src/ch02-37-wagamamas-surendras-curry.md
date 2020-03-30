@@ -1,4 +1,4 @@
-# Recipe Name
+# Wagamamas Surendras Curry
 
 ## Overview
 
@@ -42,7 +42,7 @@
 
 ## References and Acknowledgments
 
-[Link Text](https://www.website.com/Recipes/recipe/)
+[Wagamamas Surendras Curry](https://www.reddit.com/r/GifRecipes/comments/eyp4p7/wagamamas_surendras_curry/)
 
 ## Tags
 

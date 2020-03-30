@@ -59,7 +59,7 @@ def process_link( link, chapter, section ):
         filedata = file.read()
 
     # Replace the target string
-    filedata = filedata.replace('RecipeTitle', recipe_name)
+    filedata = filedata.replace('Recipe Name', recipe_name)
     filedata = filedata.replace('Link Text', recipe_name)
     filedata = filedata.replace('https://www.website.com/Recipes/recipe/', link.strip())
 

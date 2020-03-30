@@ -1,4 +1,4 @@
-# Recipe Name
+# Bengali Chicken Curry
 
 ## Overview
 
@@ -42,7 +42,7 @@
 
 ## References and Acknowledgments
 
-[Link Text](https://www.website.com/Recipes/recipe/)
+[Bengali Chicken Curry](https://www.reddit.com/r/GifRecipes/comments/cmb4th/murgir_jhol_bengali_chicken_curry/)
 
 ## Tags
 

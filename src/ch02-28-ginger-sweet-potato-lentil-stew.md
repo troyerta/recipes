@@ -1,6 +1,4 @@
-# Recipe Name
-
-Ginger Sweet Potato Lentil Stew
+# Ginger Sweet Potato Lentil Stew
 
 ## Overview
 

@@ -1,6 +1,4 @@
-# Recipe Name
-
-Sichuan Style Braised Beef Noodle Soup
+# Sichuan Style Braised Beef Noodle Soup
 
 ## Overview
 

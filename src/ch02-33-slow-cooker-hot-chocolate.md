@@ -1,4 +1,4 @@
-# Recipe Name
+# Slow Cooker Hot Chocolate
 
 ## Overview
 
@@ -42,7 +42,7 @@
 
 ## References and Acknowledgments
 
-[Link Text](https://www.website.com/Recipes/recipe/)
+[Slow Cooker Hot Chocolate](https://hostthetoast.com/slow-cooker-hot-chocolate/)
 
 ## Tags
 

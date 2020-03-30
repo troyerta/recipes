@@ -1,4 +1,4 @@
-# Recipe Name
+# Gobi Manchurian
 
 ## Overview
 
@@ -42,7 +42,7 @@
 
 ## References and Acknowledgments
 
-[Link Text](https://www.website.com/Recipes/recipe/)
+[Gobi Manchurian](https://www.reddit.com/r/GifRecipes/comments/bwzfij/gobi_manchurian_made_by_tasty_by_far_my_fave/)
 
 ## Tags
 

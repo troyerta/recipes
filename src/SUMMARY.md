@@ -42,6 +42,16 @@
   - [Shredded Beef Ragu Pasta](./ch02-26-shredded-beef-ragu-pasta.md)
   - [Sichuan Style Braised Beef Noodle Soup](./ch02-27-sichuan-style-braised-beef-noodle-soup.md)
   - [Ginger Sweet Potato Lentil Stew](./ch02-28-ginger-sweet-potato-lentil-stew.md)
+  - [Baked Falafel](./ch02-29-baked-falafel.md)
+  - [Gobi Manchurian](./ch02-30-gobi-manchurian.md)
+  - [Lean Beef and Broccoli Stir-Fry](./ch02-31-lean-beef-and-broccoli-stir-fry.md)
+  - [Mild Chicken Curry](./ch02-32-mild-chicken-curry.md)
+  - [Slow Cooker Hot Chocolate](./ch02-33-slow-cooker-hot-chocolate.md)
+  - [MOBs Curried Chickpea Stuffed Sweet Potatoes](./ch02-34-mobs-curried-chickpea-stuffed-sweet-potatoes.md)
+  - [Easy Chicken Tikka Masala](./ch02-35-easy-chicken-tikka-masala.md)
+  - [Ham and Cheese Pocket](./ch02-36-ham-and-cheese-pocket.md)
+  - [Wagamamas Surendras Curry](./ch02-37-wagamamas-surendras-curry.md)
+  - [Bengali Chicken Curry](./ch02-38-bengali-chicken-curry.md)
 
 # Desserts
 

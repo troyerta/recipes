@@ -1,4 +1,4 @@
-# Recipe Name
+# MOBs Curried Chickpea Stuffed Sweet Potatoes
 
 ## Overview
 
@@ -42,7 +42,7 @@
 
 ## References and Acknowledgments
 
-[Link Text](https://www.website.com/Recipes/recipe/)
+[MOBs Curried Chickpea Stuffed Sweet Potatoes](http://www.mobkitchen.co.uk/recipes/chickpea-sweet-potatoe)
 
 ## Tags
 

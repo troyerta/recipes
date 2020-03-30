@@ -1,4 +1,4 @@
-# Recipe Name
+# Easy Chicken Tikka Masala
 
 ## Overview
 
@@ -42,7 +42,7 @@
 
 ## References and Acknowledgments
 
-[Link Text](https://www.website.com/Recipes/recipe/)
+[Easy Chicken Tikka Masala](https://www.reddit.com/r/GifRecipes/comments/c5qv1z/easy_chicken_tikka_masala/)
 
 ## Tags
 

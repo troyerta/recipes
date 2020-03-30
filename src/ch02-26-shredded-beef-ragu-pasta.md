@@ -1,6 +1,4 @@
-# Recipe Name
-
-Shredded Beef Ragu Pasta
+# Shredded Beef Ragu Pasta
 
 ## Overview
 

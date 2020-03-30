@@ -1,4 +1,4 @@
-# Recipe Name
+# Mild Chicken Curry
 
 ## Overview
 
@@ -42,7 +42,7 @@
 
 ## References and Acknowledgments
 
-[Link Text](https://www.website.com/Recipes/recipe/)
+[Mild Chicken Curry](https://crazyrice.home.blog/2019/01/03/recipe-mild-chicken-curry/)
 
 ## Tags
 

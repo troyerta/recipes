@@ -1,6 +1,4 @@
-# Recipe Name
-
-Japanese Raman Broth
+# Japanese Raman Broth
 
 ## Overview
 
