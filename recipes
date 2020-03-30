@@ -5,6 +5,7 @@ import os
 import re
 import shutil
 import subprocess
+import PyPDF2
 
 '''
 This script needs to handle several tasks:
