@@ -5,7 +5,6 @@ import os
 import re
 import shutil
 import subprocess
-import PyPDF2
 
 '''
 This script needs to handle several tasks:
@@ -32,8 +31,6 @@ $ ./recipes save src/file1.md src/file2.md src/etc.md\n\n\
 Then type a nice message describing your changes in the popup text editor.\n\n\
 Type it on a single line, using less than 54 characters.\n\n\
 Finally, ctrl+s and ctrl+q will commit your changes!"
-
-
 
 # Link example:
 # [Reddit/GifRecipes](https://www.reddit.com/r/GifRecipes/comments/41p26n/slow_cooker_mongolian_beef/)
