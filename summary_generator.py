@@ -159,7 +159,7 @@ def isDirFile(path, file):
 #         print( 'ERROR: \'' + path + '\' is not a directory' )
 
 def get_all_things():
-    rootpath = './src/src_renamed'
+    rootpath = './src/our_book'
     rootpath_depth = len( splitpath( rootpath ) )
 
     root_list = list()

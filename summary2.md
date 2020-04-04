@@ -1,43 +1,69 @@
 # Summary2 test!
 
-[About](./src/src_renamed/about.md)
+[About](./src/our_book/about.md)
 
 # Appetizers
 
-- [Appetizers](./src/src_renamed/appetizers.md)
+- [Appetizers](./src/our_book/appetizers.md)
 
-# Drinks
+# Meal Prep
 
-- [Drinks](./src/src_renamed/drinks.md)
+- [Meal Prep](./src/our_book/meal-prep.md)
 
-# Main Courses
+# Sides
 
-- [Main Courses](./src/src_renamed/main-courses.md)
-  - [Macncheese](./src/src_renamed/3-main-courses/macncheese.md)
-  - [Asian](./src/src_renamed/main-courses/asian.md)
-    - [Asian Chicken Noodle Salad](./src/src_renamed/3-main-courses/asian/asian-chicken-noodle-salad.md)
-    - [General Tsos Chicken](./src/src_renamed/3-main-courses/asian/general-tsos-chicken.md)
-    - [Ginger Basil Noodles](./src/src_renamed/3-main-courses/asian/ginger-basil-noodles.md)
-    - [Gobi Manchurian](./src/src_renamed/3-main-courses/asian/gobi-manchurian.md)
-  - [Indian](./src/src_renamed/main-courses/indian.md)
-    - [Bengali Chicken Curry](./src/src_renamed/3-main-courses/indian/bengali-chicken-curry.md)
-    - [Butter Chicken 1](./src/src_renamed/3-main-courses/indian/butter-chicken-1.md)
-    - [Butter Chicken 2](./src/src_renamed/3-main-courses/indian/butter-chicken-2.md)
-    - [Homemade Garlic Naan](./src/src_renamed/3-main-courses/indian/homemade-garlic-naan.md)
-    - [Hyderabadi Chicken Curry](./src/src_renamed/3-main-courses/indian/hyderabadi-chicken-curry.md)
-    - [Indian Popcorn Chicken](./src/src_renamed/3-main-courses/indian/indian-popcorn-chicken.md)
-  - [Mediterranian](./src/src_renamed/main-courses/mediterranian.md)
-    - [Grilled Chicken Shawarma](./src/src_renamed/3-main-courses/mediterranian/grilled-chicken-shawarma.md)
-    - [Hummus Collection](./src/src_renamed/3-main-courses/mediterranian/hummus-collection.md)
-    - [Falafel](./src/src_renamed/main-courses/mediterranian/falafel.md)
-      - [Baked Falafel](./src/src_renamed/3-main-courses/mediterranian/falafel/baked-falafel.md)
-      - [Basic Falafel](./src/src_renamed/3-main-courses/mediterranian/falafel/basic-falafel.md)
-      - [Falafel Patties](./src/src_renamed/3-main-courses/mediterranian/falafel/falafel-patties.md)
+- [Sides](./src/our_book/sides.md)
+
+# Snacks
+
+- [Snacks](./src/our_book/snacks.md)
 
 # Desserts
 
-- [Desserts](./src/src_renamed/desserts.md)
+- [Desserts](./src/our_book/desserts.md)
 
-# Breads
+# Drinks
 
-- [Breads](./src/src_renamed/breads.md)
+- [Drinks](./src/our_book/drinks.md)
+  - [Non Alcoholic](./src/our_book/drinks/non-alcoholic.md)
+  - [Cocktails](./src/our_book/drinks/cocktails.md)
+
+# Dips & Sauces
+
+- [Dips & Sauces](./src/our_book/dips-&-sauces.md)
+
+# Spices & Marinades
+
+- [Spices & Marinades](./src/our_book/spices-&-marinades.md)
+
+# Salads & Bowls
+
+- [Salads & Bowls](./src/our_book/salads-&-bowls.md)
+
+# Soup & Chili
+
+- [Soup & Chili](./src/our_book/soup-&-chili.md)
+
+# Grilled Cheese & Quesadillas
+
+- [Grilled Cheese & Quesadillas](./src/our_book/grilled-cheese-&-quesadillas.md)
+
+# Breakfast
+
+- [Breakfast](./src/our_book/breakfast.md)
+
+# Bread
+
+- [Bread](./src/our_book/bread.md)
+
+# Pasta
+
+- [Pasta](./src/our_book/pasta.md)
+
+# Curry
+
+- [Curry](./src/our_book/curry.md)
+
+# Main Dishes
+
+- [Main Dishes](./src/our_book/main-dishes.md)
