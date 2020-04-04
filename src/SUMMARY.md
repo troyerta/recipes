@@ -1,114 +1,67 @@
-# Summary
-
-[About](./ch00-00-title.md)
+[About](./recipes/about.md)
 
 # Appetizers
 
-- [Appetizers](./ch00-00-appetizers.md)
+- [Appetizers](./recipes/1-Appetizers/appetizers.md)
 
-# Drinks
+# Meal Prep
 
-- [Drinks](./ch01-00-drinks.md)
-  - [Mean Mule Marg](./ch01-01-mean-mule-marg.md)
-  - [Potion of Healing Cocktail](./ch01-02-potion-of-healing-cocktail.md)
-  - [Slow Cooker Hot Chocolate](./ch01-03-slow-cooker-hot-chocolate.md)
+- [Meal Prep](./recipes/10-Meal-Prep/meal-prep.md)
 
-# Main Courses
+# Sides
 
-- [Main Courses](./ch02-00-mains.md)
-  - [Butter Chicken 1](./ch02-01-butter-chicken-1.md)
-  - [Slow Cooker Mongolian Beef](./ch02-02-slow-cooker-mongolian-beef.md)
-  - [Thai Coconut Soup](./ch02-03-thai-coconut-soup.md)
-  - [Spicy Thai Chicken Grains Bowl](./ch02-04-spicy-thai-chicken-grains-bowl.md)
-  - [Peanut Cucumber Chicken Satay](./ch02-05-peanut-cucumber-chicken-satay.md)
-  - [Chicken Curry](./ch02-06-chicken-curry.md)
-  - [Chicken Tikka Masala Flat Bread Sandwich](./ch02-07-chicken-tikka-masala-flat-bread-sandwich.md)
-  - [Spicy Ginger Steak Grain Bowl](./ch02-08-spicy-ginger-steak-grain-bowl.md)
-  - [Teriyaki Ginger Shrimp](./ch02-09-teriyaki-ginger-shrimp.md)
-  - [Falafel Patties](./ch02-10-falafel-patties.md)
-  - [Lentil and Wild Rice Salad](./ch02-11-lentil-wild-rice-salad.md)
-  - [Hummus](./ch02-12-hummus-collection.md)
-  - [Curried Chicken and Green Apple Salad Wrap](./ch02-13-curried-chicken-green-salad-wrap.md)
-  - [Poblano, Pale Ale, Bacon, and Gouda Mac and Cheese](./ch02-14-poblano-ale-bacon-gouda-mac-cheese.md)
-  - [Curried Couscous Salad](./ch02-15-curried-couscous-salad.md)
-  - [Asian Chicken Noodle Salad](./ch02-16-asian-chicken-noodle-salad.md)
-  - [Chopped Greek Salad](./ch02-17-chopped-greek-salad.md)
-  - [Butter Chicken 2](./ch02-18-butter-chicken-2.md)
-  - [Tandori Chicken Soup](./ch02-19-tandori-chicken-soup.md)
-  - [Tikka Masala 1](./ch02-20-tikka-masala-1.md)
-  - [Slow Cooker Chicken Tandoori](./ch02-21-slow-cooker-chicken-tandoori.md)
-  - [Ultimate Butter Chicken](./ch02-22-ultimate-butter-chicken.md)
-  - [Kimchi Fried Rice](./ch02-23-kimchi-fried-rice.md)
-  - [Lemon Garlic Chicken](./ch02-24-lemon-garlic-chicken.md)
-  - [Japanese Raman Broth](./ch02-25-japanese-raman-broth.md)
-  - [Shredded Beef Ragu Pasta](./ch02-26-shredded-beef-ragu-pasta.md)
-  - [Sichuan Style Braised Beef Noodle Soup](./ch02-27-sichuan-style-braised-beef-noodle-soup.md)
-  - [Ginger Sweet Potato Lentil Stew](./ch02-28-ginger-sweet-potato-lentil-stew.md)
-  - [Baked Falafel](./ch02-29-baked-falafel.md)
-  - [Gobi Manchurian](./ch02-30-gobi-manchurian.md)
-  - [Lean Beef and Broccoli Stir-Fry](./ch02-31-lean-beef-and-broccoli-stir-fry.md)
-  - [Mild Chicken Curry](./ch02-32-mild-chicken-curry.md)
-  - [MOBs Curried Chickpea Stuffed Sweet Potatoes](./ch02-33-mobs-curried-chickpea-stuffed-sweet-potatoes.md)
-  - [Easy Chicken Tikka Masala](./ch02-34-easy-chicken-tikka-masala.md)
-  - [Ham and Cheese Pocket](./ch02-35-ham-and-cheese-pocket.md)
-  - [Wagamamas Surendras Curry](./ch02-36-wagamamas-surendras-curry.md)
-  - [Bengali Chicken Curry](./ch02-37-bengali-chicken-curry.md)
-  - [Chocolate Chip Pancakes](./ch02-38-chocolate-chip-pancakes.md)
-  - [Vegan Winter Lentil Stew](./ch02-39-vegan-winter-lentil-stew.md)
-  - [Mozzarella Stuffed Meatballs](./ch02-40-mozzarella-stuffed-meatballs.md)
-  - [Butternut Squash Rigatoni](./ch02-41-butternut-squash-rigatoni.md)
-  - [Chicken Satay Pitas](./ch02-42-chicken-satay-pitas.md)
-  - [Chorizo Rosti and Romesco Sauce](./ch02-43-chorizo-rosti-and-romesco-sauce.md)
-  - [Baked Veggie Fritters](./ch02-44-baked-veggie-fritters.md)
-  - [Basic Falafel](./ch02-45-basic-falafel.md)
-  - [Butternut Squash Moroccan Stew](./ch02-46-butternut-squash-moroccan-stew.md)
-  - [Pearl Barley Super Salad](./ch02-47-pearl-barley-super-salad.md)
-  - [Maple Roasted Butternut Squash](./ch02-48-maple-roasted-butternut-squash.md)
-  - [Jalapeno Popper Pretzel Bites](./ch02-49-jalapeno-popper-pretzel-bites.md)
-  - [Thai Satay Chicken](./ch02-50-thai-satay-chicken.md)
-  - [Hyderabadi Chicken Curry](./ch02-51-hyderabadi-chicken-curry.md)
-  - [Peppercorn Steak Au Poivre](./ch02-52-peppercorn-steak-au-poivre.md)
-  - [Homemade Mozzarella Cheese](./ch02-53-homemade-mozzarella-cheese.md)
-  - [Cauliflower Pizza Base](./ch02-54-cauliflower-pizza-base.md)
-  - [Chocolate Truffles](./ch02-55-chocolate-truffles.md)
-  - [Wagamama Chicken Katsu Curry](./ch02-56-wagamama-chicken-katsu-curry.md)
-  - [Cauliflower Tikka Gyros](./ch02-57-cauliflower-tikka-gyros.md)
-  - [Crispy Smoked Gouda Cheese Balls](./ch02-58-crispy-smoked-gouda-cheese-balls.md)
-  - [Ultimate Lasagne](./ch02-59-ultimate-lasagne.md)
-  - [Cauliflower and Chickpea Coconut Curry](./ch02-60-cauliflower-and-chickpea-coconut-curry.md)
-  - [Roasted Root Veggie Curry](./ch02-61-roasted-root-veggie-curry.md)
-  - [Homemade Garlic Naan](./ch02-62-homemade-garlic-naan.md)
-  - [Pumpkin Chickpea and Red Lentil Curry](./ch02-63-pumpkin-chickpea-and-red-lentil-curry.md)
-  - [Pad Thai](./ch02-64-pad-thai.md)
-  - [Chilli Peanut Fridge Brownie](./ch02-65-chilli-peanut-fridge-brownie.md)
-  - [The Most Fudgy Brownies](./ch02-66-the-most-fudgy-brownies.md)
-  - [Indian Popcorn Chicken](./ch02-67-indian-popcorn-chicken.md)
-  - [Middle Eastern Lamb Koftas](./ch02-68-middle-eastern-lamb-koftas.md)
-  - [Japanese Beef Curry](./ch02-69-japanese-beef-curry.md)
-  - [Harissa Chicken](./ch02-70-harissa-chicken.md)
-  - [Pub Style Soft Pretzels with Beer Cheese](./ch02-71-pub-style-soft-pretzels-with-beer-cheese.md)
-  - [Ginger Basil Noodles](./ch02-72-ginger-basil-noodles.md)
-  - [Calzones](./ch02-73-calzones.md)
-  - [Buffalo Chicken Rangoons](./ch02-74-buffalo-chicken-rangoons.md)
-  - [Chicken Thigh Curry](./ch02-75-chicken-thigh-curry.md)
-  - [Grilled Chicken Shawarma](./ch02-76-grilled-chicken-shawarma.md)
-  - [Spicy Chicken Katsu](./ch02-77-spicy-chicken-katsu.md)
-  - [Orange Cranberry Sauce](./ch02-78-orange-cranberry-sauce.md)
-  - [Tofu Satay with Peanut Sauce](./ch02-79-tofu-satay-with-peanut-sauce.md)
-  - [Ham and Brie Flatbreads](./ch02-80-ham-and-brie-flatbreads.md)
-  - [Miso Tahini Roast Sweet Potato Bowl](./ch02-81-miso-tahini-roast-sweet-potato-bowl.md)
-  - [Chili Con Queso](./ch02-82-chili-con-queso.md)
-  - [Grilled Cheese with Honey](./ch02-83-grilled-cheese-with-honey.md)
-  - [Spicy BBQ Cauliflower Wings](./ch02-84-spicy-bbq-cauliflower-wings.md)
-  - [General Tsos Chicken](./ch02-85-general-tsos-chicken.md)
-  - [Squash Peanut Butter Curry](./ch02-86-squash-peanut-butter-curry.md)
-  - [Salmon Poke Bowl](./ch02-87-salmon-poke-bowl.md)
-  - [Pesto Veggies Traybake](./ch02-88-pesto-veggies-traybake.md)
-  - [Brussel Sprout Pad Thai](./ch02-89-brussel-sprout-pad-thai.md)
-  - [Chorizo Brussel Sprouts](./ch02-90-chorizo-brussel-sprouts.md)
-  - [Spiced Chicken Pita with Herb Yogurt Sauce](./ch02-91-spiced-chicken-pita-with-herb-yogurt-sauce.md)
+- [Sides](./recipes/11-Sides/sides.md)
+
+# Snacks
+
+- [Snacks](./recipes/12-Snacks/snacks.md)
 
 # Desserts
 
-- [Desserts](./ch03-00-desserts.md)
-  - [Black Forest Express](./ch03-01-black-forest-express.md)
+- [Desserts](./recipes/13-Desserts/desserts.md)
+
+# Drinks
+
+- [Drinks](./recipes/14-Drinks/drinks.md)
+  - [Non Alcoholic](./recipes/14-Drinks/1-Non-Alcoholic/non-alcoholic.md)
+  - [Cocktails](./recipes/14-Drinks/2-Cocktails/cocktails.md)
+
+# Dips & Sauces
+
+- [Dips & Sauces](./recipes/15-Dips-&-Sauces/dips-&-sauces.md)
+
+# Spices & Marinades
+
+- [Spices & Marinades](./recipes/16-Spices-&-Marinades/spices-&-marinades.md)
+
+# Salads & Bowls
+
+- [Salads & Bowls](./recipes/2-Salads-&-Bowls/salads-&-bowls.md)
+
+# Soup & Chili
+
+- [Soup & Chili](./recipes/3-Soup-&-Chili/soup-&-chili.md)
+
+# Grilled Cheese & Quesadillas
+
+- [Grilled Cheese & Quesadillas](./recipes/4-Grilled-Cheese-&-Quesadillas/grilled-cheese-&-quesadillas.md)
+
+# Breakfast
+
+- [Breakfast](./recipes/5-Breakfast/breakfast.md)
+
+# Bread
+
+- [Bread](./recipes/6-Bread/bread.md)
+
+# Pasta
+
+- [Pasta](./recipes/7-Pasta/pasta.md)
+
+# Curry
+
+- [Curry](./recipes/8-Curry/curry.md)
+
+# Main Dishes
+
+- [Main Dishes](./recipes/9-Main-Dishes/main-dishes.md)

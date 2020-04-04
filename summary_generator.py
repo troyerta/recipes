@@ -25,8 +25,8 @@ PATH    Path to process''' % basename(argv[0])
 # f = open("summary_test.md", "w")
 # f.write("Summary test!\n\n")
 
-f = open("summary2.md", "w")
-f.write("# Summary2 test!\n\n")
+f = open("./src/SUMMARY.md", "w")
+# f.write("# Summary2 test!\n\n")
 
 def splitpath(path, maxdepth=20):
      ( head, tail ) = os.path.split(path)
@@ -35,7 +35,7 @@ def splitpath(path, maxdepth=20):
          else [ head or tail ]
 
 def produce_dirfile_name( dir ):
-    return os.path.join( dir, re.sub( '\d+-', '', os.path.basename( dir ) ) + ".md" )
+    return os.path.join( dir, re.sub( '\d+-', '', os.path.basename( dir ).lower() ) + ".md" )
 
 def ensure_dirfile( dirfile ):
     # print("searching for file", dirfile)
@@ -55,7 +55,8 @@ def title_from_path( path ):
     return re.sub('-', ' ', and_temp )
 
 def dirfile_from_dir( dir ):
-    return re.sub( '\d+-', '', dir + ".md" )
+    base = re.sub( '\d+-', '', os.path.basename(dir).lower() + ".md" )
+    return os.path.join( dir, base )
 
 # def section_line( path ):
 #     return "[" + title_from_path( path ) + "](" + path + ")\n"
@@ -66,6 +67,11 @@ def recipe_line( path ):
 
 # def write_ch_contents( file, chapter ):
 #     pass
+
+def path_rel_to_summary( path ):
+    path_list = splitpath(path)
+    path_list.remove( path_list[1] )
+    return os.path.join( *path_list )
 
 def order_files_then_dirs( dir, paths ):
     files = [x for x in paths if isfile( os.path.join( dir, x ) )]
@@ -84,17 +90,18 @@ def order_files_then_dirs( dir, paths ):
 def print_tree( dir, padding, fPadding, chapter_dirs, section_dirs, dirfiles, recipes, about_file, print_files=False, isLast=False, isFirst=False,  ):
     if isFirst:
         pass
-        print( padding[:-1] + dir )
+        # print( padding[:-1] + dir )
     else:
-        dfile = dirfile_from_dir(dir).lower()
+        dfile = path_rel_to_summary( dirfile_from_dir(dir) )
+        # print(dfile)
 
         if isLast:
-            print( padding[:-1] + '└── ' + title_from_path(dir) )
+            # print( padding[:-1] + '└── ' + title_from_path(dir) )
             if dir in chapter_dirs:
                 f.write( '\n# ' + title_from_path(dir) + "\n\n" )
             f.write( fPadding[:-1] + '- [' + re.sub( '-', ' ', title_from_path(dir) ) + '](' + dfile + ')\n' )
         else:
-            print( padding[:-1] + '├── ' + basename(abspath(dir)) )
+            # print( padding[:-1] + '├── ' + basename(abspath(dir)) )
             if dir in chapter_dirs:
                 f.write( '\n# ' + title_from_path(dir) + "\n\n" )
             f.write( fPadding[:-1] + '- [' + re.sub( '-', ' ', title_from_path(dir) ) + '](' + dfile + ')\n' )
@@ -130,18 +137,21 @@ def print_tree( dir, padding, fPadding, chapter_dirs, section_dirs, dirfiles, re
             if isLast:
                 # print("printing", file)
                 # if not isDirFile(path,file) and path != about_file:
-                print( padding + '└── ' + file )
+                # print( padding + '└── ' + file )
+                pass
             else:
                 # print("printing", file)
                 # if not isDirFile(path,file) and path != about_file:
-                print( padding + '├── ' + file )
+                # print( padding + '├── ' + file )
+                pass
             if not path in dirfiles:
-                fpath = os.path.join(path,file)
+                # fpath = os.path.join(path,file)
+                fpath = path_rel_to_summary( path )
 
                 if path == about_file:
-                    f.write( fPadding + recipe_line(path) )
+                    f.write( fPadding + recipe_line(fpath) )
                 else:
-                    f.write( fPadding + '- ' + recipe_line(path) )
+                    f.write( fPadding + '- ' + recipe_line(fpath) )
 
 def isDirFile(path, file):
     filename, ext = os.path.splitext(file)
@@ -159,7 +169,7 @@ def isDirFile(path, file):
 #         print( 'ERROR: \'' + path + '\' is not a directory' )
 
 def get_all_things():
-    rootpath = './src/our_book'
+    rootpath = './src/recipes'
     rootpath_depth = len( splitpath( rootpath ) )
 
     root_list = list()
@@ -232,6 +242,7 @@ def get_all_things():
     else:
         with open( about_file, 'w' ) as fi:
             fi.write( "# About" )
+    print("About", about_file)
 
     # Add files from files list to the recipe list, if it is of a ".md" extension
     [recipes.append( path ) for path in file_list if path.endswith(".md") and path not in dirfiles]
@@ -250,7 +261,6 @@ def get_all_things():
     # [print(x) for x in recipes]
 
     assert( len(dirfiles) == ( len( chapter_dirs ) + len( section_dirs ) ) )
-    print( about_file )
     # f.write( "# Summary\n\n[About](./about.md)\n\n" )
 
     print_tree( rootpath, '', '', chapter_dirs, section_dirs, dirfiles, recipes, about_file, True, False, True )
@@ -302,4 +312,3 @@ if __name__ == "__main__":
     workerFunction()
 
 f.close()
-

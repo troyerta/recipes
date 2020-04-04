@@ -4,3 +4,8 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Recipes"
+create-missing = false
+
+[output.html.fold]
+enable = true
+level = 1
