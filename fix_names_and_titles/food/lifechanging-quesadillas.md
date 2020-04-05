@@ -2,7 +2,7 @@
 
 ## Overview
 
-- Serves:
+- Yield:
 
 - Prep Time:
 
