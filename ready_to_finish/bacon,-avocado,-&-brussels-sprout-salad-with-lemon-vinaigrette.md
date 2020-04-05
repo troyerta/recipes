@@ -1,0 +1,49 @@
+# Bacon, Avocado, & Brussels Sprout Salad With Lemon Vinaigrette
+
+## Overview
+
+- Serves:
+
+- Prep Time:
+
+- Total Time:
+
+## Ingredients
+
+
+
+## Method
+
+### Sub-method 1 (sub-methods are optional)
+
+1. Do this
+---
+2. Do that
+---
+3.
+
+### Sub-method 2
+
+1.
+---
+2.
+---
+3.
+
+## Notes
+
+- Tip on serving
+
+- Tip on storing
+
+- Tip for reheating
+
+- Tips if missing ingredients or equipment
+
+## References and Acknowledgments
+
+[Bacon, Avocado, & Brussels Sprout Salad With Lemon Vinaigrette](https://tasty.co/recipe/bacon-avocado-brussels-sprout-salad-with-lemon-vinaigrette)
+
+## Tags
+
+

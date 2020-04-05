@@ -2,6 +2,7 @@
 authors = ["troyerta"]
 language = "en"
 multilingual = false
+description = "The example book covers recipes."
 src = "src"
 title = "Recipes"
 create-missing = false

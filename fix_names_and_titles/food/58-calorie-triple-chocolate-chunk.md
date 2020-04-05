@@ -1,0 +1,49 @@
+# 58 Calorie Triple Chocolate Chunk
+
+## Overview
+
+- Serves:
+
+- Prep Time:
+
+- Total Time:
+
+## Ingredients
+
+
+
+## Method
+
+### Sub-method 1 (sub-methods are optional)
+
+1. Do this
+---
+2. Do that
+---
+3.
+
+### Sub-method 2
+
+1.
+---
+2.
+---
+3.
+
+## Notes
+
+- Tip on serving
+
+- Tip on storing
+
+- Tip for reheating
+
+- Tips if missing ingredients or equipment
+
+## References and Acknowledgments
+
+[58 Calorie Triple Chocolate Chunk](http://powerforceapparel.blogspot.com/2012/03/58-calorie-triple-chocolate-chunk.html)
+
+## Tags
+
+
