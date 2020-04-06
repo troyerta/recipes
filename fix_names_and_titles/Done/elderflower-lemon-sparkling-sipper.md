@@ -28,6 +28,9 @@
 ---
 4. Drop in a few raspberries and serve.
 
+## Notes
+
+- Substitute lavender syrup #todo for elderflower syrup for a different taste. Garnishing with citrus or lavender.
 
 ## References and Acknowledgments
 
