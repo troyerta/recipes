@@ -2,13 +2,13 @@
 
 ## Ingredients
 
-2 cans cherry pie filling
+- 2 cans cherry pie filling
 
-1 pkg chocolate cake mix
+- 1 pkg chocolate cake mix
 
-1 cup margarine, melted
+- 1 cup margarine, melted
 
-1/2 cup chopped nuts
+- 1/2 cup chopped nuts
 
 ## Method
 
