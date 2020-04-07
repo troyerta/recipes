@@ -1,4 +1,4 @@
-# Dreamsicle Fruit Dip Recipe
+# Meal Prep Chicken
 
 ## Overview
 
@@ -16,4 +16,7 @@
 
 ## References and Acknowledgments
 
-[Dreamsicle Fruit Dip Recipe](http://www.mybakingaddiction.com/dreamsicle-fruit-dip-recipe/)
+[Meal Prep Chicken](http://www.yummyhealthyeasy.com/2017/01/easy-meal-prep-chicken.html)
+
+#### Tag
+easy
