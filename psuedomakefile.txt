@@ -1,0 +1,38 @@
+git worktree add /tmp/book -b pages
+
+
+git push origin HEAD:gh-pages
+
+
+.PHONY: deploy
+deploy: book
+	@echo "====> deploying to github"
+	git worktree add /tmp/book origin/gh-pages
+	rm -rf /tmp/book/*
+	cp -rp book/* /tmp/book/
+	cd /tmp/book && \
+		git add -A && \
+		git commit -m "deployed on $(shell date) by ${USER}" && \
+		git push origin gh-pages
+	rm -rf /tmp/book
+
+./save.sh
+git branch save
+python3 summary_generator.py
+mdbook build
+git add src/*
+git commit -m 'saving new recipe'
+git push origin HEAD:master
+git checkout origin/master
+git delbr save
+
+./deploy.sh
+# git checkout origin/gh-pages
+git worktree add /tmp/book origin/gh-pages
+rm -rf /tmp/book/*
+cp -rp book/* /tmp/book/
+cd /tmp/book && \
+git add -A && \
+git commit -m "deployed on $(shell date) by ${USER}" && \
+git push origin gh-pages
+rm -rf /tmp/book
