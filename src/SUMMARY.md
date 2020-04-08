@@ -24,6 +24,7 @@
 
 - [Drinks](./recipes/14-Drinks/drinks.md)
   - [Non Alcoholic](./recipes/14-Drinks/1-Non-Alcoholic/non-alcoholic.md)
+    - [Apple Cider Floats](./recipes/14-Drinks/1-Non-Alcoholic/apple-cider-floats.md)
   - [Cocktails](./recipes/14-Drinks/2-Cocktails/cocktails.md)
     - [Elderflower Champagne Cocktail](./recipes/14-Drinks/2-Cocktails/elderflower-champagne-cocktail.md)
 
