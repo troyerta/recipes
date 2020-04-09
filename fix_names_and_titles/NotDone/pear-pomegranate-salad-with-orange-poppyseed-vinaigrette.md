@@ -1,4 +1,4 @@
-# Pear Pomegranate Salad With Orange Poppyseed Vinaigrette
+# Pear Pomegranate Salad with Orange Poppyseed Vinaigrette
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Pear Pomegranate Salad With Orange Poppyseed Vinaigrette](http://houseofyumm.com/pear-pomegranate-salad-with-orange-poppyseed-vinaigrette/)
+[Pear Pomegranate Salad with Orange Poppyseed Vinaigrette](http://houseofyumm.com/pear-pomegranate-salad-with-orange-poppyseed-vinaigrette/)

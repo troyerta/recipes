@@ -48,7 +48,7 @@
 
 ## References and Acknowledgments
 
-[Winter Sangria With Citrus Pomegranate](http://www.simplebites.net/winter-sangria-with-citrus-pomegranate/)
+[Winter Sangria with Citrus Pomegranate](http://www.simplebites.net/winter-sangria-with-citrus-pomegranate/)
 
 ## Tags
 

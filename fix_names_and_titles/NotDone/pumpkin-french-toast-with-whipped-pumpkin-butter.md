@@ -1,4 +1,4 @@
-# Pumpkin French Toast With Whipped Pumpkin Butter
+# Pumpkin French Toast with Whipped Pumpkin Butter
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Pumpkin French Toast With Whipped Pumpkin Butter](https://lifemadesimplebakes.com/2015/11/pumpkin-french-toast-with-whipped-pumpkin-butter/)
+[Pumpkin French Toast with Whipped Pumpkin Butter](https://lifemadesimplebakes.com/2015/11/pumpkin-french-toast-with-whipped-pumpkin-butter/)

@@ -1,4 +1,4 @@
-# Hawaiian Bbq Quesadillas With Pineapple-Mango Guacamole
+# Hawaiian Bbq Quesadillas with Pineapple-Mango Guacamole
 
 ## Overview
 
@@ -74,7 +74,7 @@
 
 ## References and Acknowledgments
 
-[Half Baked Harvest - Hawaiian Bbq Quesadillas With Pineapple-Mango Guacamole](https://www.halfbakedharvest.com/hawaiian-bbq-quesadillas-with-pineapple-mango-guacamole/#bo-recipe)
+[Half Baked Harvest - Hawaiian Bbq Quesadillas with Pineapple-Mango Guacamole](https://www.halfbakedharvest.com/hawaiian-bbq-quesadillas-with-pineapple-mango-guacamole/#bo-recipe)
 
 ## Tags
 mexican

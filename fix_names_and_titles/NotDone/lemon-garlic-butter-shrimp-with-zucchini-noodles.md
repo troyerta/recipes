@@ -1,4 +1,4 @@
-# Lemon Garlic Butter Shrimp With Zucchini Noodles
+# Lemon Garlic Butter Shrimp with Zucchini Noodles
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Lemon Garlic Butter Shrimp With Zucchini Noodles](https://www.eatwell101.com/lemon-garlic-butter-shrimp-with-zucchini-noodles)
+[Lemon Garlic Butter Shrimp with Zucchini Noodles](https://www.eatwell101.com/lemon-garlic-butter-shrimp-with-zucchini-noodles)

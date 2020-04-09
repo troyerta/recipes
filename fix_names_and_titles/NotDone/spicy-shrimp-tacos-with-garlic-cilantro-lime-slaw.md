@@ -1,4 +1,4 @@
-# Spicy Shrimp Tacos With Garlic Cilantro Lime Slaw
+# Spicy Shrimp Tacos with Garlic Cilantro Lime Slaw
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Spicy Shrimp Tacos With Garlic Cilantro Lime Slaw](https://pinchofyum.com/spicy-shrimp-tacos-with-garlic-cilantro-lime-slaw)
+[Spicy Shrimp Tacos with Garlic Cilantro Lime Slaw](https://pinchofyum.com/spicy-shrimp-tacos-with-garlic-cilantro-lime-slaw)

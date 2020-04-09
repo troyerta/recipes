@@ -1,4 +1,4 @@
-# Roasted Veggie Bowls With Turmeric Dressing
+# Roasted Veggie Bowls with Turmeric Dressing
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Roasted Veggie Bowls With Turmeric Dressing](https://ourbalancedbowl.com/roasted-veggie-bowls-with-turmeric-dressing/)
+[Roasted Veggie Bowls with Turmeric Dressing](https://ourbalancedbowl.com/roasted-veggie-bowls-with-turmeric-dressing/)

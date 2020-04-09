@@ -1,4 +1,4 @@
-# Superfood Broccoli Salad With Creamy Poppyseed Dressing
+# Superfood Broccoli Salad with Creamy Poppyseed Dressing
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Superfood Broccoli Salad With Creamy Poppyseed Dressing](http://littlespicejar.com/superfood-broccoli-salad-with-creamy-poppyseed-dressing/)
+[Superfood Broccoli Salad with Creamy Poppyseed Dressing](http://littlespicejar.com/superfood-broccoli-salad-with-creamy-poppyseed-dressing/)

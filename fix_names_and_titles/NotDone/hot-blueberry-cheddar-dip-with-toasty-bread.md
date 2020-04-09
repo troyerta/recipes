@@ -1,4 +1,4 @@
-# Hot Blueberry Cheddar Dip With Toasty Bread
+# Hot Blueberry Cheddar Dip with Toasty Bread
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Hot Blueberry Cheddar Dip With Toasty Bread](http://www.howsweeteats.com/2012/07/hot-blueberry-cheddar-dip-with-toasty-bread/)
+[Hot Blueberry Cheddar Dip with Toasty Bread](http://www.howsweeteats.com/2012/07/hot-blueberry-cheddar-dip-with-toasty-bread/)

@@ -1,4 +1,4 @@
-# Get To Your Summer Bod Goals With This Chicken And Salmon?Utm_Term=.Cdvywdkyg#.Mek6Xpbam
+# Get To Your Summer Bod Goals with This Chicken And Salmon?Utm_Term=.Cdvywdkyg#.Mek6Xpbam
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Get To Your Summer Bod Goals With This Chicken And Salmon?Utm_Term=.Cdvywdkyg#.Mek6Xpbam](https://www.buzzfeed.com/joeyfiroben/get-to-your-summer-bod-goals-with-this-chicken-and-salmon?utm_term=.cdvywDkYg#.meK6XPbam)
+[Get To Your Summer Bod Goals with This Chicken And Salmon?Utm_Term=.Cdvywdkyg#.Mek6Xpbam](https://www.buzzfeed.com/joeyfiroben/get-to-your-summer-bod-goals-with-this-chicken-and-salmon?utm_term=.cdvywDkYg#.meK6XPbam)

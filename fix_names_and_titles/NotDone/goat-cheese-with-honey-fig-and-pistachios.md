@@ -1,4 +1,4 @@
-# Goat Cheese With Honey Fig And Pistachios
+# Goat Cheese with Honey Fig And Pistachios
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Goat Cheese With Honey Fig And Pistachios](http://www.simplehealthykitchen.com/goat-cheese-with-honey-fig-and-pistachios/)
+[Goat Cheese with Honey Fig And Pistachios](http://www.simplehealthykitchen.com/goat-cheese-with-honey-fig-and-pistachios/)
