@@ -1,4 +1,4 @@
-# Make Meal Prep Easy And Delicious with Balsamic Chicken And
+# Make Meal Prep Easy and Delicious with Balsamic Chicken And
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Make Meal Prep Easy And Delicious with Balsamic Chicken And](https://www.buzzfeed.com/melissaboyajian/make-meal-prep-easy-and-delicious-with-balsamic-chicken-and)
+[Make Meal Prep Easy and Delicious with Balsamic Chicken And](https://www.buzzfeed.com/melissaboyajian/make-meal-prep-easy-and-delicious-with-balsamic-chicken-and)

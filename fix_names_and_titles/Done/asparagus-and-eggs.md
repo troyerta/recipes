@@ -1,4 +1,4 @@
-# Asparagus And Eggs
+# Asparagus and Eggs
 
 ## Overview
 
@@ -38,4 +38,4 @@
 
 ## References and Acknowledgments
 
-[Naturallyella - Asparagus And Eggs](http://naturallyella.com/2013/05/03/asparagus-and-eggs/)
+[Naturallyella - Asparagus and Eggs](http://naturallyella.com/2013/05/03/asparagus-and-eggs/)

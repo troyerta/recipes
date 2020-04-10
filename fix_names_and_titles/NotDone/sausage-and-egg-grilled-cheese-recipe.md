@@ -1,4 +1,4 @@
-# Sausage And Egg Grilled Cheese Recipe
+# Sausage and Egg Grilled Cheese Recipe
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Sausage And Egg Grilled Cheese Recipe](http://blogchef.net/sausage-and-egg-grilled-cheese-recipe/)
+[Sausage and Egg Grilled Cheese Recipe](http://blogchef.net/sausage-and-egg-grilled-cheese-recipe/)

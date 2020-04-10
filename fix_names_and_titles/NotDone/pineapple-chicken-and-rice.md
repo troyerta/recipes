@@ -1,4 +1,4 @@
-# Pineapple Chicken And Rice
+# Pineapple Chicken and Rice
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Pineapple Chicken And Rice](https://dailyappetite.com/2017/02/09/pineapple-chicken-and-rice/)
+[Pineapple Chicken and Rice](https://dailyappetite.com/2017/02/09/pineapple-chicken-and-rice/)

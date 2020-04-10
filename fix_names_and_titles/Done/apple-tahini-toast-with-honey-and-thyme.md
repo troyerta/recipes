@@ -33,4 +33,4 @@
 
 ## References and Acknowledgments
 
-[Apple Tahini Toast with Honey And Thyme](http://tasty-yummies.com/2014/09/22/apple-tahini-toast-with-honey-and-thyme/?crlt.pid=camp.fl9lkSrHhF6i)
+[Apple Tahini Toast with Honey and Thyme](http://tasty-yummies.com/2014/09/22/apple-tahini-toast-with-honey-and-thyme/?crlt.pid=camp.fl9lkSrHhF6i)

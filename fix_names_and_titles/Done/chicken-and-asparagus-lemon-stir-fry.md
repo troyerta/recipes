@@ -1,4 +1,4 @@
-# Chicken And Asparagus Lemon Stir Fry
+# Chicken and Asparagus Lemon Stir Fry
 
 This quick chicken and asparagus stir fry made with chicken breast, fresh lemon, garlic and ginger is the perfect fast weeknight dish.
 
@@ -58,4 +58,4 @@ This quick chicken and asparagus stir fry made with chicken breast, fresh lemon,
 
 ## References and Acknowledgments
 
-[Chicken And Asparagus Lemon Stir Fry](http://www.skinnytaste.com/2014/03/chicken-and-asparagus-lemon-stir-fry.html)
+[Chicken and Asparagus Lemon Stir Fry](http://www.skinnytaste.com/2014/03/chicken-and-asparagus-lemon-stir-fry.html)

@@ -1,4 +1,4 @@
-# Ham And Eggs Cups
+# Ham and Eggs Cups
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Ham And Eggs Cups](http://recipes-yummy.com/ham-and-eggs-cups/)
+[Ham and Eggs Cups](http://recipes-yummy.com/ham-and-eggs-cups/)

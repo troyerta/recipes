@@ -1,4 +1,4 @@
-# Sausage And Egg Breakfast Casserole
+# Sausage and Egg Breakfast Casserole
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Sausage And Egg Breakfast Casserole](https://www.730sagestreet.com/sausage-and-egg-breakfast-casserole/)
+[Sausage and Egg Breakfast Casserole](https://www.730sagestreet.com/sausage-and-egg-breakfast-casserole/)

@@ -1,4 +1,4 @@
-# Warm Gruyere Bacon And Caramelized Onion Dip
+# Warm Gruyere Bacon and Caramelized Onion Dip
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Warm Gruyere Bacon And Caramelized Onion Dip](http://www.garnishwithlemon.com/warm-gruyere-bacon-and-caramelized-onion-dip/)
+[Warm Gruyere Bacon and Caramelized Onion Dip](http://www.garnishwithlemon.com/warm-gruyere-bacon-and-caramelized-onion-dip/)

@@ -1,4 +1,4 @@
-# Butternut Squash And Goat Cheese Ravioli With Browned Butter Oregano Bread Crumbs
+# Butternut Squash and Goat Cheese Ravioli With Browned Butter Oregano Bread Crumbs
 
 ## Overview
 
@@ -73,4 +73,4 @@
 
 ## References and Acknowledgments
 
-[Butternut Squash And Goat Cheese Ravioli With Browned Butter Oregano Bread Crumbs](http://www.halfbakedharvest.com/butternut-squash-and-goat-cheese-ravioli-with-browned-butter-oregano-bread-crumbs-video/)
+[Butternut Squash and Goat Cheese Ravioli With Browned Butter Oregano Bread Crumbs](http://www.halfbakedharvest.com/butternut-squash-and-goat-cheese-ravioli-with-browned-butter-oregano-bread-crumbs-video/)

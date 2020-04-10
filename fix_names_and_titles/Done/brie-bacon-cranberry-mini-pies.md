@@ -1,4 +1,4 @@
-# Brie, Bacon, And Cranberry Mini Pies
+# Brie, Bacon, and Cranberry Mini Pies
 
 Yield: 12 servings
 
@@ -31,7 +31,7 @@ Yield: 12 servings
 
 ## References and Acknowledgments
 
-[Brie, Bacon, And Cranberry Mini Pies](https://tasty.co/recipe/brie-bacon-and-cranberry-mini-pies)
+[Brie, Bacon, and Cranberry Mini Pies](https://tasty.co/recipe/brie-bacon-and-cranberry-mini-pies)
 
 ## Tags
 

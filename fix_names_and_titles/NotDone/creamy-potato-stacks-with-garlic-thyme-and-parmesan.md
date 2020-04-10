@@ -1,4 +1,4 @@
-# Creamy Potato Stacks With Garlic Thyme And Parmesan
+# Creamy Potato Stacks With Garlic Thyme and Parmesan
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Creamy Potato Stacks With Garlic Thyme And Parmesan](http://www.littlebroken.com/2015/11/06/creamy-potato-stacks-with-garlic-thyme-and-parmesan/)
+[Creamy Potato Stacks With Garlic Thyme and Parmesan](http://www.littlebroken.com/2015/11/06/creamy-potato-stacks-with-garlic-thyme-and-parmesan/)

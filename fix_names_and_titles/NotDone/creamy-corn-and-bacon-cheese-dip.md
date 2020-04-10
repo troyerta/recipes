@@ -1,4 +1,4 @@
-# Creamy Corn And Bacon Cheese Dip
+# Creamy Corn and Bacon Cheese Dip
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Creamy Corn And Bacon Cheese Dip](http://www.wineandglue.com/2013/10/creamy-corn-and-bacon-cheese-dip.html)
+[Creamy Corn and Bacon Cheese Dip](http://www.wineandglue.com/2013/10/creamy-corn-and-bacon-cheese-dip.html)

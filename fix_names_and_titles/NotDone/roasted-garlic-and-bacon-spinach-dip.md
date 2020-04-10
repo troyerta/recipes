@@ -1,4 +1,4 @@
-# Roasted Garlic And Bacon Spinach Dip
+# Roasted Garlic and Bacon Spinach Dip
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Roasted Garlic And Bacon Spinach Dip](http://sallysbakingaddiction.com/2015/03/05/roasted-garlic-and-bacon-spinach-dip/)
+[Roasted Garlic and Bacon Spinach Dip](http://sallysbakingaddiction.com/2015/03/05/roasted-garlic-and-bacon-spinach-dip/)

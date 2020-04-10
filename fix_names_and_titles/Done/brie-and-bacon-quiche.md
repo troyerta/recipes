@@ -1,4 +1,4 @@
-# Brie And Bacon Quiche
+# Brie and Bacon Quiche
 
 Delicious recipe that incorporates creamy Brie cheese, Swiss cheese, and crispy bacon.
 
@@ -43,4 +43,4 @@ Delicious recipe that incorporates creamy Brie cheese, Swiss cheese, and crispy 
 
 ## References and Acknowledgments
 
-[Brie And Bacon Quiche](http://tastykitchen.com/blog/2011/05/brie-and-bacon-quiche/)
+[Brie and Bacon Quiche](http://tastykitchen.com/blog/2011/05/brie-and-bacon-quiche/)

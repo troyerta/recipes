@@ -1,4 +1,4 @@
-# Sauces Pestos And Marinades#.Cyq9Rzzoz
+# Sauces Pestos and Marinades#.Cyq9Rzzoz
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Sauces Pestos And Marinades#.Cyq9Rzzoz](http://www.buzzfeed.com/melissaharrison/sauces-pestos-and-marinades#.cyq9rzzoz)
+[Sauces Pestos and Marinades#.Cyq9Rzzoz](http://www.buzzfeed.com/melissaharrison/sauces-pestos-and-marinades#.cyq9rzzoz)

@@ -1,4 +1,4 @@
-# Cheesy Chicken And Rice Bake
+# Cheesy Chicken and Rice Bake
 
 ## Overview
 
@@ -14,7 +14,7 @@
 
 - ¾ cups Frozen Corn
 
-- 15 ounces, fluid Can Black Beans, Drained And Rinsed
+- 15 ounces, fluid Can Black Beans, Drained and Rinsed
 
 - 1 cup Plain Greek Yogurt (or Sour Cream)
 
@@ -41,4 +41,4 @@
 
 ## References and Acknowledgments
 
-[Cheesy Chicken And Rice Bake](http://tastykitchen.com/recipes/main-courses/cheesy-chicken-and-rice-bake/)
+[Cheesy Chicken and Rice Bake](http://tastykitchen.com/recipes/main-courses/cheesy-chicken-and-rice-bake/)

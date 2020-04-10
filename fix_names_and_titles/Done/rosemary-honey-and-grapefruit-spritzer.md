@@ -1,4 +1,4 @@
-# Rosemary Honey And Grapefruit Spritzer
+# Rosemary Honey and Grapefruit Spritzer
 
 ## Overview
 
@@ -36,7 +36,7 @@
 
 ## References and Acknowledgments
 
-[Rosemary Honey And Grapefruit Spritzer](https://tendingthetable.com/2017/02/08/rosemary-honey-and-grapefruit-spritzer/)
+[Rosemary Honey and Grapefruit Spritzer](https://tendingthetable.com/2017/02/08/rosemary-honey-and-grapefruit-spritzer/)
 
 ## Tags
 

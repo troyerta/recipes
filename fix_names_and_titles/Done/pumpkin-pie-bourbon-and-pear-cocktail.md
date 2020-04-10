@@ -1,4 +1,4 @@
-# Pumpkin Pie Bourbon And Pear Cocktail
+# Pumpkin Pie Bourbon and Pear Cocktail
 
 ## Overview
 
@@ -70,7 +70,7 @@
 
 ## References and Acknowledgments
 
-[Pumpkin Pie Bourbon And Pear Cocktail](https://honestlyyum.com/11871/pumpkin-pie-bourbon-and-pear-cocktail/)
+[Pumpkin Pie Bourbon and Pear Cocktail](https://honestlyyum.com/11871/pumpkin-pie-bourbon-and-pear-cocktail/)
 
 ## Tags
 

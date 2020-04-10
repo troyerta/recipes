@@ -1,4 +1,4 @@
-# Apple And Pear White Sangria
+# Apple and Pear White Sangria
 
 ## Overview
 
@@ -41,7 +41,7 @@
 
 ## References and Acknowledgments
 
-[Apple And Pear White Sangria](http://www.lovegrowswild.com/2013/09/apple-and-pear-white-sangria.html)
+[Apple and Pear White Sangria](http://www.lovegrowswild.com/2013/09/apple-and-pear-white-sangria.html)
 
 ## Tags
 

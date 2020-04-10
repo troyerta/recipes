@@ -1,4 +1,4 @@
-# Warm Quinoa And Roasted Vegetable Salad
+# Warm Quinoa and Roasted Vegetable Salad
 
 ## Overview
 
@@ -16,4 +16,4 @@
 
 ## References and Acknowledgments
 
-[Warm Quinoa And Roasted Vegetable Salad](http://thecreeksidecook.com/warm-quinoa-and-roasted-vegetable-salad/)
+[Warm Quinoa and Roasted Vegetable Salad](http://thecreeksidecook.com/warm-quinoa-and-roasted-vegetable-salad/)

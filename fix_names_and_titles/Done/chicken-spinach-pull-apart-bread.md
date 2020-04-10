@@ -1,4 +1,4 @@
-# Chicken And Spinach Pull-Apart Bread
+# Chicken and Spinach Pull-Apart Bread
 
 ## Overview
 
@@ -55,7 +55,7 @@
 
 ## References and Acknowledgments
 
-[Chicken And Spinach Pull-Apart Bread](https://tasty.co/recipe/chicken-and-spinach-pull-apart-bread)
+[Chicken and Spinach Pull-Apart Bread](https://tasty.co/recipe/chicken-and-spinach-pull-apart-bread)
 
 ## Tags
 
