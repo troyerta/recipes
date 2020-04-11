@@ -37,9 +37,5 @@
 7. Turn over on foiled jelly roll pan.
 ---
 
-## References and Acknowledgments
-
-[Link Text](https://www.website.com/Recipes/recipe/)
-
 ## Tags
 troyer
