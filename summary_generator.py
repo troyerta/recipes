@@ -252,8 +252,10 @@ def get_all_things():
     chapter_dirs = sorted( chapter_dirs )
     section_dirs = sorted( section_dirs )
 
-    # print('')
-    # [print(x) for x in chapter_dirs]
+    print( "Found", str(len(recipes)), "recipes in", str(len(chapter_dirs)), "chapters" )
+
+    print('')
+    [print(x) for x in chapter_dirs]
     # print('')
     # [print(x) for x in section_dirs]
     # print('')
@@ -269,10 +271,6 @@ def get_all_things():
     # for chapter in chapter_dirs:
         # Call a recursive thing to do the job
         # f.write( "# " + re.sub('\d+-', '', os.path.basename( chapter ).title() ) + "\n\n\n" )
-
-
-
-
 
 def find_files( dir='.', glob=r'*' ):
     matches = list()
