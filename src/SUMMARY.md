@@ -151,6 +151,7 @@
 # Meal Prep
 
 - [Meal Prep](./recipes/10-Meal-Prep/meal-prep.md)
+  - [Chicken and Salmon Meal Prep](./recipes/10-Meal-Prep/chicken-and-salmon-meal-prep.md)
   - [Cilantro Lime Chicken & Veggie Rice Meal Prep](./recipes/10-Meal-Prep/cilantro-lime-chicken-&-veggie-rice-meal-prep.md)
   - [One Pan Healthy Italian Sausage and Veggies](./recipes/10-Meal-Prep/one-pan-healthy-italian-sausage-and-veggies.md)
 
