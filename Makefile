@@ -30,17 +30,14 @@ deploy: book
 	@echo "====> building a temporary worktree on gh-pages branch"
 	@git worktree add ./tmp_book origin/gh-pages
 	@echo "====> deleting the old book"
-	@rm -rf ./tmp/book/*
+	@rm -rf ./tmp_book/*
 	@echo "====> copying over the new book"
 	@cp -rp book/* ./tmp_book/
 	@echo "====> committing and pushing new book to gh-pages branch"
 	cd ./tmp_book && \
-		git checkout -b tmp && \
 		git add -A && \
 		git commit -m "deployed on $(shell date) by ${USER}" && \
-		git push origin HEAD:gh-pages && \
-		git checkout origin/gh-pages && \
-		git delbr tmp
+		git push origin HEAD:gh-pages
 	@echo "====> pruning the worktree"
 	@rm -rf ./tmp_book
 	@git worktree prune
