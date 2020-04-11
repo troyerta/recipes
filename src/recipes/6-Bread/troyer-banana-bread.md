@@ -20,14 +20,22 @@
 
 ## Method
 
-Preheat oven to 350 deg F.
-Grease pan.
-Cream shortening and sugar, add beaten eggs.
-Mix in the milk.
-Mix in the baking soda.
-Mix in the salt.
-Mix in the bananas and flour.
-Bake at 350 deg F for 1 hr
+1. Preheat oven to 350 deg F.
+---
+2. Grease pan.
+---
+3. Cream shortening and sugar, add beaten eggs.
+---
+4. Mix in the milk.
+---
+5. Mix in the baking soda.
+---
+6. Mix in the salt.
+---
+7. Mix in the bananas and flour.
+---
+8. Bake at 350 deg F for 1 hr
+---
 
 ## References and Acknowledgments
 
