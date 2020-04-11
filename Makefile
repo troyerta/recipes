@@ -34,10 +34,10 @@ deploy: book
 	@echo "====> copying over the new book"
 	@cp -rp book/* ./tmp_book/
 	@echo "====> committing new book to gh-pages branch"
-	@cd ./tmp_book && \
+	cd ./tmp_book && \
 		git add -A && \
 		git commit -m "deployed on $(shell date) by ${USER}" && \
-		@echo "====> pushing book to github.com/troyerta/recipes/"
+		echo "====> pushing book to github.com/troyerta/recipes/"
 		git push origin HEAD:gh-pages
 	@echo "====> pruning the worktree"
 	@rm -rf ./tmp_book
