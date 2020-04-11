@@ -35,9 +35,12 @@ deploy: book
 	@cp -rp book/* ./tmp_book/
 	@echo "====> committing and pushing new book to gh-pages branch"
 	cd ./tmp_book && \
+		git checkout -b tmp && \
 		git add -A && \
 		git commit -m "deployed on $(shell date) by ${USER}" && \
-		git push origin HEAD:gh-pages
+		git push origin HEAD:gh-pages && \
+		git checkout origin/gh-pages && \
+		git delbr tmp
 	@echo "====> pruning the worktree"
 	@rm -rf ./tmp_book
 	@git worktree prune

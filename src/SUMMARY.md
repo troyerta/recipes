@@ -211,9 +211,11 @@
   - [Dark Chocolate Brown Sugar Cookies](./recipes/13-Desserts/dark-chocolate-brown-sugar-cookies.md)
   - [Dark Chocolate Raspberry Pie Bars](./recipes/13-Desserts/dark-chocolate-raspberry-pie-bars.md)
   - [Double Chocolate Brownies](./recipes/13-Desserts/double-chocolate-brownies.md)
+  - [Double Chocolate Zucchini Brownies](./recipes/13-Desserts/double-chocolate-zucchini-brownies.md)
   - [Double Dark Chocolate Shortbread Cookies](./recipes/13-Desserts/double-dark-chocolate-shortbread-cookies.md)
   - [Edible Eggless Chocolate Chip Cookie Dough](./recipes/13-Desserts/edible-eggless-chocolate-chip-cookie-dough.md)
   - [Eggnog Fudge](./recipes/13-Desserts/eggnog-fudge.md)
+  - [Ginger Spice Molasses Cookies](./recipes/13-Desserts/ginger-spice-molasses-cookies.md)
   - [Homemade Peppermint Patties](./recipes/13-Desserts/homemade-peppermint-patties.md)
   - [Homemade Tootsie Rolls](./recipes/13-Desserts/homemade-tootsie-rolls.md)
 
