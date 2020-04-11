@@ -237,12 +237,13 @@ def get_all_things():
     # From the files list, make sure the about.md file exists, make it if it does not
     # Remove it from the files list otherwise
     about_file = os.path.join( rootpath, "about.md" )
+    # print("About", about_file)
     if( about_file in file_list ):
         file_list.remove( about_file )
     else:
+        print( "No about.md found. Generating", about_file )
         with open( about_file, 'w' ) as fi:
             fi.write( "# About" )
-    print("About", about_file)
 
     # Add files from files list to the recipe list, if it is of a ".md" extension
     [recipes.append( path ) for path in file_list if path.endswith(".md") and path not in dirfiles]
