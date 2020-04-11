@@ -45,4 +45,6 @@ deploy: book
 	@echo "====> resetting the workspace"
 	@git checkout origin/master
 	@git delbr temp-deploy-branch
+	@git delbr master
+	@git checkout -b master
 	@echo "====> Done!"
