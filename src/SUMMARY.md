@@ -90,6 +90,7 @@
   - [Chocolate Banana Bread](./recipes/06-Bread/chocolate-banana-bread.md)
   - [English Muffin Bread](./recipes/06-Bread/english-muffin-bread.md)
   - [Flour Tortillas From Scratch](./recipes/06-Bread/flour-tortillas-from-scratch.md)
+  - [Garlic Cheese Focaccia Bread](./recipes/06-Bread/garlic-cheese-focaccia-bread.md)
   - [Troyer Banana Bread](./recipes/06-Bread/troyer-banana-bread.md)
 
 # Pasta
