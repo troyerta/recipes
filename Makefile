@@ -13,11 +13,13 @@ save:
 	@echo "====> adding new recipes"
 	git add src/*
 	@echo "====> committing changes"
-	git commit -m 'Commit changes on $(shell date) by ${USER}'
+	git commit -m 'Auto-commit on $(shell date)'
 	@echo "====> pushing book source to github.com/troyerta/recipes/"
 	git push origin HEAD:master
 	@echo "====> resetting workspace"
 	git checkout origin/master
+	git delbr master
+	git checkout -b master
 	git delbr save
 	@echo "====> Done!"
 
