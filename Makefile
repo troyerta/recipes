@@ -10,3 +10,4 @@ deploy: book
 		git commit -m "deployed on $(shell date) by ${USER}" && \
 		git push origin HEAD:gh-pages
 	rm -rf ../tmp/book
+	git worktree prune

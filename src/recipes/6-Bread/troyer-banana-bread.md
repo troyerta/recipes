@@ -32,9 +32,11 @@
 ---
 6. Mix in the salt.
 ---
-7. Mix in the bananas and flour.
+7. Mix in the flour.
 ---
-8. Bake at 350 deg F for 1 hr.
+8. Mix in the bananas.
+---
+9. Bake at 350 deg F for 1 hr.
 ---
 
 ## Tags
