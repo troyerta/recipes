@@ -268,6 +268,7 @@
   - [Lemon Poppy Seed Pancakes](./recipes/5-Breakfast/lemon-poppy-seed-pancakes.md)
   - [Maple Glazed Apple Pull Apart Bread](./recipes/5-Breakfast/maple-glazed-apple-pull-apart-bread.md)
   - [Triple Chocolate Chunk Muffins](./recipes/5-Breakfast/triple-chocolate-chunk-muffins.md)
+  - [Troyer Sticky Pecan Rolls](./recipes/5-Breakfast/troyer-sticky-pecan-rolls.md)
 
 # Bread
 
@@ -280,6 +281,7 @@
   - [Chocolate Banana Bread](./recipes/6-Bread/chocolate-banana-bread.md)
   - [English Muffin Bread](./recipes/6-Bread/english-muffin-bread.md)
   - [Flour Tortillas From Scratch](./recipes/6-Bread/flour-tortillas-from-scratch.md)
+  - [Troyer Banana Bread](./recipes/6-Bread/troyer-banana-bread.md)
 
 # Pasta
 

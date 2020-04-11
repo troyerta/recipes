@@ -9,4 +9,3 @@ create-missing = false
 
 [output.html.fold]
 enable = true
-level = 1
