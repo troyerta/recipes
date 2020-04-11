@@ -34,11 +34,8 @@
 ---
 7. Mix in the bananas and flour.
 ---
-8. Bake at 350 deg F for 1 hr
+8. Bake at 350 deg F for 1 hr.
 ---
 
-## References and Acknowledgments
-
-[Link Text](https://www.website.com/Recipes/recipe/)
-
 ## Tags
+troyer
