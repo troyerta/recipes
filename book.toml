@@ -7,5 +7,8 @@ src = "src"
 title = "Recipes"
 create-missing = false
 
+[output.html]
+additional-js = ["js/enable-checkboxes.js"]
+
 [output.html.fold]
 enable = true

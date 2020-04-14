@@ -9,7 +9,7 @@
 
 ## Ingredients
 
-- 12 sheets frozen phyllo dough, thawed
+- [ ] 12 sheets frozen phyllo dough, thawed
 
 - 4 tablespoons (1/2 stick) unsalted butter, melted
 

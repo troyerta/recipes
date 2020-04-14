@@ -6,48 +6,44 @@ import re
 import shutil
 import subprocess
 
-'''
-This script needs to handle several tasks:
-- Generating new recipes pages from a template
-- Building the book
-  - Updating the section title pages with Links to the child pages
-- Viewing changes
-- Saving changes (making commits)
-- Pushing to the repo
-'''
-
-cmds = [ "new", "build", "save", "upload", "help" ]
-
-new_help_msg = "\nAfter adding a new recipe entry in src/SUMMARY.md, run the following to generate the actual file:\n\n\
-$ ./recipes build\n\n\
-Then you can copy/paste the contents of src/template.md to the newly generated file!\n"
-
-build_help_msg = "\nThis is the equivalent to running ./mdbook build, which checks for errors\n\
-html generation. Mdbook also reads the src/SUMMARY.md file for any new recipe entries. If the file entry\n\
-does not yet exist, it will create it for you during this step."
-
-save_help_msg = "Make sure all new files are saved, then run\n\n\r\
-$ ./recipes save src/file1.md src/file2.md src/etc.md\n\n\
-Then type a nice message describing your changes in the popup text editor.\n\n\
-Type it on a single line, using less than 54 characters.\n\n\
-Finally, ctrl+s and ctrl+q will commit your changes!"
-
-# Link example:
-# [Reddit/GifRecipes](https://www.reddit.com/r/GifRecipes/comments/41p26n/slow_cooker_mongolian_beef/)
-# https://troyerta.github.io/recipes/ch02-02-slow-cooker-mongolian-beef.html
-
 SRC_PATH = "src/"
 SUMMARY_PATH = "src/SUMMARY.md"
 TEMPLATE_PATH = "src/template_blank.md"
 
-def process_link( link, chapter, section ):
+cmds = [ "", "", "", "", "", "" ]
+
+def get_dirty_title_from_url( url_str ):
+
+
+def gen_recipe_title( input ):
+    # Replace any hyphens or underscores with spaces
+    buf1 = re.sub( '-', ' ', input )
+    buf2 = re.sub( '_', ' ', buf1 )
+
+    # Change to title case
+    buf3 = buf2.title()
+
+    # Change 'And' to 'and'
+    buf4 = re.sub( 'And', 'and', buf3 )
+
+    # Change 'With' to 'with'
+    return re.sub( 'With', 'with', buf4 )
+
+def gen_filename_from_title(  ):
+
+
+    pass
+
+
+
+def process_link( link ):
     print("processing", link )
 
     # Get recipe name:
     recipe_name = input("Recipe title: ")
 
     # Make target filename
-    filename = SRC_PATH + "ch0" + str(chapter) + "-" + str(section) + "-" + re.sub(' ', '-', recipe_name.lower() ) + ".md"
+    filename = SRC_PATH + re.sub(' ', '-', recipe_name.lower() ) + ".md"
     print(filename)
 
     shutil.copy(TEMPLATE_PATH, filename)
@@ -56,7 +52,7 @@ def process_link( link, chapter, section ):
     with open(filename, 'r') as file :
         filedata = file.read()
 
-    # Replace the target string
+    # Replace the target string # REPLACE TEMPLATE VARS WITH SIMPLER STRINGS
     filedata = filedata.replace('Recipe Name', recipe_name)
     filedata = filedata.replace('Link Text', recipe_name)
     filedata = filedata.replace('https://www.website.com/Recipes/recipe/', link.strip())
@@ -67,32 +63,27 @@ def process_link( link, chapter, section ):
 
     return recipe_name, filename
 
-def run_batch_from_file( filepath, chapter, starting_section ):
+def run_batch_from_file( filepath ):
     with open(filepath) as f:
         links = f.readlines()
 
         recipe_list = list()
         file_list = list()
 
-        section = int(starting_section)
-        # For each link, get a recipe name, copy the template using the recipe name, and fill in other meaningful data with
-        # useful stuff - like the recipe link
+        # For each link, get a recipe name, copy the template using the recipe name, and fill in other meaningful data
         for link in links:
-            recipe, recipe_file = process_link( link, chapter, section )
-            section += 1
+            recipe, recipe_file = process_link( link )
             recipe_list.append( recipe )
             file_list.append( recipe_file )
 
         print("")
-
         for recipe in recipe_list:
-            print("- Add " + recipe + " recipe" )
+            print("- Adding", recipe )
         print("")
 
         for idx, title in enumerate(recipe_list, start=0):
             print("  - [" + title + "](./" + os.path.basename( file_list[idx] ) + ")" )
         print("")
-
 
 def workerFunction():
     if len(sys.argv) <= 1 or sys.argv[1] not in cmds:
@@ -101,53 +92,9 @@ def workerFunction():
     arg = sys.argv[1]
 
     if arg == cmds[0]:
-        # print( new_help_msg )
         print("Running batch job..")
-        # cmd[1] is the batch file of jobs, and cmd[2] is the chapter, and cmd[3] is the starting section
-        run_batch_from_file( sys.argv[2], sys.argv[3], sys.argv[4] )
-
-    # elif arg == cmds[1]:
-    #     if len(sys.argv) > 2 and sys.argv[2] == "help":
-    #         print( build_help_msg )
-    #         sys.exit()
-    #     p1 = subprocess.Popen( ['mdbook', 'build'] )
-    #     p1.wait()
-
-    # elif arg == cmds[2]:
-    #     if len(sys.argv) > 2 and sys.argv[2] == "help":
-    #         print( save_help_msg )
-    #         sys.exit()
-    #     print("Staging tracked file(s)..")
-    #     addd_cmd = ['git', 'addd']
-    #     p1 = subprocess.Popen( addd_cmd )
-    #     p1.wait()
-    #     if len(sys.argv) > 2:
-    #         print("Committing new file(s)..")
-    #         fi = sys.argv[2:]
-    #         print(fi)
-    #         add_cmd = ['git', 'add']
-    #         [add_cmd.append( fil ) for fil in fi]
-    #         print( add_cmd )
-    #         p1 = subprocess.Popen( add_cmd )
-    #         p1.wait()
-
-    #     p1 = subprocess.Popen( ['git', 'ci' ] )
-    #     p1.wait()
-
-    # elif arg == cmds[3]:
-    #     if len(sys.argv) > 2 and sys.argv[2] == "help":
-    #         print("Uploading help")
-    #         sys.exit()
-    #     print("uploading to repository..")
-    #     p1 = subprocess.Popen( ['git', 'push', 'origin', 'HEAD:master' ] )
-    #     p1.wait()
-    #     print("Done!")
-
-    # elif arg == cmds[4]:
-    #     if len(sys.argv) > 2 and sys.argv[2] == "help":
-    #         print("This command is not very useful yet!")
-    #         sys.exit()
-    #     print("This command is not very useful yet!")
+        # cmd[1] is the batch file of jobs
+        run_batch_from_file( sys.argv[2] )
 
 if __name__ == "__main__":
     workerFunction()
