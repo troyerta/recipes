@@ -10,18 +10,12 @@
 ## Ingredients
 
 - [ ] 12 sheets frozen phyllo dough, thawed
-
-- 4 tablespoons (1/2 stick) unsalted butter, melted
-
-- 12 ounce Brie wheel, cut into 12 slices
-
-- 12 thin slices prosciutto
-
-- Honey, for drizzling
-
-- Arils from 1 pomegranate
-
-- Flaky sea salt and black pepper
+- [ ] 4 tablespoons (1/2 stick) unsalted butter, melted
+- [ ] 12 ounce Brie wheel, cut into 12 slices
+- [ ] 12 thin slices prosciutto
+- [ ] Honey, for drizzling
+- [ ] Arils from 1 pomegranate
+- [ ] Flaky sea salt and black pepper
 
 ## Method
 
