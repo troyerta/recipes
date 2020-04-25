@@ -322,13 +322,21 @@ def get_all_things():
                 # print( '- [' + re.sub( '-', ' ', title_from_path( file_base ) ) + '](./' + curr_fi + ')<br><br>\n' )
                 fi.write( '- [' + re.sub( '-', ' ', title_from_path( file_base ) ) + '](./' + curr_fi + ')<br><br>\n' )
 
+    # Lastly, open the about.md file and make a TOC in it
+    with open( about_file, 'w' ) as fi:
+        fi.write( "# About\n\n" )
 
-            # Print them to the current dirfile, subsections first, then recipes
+        '''
+        Write some tips and tools here if necessary
+        '''
+
+        for ch in chapter_dirs:
+            rel_path = "./" + os.path.join( os.path.basename(ch), re.sub( '\d+-', '', os.path.basename( ch ).lower() ) + ".md" )
+
+            # print( '- [' + re.sub( '-', ' ', title_from_path( ch ) ) + '](' + produce_dirfile_name( ch ) + ')<br><br>\n' )
+            fi.write( '- [' + re.sub( '-', ' ', title_from_path( ch ) ) + '](' + rel_path + ')<br><br>\n' )
 
 
-
-
-        # Lastly, open the about.md file and make a TOC in it
 
 
 
