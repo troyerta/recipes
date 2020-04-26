@@ -28,7 +28,7 @@
 
 #### Dipping Sauce:
 
-- 1/2 cup Greek yogurt [2]
+- 1/2 cup Greek yogurt
 
 - 1/4 cup Ketchup
 

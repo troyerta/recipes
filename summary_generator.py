@@ -146,6 +146,8 @@ def print_tree( dir, padding, fPadding, chapter_dirs, section_dirs, dirfiles, re
 
                 if path == about_file:
                     f.write( fPadding + recipe_line(fpath) )
+                elif path == SUMMARY_PATH:
+                    pass
                 else:
                     f.write( fPadding + '- ' + recipe_line(fpath) )
 
@@ -158,7 +160,7 @@ def isDirFile(path, file):
         return False
 
 def get_all_things():
-    rootpath = './src/recipes'
+    rootpath = './src'
     rootpath_depth = len( splitpath( rootpath ) )
 
     root_list = list()
@@ -229,10 +231,13 @@ def get_all_things():
     # print("About", about_file)
     if( about_file in file_list ):
         file_list.remove( about_file )
-    else:
-        print( "No about.md found. Generating", about_file )
-        with open( about_file, 'w' ) as fi:
-            fi.write( "# About" )
+    # else:
+    #     print( "No about.md found. Generating", about_file )
+    #     with open( about_file, 'w' ) as fi:
+    #         fi.write( "# About" )
+
+    file_list.remove( SUMMARY_PATH )
+    # [print(f) for f in file_list]
 
     # Add files from files list to the recipe list, if it is of a ".md" extension
     [recipes.append( path ) for path in file_list if path.endswith(".md") and path not in dirfiles]
