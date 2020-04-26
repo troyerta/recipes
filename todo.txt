@@ -29,7 +29,6 @@ $ ./recipe_book.py new --file=batch_urls.txt --names --urls
 
 
 - Add linkcheck
-- Add TOCs script
 - Find way to normalize photo size
 - Add photos
 
