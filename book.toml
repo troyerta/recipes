@@ -1,14 +1,22 @@
 [book]
-authors = ["troyerta"]
-language = "en"
-multilingual = false
-description = "The example book covers recipes."
-src = "src"
 title = "Recipes"
+authors = ["troyerta"]
+description = "An online recipe book"
+language = "en"
+
+[build]
 create-missing = false
+
+# Convert all chapter files named README.md into index.md. That is to say, all README.md would be rendered to an index file index.html in the rendered book.
+# [preprocessor.index]
+
+# [preprocessor.summary_gen]
+# command = "python3 summary_gen.py"
 
 [output.html]
 additional-js = ["js/enable-checkboxes.js"]
+no-section-label = true
+google-analytics = "UA-164779968-1"
 
 [output.html.fold]
 enable = true

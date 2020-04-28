@@ -27,8 +27,6 @@ Error - please use at least one of the following arguments: --name, --url, or bo
 
 $ ./recipe_book.py new --file=batch_urls.txt --names --urls
 
-
-- Add linkcheck
 - Find way to normalize photo size
 - Add photos
 

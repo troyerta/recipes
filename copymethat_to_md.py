@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import sys
 import os
 from os.path import abspath, basename, isdir, isfile
@@ -115,9 +117,9 @@ def find_description( data ):
     # print( section )
     section = re.sub( r'INGREDIENTS', r'', section, flags=re.MULTILINE )
     # print( section )
-    desc = re.search( r'^.*$', section.strip('\n'), flags=re.MULTILINE )
+    desc = re.search( r'^\w*$', section.strip('\n'), flags=re.MULTILINE )
     # print( desc )
-    if desc:
+    if desc and desc.group(0) != '':
         return desc.group(0)
     else:
         return None
@@ -139,6 +141,16 @@ def workerFunction():
         prep_time = '1' #input('Prep Time: ')
         cook_time = '1' #input('Cook Time: ')
         total_time = '1' #input('Total Time: ')
+
+        while True:
+            prep_time = input('Prep Time: ')
+            cook_time = input('Cook Time: ')
+            total_time = input('Total Time: ')
+            answer = input( "Enter any key to redo, or Press ENTER to confirm: " )
+            if not answer:
+                break
+
+
         data = fi.read()
         # print(data)
 
@@ -148,11 +160,18 @@ def workerFunction():
         servings_match = find_servings( data )
 
         # What kind of ingredients section do we have? continuous? broken up?
+        if url_match:
+            print( "url_match:", "\'" + url_match + "\'" )
+        if tags_match:
+            print( "tags_match", "\'" + tags_match + "\'" )
+        if description_match:
+            print( "description_match:", "\'" + description_match + "\'" )
+        # print( "description_match:", "\'" + description_match + "\'" )
+        if servings_match:
+            print( "servings_match:", "\'" + servings_match + "\'" )
 
-        print( "url_match:", url_match )
-        print( "tags_match", tags_match )
-        print( "description_match:", description_match )
-        print( "servings_match:", servings_match )
+
+
 
 
 
