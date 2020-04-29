@@ -27,9 +27,13 @@
 #### Dressing:
 
 - 1/4 cup olive oil
+
 - 1 tablespoon balsamic vinegar
+
 - 1/2 teaspoon Dijon mustard
+
 - 1/2 teaspoon honey
+
 - Optional: squeeze of lemon, Mrs. Dash chicken grilling blends seasoning, salt
 
 ## Method

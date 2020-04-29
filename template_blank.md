@@ -1,5 +1,7 @@
 # Recipe Name
 
+## Description
+
 ## Overview
 
 - Yield:
@@ -9,15 +11,13 @@
 
 ## Ingredients
 
-
+- ingredient 1
 ## Method
 
-
-
+- step 1
 ## References and Acknowledgments
 
 [Link Text](https://www.website.com/Recipes/recipe/)
 
 ## Tags
-
 

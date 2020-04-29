@@ -7,9 +7,8 @@ import re
 import shutil
 import subprocess
 
-SRC_PATH = "src/"
-SUMMARY_PATH = "src/SUMMARY.md"
-TEMPLATE_PATH = "src/template_blank.md"
+TEMPLATE_PATH = "./template_blank.md"
+OUTPUT_PATH = "./drafts/parser_output"
 
 REGEX_URL = r'^(?:Adapted from )(.*)$'
 REGEX_TAGS_LINE = r'^tags: (.*)$'
@@ -24,6 +23,17 @@ REGEX_DESCRIPTION_WHEN_TAGS = r'^tags:.*$\n(^.*$\n){2}'
 # REGEX_STEPS_SUBSECTION = r''
 # REGEX_STEPS_ITEM = r''
 
+# GRAB_ALL_LINES_AFTER_STEPS_IN_GROUP1 = (?:STEPS\n\n)((.*\n)+)
+
+# Then go through this, for each non-blank line, see if it is a regular step, or a substep title
+# Format accordingly, add to some list, then move on
+
+'''
+Find a numbered line/step, store number in group 1, text in group 2: r'^(\d+)\) (.*)'
+Find a substep: r'^(.*:)'
+
+Each line will match one these, so just format it appropriately and then move on
+'''
 '''
 Grab the sub ingred titles, then use
 r':\n\n(^\w.*\n)+\n' to match the entire sublist. THen match sure the number of matches are equal
@@ -55,7 +65,7 @@ in groups 1 and 2 respectively: r'(?:STEPS)?\n\n*(\w.*:\n*)((\n\n^\d\).*)+)'
 def confirm_title( title ):
     result = title
     while True:
-        new_title = input( "Current title is \'" + result + "\'\n\tPress ENTER to confirm\n\t\'q\' to cancel\n\tOr type new title: " )
+        new_title = input( "\nCurrent title is \'" + result + "\'\n\tPress ENTER to confirm\n\t\'q\' to cancel\n\tOr type new title: " )
 
         if new_title:
             if new_title == 'q':
@@ -117,12 +127,47 @@ def find_description( data ):
     # print( section )
     section = re.sub( r'INGREDIENTS', r'', section, flags=re.MULTILINE )
     # print( section )
-    desc = re.search( r'^\w*$', section.strip('\n'), flags=re.MULTILINE )
+    desc = re.search( r'^.*$', section.strip('\n'), flags=re.MULTILINE )
     # print( desc )
     if desc and desc.group(0) != '':
         return desc.group(0)
     else:
         return None
+
+def format_ingredients_lines( ingredients_section ):
+
+    formatted_output = str()
+
+    for item in ingredients_section:
+        section_title_match = re.search( r'(.*:)', item )
+        ingredient_match = re.search( r'(.+)', item )
+
+        if section_title_match:
+            formatted_output += ( "#### " + section_title_match.group(1) + "\n\n" )
+        elif ingredient_match:
+            formatted_output += ( '- ' + item + '\n\n' )
+        else:
+            print("Ingredients section contains unreadable line:", item)
+            sys.exit()
+    return formatted_output
+
+def format_method_lines( steps_section ):
+
+    formatted_output = str()
+
+    for step in steps_section:
+        step_match = re.search( r'^(\d+)\) (.*)', step )
+        sub_step_title_match = re.search( r'^(.*:)' , step )
+
+        if step_match:
+            formatted_output += ( step_match.group(1) + '. ' + step_match.group(2) + '\n' )
+            formatted_output += ("---\n\n")
+        elif sub_step_title_match:
+            formatted_output += ( "#### " + sub_step_title_match.group(1) + "\n\n" )
+        else:
+            print("Steps section contains unreadable line")
+            sys.exit()
+    return formatted_output
 
 def workerFunction():
     if len(sys.argv) <= 1:
@@ -137,10 +182,12 @@ def workerFunction():
 
     data = None
     with open( target_file, 'r') as fi:
+
         title = get_title(  fi.readline() )
-        prep_time = '1' #input('Prep Time: ')
-        cook_time = '1' #input('Cook Time: ')
-        total_time = '1' #input('Total Time: ')
+
+        prep_time = str()
+        cook_time = str()
+        total_time = str()
 
         while True:
             prep_time = input('Prep Time: ')
@@ -150,44 +197,82 @@ def workerFunction():
             if not answer:
                 break
 
-
         data = fi.read()
-        # print(data)
 
         url_match = find_url( data )
         tags_match = find_tags( data )
         description_match = find_description( data )
         servings_match = find_servings( data )
 
-        # What kind of ingredients section do we have? continuous? broken up?
-        if url_match:
-            print( "url_match:", "\'" + url_match + "\'" )
-        if tags_match:
-            print( "tags_match", "\'" + tags_match + "\'" )
-        if description_match:
-            print( "description_match:", "\'" + description_match + "\'" )
-        # print( "description_match:", "\'" + description_match + "\'" )
-        if servings_match:
-            print( "servings_match:", "\'" + servings_match + "\'" )
+        ingredients_match = re.search( r'^(?:INGREDIENTS\n\n)((.*\n)+)^\nSTEPS', data, flags=re.MULTILINE )
+        if ingredients_match:
+            all_ingredient_lines = ingredients_match.group(1).splitlines()
+            lines_in_ingredients = [line for line in all_ingredient_lines if line != '']
+            # Find first alpha-word in each line: r'([a-zA-Z]+).*\n'
 
+        ingredients_text_formatted = format_ingredients_lines( lines_in_ingredients )
+        # print( ingredients_text_formatted )
 
+        steps_match = re.search( r'(?:^STEPS\n\n)((.*\n)+)', data, flags=re.MULTILINE )
+        if steps_match:
+            all_lines = steps_match.group(1).splitlines()
+            lines_in_steps = [line for line in all_lines if line != '']
 
+        method_text_formatted = format_method_lines( lines_in_steps )
+        # print( method_text_formatted )
 
+    # Make target filename
+    filename = os.path.join( OUTPUT_PATH, re.sub(' ', '-', title.lower() ) + ".md" )
 
+    shutil.copy(TEMPLATE_PATH, filename)
 
+    # Read in the template
+    with open(filename, 'r') as file :
+        filedata = file.read()
 
-        # ingredients_sub_lists =
-        # steps_sub_lists =
-        # tags =
+    # Replace the target string # REPLACE TEMPLATE VARS WITH SIMPLER STRINGS
+    filedata = filedata.replace('Recipe Name', title)
+    if url_match:
+        filedata = filedata.replace('Link Text', title)
+        filedata = filedata.replace('https://www.website.com/Recipes/recipe/', url_match)
 
+    if description_match:
+        filedata = filedata.replace('Description', description_match)
+    else:
+        filedata = filedata.replace('## Description\n\n', '')
 
+    # If Servings string is just a number, append "servings" or "serving" depending on the value
+    if servings_match:
+        filedata = filedata.replace('- Yield:', '- Yield: ' + servings_match)
+    else:
+        filedata = filedata.replace('- Yield\n:', '')
 
+    if prep_time:
+        filedata = filedata.replace('- Prep Time:', '- Prep Time: ' + prep_time)
+    else:
+        filedata = filedata.replace('- Prep Time:\n', '')
+    if cook_time:
+        filedata = filedata.replace('- Cook Time:', '- Cook Time: ' + cook_time)
+    else:
+        filedata = filedata.replace('- Cook Time:\n', '')
+    if total_time:
+        filedata = filedata.replace('- Total Time:', '- Total Time: ' + total_time)
+    else:
+        filedata = filedata.replace('- Total Time:\n', '')
 
+    if tags_match:
+        tags_str = '\n'.join(sorted(tags_match))
+        filedata = filedata.replace('## Tags\n', '## Tags\n' + tags_str)
+    else:
+        filedata = filedata.replace('\n## Tags\n\n', '')
 
+    filedata = filedata.replace('- ingredient 1\n', ingredients_text_formatted)
 
+    filedata = filedata.replace('- step 1\n', method_text_formatted)
 
-
-
+    # Write the file out again
+    with open(filename, 'w') as file:
+        file.write(filedata)
 
 if __name__ == "__main__":
     workerFunction()

@@ -2,7 +2,7 @@ Coconut-Lime Shortbread Cookies
 
 Adapted from https://www.gimmesomeoven.com/coconut-lime-shortbread-cookies/
 
-tags: sweets, unhealthy
+tags: sweets, unhealthy, awesome
 
 Test Description goes here...
 
