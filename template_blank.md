@@ -15,6 +15,7 @@
 ## Method
 
 - step 1
+## Notes
 ## References and Acknowledgments
 
 [Link Text](https://www.website.com/Recipes/recipe/)
