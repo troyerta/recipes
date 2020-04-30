@@ -16,7 +16,6 @@
 
 - 2 cups sugar
 
-
 ## Method
 
 1. In medium saucepan, bring water and lavender to a boil.
@@ -28,6 +27,7 @@
 4. Remove from heat and allow to cool and steep for at least 1 hour.
 ---
 5. Strain the lavender, pour into bottles and store in refrigerator.
+---
 
 ## Notes
 

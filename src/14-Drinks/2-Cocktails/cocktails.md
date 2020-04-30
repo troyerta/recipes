@@ -33,6 +33,7 @@
 [Honey Sage Gin Fizz](./honey-sage-gin-fizz.md)<br><br>
 [Lavender Moscow Mule](./lavender-moscow-mule.md)<br><br>
 [Lavender Simple Syrup](./lavender-simple-syrup.md)<br><br>
+[Mean Mule Marg](./mean-mule-marg.md)<br><br>
 [Mexican 75](./mexican-75.md)<br><br>
 [Mistletoe Margarita](./mistletoe-margarita.md)<br><br>
 [Peach Honey Sangria Slushies](./peach-honey-sangria-slushies.md)<br><br>

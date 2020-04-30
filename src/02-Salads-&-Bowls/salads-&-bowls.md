@@ -10,6 +10,7 @@
 [Chopped Greek Salad](./chopped-greek-salad.md)<br><br>
 [Essentials Power Bowl with Tahini Lime Drizzle](./essentials-power-bowl-with-tahini-lime-drizzle.md)<br><br>
 [Honey Mustard Chicken Salad with Bacon and Avocado](./honey-mustard-chicken-salad-with-bacon-and-avocado.md)<br><br>
+[Lentil Wild Rice Salad](./lentil-wild-rice-salad.md)<br><br>
 [Nutty Green Veggie Crunch Salad](./nutty-green-veggie-crunch-salad.md)<br><br>
 [Southwestern Farro Bowl](./southwestern-farro-bowl.md)<br><br>
 [Winter Kale and Quinoa Salad](./winter-kale-and-quinoa-salad.md)<br><br>

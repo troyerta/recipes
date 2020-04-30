@@ -37,7 +37,3 @@
 ## References and Acknowledgments
 
 [Classic Gin Fizz](https://www.liquor.com/recipes/gin-fizz/)
-
-## Tags
-
-

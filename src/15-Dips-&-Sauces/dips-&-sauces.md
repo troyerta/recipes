@@ -2,6 +2,7 @@
 
 [<--- Home](../about.md)
 
+[Hummus --->](./Hummus/hummus.md)<br><br>
 [Buffalo Chicken Dip](./Buffalo-Chicken-Dip.md)<br><br>
 [Avocado Dip](./avocado-dip.md)<br><br>
 [Avocado Greek Yogurt Ranch Dressing](./avocado-greek-yogurt-ranch-dressing.md)<br><br>

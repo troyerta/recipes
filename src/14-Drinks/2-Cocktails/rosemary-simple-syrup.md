@@ -18,8 +18,6 @@
 
 ## Method
 
-### Sub-method 1 (sub-methods are optional)
-
 1. In medium saucepan bring ingredients to a boil, stirring occasionally, and boil for 1 minute or until sugar is dissolved.
 ---
 2. Remove from heat and let stand 30 mins.
