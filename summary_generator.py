@@ -320,12 +320,12 @@ def get_all_things():
 
             for sub_sect in curr_subsections:
                 # print( '- [' + re.sub( '-', ' ', title_from_path( sub_sect ) ) + '](./' + produce_dirfile_name( sub_sect ) + ')<br><br>\n' )
-                fi.write( '- [' + re.sub( '-', ' ', title_from_path( sub_sect ) ) + ' --->](./' + produce_dirfile_name( sub_sect ) + ')<br><br>\n' )
+                fi.write( '[' + re.sub( '-', ' ', title_from_path( sub_sect ) ) + ' --->](./' + produce_dirfile_name( sub_sect ) + ')<br><br>\n' )
 
             for curr_fi in curr_files:
                 file_base, ext = os.path.splitext( curr_fi )
                 # print( '- [' + re.sub( '-', ' ', title_from_path( file_base ) ) + '](./' + curr_fi + ')<br><br>\n' )
-                fi.write( '- [' + re.sub( '-', ' ', title_from_path( file_base ) ) + '](./' + curr_fi + ')<br><br>\n' )
+                fi.write( '[' + re.sub( '-', ' ', title_from_path( file_base ) ) + '](./' + curr_fi + ')<br><br>\n' )
 
     # Lastly, open the about.md file and make a TOC in it
     with open( about_file, 'w' ) as fi:
@@ -339,7 +339,7 @@ def get_all_things():
             rel_path = "./" + os.path.join( os.path.basename(ch), re.sub( '\d+-', '', os.path.basename( ch ).lower() ) + ".md" )
 
             # print( '- [' + re.sub( '-', ' ', title_from_path( ch ) ) + '](' + produce_dirfile_name( ch ) + ')<br><br>\n' )
-            fi.write( '- [' + re.sub( '-', ' ', title_from_path( ch ) ) + '](' + rel_path + ')<br><br>\n' )
+            fi.write( '[' + re.sub( '-', ' ', title_from_path( ch ) ) + '](' + rel_path + ')<br><br>\n' )
 
 
 
