@@ -15,11 +15,24 @@ REGEX_URL = r'^(?:Adapted from )(.*)$'
 REGEX_TAGS_LINE = r'^tags: (.*)$'
 REGEX_SERVINGS = r'^(?:Servings: )(.*)$'
 
+number_dict = {
+    '0':"zero",
+    "1":"one",
+    "2":"two",
+    "3":"three",
+    "4":"four",
+    "5":"five",
+    "6":"six",
+    "7":"seven",
+    "8":"eight",
+    "9":"nine",
+}
+
 def error( msg ):
     print( "\n" + msg + "\n" )
     sys.exit()
 
-class recipe():
+class Recipe():
     def __init__( self, path, template_path, output_dir ):
 
         self.target_file_path = os.path.normpath( path )
@@ -60,7 +73,7 @@ class recipe():
     # Finds all test groups and test cases, returning a list of test group objects
     def parse_data( self ):
         self.title              = self.get_title( self.target_file_data )
-        self.result_file_path   = os.path.join( OUTPUT_PATH, re.sub(' ', '-', self.title.lower() ) + ".md" )
+        self.out_file           = self.make_result_filepath()
         self.url_txt            = self.find_url( self.target_file_data )
         self.tags_txt           = self.find_tags( self.target_file_data )
         self.description_txt    = self.find_description( self.target_file_data )
@@ -69,13 +82,28 @@ class recipe():
         self.ingredients_txt    = self.find_ingredients( self. target_file_data )
         self.method_txt         = self.find_method( self.target_file_data )
 
+    def make_result_filepath( self ):
+        lowercase = self.title.lower()
+        spaces_to_hyphen = re.sub(' ', '-', lowercase )
+        and_to_and = re.sub('&', 'and', spaces_to_hyphen )
+
+        first_number_match = re.search( r'^(\d)-', and_to_and, flags=re.MULTILINE )
+        if first_number_match:
+            number = number_dict[ first_number_match.group(1) ]
+            first_number_to_semantic = re.sub('^\d', number, and_to_and, flags=re.MULTILINE )
+            print("\tFound a number", os.path.join( OUTPUT_PATH, first_number_to_semantic + ".md" ))
+        else:
+            first_number_to_semantic = and_to_and
+
+        return os.path.join( OUTPUT_PATH, first_number_to_semantic + ".md" )
+
     def get_title( self, data ):
         title = None
         title_match = re.search( REGEX_TITLE, data )
         if title_match:
             # title = self.confirm_title( self.clean_title( title_match.group(1) ) )
             title = self.clean_title( title_match.group(1) )
-            print( "Processing", title )
+            # print( "Processing", title, os.path.basename( self.target_file_path ) )
         return title
 
     def confirm_title( self, title ):
@@ -103,14 +131,14 @@ class recipe():
             fixed_url = re.sub( r'\.', r'\.', fixed_url )
 
             regex = r'^' + fixed_url + r' \((.*)\)\n'
-            print("regex", regex)
+            # print("regex", regex)
 
             with open("links_and_times.txt", 'r') as fi:
                 data = fi.read()
                 match = re.search( regex, data, flags=re.MULTILINE )
 
                 if match:
-                    print("Found match", "\'" + match.group(1) + "\'" )
+                    # print("Found match", "\'" + match.group(1) + "\'" )
                     listed_times = match.group(1).split(',')
 
                     if listed_times[0]:
@@ -119,12 +147,12 @@ class recipe():
                         self.cook_time = listed_times[1]
                     if listed_times[2]:
                         self.total_time = listed_times[2]
-                else:
-                    print("No match!")
+                # else:
+                    # print("No match!")
 
-        print( "Prep Time:", self.prep_time )
-        print( "Cook Time:", self.cook_time )
-        print( "Total Time:", self.total_time )
+        # print( "Prep Time:", self.prep_time )
+        # print( "Cook Time:", self.cook_time )
+        # print( "Total Time:", self.total_time )
 
     def set_times_manually( self ):
         while True:
@@ -156,9 +184,11 @@ class recipe():
         num_temp = re.sub('\d+-', '', os.path.basename( title_in ).title() )
         with_temp = re.sub('With', 'with', num_temp )
         and_temp = re.sub('And', 'and', with_temp )
-        u_score_temp = re.sub('_', ' ', and_temp )
+        the_temp = re.sub('The', '', and_temp )
+        best_temp = re.sub('Best', '', the_temp )
+        u_score_temp = re.sub('_', ' ', best_temp )
         tasty_temp = re.sub('By Tasty', '', u_score_temp )
-        recipe_temp = re.sub('Recipe', '', tasty_temp )
+        recipe_temp = re.sub('Recipes?', '', tasty_temp )
         comma_temp = re.sub(',', '', recipe_temp )
         return comma_temp.strip()
 
@@ -277,8 +307,6 @@ class recipe():
         return formatted_output
 
     def create_out_file( self ):
-        # Make target filename
-        self.out_file = os.path.join( OUTPUT_PATH, re.sub(' ', '-', self.title.lower() ) + ".md" )
         shutil.copy(TEMPLATE_PATH, self.out_file)
 
     def print_to_out_file( self ):
@@ -386,7 +414,7 @@ class recipe():
 
     def fill_template_method( self, filedata ):
         if self.method_txt:
-            filedata = filedata.replace('- step 1\n', self.method_txt)
+            filedata = filedata.replace('- step 1\n', self.method_txt + "\n" )
         else:
             error( "No methods to write" )
         return filedata
@@ -403,21 +431,42 @@ class recipe():
 
 def workerFunction():
     if len(sys.argv) <= 1:
-        print("Please pass in a txt file to convert..")
+        print("Please pass in a txt file or directory of files to convert..")
         error( "Missing argument 1" )
 
-    target_file = sys.argv[1]
-    if not isfile( target_file ):
-        print("File not found:", target_file )
-        error( "File not found" )
+    target = sys.argv[1]
+    if not isfile( target ) and not isdir( target ):
+        print("File or directory not found:", target )
+        error( "Path not found" )
 
-    target_recipe = recipe( target_file, TEMPLATE_PATH, OUTPUT_PATH )
-    target_recipe.parse_data()
-    # target_recipe.set_times_manually()
-    target_recipe.set_times_automatically()
-    # target_recipe.create_out_file()
-    # target_recipe.print_to_out_file()
-    # target_recipe.clean_up()
+    if not isdir(OUTPUT_PATH):
+        os.mkdir(OUTPUT_PATH)
+
+    if isfile( target ):
+        target_recipe = Recipe( target, TEMPLATE_PATH, OUTPUT_PATH )
+        target_recipe.parse_data()
+        # target_recipe.set_times_manually()
+        # target_recipe.set_times_automatically()
+        # target_recipe.create_out_file()
+        # target_recipe.print_to_out_file()
+        # target_recipe.clean_up()
+
+    elif isdir( target ):
+        contents = os.listdir( target )
+        # print(contents)
+        files = [os.path.join( target, item ) for item in contents if isfile(os.path.join(target,item))]
+        # print(files)
+        txt_files = [fi for fi in files if os.path.splitext(fi)[1] == '.txt']
+        # print(txt_files)
+
+        for recipe in txt_files:
+            target_recipe = Recipe( recipe, TEMPLATE_PATH, OUTPUT_PATH )
+            target_recipe.parse_data()
+            # target_recipe.set_times_manually()
+            target_recipe.set_times_automatically()
+            target_recipe.create_out_file()
+            target_recipe.print_to_out_file()
+            # target_recipe.clean_up()
 
     print("\nSuccess!\n")
 
