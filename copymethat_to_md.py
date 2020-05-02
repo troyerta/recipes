@@ -73,7 +73,9 @@ class recipe():
         title = None
         title_match = re.search( REGEX_TITLE, data )
         if title_match:
-            title = self.confirm_title( self.clean_title( title_match.group(1) ) )
+            # title = self.confirm_title( self.clean_title( title_match.group(1) ) )
+            title = self.clean_title( title_match.group(1) )
+            print( "Processing", title )
         return title
 
     def confirm_title( self, title ):
@@ -95,7 +97,36 @@ class recipe():
         print("Title:", ret)
         return ret
 
-    def set_times( self ):
+    def set_times_automatically( self ):
+        if self.url_txt:
+            fixed_url = re.sub( r'\/', r'\/', self.url_txt )
+            fixed_url = re.sub( r'\.', r'\.', fixed_url )
+
+            regex = r'^' + fixed_url + r' \((.*)\)\n'
+            print("regex", regex)
+
+            with open("links_and_times.txt", 'r') as fi:
+                data = fi.read()
+                match = re.search( regex, data, flags=re.MULTILINE )
+
+                if match:
+                    print("Found match", "\'" + match.group(1) + "\'" )
+                    listed_times = match.group(1).split(',')
+
+                    if listed_times[0]:
+                        self.prep_time = listed_times[0]
+                    if listed_times[1]:
+                        self.cook_time = listed_times[1]
+                    if listed_times[2]:
+                        self.total_time = listed_times[2]
+                else:
+                    print("No match!")
+
+        print( "Prep Time:", self.prep_time )
+        print( "Cook Time:", self.cook_time )
+        print( "Total Time:", self.total_time )
+
+    def set_times_manually( self ):
         while True:
             self.prep_time = input( "Prep Time: " )
             if self.prep_time and self.prep_time == 'q':
@@ -128,7 +159,8 @@ class recipe():
         u_score_temp = re.sub('_', ' ', and_temp )
         tasty_temp = re.sub('By Tasty', '', u_score_temp )
         recipe_temp = re.sub('Recipe', '', tasty_temp )
-        return recipe_temp.strip()
+        comma_temp = re.sub(',', '', recipe_temp )
+        return comma_temp.strip()
 
     def clean_subsection( self, title_in ):
         with_temp = re.sub('With', 'with', title_in.title() )
@@ -381,10 +413,11 @@ def workerFunction():
 
     target_recipe = recipe( target_file, TEMPLATE_PATH, OUTPUT_PATH )
     target_recipe.parse_data()
-    target_recipe.set_times()
-    target_recipe.create_out_file()
-    target_recipe.print_to_out_file()
-    target_recipe.clean_up()
+    # target_recipe.set_times_manually()
+    target_recipe.set_times_automatically()
+    # target_recipe.create_out_file()
+    # target_recipe.print_to_out_file()
+    # target_recipe.clean_up()
 
     print("\nSuccess!\n")
 
