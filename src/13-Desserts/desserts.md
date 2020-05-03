@@ -42,7 +42,7 @@
 [Ghirardelli English Toffee Recipe](./ghirardelli-english-toffee-recipe.md)<br><br>
 [Ginger Spice Molasses Cookies](./ginger-spice-molasses-cookies.md)<br><br>
 [Homemade Cosmic Brownies](./homemade-cosmic-brownies.md)<br><br>
-[Homemade Peppermint Patties (1)](./homemade-peppermint-patties (1).md)<br><br>
+[Homemade Peppermint Patties Other](./homemade-peppermint-patties-other.md)<br><br>
 [Homemade Peppermint Patties](./homemade-peppermint-patties.md)<br><br>
 [Homemade Tootsie Rolls](./homemade-tootsie-rolls.md)<br><br>
 [Hot Fudge Brownie Bread](./hot-fudge-brownie-bread.md)<br><br>
