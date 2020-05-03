@@ -33,14 +33,20 @@
 [Honey Sage Gin Fizz](./honey-sage-gin-fizz.md)<br><br>
 [Lavender Moscow Mule](./lavender-moscow-mule.md)<br><br>
 [Lavender Simple Syrup](./lavender-simple-syrup.md)<br><br>
+[Mango Pineapple Frozen Sangria](./mango-pineapple-frozen-sangria.md)<br><br>
 [Mean Mule Marg](./mean-mule-marg.md)<br><br>
 [Mexican 75](./mexican-75.md)<br><br>
 [Mistletoe Margarita](./mistletoe-margarita.md)<br><br>
+[Mixed Berry Frozen Sangria](./mixed-berry-frozen-sangria.md)<br><br>
 [Peach Honey Sangria Slushies](./peach-honey-sangria-slushies.md)<br><br>
 [Peppermint Mocha White Russian](./peppermint-mocha-white-russian.md)<br><br>
 [Pink Lemonade Moscato](./pink-lemonade-moscato.md)<br><br>
+[Potion Of Healing Cocktail](./potion-of-healing-cocktail.md)<br><br>
 [Pumpkin Pie Bourbon and Pear Cocktail](./pumpkin-pie-bourbon-and-pear-cocktail.md)<br><br>
+[Raspberry Fizz](./raspberry-fizz.md)<br><br>
+[Raspberry Lemonade Sangria Float](./raspberry-lemonade-sangria-float.md)<br><br>
 [Raspberry Lime Champagne Punch](./raspberry-lime-champagne-punch.md)<br><br>
+[Raspberry Peach Frozen Sangria](./raspberry-peach-frozen-sangria.md)<br><br>
 [Red Wine Hot Chocolate](./red-wine-hot-chocolate.md)<br><br>
 [Rhubarb 75](./rhubarb-75.md)<br><br>
 [Rosemary Grapefruit Moscow Mule](./rosemary-grapefruit-moscow-mule.md)<br><br>
@@ -53,8 +59,12 @@
 [Sparkling White Peach Sangria](./sparkling-white-peach-sangria.md)<br><br>
 [Spiced Pomegranate Cocktail](./spiced-pomegranate-cocktail.md)<br><br>
 [Spicy Grapefruit Jalapeno Margarita](./spicy-grapefruit-jalapeno-margarita.md)<br><br>
+[Spicy Sweet Grinch Cocktail](./spicy-sweet-grinch-cocktail.md)<br><br>
 [Strawberry Gin Smash](./strawberry-gin-smash.md)<br><br>
+[Strawberry Lemonade Frozen Sangria](./strawberry-lemonade-frozen-sangria.md)<br><br>
 [The Frenchy](./the-frenchy.md)<br><br>
 [The Mistletoe Kiss](./the-mistletoe-kiss.md)<br><br>
+[Tropical Mimosa Sangria Float](./tropical-mimosa-sangria-float.md)<br><br>
+[Very Berry Sangria Float](./very-berry-sangria-float.md)<br><br>
 [White Christmas Mojito](./white-christmas-mojito.md)<br><br>
 [Winter Pomegranate Sangria](./winter-pomegranate-sangria.md)<br><br>

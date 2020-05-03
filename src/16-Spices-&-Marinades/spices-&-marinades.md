@@ -12,6 +12,7 @@
 [Cilantro Lime Chicken Marinade2](./cilantro-lime-chicken-marinade2.md)<br><br>
 [Coconut Five Spice Chicken Marinade](./coconut-five-spice-chicken-marinade.md)<br><br>
 [Cold Brew Steak Marinade](./cold-brew-steak-marinade.md)<br><br>
+[Easy Shawarma Marinade](./easy-shawarma-marinade.md)<br><br>
 [Enchilada Chicken Marinade](./enchilada-chicken-marinade.md)<br><br>
 [Farm Dust Ultimate Purpose Seasoning](./farm-dust-ultimate-purpose-seasoning.md)<br><br>
 [Greek Chicken Marinade](./greek-chicken-marinade.md)<br><br>
