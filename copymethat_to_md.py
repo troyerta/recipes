@@ -103,7 +103,7 @@ class Recipe():
         if title_match:
             # title = self.confirm_title( self.clean_title( title_match.group(1) ) )
             title = self.clean_title( title_match.group(1) )
-            # print( "Processing", title, os.path.basename( self.target_file_path ) )
+            print( "Processing", title, os.path.basename( self.target_file_path ) )
         return title
 
     def confirm_title( self, title ):
