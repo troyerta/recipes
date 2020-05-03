@@ -19,4 +19,5 @@
 [Slow Cooker Ham and Potato Soup](./slow-cooker-ham-and-potato-soup.md)<br><br>
 [Tandori Chicken Soup](./tandori-chicken-soup.md)<br><br>
 [Thai Coconut Curry Butternut Squash Soup](./thai-coconut-curry-butternut-squash-soup.md)<br><br>
+[Thai_Spiced_Sweet_Potato_Coconut_Soup](./thai_spiced_sweet_potato_coconut_soup.txt)<br><br>
 [Vegan Winter Lentil Stew](./vegan-winter-lentil-stew.md)<br><br>

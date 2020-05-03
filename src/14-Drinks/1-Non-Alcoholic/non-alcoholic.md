@@ -4,6 +4,7 @@
 
 [Apple Cider Floats](./apple-cider-floats.md)<br><br>
 [Bright and Bitter Mocktail](./bright-and-bitter-mocktail.md)<br><br>
+[Chai_Iced_Tea_Cubes](./chai_iced_tea_cubes.txt)<br><br>
 [Christmas Punch](./christmas-punch.md)<br><br>
 [Cinnamon Sore Throat Tea](./cinnamon-sore-throat-tea.md)<br><br>
 [Cookies and Cream Iced Coffee Float](./cookies-and-cream-iced-coffee-float.md)<br><br>

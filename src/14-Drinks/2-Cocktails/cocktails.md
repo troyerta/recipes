@@ -7,15 +7,19 @@
 [Blackberry Bramble](./blackberry-bramble.md)<br><br>
 [Blackberry Cream Soda](./blackberry-cream-soda.md)<br><br>
 [Blackberry Tequila Lemon Cooler](./blackberry-tequila-lemon-cooler.md)<br><br>
+[Blackberry_Whiskey_Lemonade](./blackberry_whiskey_lemonade.txt)<br><br>
 [Blueberry Gin Sour](./blueberry-gin-sour.md)<br><br>
 [Blueberry Mojito](./blueberry-mojito.md)<br><br>
 [Blushing Whiskey Sour](./blushing-whiskey-sour.md)<br><br>
 [Boozy Strawberry Lemonade Slushies](./boozy-strawberry-lemonade-slushies.md)<br><br>
+[Boozy_Indian_Chai](./boozy_indian_chai.txt)<br><br>
 [Bourbon Cider Sours](./bourbon-cider-sours.md)<br><br>
 [Champagne Mint Julep](./champagne-mint-julep.md)<br><br>
 [Christmas Sangria](./christmas-sangria.md)<br><br>
 [Classic Gin Fizz](./classic-gin-fizz.md)<br><br>
+[Clover_Club](./clover_club.txt)<br><br>
 [Cranberry Bourbon Blizzard](./cranberry-bourbon-blizzard.md)<br><br>
+[Creamy_Coconut_Lime_Mojito](./creamy_coconut_lime_mojito.txt)<br><br>
 [Cucumber Rosemary Gin and Tonic](./cucumber-rosemary-gin-and-tonic.md)<br><br>
 [Dirty Shirley](./dirty-shirley.md)<br><br>
 [Dry Cucumber Cooler](./dry-cucumber-cooler.md)<br><br>
@@ -23,6 +27,7 @@
 [Easy Pitcher Palomas](./easy-pitcher-palomas.md)<br><br>
 [Elderflower Champagne Cocktail](./elderflower-champagne-cocktail.md)<br><br>
 [Elderflower Lemon Sparkling Sipper](./elderflower-lemon-sparkling-sipper.md)<br><br>
+[Frozen_Palomas](./frozen_palomas.txt)<br><br>
 [Fruity Moscato Sangria](./fruity-moscato-sangria.md)<br><br>
 [Gin Buck](./gin-buck.md)<br><br>
 [Grapefruit Ginger Bourbon Sour](./grapefruit-ginger-bourbon-sour.md)<br><br>

@@ -14,3 +14,4 @@
 [Southwestern Crispy Chicken Wraps](./southwestern-crispy-chicken-wraps.md)<br><br>
 [Spicy Shrimp Tacos with Garlic Cilantro Lime Slaw](./spicy-shrimp-tacos-with-garlic-cilantro-lime-slaw.md)<br><br>
 [Taco Tortilla Stacks](./taco-tortilla-stacks.md)<br><br>
+[Taco_Al_Pastor](./taco_al_pastor.txt)<br><br>
