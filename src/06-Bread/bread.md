@@ -3,15 +3,15 @@
 [<--- Home](../about.md)
 
 [Banana Trail Mix Bread](./banana-trail-mix-bread.md)<br><br>
-[Bazlama_Turkish_Flatbread](./bazlama_turkish_flatbread.txt)<br><br>
+[Bazlama Turkish Flatbread](./bazlama-turkish-flatbread.md)<br><br>
 [Black Pepper Cheddar Bacon Biscuits](./black-pepper-cheddar-bacon-biscuits.md)<br><br>
 [Buttery Beer Bread](./buttery-beer-bread.md)<br><br>
 [Cauliflower Pizza Base](./cauliflower-pizza-base.md)<br><br>
 [Cheesy Bacon Biscuit Pull Aparts](./cheesy-bacon-biscuit-pull-aparts.md)<br><br>
 [Chocolate Banana Bread](./chocolate-banana-bread.md)<br><br>
-[Cinnamon_Crunch_Knots](./cinnamon_crunch_knots.txt)<br><br>
+[Cinnamon Crunch Knots](./cinnamon-crunch-knots.md)<br><br>
 [Cloud Bread](./cloud-bread.md)<br><br>
-[Easy_Bread](./easy_bread.txt)<br><br>
+[Easy Bread](./easy-bread.md)<br><br>
 [English Muffin Bread](./english-muffin-bread.md)<br><br>
 [Flour Tortillas From Scratch](./flour-tortillas-from-scratch.md)<br><br>
 [Four Ingredient Cloud Bread](./four-ingredient-cloud-bread.md)<br><br>
@@ -20,14 +20,14 @@
 [Glazed Apple Cinnamon Oatmeal Bread](./glazed-apple-cinnamon-oatmeal-bread.md)<br><br>
 [Gozleme Turkish Spinach and Feta Flatbread](./gozleme-turkish-spinach-and-feta-flatbread.md)<br><br>
 [Homemade Garlic Naan](./homemade-garlic-naan.md)<br><br>
-[Italian_Cheese_Bread](./italian_cheese_bread.txt)<br><br>
+[Italian Cheese Bread](./italian-cheese-bread.md)<br><br>
 [Jazz Fest Styled Crawfish Bread](./jazz-fest-styled-crawfish-bread.md)<br><br>
 [Lemon Blueberry Zucchini Bread with Lemon Glaze](./lemon-blueberry-zucchini-bread-with-lemon-glaze.md)<br><br>
 [Lemon Poppy Seed Slices](./lemon-poppy-seed-slices.md)<br><br>
 [Moist Pineapple Banana Bread](./moist-pineapple-banana-bread.md)<br><br>
 [No Knead Rosemary Bread](./no-knead-rosemary-bread.md)<br><br>
 [Parmesan Basil Cheddar Stars](./parmesan-basil-cheddar-stars.md)<br><br>
-[Peanut_Butter_Bread](./peanut_butter_bread.txt)<br><br>
+[Peanut Butter Bread](./peanut-butter-bread.md)<br><br>
 [Pizza Dough By Joe Heffernan](./pizza-dough-by-joe-heffernan.md)<br><br>
 [Pull Apart Cinnamon Sugar Pumpkin Bread](./pull-apart-cinnamon-sugar-pumpkin-bread.md)<br><br>
 [Pull Apart Garlic Butter Bread Wreath](./pull-apart-garlic-butter-bread-wreath.md)<br><br>

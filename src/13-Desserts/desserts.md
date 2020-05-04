@@ -4,7 +4,7 @@
 
 [Banana Bars with Cream Cheese Frosting](./banana-bars-with-cream-cheese-frosting.md)<br><br>
 [Banana Bundt Cake Recipe](./banana-bundt-cake-recipe.md)<br><br>
-[Belgian_Lemon_Tea_Cake](./belgian_lemon_tea_cake.txt)<br><br>
+[Belgian Lemon Tea Cake](./belgian-lemon-tea-cake.md)<br><br>
 [Black Bottom Coconut Bars](./black-bottom-coconut-bars.md)<br><br>
 [Black Forest Express](./black-forest-express.md)<br><br>
 [Blackberry Lavender Cobbler](./blackberry-lavender-cobbler.md)<br><br>
@@ -12,7 +12,7 @@
 [Blueberry Cream Cheese Bread](./blueberry-cream-cheese-bread.md)<br><br>
 [Blueberry Peach Tart with Vanilla Glaze](./blueberry-peach-tart-with-vanilla-glaze.md)<br><br>
 [Brown Butter Cinnamon Crinkle Cookies](./brown-butter-cinnamon-crinkle-cookies.md)<br><br>
-[Buckeye_Cookie](./buckeye_cookie.txt)<br><br>
+[Buckeye Cookie](./buckeye-cookie.md)<br><br>
 [Butterbeer Fudge](./butterbeer-fudge.md)<br><br>
 [Cardamom Pear Upside Down Cake](./cardamom-pear-upside-down-cake.md)<br><br>
 [Carmelitas](./carmelitas.md)<br><br>
@@ -51,12 +51,12 @@
 [Iced Lemon Sugar Cookies](./iced-lemon-sugar-cookies.md)<br><br>
 [Lemon Brownies](./lemon-brownies.md)<br><br>
 [Lemon Cheesecake Crescent Rolls](./lemon-cheesecake-crescent-rolls.md)<br><br>
+[Lemon Cookies](./lemon-cookies.md)<br><br>
 [Lemon Crinkle Cookies](./lemon-crinkle-cookies.md)<br><br>
 [Lemon Mousse](./lemon-mousse.md)<br><br>
 [Lemon Pistachio Shortbread Cookies](./lemon-pistachio-shortbread-cookies.md)<br><br>
 [Lemon Sugar Cookies](./lemon-sugar-cookies.md)<br><br>
 [Lemon Tea Cookies](./lemon-tea-cookies.md)<br><br>
-[Lemon_Cookies](./lemon_cookies.txt)<br><br>
 [Magic Turtle Bars](./magic-turtle-bars.md)<br><br>
 [Mexican Chocolate Chip Cookies](./mexican-chocolate-chip-cookies.md)<br><br>
 [Meyer Lemon Iced Raspberry Yogurt Cake](./meyer-lemon-iced-raspberry-yogurt-cake.md)<br><br>
@@ -74,7 +74,7 @@
 [Pomegranate Dark Chocolate Bites](./pomegranate-dark-chocolate-bites.md)<br><br>
 [Raspberry Lemon Cookies](./raspberry-lemon-cookies.md)<br><br>
 [Salted Chocolate Covered Bourbon Cider Caramels](./salted-chocolate-covered-bourbon-cider-caramels.md)<br><br>
-[Scotch_Cookies](./scotch_cookies.txt)<br><br>
+[Scotch Cookies](./scotch-cookies.md)<br><br>
 [Soft Lemon Cream Cheese Cookies](./soft-lemon-cream-cheese-cookies.md)<br><br>
 [Spiced Poppy Seed Cake with Almond Buttercream Frosting](./spiced-poppy-seed-cake-with-almond-buttercream-frosting.md)<br><br>
 [Strawberry Champagne Cookies](./strawberry-champagne-cookies.md)<br><br>

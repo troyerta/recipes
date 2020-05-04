@@ -11,7 +11,7 @@
 [Chicken Alfredo Roll Ups](./chicken-alfredo-roll-ups.md)<br><br>
 [Chicken Broccoli Alfredo Pasta](./chicken-broccoli-alfredo-pasta.md)<br><br>
 [Chicken Mozzarella Pasta with Sun Dried Tomatoes](./chicken-mozzarella-pasta-with-sun-dried-tomatoes.md)<br><br>
-[Chorizo_Carbonara](./chorizo_carbonara.txt)<br><br>
+[Chorizo Carbonara](./chorizo-carbonara.md)<br><br>
 [Creamy Beef Noodle Bake](./creamy-beef-noodle-bake.md)<br><br>
 [Creamy Cajun Chicken Pasta](./creamy-cajun-chicken-pasta.md)<br><br>
 [Creamy Tortellini with Peas Asparagus and Bacon](./creamy-tortellini-with-peas-asparagus-and-bacon.md)<br><br>

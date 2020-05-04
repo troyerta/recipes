@@ -19,7 +19,7 @@
 [Grilled Cheese with Honey](./grilled-cheese-with-honey.md)<br><br>
 [Hawaiian Bbq Quesadillas with Pineapple Mango Guacamole](./hawaiian-bbq-quesadillas-with-pineapple-mango-guacamole.md)<br><br>
 [Hawaiian Grilled Cheese](./hawaiian-grilled-cheese.md)<br><br>
-[Kimchi_Grilled_Cheese](./kimchi_grilled_cheese.txt)<br><br>
+[Kimchi Grilled Cheese](./kimchi-grilled-cheese.md)<br><br>
 [Lemon Lavender Blackberry and Ricotta Grilled Cheese Sandwiches](./lemon-lavender-blackberry-and-ricotta-grilled-cheese-sandwiches.md)<br><br>
 [Panini with Chocolate and Brie](./panini-with-chocolate-and-brie.md)<br><br>
 [Peach Chicken Gorgonzola Balsamic Quesadillas with Arugula Pesto](./peach-chicken-gorgonzola-balsamic-quesadillas-with-arugula-pesto.md)<br><br>

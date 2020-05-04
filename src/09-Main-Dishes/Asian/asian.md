@@ -4,7 +4,7 @@
 
 [Asian Lemon Chicken](./asian-lemon-chicken.md)<br><br>
 [Asian Sloppy Joes](./asian-sloppy-joes.md)<br><br>
-[Bacon_Instant_Packet_Peanut_Noodles](./bacon_instant_packet_peanut_noodles.txt)<br><br>
+[Bacon Instant Packet Peanut Noodles](./bacon-instant-packet-peanut-noodles.md)<br><br>
 [Bang Bang Cauliflower](./bang-bang-cauliflower.md)<br><br>
 [Chicken and Asparagus Lemon Stir Fry](./chicken-and-asparagus-lemon-stir-fry.md)<br><br>
 [Chinese Honey Garlic Chicken](./chinese-honey-garlic-chicken.md)<br><br>
@@ -14,7 +14,7 @@
 [Holy Yum Chicken](./holy-yum-chicken.md)<br><br>
 [Honey Sesame Chicken](./honey-sesame-chicken.md)<br><br>
 [Japanese Style Fried Chicken Rice Burger](./japanese-style-fried-chicken-rice-burger.md)<br><br>
-[Kung_Pao_Cauliflower](./kung_pao_cauliflower.txt)<br><br>
+[Kung Pao Cauliflower](./kung-pao-cauliflower.md)<br><br>
 [Lean Beef and Broccoli Stir Fry](./lean-beef-and-broccoli-stir-fry.md)<br><br>
 [Minute Chicken Pho](./minute-chicken-pho.md)<br><br>
 [Saucy Garlic Butter Shrimp with Coconut Milk and Rice Noodles](./saucy-garlic-butter-shrimp-with-coconut-milk-and-rice-noodles.md)<br><br>
@@ -24,7 +24,7 @@
 [Spicy Chicken Katsu](./spicy-chicken-katsu.md)<br><br>
 [Spicy Korean Bbq Style Pork](./spicy-korean-bbq-style-pork.md)<br><br>
 [Spicy Korean Chicken](./spicy-korean-chicken.md)<br><br>
-[Spicy_Korean_Rice_Cakes](./spicy_korean_rice_cakes.txt)<br><br>
+[Spicy Korean Rice Cakes](./spicy-korean-rice-cakes.md)<br><br>
 [Sticky Chilli Beef](./sticky-chilli-beef.md)<br><br>
 [Sweet and Spicy Chicken](./sweet-and-spicy-chicken.md)<br><br>
 [Teriyaki Ginger Shrimp](./teriyaki-ginger-shrimp.md)<br><br>
