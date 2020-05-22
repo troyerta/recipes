@@ -6,6 +6,7 @@
 [Butter Chicken](./butter-chicken.md)<br><br>
 [Cauliflower and Chickpea Coconut Curry](./cauliflower-and-chickpea-coconut-curry.md)<br><br>
 [Cheese Stuffed Tonkatsu Japanese Curry](./cheese-stuffed-tonkatsu-japanese-curry.md)<br><br>
+[Chicken Coconut Korma](./chicken-coconut-korma.md)<br><br>
 [Chicken Curry](./chicken-curry.md)<br><br>
 [Chicken Korma](./chicken-korma.md)<br><br>
 [Chicken Thigh Curry](./chicken-thigh-curry.md)<br><br>
