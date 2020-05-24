@@ -8,7 +8,7 @@
 - Total Time: 20 mins
 
 <p align="center">
-<img title="F3" src="../assets/f3.jpg">
+<img title="asian lemon chicken" src="../../../assets/asian-lemon-chicken.jpg">
 </p>
 
 ## Ingredients
