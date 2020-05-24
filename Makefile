@@ -4,7 +4,7 @@ save:
 	@echo "====> saving changes"
 	@git checkout -b save
 	@echo "====> generating SUMMARY.md"
-	@python3 summary_generator.py
+	@./venv/bin/python3 summary_generator.py
 	@echo "====> rebuilding the book.."
 	mdbook build
 	@echo "====> done"

@@ -7,6 +7,10 @@
 - Cook Time: 10 mins
 - Total Time: 20 mins
 
+<p align="center">
+<img title="F3" src="../assets/f3.jpg">
+</p>
+
 ## Ingredients
 
 - 1.5 lbs boneless chicken breast cut into tenders

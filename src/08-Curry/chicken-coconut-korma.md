@@ -88,7 +88,6 @@
 11. Serve over rice and garnish with cilantro and cashews
 ---
 
-
 ## Adapted from
 
 [Chicken Coconut Korma](https://www.yourhomebasedmom.com/chicken-coconut-korma/)
