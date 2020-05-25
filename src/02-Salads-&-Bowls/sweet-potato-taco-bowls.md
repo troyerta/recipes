@@ -11,7 +11,11 @@
 
 - 1 tablespoon chili powder
 
-#### 1/4 Teaspoon Each:
+- 1/4 Teaspoon garlic powder
+
+- 1/4 Teaspoon onion powder
+
+- 1/4 Teaspoon dried oregano
 
 - 1/2 teaspoon paprika
 

@@ -4,56 +4,66 @@
 
 - Yield: 4 servings
 - Prep Time: 15 mins
-- Cook Time: 30 mins
-- Total Time: 45 mins
+- Cook Time: 20 mins
 
 ## Ingredients
 
 #### Cauliflower:
 
-- 4 cups bite-sized cauliflower florets, rinsed
+- 4 cups cauliflower florets
 
-- 1/2 cup white rice flour
+- 2 eggs
 
-- 2 TB Ener-G, whisked with 3/4 cup water
+- 2 cups panko breadcrumbs
 
-- 2 cups panko
+- Salt and pepper
 
-- salt and pepper
-
-- spray oil
+- 1 scallion (thinly sliced)
 
 #### Sauce:
 
-- 1/2 cup vegan mayo (I used Follow Your Heart brand)
+- 2 tablespoons sweet chili sauce
 
-- 1/4 cup sweet chili sauce
+- 2 teaspoons Sriracha hot sauce
 
-- 1 Tbsp sriracha
+- 1/2 cup mayonnaise
 
-- Juice of half a lime
+- 1/2 cup non-fat plain Greek yogurt
 
-#### On the Side:
-
-- 2 scallions, thinly sliced
-
-- handful of cilantro, finely minced
+- Garnish (chopped parsley or cilantro)
 
 ## Method
 
-1. Preheat oven to 400. Line a baking sheet with a silpat or parchment paper.
+1. Gather ingredients.
 ---
-2. Set up a station with three large bowls. In the first bowl, place the rice flour. In the second, place the Ener-G+water. In the third place the panko mixture.
+
+2. Preheat the oven to 425 F. Whisk together the eggs in a small bowl. Add the salt and pepper: about a teaspoon of each will do. Add about a teaspoon of water to thin out the eggs a little bit. The egg will stick better to the cauliflower this way.
 ---
-3. Working in batches, place some of the rinsed-and-still-wet cauliflower florets into the first bowl with the rice flour, and use your hands to toss to coat. Then pick up the cauliflower, shaking off any excess flour and place into the bowl with the vegan egg mixture, and toss to coat. Then place the coated cauliflower into the bowl with the panko and toss well to combine. The pieces don’t need to be completely covered in panko, but If you find you are having some trouble with getting it to stick, moisten with a little of the vegan egg mixture and press the panko onto the florets with your fingers.
+
+3. Dip the cauliflower florets in the beaten eggs and coat them on all sides.
 ---
-4. Place the cauliflower onto the lined baked sheet in a single layer. Repeat until all of the cauliflower pieces are coated, then spray the tops of each with a little oil, then season with salt and pepper. Place into the oven for 15 minutes, or until the tops are slightly golden.
+
+4. Drop the cauliflower florets into the panko breadcrumbs. Toss them to completely coat. The panko should coat the cauliflower pretty easily, but if you need to, you can press some more of the breadcrumbs onto the cauliflower.
 ---
-5. Remove, flip the florets and respray the other side with a little more spray oil. Bake for 10 minutes more, or until golden all over. Do keep an eye on them towards the end of the bake time to prevent burning! (The bake time will vary based on the size of your florets.)
+
+5. Place the coated cauliflower on a parchment lined baking sheet. Leave a little space between each floret.
 ---
-6. To serve, allow the cauliflower to slightly cool, then drizzle with the sauce as desired. Sprinkle with the chopped scallions and cilantro and serve immediately.
+
+6. Spray the cauliflower with cooking spray and then bake for 15 to 20 minutes or until golden brown and crispy.
 ---
+
+7. While the cauliflower is cooking, whisk together the ingredients to the bang bang sauce in a bowl.
+---
+
+8. Drizzle the bang bang sauce over the crispy cauliflower and top with chopped scallions and parsley. Then serve immediately...with more bang bang sauce on the side, of course!
+---
+
+## Notes
+
+- You can add salt and pepper to the cauliflower and to the breadcrumbs for even more flavor.
+
+- If you like it on the spicier side, add more Sriracha to the sauce.
 
 ## References and Acknowledgments
 
-[Olives for Dinner - Bang Bang Cauliflower](http://olivesfordinner.com/2016/05/bang-bang-cauliflower.html)
+[Spruce Eats - Bang Bang Cauliflower](https://www.thespruceeats.com/bang-bang-cauliflower-4684549)

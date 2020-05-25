@@ -27,6 +27,12 @@
 
 - 1/4 cup sugar, for rolling cookies
 
+#### Lemon Glaze:
+
+- 1/2 Cup powdered sugar
+
+- Lemon juice, as needed for viscosity
+
 ## Method
 
 1. In a mixing bowl, beat the butter, sugar, and lemon zest with an electric mixer for 1-2 minutes.
@@ -50,6 +56,8 @@
 7. Allow the cookies to cool on the baking sheet for 5 minutes, then move to a cooling rack to cool completely.
 ---
 
+8. After cookies have cooled, mix up the Lemon Glaze ingredients and dip or drizzle each cookie, setting each aside to allow glaze to set.
+---
 
 ## Notes
 
@@ -57,4 +65,4 @@
 
 ## References and Acknowledgments
 
-[Lemon Cookies](https://thefirstyearblog.com/lemon-sugar-cookies/)
+Adapted from [Lemon Cookies](https://thefirstyearblog.com/lemon-sugar-cookies/)
