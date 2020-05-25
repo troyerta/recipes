@@ -1,5 +1,7 @@
 # Chinese Honey Garlic Chicken
 
+PHOTO
+
 ## Overview
 
 - Yield: 4 servings

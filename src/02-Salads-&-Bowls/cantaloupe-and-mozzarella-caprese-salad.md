@@ -1,5 +1,7 @@
 # Cantaloupe and Mozzarella Caprese Salad
 
+PHOTO
+
 ## Overview
 
 - Prep Time: 10 mins

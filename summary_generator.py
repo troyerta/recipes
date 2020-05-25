@@ -201,7 +201,7 @@ def get_all_things():
 
     # [print(x) for x in chapter_dirs]
     [dir_list.remove(dir) for dir in chapter_dirs]
-    [section_dirs.append(dir) for dir in dir_list]
+    [section_dirs.append(dir) for dir in dir_list if not dir.startswith( PHOTO_DIR )]
     # print('')
     # [print(x) for x in section_dirs]
 
@@ -213,6 +213,7 @@ def get_all_things():
 
     for dir in chapter_dirs:
         dirfile = produce_dirfile_name( dir )
+        print("made", dirfile)
         ensure_dirfile( dirfile )
         dirfiles.append( dirfile )
     # print('')
@@ -224,6 +225,7 @@ def get_all_things():
 
     for dir in section_dirs:
         dirfile = produce_dirfile_name( dir )
+        print("made", dirfile)
         ensure_dirfile( dirfile )
         dirfiles.append( dirfile )
     # print('')

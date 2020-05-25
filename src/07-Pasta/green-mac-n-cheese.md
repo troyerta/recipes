@@ -1,5 +1,7 @@
 # Green Mac and Cheese
 
+PHOTO
+
 ## Overview
 
 - Yield: 12 servings

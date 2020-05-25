@@ -1,5 +1,7 @@
 # Blackberry Bacon Grilled Cheese
 
+PHOTO
+
 ## Overview
 
 - Yield: 1 sandwich

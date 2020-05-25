@@ -1,5 +1,7 @@
 # Chicken Coconut Korma
 
+PHOTO
+
 ## Overview
 
 - Yield: 6 servings

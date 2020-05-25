@@ -1,5 +1,7 @@
 # Sweet Potato Taco Bowls
 
+PHOTO
+
 ## Overview
 
 - Yield: 6

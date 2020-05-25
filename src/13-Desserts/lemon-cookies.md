@@ -1,5 +1,7 @@
 # Lemon Cookies
 
+PHOTO
+
 ## Overview
 
 - Yield: 24 cookies

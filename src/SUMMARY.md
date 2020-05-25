@@ -244,6 +244,7 @@
   - [Ham and Cheese Pierogi](./07-Pasta/ham-and-cheese-pierogi.md)
   - [Lemon Garlic Butter Shrimp  with Zucchini Noodles](./07-Pasta/lemon-garlic-butter-shrimp--with-zucchini-noodles.md)
   - [Loaded Chicken Alfredo Gnocchi Bake](./07-Pasta/loaded-chicken-alfredo-gnocchi-bake.md)
+  - [Nyt Spaghetti Carbonara](./07-Pasta/nyt-spaghetti-carbonara.md)
   - [One Pan Cheesy Smoked Sausage Pasta](./07-Pasta/one-pan-cheesy-smoked-sausage-pasta.md)
   - [Parmesan Spinach Gnocchi (with How To Video!) (Video)](./07-Pasta/parmesan-spinach-gnocchi-(with-how-to-video!)-(video).md)
   - [Pasta with Sun Dried Tomato Cream Sauce](./07-Pasta/pasta-with-sun-dried-tomato-cream-sauce.md)

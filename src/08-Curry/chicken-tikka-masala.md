@@ -1,5 +1,7 @@
 # Chicken Tikka Masala
 
+PHOTO
+
 ## Overview
 
 - Yield: 6 servings

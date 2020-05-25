@@ -1,4 +1,6 @@
-# Banana Bread
+# Troyer Banana Bread
+
+PHOTO
 
 ## Overview
 
@@ -40,4 +42,3 @@
 ---
 
 ## Tags
-troyer

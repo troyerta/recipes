@@ -1,5 +1,7 @@
 # Garlic Butter Shrimp Pad Thai
 
+PHOTO
+
 ## Overview
 
 - Yield: 4 servings

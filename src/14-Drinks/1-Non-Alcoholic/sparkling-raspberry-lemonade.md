@@ -1,5 +1,7 @@
 # Sparkling Raspberry Lemonade
 
+PHOTO
+
 ## Overview
 
 - Yield: 8

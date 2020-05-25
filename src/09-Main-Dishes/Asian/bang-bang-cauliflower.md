@@ -1,5 +1,7 @@
 # Bang Bang Cauliflower
 
+PHOTO
+
 ## Overview
 
 - Yield: 4 servings

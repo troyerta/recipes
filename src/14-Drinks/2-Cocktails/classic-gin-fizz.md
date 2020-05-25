@@ -1,5 +1,7 @@
 # Classic Gin Fizz
 
+PHOTO
+
 ## Overview
 
 - Yield: 1
