@@ -38,7 +38,6 @@
 
 - Cilantro to garnish
 
-
 ## Method
 
 1. Stir together the yogurt, ginger–garlic paste, coriander, cumin, and 2 tsps of turmeric. To this, add a bit of salt and the chicken. You can let it marinate up to 7 hours in the refrigerator.

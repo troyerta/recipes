@@ -7,6 +7,24 @@ import fnmatch
 from os.path import isdir, isfile
 from PIL import Image
 
+'''
+Requirements:
+
+If a PHOTO tag is found in a recipe, the tag should be replaced with a link to the image.
+If the image can't be found, then throw an error.
+
+If a image file link in a recipe does not correctly point back to an existing file, or looks in the wrong place for a file, then
+throw and warning, and try to fix the link to the correct link.
+
+If an image is not linked or referred to anywhere in the recipe book, then print a warning message.
+
+./photo_processor.py
+Checking for new photo links..
+Testing photo links..
+Looking for unreferenced photos..
+
+'''
+
 PHOTO_DIR = 'assets'
 PHOTO_WIDTH = 1024
 IMAGE_STRUCT = "<p align=\"center\">\n\
@@ -14,29 +32,26 @@ IMAGE_STRUCT = "<p align=\"center\">\n\
 </p>\n"
 
 '''
-Add
-
-<p align="center">
-<img title="F3" src="../assets/f3.jpg">
-</p>
+Bail out early with a message
 '''
-
 def quit():
     print("Exiting..")
     sys.exit()
 
 '''
-
+Downscales the image target image size if necessary
 '''
-def resize_image( image_filepath, target_width ):
+def enforce_image_width( image_filepath, target_width ):
     img = Image.open(image_filepath)
     # print(img.format)
     # print(img.mode)
     # print(img.size)
-    wpercent = (target_width/float(img.size[0]))
-    hsize = int((float(img.size[1])*float(wpercent)))
-    img = img.resize((target_width,hsize), Image.ANTIALIAS)
-    img.save(image_filepath)
+    if img.size[0] > target_width:
+        print("resizing", image_filepath)
+        # wpercent = (target_width/float(img.size[0]))
+        # hsize = int((float(img.size[1])*float(wpercent)))
+        # img = img.resize((target_width,hsize), Image.ANTIALIAS)
+        # img.save(image_filepath)
 
 '''
 Find a specific recipe file in the recipe src
@@ -64,56 +79,19 @@ def find_file_by_glob( dir='assets', glob=r'*' ):
     else:
         return list()
 
+'''
+Recursively find all files of a certain type under some root directory
+'''
 def list_files( rootdir, ext ):
     file_list = list()
     for root, dirs, files in os.walk(rootdir):
         [file_list.append( os.path.join( root, file ) ) for file in files if file.endswith(ext)]
     return file_list
 
-# images = find_file_by_glob('assets', glob=r'*')
-
-# [print(img) for img in images]
-
-# recipe = find( 'src', 'asian-lemon-chicken.md', True )
-
-# print(recipe)
-
 '''
-[DONE] Go through each recipe, and look for the PHOTO tag. If found, then find a corresponding photo in the assets folder.
-[DONE] If not found, then write an error message and exit.
-[DONE] If found, then resize the photo, re-saving as a jpg.
-[DONE]    Then, re.sub the PHOTO tag with the <p> section with the correct relative link to the file.
-
-[DONE] To track the sources better - go through EVERY recipe, and look for recipe text, collecting the cited photo name
-[DONE] Make sure the specified photo path is correct
-
-If photo is present in assets, enforce the correct width / height.
-
-If photo is not present, throw an error detailing the issue, then exit.
-
-Each photo called out through the book is recorded in a local list.
-
-After checking each recipe for for a photo, compare the recorded list of "handled" photos with the contents of the asserts dir.
-
-If they differ by this point, then there is at least 1 unhandled photo in /assets.
-
-For each unhandled photo, look for a recipe under the same title.
-
-If such a recipe file exists, open it and search for a photo section
-
-If a photo section match is found, then throw a detailed error, since this was not found earlier.
-It might mean the recipe is trying to call out a photo under a mismatched name.
-
-If no photo section match is found, then insert the photo text structure where it belongs.
-
-Then run another giant search to make sure each photo is accounted for, and each recipe's photo exists.
-
-If a photo moves around, or it's name changes, we should still have everything we need in order to fix the rel links
-
-There, easy!
-
+Search for the img <p> in a recipe file, returning the match object
+The match object has two groups: the image title and rel link
 '''
-
 def search_img_link_in_file( file ):
     with open( file, 'r' ) as fi:
         file_data = fi.read()
@@ -123,6 +101,9 @@ def search_img_link_in_file( file ):
         else:
             return None
 
+'''
+Return the match object the 'PHOTO' tag in a recipe if it is found, else None
+'''
 def search_img_tag_in_file( file ):
     with open( file, 'r' ) as fi:
         file_data = fi.read()
@@ -132,6 +113,10 @@ def search_img_tag_in_file( file ):
         else:
             return None
 
+'''
+Return the given path as an ordered list of path components
+Can be used to easily determine a file's depth
+'''
 def splitpath(path, maxdepth=20):
      ( head, tail ) = os.path.split(path)
      return splitpath(head, maxdepth - 1) + [ tail ] \
@@ -162,7 +147,7 @@ def image_struct_from_file( target_file ):
     rel_path = photo_relpath_from_recipe_path( target_file )
     title = re.sub( r'-', ' ', os.path.splitext(os.path.basename( target_file ))[0] )
     # print(rel_path,title)
-    output = IMAGE_STRUCT.format( title, rel_path )
+    output = IMAGE_STRUCT.format( title.title(), rel_path )
     return output
 
 '''
@@ -172,18 +157,38 @@ def insert_image_link( target_file ):
     with open( target_file, 'r' ) as fi:
         file_data = fi.read()
         image_struct_str = image_struct_from_file(target_file)
-        # print(image_struct_str)
         new_data = re.sub( r'^PHOTO$\n', image_struct_str, file_data, flags=re.MULTILINE )
-        # new_data = file_data.replace( "PHOTO\n", image_struct_str )
 
     with open( target_file, 'w' ) as fi:
         fi.write( new_data )
 
-def proc_photos():
-    # Make a list of every md file in the src dir
-    md_files = list_files( "src", ".md" )
+'''
+Replace the current image <p> structure in a recipe with a new one. Good for updating rel paths
+'''
+def fix_image_link( target_file ):
+    current_link = search_img_link_in_file(target_file)
+    if current_link:
+        with open( target_file, 'r' ) as fi:
+            file_data = fi.read()
+            image_struct_str = image_struct_from_file(target_file)
+            new_data = re.sub( current_link.group(0), "\n"+image_struct_str, file_data, flags=re.MULTILINE )
 
-    print("Checking recipes for image tags..")
+        with open( target_file, 'w' ) as fi:
+            fi.write( new_data )
+        return True
+    else:
+        return False
+
+'''
+Worker function for the script. Runs the 3 major tasks of the photo processor
+'''
+def proc_photos():
+    # Make a list of every md file in the src dir, a list of their basenames, and a list of each jpg file in the assets dir
+    image_files = list_files( "assets", ".jpg" )
+    md_files = list_files( "src", ".md" )
+    md_file_basenames = [os.path.basename( fi ) for fi in md_files]
+
+    print("Checking for new photo links..")
     for md_file in md_files:
         tag_match = search_img_tag_in_file( md_file )
 
@@ -194,28 +199,45 @@ def proc_photos():
                 print("Could not find", img_filepath, "for", md_file)
                 quit()
 
-            # Image is present: Resize it and insert a link into the recipe
-            # resize_image( img_filepath, PHOTO_WIDTH )
+            # Found the corresponding image file Resize it and insert a link into the recipe
+            enforce_image_width( img_filepath, PHOTO_WIDTH )
             insert_image_link( md_file )
 
-    print("Checking recipes for image references..")
+    print("Testing image links..")
     for md_file in md_files:
         img_match = search_img_link_in_file( md_file )
 
         if img_match:
             image_rel_link = photo_relpath_from_recipe_path( md_file )
+            asset_img = os.path.join( PHOTO_DIR, photo_filename_from_recipe_path( md_file ) )
 
             if( image_rel_link != img_match.group(2) ):
-                print(md_file, "contains mismatched image link.\nExpected " + "\'" + image_rel_link + "\'" + " - was " + "\'" + img_match.group(2) + "\'" )
+                if fix_image_link( md_file ) == True:
+                    print("\tUpdated image reference in", md_file)
+                    image_files.remove( os.path.join( PHOTO_DIR, photo_filename_from_recipe_path( md_file ) ) )
+                else:
+                    print("\t" + md_file, "contains mismatched image link.\n\tExpected " + "\'" + image_rel_link + "\'" + "\n\twas " + "\'" + img_match.group(2) + "\'" )
+                    print("\tI tried to update the link, but failed to find the current image reference")
+                    quit()
+            elif not isfile( asset_img ):
+                print("Could not find", asset_img, "for", md_file)
                 quit()
+            else:
+                image_files.remove( os.path.join( PHOTO_DIR, photo_filename_from_recipe_path( md_file ) ) )
 
-            # print("searching for", image_should)
-            # if isfile( image_should ):
-            #     print( "found", image_should, "referenced in", md_file )
-
+    print("Looking for unreferenced photos..")
+    if len(image_files) > 0:
+        print("\tWarning - unreferenced images found:")
+        for image in image_files:
+            print("\t\t" + image)
+            possible_recipe = os.path.splitext( os.path.basename( image ) )[0] + ".md"
+            if possible_recipe in md_file_basenames:
+                print("\t\tDid you mean to reference the", possible_recipe, "recipe?")
+                print("\t\tJust add a \'PHOTO\' tag somewhere in the recipe to reference this photo")
 
 def workerFunction():
     proc_photos()
+    sys.exit()
 
 if __name__ == "__main__":
     workerFunction()

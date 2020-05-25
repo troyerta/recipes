@@ -78,7 +78,6 @@ class Recipe():
         self.tags_txt           = self.find_tags( self.target_file_data )
         self.description_txt    = self.find_description( self.target_file_data )
         self.servings_txt       = self.find_servings( self.target_file_data )
-        # print("Servings: " + "'" + self.servings_txt + "'" )
         self.ingredients_txt    = self.find_ingredients( self. target_file_data )
         self.method_txt         = self.find_method( self.target_file_data )
 

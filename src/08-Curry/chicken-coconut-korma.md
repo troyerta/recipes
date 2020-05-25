@@ -9,7 +9,7 @@
 
 ## Ingredients
 
-- 2-3 chicken breasts skinless, bonesless, cut into 1 inch pieces
+- 2 - 3 chicken breasts skinless, boneless, cut into 1 inch pieces
 
 #### Chicken Marinade:
 

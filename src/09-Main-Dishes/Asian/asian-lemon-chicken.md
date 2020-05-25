@@ -7,10 +7,6 @@
 - Cook Time: 10 mins
 - Total Time: 20 mins
 
-<p align="center">
-<img title="asian lemon chicken" src="../../../assets/asian-lemon-chicken.jpg">
-</p>
-
 ## Ingredients
 
 - 1.5 lbs boneless chicken breast cut into tenders
