@@ -1,5 +1,9 @@
 # Butter Chicken
 
+<p align="center">
+<img title="Butter Chicken" src="../assets/butter-chicken.jpg">
+</p>
+
 ## Overview:
 
 Prep time: 30 minutes<br>

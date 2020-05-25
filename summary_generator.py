@@ -12,6 +12,7 @@ import fnmatch
 
 SRC_DIR = "src/src_sorted"
 SRC_NEW = "src/src_renamed"
+PHOTO_DIR = './src/assets'
 
 SUMMARY_PATH = "./src/SUMMARY.md"
 
@@ -121,7 +122,8 @@ def print_tree( dir, padding, fPadding, chapter_dirs, section_dirs, dirfiles, re
         count += 1
         path = os.path.join( dir, file )
         isLast = i == last  # Marks the last file in the entire list
-        if isdir(path):
+        if isdir(path) and not path.startswith( PHOTO_DIR ):
+        # if isdir(path):
             if count == len(files):
                 if isFirst:
                     print_tree(path, padding + ' ', fPadding + ' ', chapter_dirs, section_dirs, dirfiles, recipes, about_file, print_files, isLast, False )
@@ -147,6 +149,8 @@ def print_tree( dir, padding, fPadding, chapter_dirs, section_dirs, dirfiles, re
                 if path == about_file:
                     f.write( fPadding + recipe_line(fpath) )
                 elif path == SUMMARY_PATH:
+                    pass
+                elif path.startswith( PHOTO_DIR ):
                     pass
                 else:
                     f.write( fPadding + '- ' + recipe_line(fpath) )
@@ -192,7 +196,7 @@ def get_all_things():
     # From the all_dirs list, get the dirs that start with a number, and are at a depth of 1
     # Add those dirs to the chapter_list, remove them from the all_dirs list
     for dir in dir_list:
-        if( ( len( splitpath( dir ) ) - rootpath_depth ) == 1 ):
+        if( ( len( splitpath( dir ) ) - rootpath_depth ) == 1 ) and not dir.startswith( PHOTO_DIR ):
             chapter_dirs.append( dir )
 
     # [print(x) for x in chapter_dirs]

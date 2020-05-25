@@ -25,8 +25,8 @@ Looking for unreferenced photos..
 
 '''
 
-PHOTO_DIR = 'assets'
-PHOTO_WIDTH = 1024
+PHOTO_DIR = 'src/assets'
+PHOTO_WIDTH = 600
 IMAGE_STRUCT = "<p align=\"center\">\n\
 <img title=\"{}\" src=\"{}\">\n\
 </p>\n"
@@ -45,13 +45,13 @@ def enforce_image_width( image_filepath, target_width ):
     img = Image.open(image_filepath)
     # print(img.format)
     # print(img.mode)
-    # print(img.size)
+    print(img.size[0])
     if img.size[0] > target_width:
         print("resizing", image_filepath)
-        # wpercent = (target_width/float(img.size[0]))
-        # hsize = int((float(img.size[1])*float(wpercent)))
-        # img = img.resize((target_width,hsize), Image.ANTIALIAS)
-        # img.save(image_filepath)
+        wpercent = (target_width/float(img.size[0]))
+        hsize = int((float(img.size[1])*float(wpercent)))
+        img = img.resize((target_width,hsize), Image.ANTIALIAS)
+        img.save(image_filepath)
 
 '''
 Find a specific recipe file in the recipe src
@@ -63,21 +63,6 @@ def find(root, file, first=True):
             if first == True:
                 return os.path.join(d,file)
     return None
-
-'''
-Find photos in the assets directory
-'''
-def find_file_by_glob( dir='assets', glob=r'*' ):
-    matches = list()
-
-    for file in os.listdir( dir ):
-        if fnmatch.fnmatch(file, glob):
-            matches.append( file )
-
-    if matches:
-        return [os.path.join( dir, match ) for match in matches ]
-    else:
-        return list()
 
 '''
 Recursively find all files of a certain type under some root directory
@@ -135,9 +120,9 @@ Get something like "../../assets/port-brownies.jpg" from "src/desserts/pork-brow
 def photo_relpath_from_recipe_path( path ):
     image_rel_link = str()
     filename = photo_filename_from_recipe_path( path )
-    for num in range( len( splitpath( path ) ) - 1 ):
+    for num in range( len( splitpath( path ) ) - 2 ):
         image_rel_link = os.path.join( "..", image_rel_link )
-    rel_path = os.path.join( image_rel_link, PHOTO_DIR, filename )
+    rel_path = os.path.join( image_rel_link, os.path.basename( PHOTO_DIR ), filename )
     return rel_path
 
 '''
@@ -184,9 +169,11 @@ Worker function for the script. Runs the 3 major tasks of the photo processor
 '''
 def proc_photos():
     # Make a list of every md file in the src dir, a list of their basenames, and a list of each jpg file in the assets dir
-    image_files = list_files( "assets", ".jpg" )
+    image_files = list_files( PHOTO_DIR, ".jpg" )
     md_files = list_files( "src", ".md" )
     md_file_basenames = [os.path.basename( fi ) for fi in md_files]
+
+    print(image_files)
 
     print("Checking for new photo links..")
     for md_file in md_files:
