@@ -42,6 +42,7 @@
 [Spicy Thai Chicken Grains Bowl](./spicy-thai-chicken-grains-bowl.md)<br><br>
 [Spring Detox Cauliflower Salad](./spring-detox-cauliflower-salad.md)<br><br>
 [Summer Bliss Bowls with Sweet Potato Falafel and Jalapeno Ranch](./summer-bliss-bowls-with-sweet-potato-falafel-and-jalapeno-ranch.md)<br><br>
+[Summer Pasta Salad](./summer-pasta-salad.md)<br><br>
 [Superfood Broccoli Salad with Poppy Seed Dressing](./superfood-broccoli-salad-with-poppy-seed-dressing.md)<br><br>
 [Sweet Potato Taco Bowls](./sweet-potato-taco-bowls.md)<br><br>
 [Thai Satay Cucumber Salad](./thai-satay-cucumber-salad.md)<br><br>

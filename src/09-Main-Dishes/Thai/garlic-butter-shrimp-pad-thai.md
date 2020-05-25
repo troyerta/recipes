@@ -1,6 +1,8 @@
 # Garlic Butter Shrimp Pad Thai
 
-PHOTO
+<p align="center">
+<img title="Garlic Butter Shrimp Pad Thai" src="../../assets/garlic-butter-shrimp-pad-thai.jpg">
+</p>
 
 ## Overview
 

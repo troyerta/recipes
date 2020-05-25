@@ -1,6 +1,9 @@
 # Chicken Coconut Korma
 
-PHOTO
+<p align="center">
+<img title="Chicken Coconut Korma" src="../assets/chicken-coconut-korma.jpg">
+</p>
+photo credit: S.K.
 
 ## Overview
 

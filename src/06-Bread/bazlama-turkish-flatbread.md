@@ -1,6 +1,8 @@
 # Bazlama Turkish Flatbread
 
-PHOTO
+<p align="center">
+<img title="Bazlama Turkish Flatbread" src="../assets/bazlama-turkish-flatbread.jpg">
+</p>
 
 ## Overview
 

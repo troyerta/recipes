@@ -45,7 +45,7 @@ def enforce_image_width( image_filepath, target_width ):
     img = Image.open(image_filepath)
     # print(img.format)
     # print(img.mode)
-    print(img.size[0])
+    # print(img.size[0])
     if img.size[0] > target_width:
         print("resizing", image_filepath)
         wpercent = (target_width/float(img.size[0]))
@@ -172,8 +172,6 @@ def proc_photos():
     image_files = list_files( PHOTO_DIR, ".jpg" )
     md_files = list_files( "src", ".md" )
     md_file_basenames = [os.path.basename( fi ) for fi in md_files]
-
-    print(image_files)
 
     print("Checking for new photo links..")
     for md_file in md_files:

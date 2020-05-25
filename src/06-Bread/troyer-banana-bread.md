@@ -1,6 +1,8 @@
 # Troyer Banana Bread
 
-PHOTO
+<p align="center">
+<img title="Troyer Banana Bread" src="../assets/troyer-banana-bread.jpg">
+</p>
 
 ## Overview
 

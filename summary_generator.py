@@ -213,7 +213,6 @@ def get_all_things():
 
     for dir in chapter_dirs:
         dirfile = produce_dirfile_name( dir )
-        print("made", dirfile)
         ensure_dirfile( dirfile )
         dirfiles.append( dirfile )
     # print('')
@@ -225,7 +224,6 @@ def get_all_things():
 
     for dir in section_dirs:
         dirfile = produce_dirfile_name( dir )
-        print("made", dirfile)
         ensure_dirfile( dirfile )
         dirfiles.append( dirfile )
     # print('')

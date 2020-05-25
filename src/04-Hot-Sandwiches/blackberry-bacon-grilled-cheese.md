@@ -1,6 +1,8 @@
 # Blackberry Bacon Grilled Cheese
 
-PHOTO
+<p align="center">
+<img title="Blackberry Bacon Grilled Cheese" src="../assets/blackberry-bacon-grilled-cheese.jpg">
+</p>
 
 ## Overview
 

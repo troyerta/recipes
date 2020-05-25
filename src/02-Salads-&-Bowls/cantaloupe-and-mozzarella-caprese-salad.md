@@ -1,6 +1,8 @@
 # Cantaloupe and Mozzarella Caprese Salad
 
-PHOTO
+<p align="center">
+<img title="Cantaloupe And Mozzarella Caprese Salad" src="../assets/cantaloupe-and-mozzarella-caprese-salad.jpg">
+</p>
 
 ## Overview
 

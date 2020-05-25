@@ -1,6 +1,8 @@
 # Lemon Cookies
 
-PHOTO
+<p align="center">
+<img title="Lemon Cookies" src="../assets/lemon-cookies.jpg">
+</p>
 
 ## Overview
 

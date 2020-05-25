@@ -1,6 +1,8 @@
 # Classic Gin Fizz
 
-PHOTO
+<p align="center">
+<img title="Classic Gin Fizz" src="../../assets/classic-gin-fizz.jpg">
+</p>
 
 ## Overview
 

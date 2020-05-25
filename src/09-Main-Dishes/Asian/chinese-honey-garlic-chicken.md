@@ -1,6 +1,8 @@
 # Chinese Honey Garlic Chicken
 
-PHOTO
+<p align="center">
+<img title="Chinese Honey Garlic Chicken" src="../../assets/chinese-honey-garlic-chicken.jpg">
+</p>
 
 ## Overview
 

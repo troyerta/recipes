@@ -1,6 +1,8 @@
 # Bang Bang Cauliflower
 
-PHOTO
+<p align="center">
+<img title="Bang Bang Cauliflower" src="../../assets/bang-bang-cauliflower.jpg">
+</p>
 
 ## Overview
 

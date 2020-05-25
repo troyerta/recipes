@@ -1,6 +1,8 @@
 # Chicken Tikka Masala
 
-PHOTO
+<p align="center">
+<img title="Chicken Tikka Masala" src="../assets/chicken-tikka-masala.jpg">
+</p>
 
 ## Overview
 

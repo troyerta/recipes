@@ -1,6 +1,8 @@
 # Sparkling Raspberry Lemonade
 
-PHOTO
+<p align="center">
+<img title="Sparkling Raspberry Lemonade" src="../../assets/sparkling-raspberry-lemonade.jpg">
+</p>
 
 ## Overview
 
@@ -39,3 +41,6 @@ PHOTO
 ## References and Acknowledgments
 
 [Sparkling Raspberry Lemonade](https://natashaskitchen.com/sparkling-raspberry-lemonade/)
+
+## Tags
+verified

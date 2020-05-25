@@ -1,6 +1,8 @@
 # Sweet Potato Taco Bowls
 
-PHOTO
+<p align="center">
+<img title="Sweet Potato Taco Bowls" src="../assets/sweet-potato-taco-bowls.jpg">
+</p>
 
 ## Overview
 
@@ -85,3 +87,6 @@ PHOTO
 ## References and Acknowledgments
 
 [Sweet Potato Taco Bowls](https://www.chelseasmessyapron.com/sweet-potato-taco-bowls/)
+
+## Tags
+verified

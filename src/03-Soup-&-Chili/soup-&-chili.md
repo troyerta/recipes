@@ -9,6 +9,7 @@
 [Easy Thai Coconut Soup](./easy-thai-coconut-soup.md)<br><br>
 [Easy White Bean Chicken Chili](./easy-white-bean-chicken-chili.md)<br><br>
 [Ginger Sweet Potato Lentil Stew](./ginger-sweet-potato-lentil-stew.md)<br><br>
+[Greek Lemon Chicken Soup](./greek-lemon-chicken-soup.md)<br><br>
 [Home Made Ramen Broth](./home-made-ramen-broth.md)<br><br>
 [Mexican Street Corn Soup](./mexican-street-corn-soup.md)<br><br>
 [Moroccan Butternut Squash and Goat Cheese Soup](./moroccan-butternut-squash-and-goat-cheese-soup.md)<br><br>

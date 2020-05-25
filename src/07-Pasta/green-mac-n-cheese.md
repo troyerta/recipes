@@ -1,6 +1,8 @@
 # Green Mac and Cheese
 
-PHOTO
+<p align="center">
+<img title="Green Mac N Cheese" src="../assets/green-mac-n-cheese.jpg">
+</p>
 
 ## Overview
 
