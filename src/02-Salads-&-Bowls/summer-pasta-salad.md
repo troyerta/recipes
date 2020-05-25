@@ -1,5 +1,9 @@
 # Summer Pasta Salad
 
+<p align="center">
+<img title="Summer Pasta Salad" src="../assets/summer-pasta-salad.jpg">
+</p>
+
 ## Overview
 
 - Yield: 8+ servings

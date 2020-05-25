@@ -5,6 +5,7 @@ save:
 	@git checkout -b save
 	@echo "====> generating SUMMARY.md"
 	@./venv/bin/python3 summary_generator.py
+	@./venv/bin/python3 photo_processor.py
 	@echo "====> rebuilding the book.."
 	mdbook build
 	@echo "====> done"
