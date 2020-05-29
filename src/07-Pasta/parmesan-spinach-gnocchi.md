@@ -1,4 +1,4 @@
-# Parmesan Spinach Gnocchi (with How-To Video!) (Video)
+# Parmesan Spinach Gnocchi
 
 ## Overview
 
@@ -73,4 +73,4 @@
 
 ## References and Acknowledgments
 
-[Parmesan Spinach Gnocchi (with How-To Video!) (Video)](https://www.lifeasastrawberry.com/parmesan-spinach-gnocchi/)
+[Parmesan Spinach Gnocchi](https://www.lifeasastrawberry.com/parmesan-spinach-gnocchi/)

@@ -14,6 +14,7 @@
 [Chorizo Carbonara](./chorizo-carbonara.md)<br><br>
 [Creamy Beef Noodle Bake](./creamy-beef-noodle-bake.md)<br><br>
 [Creamy Cajun Chicken Pasta](./creamy-cajun-chicken-pasta.md)<br><br>
+[Creamy Sausage and Roasted Red Pepper Pasta](./creamy-sausage-and-roasted-red-pepper-pasta.md)<br><br>
 [Creamy Tortellini with Peas Asparagus and Bacon](./creamy-tortellini-with-peas-asparagus-and-bacon.md)<br><br>
 [Crispy Prosciutto Cheesy White Lasagna](./crispy-prosciutto-cheesy-white-lasagna.md)<br><br>
 [Easy Roasted Garlic Alfredo Tortellini](./easy-roasted-garlic-alfredo-tortellini.md)<br><br>
@@ -26,7 +27,7 @@
 [Loaded Chicken Alfredo Gnocchi Bake](./loaded-chicken-alfredo-gnocchi-bake.md)<br><br>
 [Nyt Spaghetti Carbonara](./nyt-spaghetti-carbonara.md)<br><br>
 [One Pan Cheesy Smoked Sausage Pasta](./one-pan-cheesy-smoked-sausage-pasta.md)<br><br>
-[Parmesan Spinach Gnocchi (with How To Video!) (Video)](./parmesan-spinach-gnocchi-(with-how-to-video!)-(video).md)<br><br>
+[Parmesan Spinach Gnocchi](./parmesan-spinach-gnocchi.md)<br><br>
 [Pasta with Sun Dried Tomato Cream Sauce](./pasta-with-sun-dried-tomato-cream-sauce.md)<br><br>
 [Poblano Ale Bacon Gouda Mac Cheese](./poblano-ale-bacon-gouda-mac-cheese.md)<br><br>
 [Pumpkin Gnocchi with Sage Butter Sauce](./pumpkin-gnocchi-with-sage-butter-sauce.md)<br><br>
