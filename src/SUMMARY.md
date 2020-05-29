@@ -480,6 +480,7 @@
   - [Carmelitas](./13-Desserts/carmelitas.md)
   - [Chai Spiced Cheesecake Muffins](./13-Desserts/chai-spiced-cheesecake-muffins.md)
   - [Cherry Bars](./13-Desserts/cherry-bars.md)
+  - [Cherry Turkish Taffy](./13-Desserts/cherry-turkish-taffy.md)
   - [Chewy Chocolate Espresso Cookies](./13-Desserts/chewy-chocolate-espresso-cookies.md)
   - [Chilli Peanut Fridge Brownie](./13-Desserts/chilli-peanut-fridge-brownie.md)
   - [Chocolate and Raspberry Tarts](./13-Desserts/chocolate-and-raspberry-tarts.md)
