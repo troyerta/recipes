@@ -471,6 +471,7 @@
   - [Blackberry Lavender Naked Cake](./13-Desserts/blackberry-lavender-naked-cake.md)
   - [Blueberry Cream Cheese Bread](./13-Desserts/blueberry-cream-cheese-bread.md)
   - [Blueberry Peach Tart with Vanilla Glaze](./13-Desserts/blueberry-peach-tart-with-vanilla-glaze.md)
+  - [Broiled Chocolate Chip Cookies](./13-Desserts/broiled-chocolate-chip-cookies.md)
   - [Brown Butter Cinnamon Crinkle Cookies](./13-Desserts/brown-butter-cinnamon-crinkle-cookies.md)
   - [Buckeye Cookie](./13-Desserts/buckeye-cookie.md)
   - [Butterbeer Fudge](./13-Desserts/butterbeer-fudge.md)
