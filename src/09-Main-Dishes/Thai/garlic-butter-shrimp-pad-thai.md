@@ -59,3 +59,6 @@
 ## References and Acknowledgments
 
 [Garlic Butter Shrimp Pad Thai](https://www.halfbakedharvest.com/shrimp-pad-thai/#bo-recipe)
+
+## Tags
+verified

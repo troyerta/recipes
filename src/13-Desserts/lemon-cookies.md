@@ -70,3 +70,6 @@
 ## References and Acknowledgments
 
 Adapted from [Lemon Cookies](https://thefirstyearblog.com/lemon-sugar-cookies/)
+
+## Tags
+verified

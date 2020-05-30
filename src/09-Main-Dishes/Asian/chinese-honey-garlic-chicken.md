@@ -53,3 +53,6 @@
 ## References and Acknowledgments
 
 [Chinese Honey Garlic Chicken](http://lecremedelacrumb.com/2014/05/chinese-honey-garlic-chicken.html)
+
+## Tags
+verified

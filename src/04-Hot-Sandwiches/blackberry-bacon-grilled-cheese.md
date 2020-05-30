@@ -28,15 +28,22 @@
 
 1. Butter one side of each slice of bread. Place bread, butter side down, in skillet.
 ---
+
 2. Top one piece of bread with cheese, bacon, and jalapeños.
 ---
+
 3. Top the other piece of bread with blackberry jam.
 ---
+
 4. Put sandwich together; grill over medium heat, flipping after 4-5 minutes.
 ---
+
 5. Grill until both sides are golden brown and cheese is melted.
 ---
 
 ## References and Acknowledgments
 
 [Blackberry Bacon Grilled Cheese - Cathy Trochelman](https://www.lemontreedwelling.com/blackberry-bacon-grilled-cheese/)
+
+## Tags
+verified

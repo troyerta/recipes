@@ -11,21 +11,19 @@
 
 ## Ingredients
 
-- 2 ounces spaghetti (about 3/4 box)
+- 12 ounces spaghetti (about 3/4 box)
 
--  ½ ounces of slab guanciale (see recipe), pancetta or bacon, sliced into pieces about 1/4 inch thick by
-- /3 inch square
+- 3½ ounces of slab guanciale (see recipe), pancetta or bacon, sliced into pieces about 1/4 inch thick by 1/3 inch square
 
--  large eggs and 2 large yolks, room temperature
+- 2 large eggs and 2 large yolks, room temperature
 
--  ounce (about 1/3 packed cup) grated pecorino Romano, plus additional for serving
+- 1 ounce (about 1/3 packed cup) grated pecorino Romano, plus additional for serving
 
--  ounce (about 1/3 packed cup) grated Parmesan
+- 1 ounce (about 1/3 packed cup) grated Parmesan
 
-- oarsely ground black pepper
+- coarsely ground black pepper
 
--  tablespoon olive oil
-
+- 1 Tablespoon olive oil
 
 ## Method
 

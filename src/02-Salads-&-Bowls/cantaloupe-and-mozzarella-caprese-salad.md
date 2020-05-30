@@ -43,5 +43,4 @@
 [Cantaloupe and Mozzarella Caprese Salad](https://www.foodiecrush.com/cantaloupe-and-mozzarella-caprese-salad/#wprm-recipe-container-36180)
 
 ## Tags
-
-
+verified

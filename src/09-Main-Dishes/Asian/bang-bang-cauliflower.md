@@ -71,3 +71,6 @@
 ## References and Acknowledgments
 
 [Spruce Eats - Bang Bang Cauliflower](https://www.thespruceeats.com/bang-bang-cauliflower-4684549)
+
+## Tags
+verified

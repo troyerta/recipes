@@ -357,7 +357,7 @@
     - [Cajun Chicken](./09-Main-Dishes/Creole-Carribean/cajun-chicken.md)
     - [Caribbean Grilled Prawns](./09-Main-Dishes/Creole-Carribean/caribbean-grilled-prawns.md)
     - [Carribean Shrimp Tacos](./09-Main-Dishes/Creole-Carribean/carribean-shrimp-tacos.md)
-    - [Grilled Coconut and Pineapple Sweet](./09-Main-Dishes/Creole-Carribean/grilled-coconut-and-pineapple-sweet.md)
+    - [Grilled Coconut and Pineapple Sweet Chili Shrimp](./09-Main-Dishes/Creole-Carribean/grilled-coconut-and-pineapple-sweet-chili-shrimp.md)
     - [Grilled Pineapple and Chicken](./09-Main-Dishes/Creole-Carribean/grilled-pineapple-and-chicken.md)
     - [Grilled Pineapple Ham Kabobs Recipe](./09-Main-Dishes/Creole-Carribean/grilled-pineapple-ham-kabobs-recipe.md)
     - [Hawaiian Chicken Skewers](./09-Main-Dishes/Creole-Carribean/hawaiian-chicken-skewers.md)

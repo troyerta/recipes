@@ -47,3 +47,6 @@
 ## References and Acknowledgments
 
 [Bazlama Turkish Flatbread](https://old.reddit.com/r/GifRecipes/comments/g2dsym/bazlama_turkish_flatbread/fnktcgq/)
+
+## Tags
+verified

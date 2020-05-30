@@ -1,5 +1,6 @@
 #!./venv/bin/python3
 
+import itertools
 import sys
 import os
 import re
@@ -165,6 +166,92 @@ def fix_image_link( target_file ):
         return False
 
 '''
+Just determine if a recipe has a tags section header or not
+'''
+def get_recipe_tag_section( file ):
+    with open( file, 'r' ) as fi:
+        file_data = fi.read()
+        # Add a newline to the data to handle files without an empty line at the end of the file
+        return re.search( r'^#*\s*[tT]ags:?\n*(^\w.+\s{0,2})*', file_data+"\n", flags=re.MULTILINE )
+
+'''
+Return a list of tags, empty if no tags present in file
+'''
+def get_recipe_tags( file ):
+    tag_list = list()
+
+    tag_section = get_recipe_tag_section( file )
+    if tag_section:
+        # Found the tags section, now return a list of the tags. Return an empty list is no tags are present
+        tags_text_match = re.search( r'^([^#].+\s)+', tag_section.group(0), flags=re.MULTILINE )
+        if tags_text_match:
+            tag_list = tags_text_match.group(0).splitlines()
+            tag_list = [tag for tag in tag_list if tag != '']
+    return tag_list
+
+'''
+Always normalizes the tag section text
+'''
+def add_recipe_tags( file, tag_list ):
+    curr_tag_section = get_recipe_tag_section( file )
+    curr_tags = list()
+    new_tag_section = "## Tags\n"
+
+    # Get current tags
+    if curr_tag_section:
+        curr_tags = get_recipe_tags( file )
+
+    [curr_tags.append( tag ) for tag in tag_list if tag not in curr_tags]
+    curr_tags.sort()
+
+    for tag in curr_tags:
+        new_tag_section += tag + "\n"
+
+    # Write back to the recipe file
+    with open( file, 'r' ) as fi:
+        file_data = fi.read().rstrip("\n")
+
+    if curr_tag_section:
+        new_data = re.sub( r'^#*\s*[tT]ags:?\n*(^\w.+\s{0,2})*', new_tag_section, file_data+"\n", flags=re.MULTILINE )
+    else:
+        new_data = file_data + "\n\n" + new_tag_section
+
+    with open( file, 'w' ) as fi:
+        fi.write(new_data)
+
+    return curr_tags
+
+'''
+Always normalizes the tag section text - UNTESTED
+'''
+def remove_recipe_tags( file, tag_list ):
+    curr_tag_section = get_recipe_tag_section( file )
+    curr_tags = list()
+    new_tag_section = "## Tags\n"
+
+    # Get current tags
+    if curr_tag_section:
+        curr_tags = get_recipe_tags( file )
+        [curr_tags.remove( tag ) for tag in tag_list if tag in curr_tags]
+        curr_tags.sort()
+
+    for tag in curr_tags:
+        new_tag_section += tag + "\n"
+
+    # Write back to the recipe file
+    with open( file, 'r' ) as fi:
+        file_data = fi.read().rstrip("\n")
+
+    new_data = re.sub( curr_tag_section.group(0), new_tag_section, file_data+"\n", flags=re.MULTILINE )
+    print("Untested function, exiting..")
+    sys.exit()
+
+    with open( file, 'w' ) as fi:
+        fi.write(new_data)
+
+    return curr_tags
+
+'''
 Worker function for the script. Runs the 3 major tasks of the photo processor
 '''
 def proc_photos():
@@ -196,7 +283,10 @@ def proc_photos():
             image_rel_link = photo_relpath_from_recipe_path( md_file )
             asset_img = os.path.join( PHOTO_DIR, photo_filename_from_recipe_path( md_file ) )
 
+            # Is the listed relative link to the image wrong?
             if( image_rel_link != img_match.group(2) ):
+
+                # Are we able to fix the link successfully?
                 if fix_image_link( md_file ) == True:
                     print("\tUpdated image reference in", md_file)
                     image_files.remove( os.path.join( PHOTO_DIR, photo_filename_from_recipe_path( md_file ) ) )
@@ -204,11 +294,16 @@ def proc_photos():
                     print("\t" + md_file, "contains mismatched image link.\n\tExpected " + "\'" + image_rel_link + "\'" + "\n\twas " + "\'" + img_match.group(2) + "\'" )
                     print("\tI tried to update the link, but failed to find the current image reference")
                     quit()
+            # If the link is correct, does the jpg actually exist?
             elif not isfile( asset_img ):
                 print("Could not find", asset_img, "for", md_file)
                 quit()
+            # Image file is accounted for, remove it from the list of remaining image files to process
             else:
                 image_files.remove( os.path.join( PHOTO_DIR, photo_filename_from_recipe_path( md_file ) ) )
+
+            # Make sure each photographed recipe gets the verified tag
+            add_recipe_tags( md_file, ["verified"] )
 
     print("Looking for unreferenced photos..")
     if len(image_files) > 0:

@@ -1,4 +1,4 @@
-# Grilled Coconut and Pineapple Sweet
+# Grilled Coconut and Pineapple Sweet Chili Shrimp
 
 ## Overview
 
@@ -11,9 +11,9 @@
 
 #### Coconut and Pineapple Sweet Chili Sauce:
 
-- 3 tablespoons coconut cream*
+- 3 tablespoons coconut cream
 
-- 3 tablespoons pineapple sweet chili sauce**
+- 3 tablespoons pineapple sweet chili sauce*
 
 - 1 teaspoon sriracha, or to taste
 
@@ -37,6 +37,10 @@
 2. Brush the sauce onto the shrimp and enjoy!
 ---
 
+#### Notes
+
+- You can just puree the pineapple into the chili sauce for a smoother consistency.
+
 ## References and Acknowledgments
 
-[Grilled Coconut and Pineapple Sweet](http://www.closetcooking.com/2015/06/grilled-coconut-and-pineapple-sweet.html)
+[Grilled Coconut and Pineapple Sweet Chili Shrimp](http://www.closetcooking.com/2015/06/grilled-coconut-and-pineapple-sweet.html)
