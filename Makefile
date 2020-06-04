@@ -7,7 +7,7 @@ save:
 	@./venv/bin/python3 summary_generator.py
 	@./venv/bin/python3 photo_processor.py
 	@echo "====> rebuilding the book.."
-	mdbook build
+	@mdbook build
 	@echo "====> done"
 	@echo "====> adding tracked files"
 	@git add -u
@@ -16,11 +16,11 @@ save:
 	@echo "====> committing changes"
 	@git commit -m 'Auto-commit on $(shell date)'
 	@echo "====> pushing book source to github.com/troyerta/recipes/"
-	git push origin HEAD:master
+	@git push origin HEAD:master
 	@echo "====> resetting workspace"
 	@git checkout origin/master
 	@git delbr master
-	git checkout -b master
+	@git checkout -b master
 	@git delbr save
 	@echo "====> Done!"
 
@@ -35,7 +35,7 @@ deploy: book
 	@echo "====> copying over the new book"
 	@cp -rp book/* ./tmp_book/
 	@echo "====> committing and pushing new book to gh-pages branch"
-	cd ./tmp_book && \
+	@cd ./tmp_book && \
 		git checkout -b tmp && \
 		git add -A && \
 		git commit -m "deployed on $(shell date) by ${USER}" && \
