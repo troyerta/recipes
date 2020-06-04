@@ -6,25 +6,39 @@
 
 ## Ingredients
 
-- 255g  cake flour
+- 255g cake flour
 
-- 1 1/2 tsp  baking powder
+- 1 1/2 tsp baking powder
 
-- 1 tsp  kosher salt
+- 1 tsp kosher salt
 
-- 1/2 tsp  ground nutmeg
+- 1/2 tsp ground nutmeg
 
-- 100g  sugar
+- 100g sugar
 
 - Zest of 1 lemon
 
-- 2 Tbsp  unsalted butter, room temperature
+- 2 Tbsp unsalted butter, room temperature
 
-- 2  large egg yolks
+- 2 large egg yolks
 
-- 150g  sour cream
+- 150g sour cream
 
 - Canola oil, for frying
+
+#### Glaze:
+
+- 350g powdered sugar, sifted
+
+- 1 tsp light corn syrup
+
+- 1/4 tsp kosher salt
+
+- 1/2 tsp vanilla extract
+
+- 75ml lemon juice, freshly squeezed (about 3 lemons)
+
+- Poppy seeds
 
 ## Method
 
@@ -46,8 +60,14 @@
 6. Carefully add two dough rounds to the hot oil. Once the donuts float, about 10-15 seconds, gently flip them over. Fry for 2 minutes, until cracked and lightly golden, then flip over and fry the other side for 2 minutes. Again, flip over and fry for 1 minute. Flip once more and fry for another 1 minute. Transfer to the prepared cooling wrack. Immediately, coat each donut with glaze, flip over and glaze each of their tops. Sprinkle generously with poppy seeds. Repeat frying (allowing oil to reheat to 325F between each addition) and glazing process until all donuts are coated. Scrape up the glaze drippings that fall onto the parchment paper and reuse to finish coating donuts if needed.
 ---
 
-7. Serve donuts warm or allow them to cool, store, and enjoy the next day. Store leftover donuts, in an airtight container, at room temperature. Donuts taste even better the following day as the glaze seeps into the donuts and seals in moisture.
+#### Glaze:
+
+1. In a bowl, whisk together powdered sugar, light corn syrup, salt, vanilla, and lemon juice until smooth. Any leftover glaze may be stored in an airtight container for up to 1 week.
 ---
+
+## Notes
+
+- Serve donuts warm or allow them to cool, store, and enjoy the next day. Store leftover donuts, in an airtight container, at room temperature. Donuts taste even better the following day as the glaze seeps into the donuts and seals in moisture.
 
 ## References and Acknowledgments
 
