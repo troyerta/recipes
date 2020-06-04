@@ -19,6 +19,7 @@
 [Garlic Pull Apart Bread Parmesan Herb](./garlic-pull-apart-bread-parmesan-herb.md)<br><br>
 [Glazed Apple Cinnamon Oatmeal Bread](./glazed-apple-cinnamon-oatmeal-bread.md)<br><br>
 [Gozleme Turkish Spinach and Feta Flatbread](./gozleme-turkish-spinach-and-feta-flatbread.md)<br><br>
+[Herbed Ricotta Cheesy Bread](./herbed-ricotta-cheesy-bread.md)<br><br>
 [Homemade Garlic Naan](./homemade-garlic-naan.md)<br><br>
 [Italian Cheese Bread](./italian-cheese-bread.md)<br><br>
 [Jazz Fest Styled Crawfish Bread](./jazz-fest-styled-crawfish-bread.md)<br><br>
@@ -33,7 +34,9 @@
 [Pull Apart Garlic Butter Bread Wreath](./pull-apart-garlic-butter-bread-wreath.md)<br><br>
 [Pull Apart Garlic Rolls](./pull-apart-garlic-rolls.md)<br><br>
 [Pumpkin Cream Cheese Swirl Muffins](./pumpkin-cream-cheese-swirl-muffins.md)<br><br>
+[Rosemary Sea Salt Sweet Potato Rolls](./rosemary-sea-salt-sweet-potato-rolls.md)<br><br>
 [Soft Wrap Bread](./soft-wrap-bread.md)<br><br>
+[Street Style Chinese Scallion Pancakes](./street-style-chinese-scallion-pancakes.md)<br><br>
 [Troyer Banana Bread](./troyer-banana-bread.md)<br><br>
 [Unbelievably Easy Artisan Rolls](./unbelievably-easy-artisan-rolls.md)<br><br>
 [Vegan Pretzel Bread](./vegan-pretzel-bread.md)<br><br>

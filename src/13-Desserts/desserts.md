@@ -80,5 +80,6 @@
 [Soft Lemon Cream Cheese Cookies](./soft-lemon-cream-cheese-cookies.md)<br><br>
 [Spiced Poppy Seed Cake with Almond Buttercream Frosting](./spiced-poppy-seed-cake-with-almond-buttercream-frosting.md)<br><br>
 [Strawberry Champagne Cookies](./strawberry-champagne-cookies.md)<br><br>
+[Summer Solstice Honey Cake](./summer-solstice-honey-cake.md)<br><br>
 [Toffee Crunch Chocolate Cookies](./toffee-crunch-chocolate-cookies.md)<br><br>
 [Wild Blueberry Lavender Coconut Ice Cream](./wild-blueberry-lavender-coconut-ice-cream.md)<br><br>

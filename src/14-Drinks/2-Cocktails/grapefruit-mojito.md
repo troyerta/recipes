@@ -1,5 +1,9 @@
 # Grapefruit Mojito
 
+<p align="center">
+<img title="Grapefruit Mojito" src="../../assets/grapefruit-mojito.jpg">
+</p>
+
 ## Overview
 
 - Serves: 2
@@ -43,5 +47,4 @@
 [Champagne Grapefruit Mojito](http://www.callmepmc.com/2015/03/champagne-grapefruit-mojito/)
 
 ## Tags
-
-
+verified

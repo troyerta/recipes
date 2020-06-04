@@ -1,5 +1,9 @@
 # Grilled Coconut and Pineapple Sweet Chili Shrimp
 
+<p align="center">
+<img title="Grilled Coconut And Pineapple Sweet Chili Shrimp" src="../../assets/grilled-coconut-and-pineapple-sweet-chili-shrimp.jpg">
+</p>
+
 ## Overview
 
 - Yield: 4 servings
@@ -44,3 +48,6 @@
 ## References and Acknowledgments
 
 [Grilled Coconut and Pineapple Sweet Chili Shrimp](http://www.closetcooking.com/2015/06/grilled-coconut-and-pineapple-sweet.html)
+
+## Tags
+verified

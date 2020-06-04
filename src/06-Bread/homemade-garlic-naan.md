@@ -1,5 +1,9 @@
 # Homemade Garlic Naan
 
+<p align="center">
+<img title="Homemade Garlic Naan" src="../assets/homemade-garlic-naan.jpg">
+</p>
+
 ## Overview
 
 - Yield: 12 naan flatbreads
@@ -46,3 +50,6 @@
 ## References and Acknowledgments
 
 [Homemade Garlic Naan](https://hostthetoast.com/homemade-garlic-naan/)
+
+## Tags
+verified

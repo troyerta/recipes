@@ -1,5 +1,9 @@
 # Cauliflower and Chickpea Coconut Curry
 
+<p align="center">
+<img title="Cauliflower And Chickpea Coconut Curry" src="../assets/cauliflower-and-chickpea-coconut-curry.jpg">
+</p>
+
 ## Overview
 
 - Yield: 4 servings
@@ -66,5 +70,4 @@
 [Cauliflower and Chickpea Coconut Curry](https://veganhuggs.com/chickpea-coconut-curry/?fbclid=IwAR3kybzVGFv9DTZAKL0Tjyn0GNSnsVffOK0rUDd_HPjMfb3JtYiTedrSgm8)
 
 ## Tags
-
-
+verified
