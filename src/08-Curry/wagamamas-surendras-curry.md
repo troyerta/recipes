@@ -1,4 +1,4 @@
-# Wagamama'S Surendra'S Curry
+# Wagamama's Surendra's Curry
 
 ## Overview
 
@@ -58,4 +58,4 @@
 
 ## References and Acknowledgments
 
-[Wagamama'S Surendra'S Curry](http://www.mobkitchen.co.uk/recipes/wagamamas-curry)
+[Wagamama's Surendra's Curry](http://www.mobkitchen.co.uk/recipes/wagamamas-curry)

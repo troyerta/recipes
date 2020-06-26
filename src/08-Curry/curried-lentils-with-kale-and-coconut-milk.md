@@ -43,19 +43,25 @@
 
 ## Method
 
-1.In a large pot over medium-high, combine the oil, onion, garlic and 1 teaspoon salt. When you hear a sizzle, cover the pot, turn heat to low, and cook, stirring every so often, until the onion has softened and is just beginning to color, 7 to 9 minutes.
+1. In a large pot over medium-high, combine the oil, onion, garlic and 1 teaspoon salt. When you hear a sizzle, cover the pot, turn heat to low, and cook, stirring every so often, until the onion has softened and is just beginning to color, 7 to 9 minutes.
 ---
-2.Stir in the ginger, the mustard seeds, turmeric, coriander, fennel and red pepper flakes. Cook, stirring often, until fragrant, about 1 minute.
+
+2. Stir in the ginger, the mustard seeds, turmeric, coriander, fennel and red pepper flakes. Cook, stirring often, until fragrant, about 1 minute.
 ---
-3.Add the water, coconut milk, lentils, and remaining 1/2 teaspoon salt, then bring to a boil.
+
+3. Add the water, coconut milk, lentils, and remaining 1/2 teaspoon salt, then bring to a boil.
 ---
-4.Reduce to low, cover and simmer, stirring once or twice, until the lentils have broken down, 40 to 50 minutes.
+
+4. Reduce to low, cover and simmer, stirring once or twice, until the lentils have broken down, 40 to 50 minutes.
 ---
-5.Stir in the kale and return to a simmer.
+
+5. Stir in the kale and return to a simmer.
 ---
-6.Taste and season with salt if desired.
+
+6. Taste and season with salt if desired.
 ---
-7.Serve immediately or cool and refrigerate for a future day — it’s good cold straight from the fridge.
+
+7. Serve immediately or cool and refrigerate for a future day — it’s good cold straight from the fridge.
 ---
 
 ## Notes

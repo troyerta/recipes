@@ -1,3 +1,0 @@
-
-- Find way to normalize photo size - pythons pillow lib
-- Add photos

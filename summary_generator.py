@@ -8,23 +8,9 @@ import re
 import shutil
 import fnmatch
 
-# Update the SUMMARY.md file according to the sorted contents found in src/
 
-SRC_DIR = "src/src_sorted"
-SRC_NEW = "src/src_renamed"
 PHOTO_DIR = "./src/assets"
-
 SUMMARY_PATH = "./src/SUMMARY.md"
-
-
-def usage():
-    return """Usage: %s [-f]
-Print tree structure of path specified.
-Options:
--f      Print files as well as directories
-PATH    Path to process""" % basename(
-        argv[0]
-    )
 
 
 f = open(SUMMARY_PATH, "w")
@@ -421,45 +407,11 @@ def get_all_things():
             fi.write("[" + re.sub("-", " ", title_from_path(ch)) + "](" + rel_path + ")<br><br>\n")
 
 
-def find_files(dir=".", glob=r"*"):
-    matches = list()
-
-    for file in os.listdir(dir):
-        if fnmatch.fnmatch(file, glob):
-            matches.append(file)
-    # print(glob)
-    # print(os.listdir( dir ))
-    # print(matches)
-    # sys.exit()
-
-    if matches:
-        return [os.path.join(dir, match) for match in matches]
-    else:
-        return list()
-
-
-def rename_files():
-    print("processing files")
-
-    # Get recipe name:
-    file_list = find_files(dir=SRC_DIR, glob=r"*.md")
-    # print( file_list )
-
-    for fi in file_list:
-        basename = os.path.basename(fi)
-        new_path = os.path.join(SRC_NEW, re.sub("ch\d*-\d*-", "", basename.lower()))
-        shutil.copy(fi, new_path)
-
-    sys.exit()
-
-
 def workerFunction():
-    # tree()
     get_all_things()
-    # rename_files()
 
 
-if __name__ == "__main__":
-    workerFunction()
+    if __name__ == "__main__":
+        workerFunction()
 
 f.close()

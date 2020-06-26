@@ -289,24 +289,33 @@ class Recipe:
 
         formatted_output = str()
         lines_in_steps = str()
+        step_idx = 1
 
         steps_match = re.search(r"(?:^STEPS\n\n)((.*\n)+)", noteless_data, flags=re.MULTILINE)
         if steps_match:
             all_lines = steps_match.group(1).splitlines()
             lines_in_steps = [line for line in all_lines if line != ""]
+        else:
+            error( "No steps section found!" )
 
         for step in lines_in_steps:
             step_match = re.search(r"^(\d+)\) (.*)", step)
             sub_step_title_match = re.search(r"^(.*:)", step)
 
             if step_match:
-                formatted_output += step_match.group(1) + ". " + step_match.group(2) + "\n"
+                formatted_output += str(step_idx) + ". " + step_match.group(2) + "\n"
                 formatted_output += "---\n\n"
+                step_idx += 1
             elif sub_step_title_match:
                 formatted_output += "#### " + self.clean_subsection(sub_step_title_match.group(1)) + "\n\n"
+                # Reset the step index for each sub section we come across
+                step_idx = 1
             else:
-                print("Steps section contains unreadable line:", step)
-                sys.exit()
+                # Just an incorrectly labeled "floating" step
+                formatted_output += str(step_idx) + ". " + step + "\n"
+                formatted_output += "---\n\n"
+                step_idx += 1
+
         return formatted_output
 
     def create_out_file(self):
@@ -450,9 +459,9 @@ def workerFunction():
         target_recipe = Recipe(target, TEMPLATE_PATH, OUTPUT_PATH)
         target_recipe.parse_data()
         # target_recipe.set_times_manually()
-        # target_recipe.set_times_automatically()
-        # target_recipe.create_out_file()
-        # target_recipe.print_to_out_file()
+        target_recipe.set_times_automatically()
+        target_recipe.create_out_file()
+        target_recipe.print_to_out_file()
         # target_recipe.clean_up()
 
     elif isdir(target):

@@ -1,5 +1,9 @@
 # Slow Cooker Braised Hawaiian Pineapple Chicken Tacos
 
+<p align="center">
+<img title="Slow Cooker Braised Hawaiian Pineapple Chicken Tacos" src="../../assets/slow-cooker-braised-hawaiian-pineapple-chicken-tacos.jpg">
+</p>
+
 ## Overview
 
 - Yield: 6
@@ -82,3 +86,6 @@
 ## References and Acknowledgments
 
 [Slow Cooker Braised Hawaiian Pineapple Chicken Tacos](https://www.halfbakedharvest.com/hawaiian-pineapple-chicken-tacos/#bo-recipe)
+
+## Tags
+verified

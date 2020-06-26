@@ -1,5 +1,9 @@
 # Cucumber Rosemary Gin & Tonic
 
+<p align="center">
+<img title="Cucumber Rosemary Gin And Tonic" src="../../assets/cucumber-rosemary-gin-and-tonic.jpg">
+</p>
+
 ## Overview
 
 - Yield: 1
@@ -35,5 +39,4 @@
 [Cucumber Rosemary Gin & Tonic](https://www.thekitchn.com/recipe-cucumberrosemary-gin-an-124907)
 
 ## Tags
-
-
+verified

@@ -6,10 +6,10 @@
 
 ## Overview:
 
-Prep time: 30 minutes
-Cook time: 30 minutes
-Marinating time: 30 minutes minimum, 8 hours maximum
-Yield: 4 servings
+- Prep time: 30 minutes
+- Cook time: 30 minutes
+- Marinating time: 30 minutes minimum, 8 hours maximum
+- Yield: 4 servings
 
 ## Marinade:
 

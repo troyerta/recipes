@@ -1,5 +1,9 @@
 # Greek Meatballs & Lemon Butter Orzo
 
+<p align="center">
+<img title="Greek Meatballs & Lemon Butter Orzo" src="../assets/greek-meatballs-&-lemon-butter-orzo.jpg">
+</p>
+
 Pan-seared Greek seasoned chicken meatballs, cooked together with lemon butter orzo pasta, for a complete dinner made in just one skillet.
 
 ## Overview
@@ -73,3 +77,6 @@ Pan-seared Greek seasoned chicken meatballs, cooked together with lemon butter o
 ## References and Acknowledgments
 
 [Greek Meatballs & Lemon Butter Orzo](https://www.halfbakedharvest.com/one-skillet-greek-meatballs-and-lemon-butter-orzo/#bo-recipe)
+
+## Tags
+verified
