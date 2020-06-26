@@ -22,5 +22,5 @@
 [Squash and Peanut Butter Curry](./squash-and-peanut-butter-curry.md)<br><br>
 [Summer Coconut Chickpea Curry with Rice and Fried Halloumi](./summer-coconut-chickpea-curry-with-rice-and-fried-halloumi.md)<br><br>
 [Sweet Potato Lentil Curry with Crispy Sesame Chickpeas](./sweet-potato-lentil-curry-with-crispy-sesame-chickpeas.md)<br><br>
-[Wagamama'S Surendra'S Curry](./wagamama's-surendra's-curry.md)<br><br>
 [Wagamama Chicken Katsu Curry with Rice](./wagamama-chicken-katsu-curry-with-rice.md)<br><br>
+[Wagamamas Surendras Curry](./wagamamas-surendras-curry.md)<br><br>

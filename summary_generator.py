@@ -411,7 +411,7 @@ def workerFunction():
     get_all_things()
 
 
-    if __name__ == "__main__":
-        workerFunction()
+if __name__ == "__main__":
+    workerFunction()
 
 f.close()
