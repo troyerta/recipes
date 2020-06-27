@@ -1,18 +1,19 @@
-#!/usr/bin/env python3
+#!./venv/bin/python3
 
 import os
 import sys
-from pathlib import *
+# from pathlib import *
 import re
 import shutil
-import subprocess
+# import subprocess
+import argparse
 
 # TODO: Fix and simplify summary generator to accept a single ignore list of files and dirs
 
 '''
 Usage:
 
-python rbook.py update -n
+python rbook.py -n
 Looking for things to do..
 Looking for imports in ./imports/copymethat..
   Would parse some_recipe.txt
@@ -109,6 +110,8 @@ Generate the SUMMARY.md file
 Write all the TOCs and the about file
 '''
 
+SRC_DIR = "src"
+DRAFTS_DIR = "drafts"
 PHOTO_DIR = "src/assets"
 PHOTO_WIDTH = 600
 IMAGE_STRUCT = '<p align="center">\n\
@@ -139,12 +142,12 @@ def print_done():
     print( "\033[92m " + "DONE!" + "\033[00m" )
 
 class Rbook:
-    def __init__( self, assets_dir, drafts_dir, src_dir ):
+    def __init__( self, assets_dir, drafts_dir, src_dir, dry_run ):
 
         self.assets_path = os.path.normpath( assets_dir )
         self.drafts_path = os.path.normpath( drafts_dir )
         self.src_path = os.path.normpath( src_dir )
-        self.dry_update = False
+        self.dry_update = dry_run
         self.photo_files = list_files(assets_dir, ".jpg")
         self.md_files = list_files("src", ".md")
 
@@ -169,34 +172,48 @@ class Rbook:
 def workerFunction():
     print( "Looking for things to do.." )
 
-    '''
-    # Modify md files
+    # Collect the dry run flag from passed in args
+    parser = argparse.ArgumentParser(prog='RBook')
+    parser.add_argument('-f', action='store_true')
+    args = parser.parse_args(sys.argv[1:])
 
-    Handle new photos, and add links to recipes
-    Test all photo links in the book
-    Check for orphaned photos
-    Enforce "verified" tags
+    book = Rbook( PHOTO_DIR, DRAFTS_DIR, SRC_DIR, args.f )
+
+    # Modify md files
+        # Handle new photos, and add links to recipes
+        # Test all photo links in the book
+        # Check for orphaned photos
+        # Enforce "verified" tags
+    book.proc_new_photos()
+    book.update_photo_links()
+    book.check_orphan_photos()
+    book.enforce_verify_tags()
 
     # All recipe file modification is done by now
-
-    Get a list of modifed recipes using timestamps
-    Update those entries in the DB, adding if necessary, adding all fields for each recipe
-    Look for any recipes in the DB, not found as an md file - delete from DB.
+        # Get a list of modifed recipes using timestamps
+        # Update those entries in the DB, adding if necessary, adding all fields for each recipe
+        # Look for any recipes in the DB, not found as an md file - delete from DB.
+    modified = book.get_modified_recipes()
+    book.add_update_db( modifed )
+    orphaned = book.get_orphaned_recipes_db()
+    book.trim_db( orphaned )
 
     # Mdbook and DB are now up-to date with each other
-
-    Collect lists of books files - recipes, chapters, sections, dirfiles, summary exclusions, etc.
-    Generate the SUMMARY.md file
-    Write all the TOCs and the about file
-    '''
+        # Collect lists of books files - recipes, chapters, sections, dirfiles, summary exclusions, etc.
+        # Generate the SUMMARY.md file
+        # Write all the TOCs and the about file
+    book.get_objects()
+    book.update_summary()
+    book.update_tocs()
+    book.update_about()
+    # A new page that shows how many recipes are verified, how many total, current update rate, etc.
+    book.update_stats()
 
     age = os.stat("links_and_times.txt").st_mtime
     print(age)
 
-    book = Rbook( PHOTO_DIR, "drafts", "src" )
-    book.add_new_photo_links()
-
     print( "end of update" )
+
     print_done()
 
 
