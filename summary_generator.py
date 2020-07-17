@@ -87,11 +87,9 @@ def print_tree(
     dir,
     padding,
     fPadding,
-    chapter_dirs,
-    section_dirs,
     dirfiles,
-    recipes,
     about_file,
+    not_found_file,
     print_files=False,
     isLast=False,
     isFirst=False,
@@ -105,13 +103,13 @@ def print_tree(
 
         if isLast:
             # print( padding[:-1] + '└── ' + title_from_path(dir) )
-            if dir in chapter_dirs:
-                f.write("\n# " + title_from_path(dir) + "\n\n")
+            # if dir in chapter_dirs:
+                # f.write("\n# " + title_from_path(dir) + "\n\n")
             f.write(fPadding[:-1] + "- [" + re.sub("-", " ", title_from_path(dir)) + "](" + dfile + ")\n")
         else:
             # print( padding[:-1] + '├── ' + basename(abspath(dir)) )
-            if dir in chapter_dirs:
-                f.write("\n# " + title_from_path(dir) + "\n\n")
+            # if dir in chapter_dirs:
+                # f.write("\n# " + title_from_path(dir) + "\n\n")
             f.write(fPadding[:-1] + "- [" + re.sub("-", " ", title_from_path(dir)) + "](" + dfile + ")\n")
     files = []
     if print_files:
@@ -141,11 +139,9 @@ def print_tree(
                         path,
                         padding + " ",
                         fPadding + " ",
-                        chapter_dirs,
-                        section_dirs,
                         dirfiles,
-                        recipes,
                         about_file,
+                        not_found_file,
                         print_files,
                         isLast,
                         False,
@@ -155,11 +151,9 @@ def print_tree(
                         path,
                         padding + " ",
                         fPadding + " ",
-                        chapter_dirs,
-                        section_dirs,
                         dirfiles,
-                        recipes,
                         about_file,
+                        not_found_file,
                         print_files,
                         isLast,
                         False,
@@ -169,11 +163,9 @@ def print_tree(
                     path,
                     padding + "│",
                     fPadding + " ",
-                    chapter_dirs,
-                    section_dirs,
                     dirfiles,
-                    recipes,
                     about_file,
+                    not_found_file,
                     print_files,
                     isLast,
                     False,
@@ -195,6 +187,8 @@ def print_tree(
 
                 if path == about_file:
                     f.write(fPadding + recipe_line(fpath))
+                elif path == not_found_file:
+                    pass
                 elif path == SUMMARY_PATH:
                     pass
                 elif path.startswith(PHOTO_DIR):
@@ -230,11 +224,11 @@ def get_all_things():
             # print( "file", os.path.join(root, file) )
             file_list.append(os.path.join(root, file))
 
-    print("")
-    [print(x) for x in dir_list]
-    print("")
-    [print(x) for x in file_list]
-    print("")
+    # print("")
+    # [print(x) for x in dir_list]
+    # print("")
+    # [print(x) for x in file_list]
+    # print("")
 
     # Create sorted lists: chapter_dirs, section_dirs, dirfiles, recipes
     chapter_dirs = list()
@@ -284,6 +278,11 @@ def get_all_things():
     # print("About", about_file)
     if about_file in file_list:
         file_list.remove(about_file)
+
+    not_found_file = os.path.join(rootpath, "404.md")
+
+    if not_found_file in file_list:
+        file_list.remove(not_found_file)
     # else:
     #     print( "No about.md found. Generating", about_file )
     #     with open( about_file, 'w' ) as fi:
@@ -317,7 +316,7 @@ def get_all_things():
     )
 
     print_tree(
-        rootpath, "", "", chapter_dirs, section_dirs, dirfiles, recipes, about_file, True, False, True,
+        rootpath, "", "", dirfiles, about_file, not_found_file, True, False, True,
     )
 
     # Post process the Book

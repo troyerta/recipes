@@ -22,7 +22,7 @@
 [Lemon Garlic Chicken with A Salad Drizzled with Lemon Vinaigrette](./lemon-garlic-chicken-with-a-salad-drizzled-with-lemon-vinaigrette.md)<br><br>
 [Lentil Wild Rice Salad](./lentil-wild-rice-salad.md)<br><br>
 [Mexican Chopped Salad](./mexican-chopped-salad.md)<br><br>
-[Mexican Street Corn Salad  (Quick How To Video)](./mexican-street-corn-salad--(quick-how-to-video).md)<br><br>
+[Mexican Street Corn Salad](./mexican-street-corn-salad.md)<br><br>
 [Miso Tahini Roast Sweet Potato Bowls](./miso-tahini-roast-sweet-potato-bowls.md)<br><br>
 [Nutty Green Veggie Crunch Salad](./nutty-green-veggie-crunch-salad.md)<br><br>
 [Pear and Pomegranate Salad with Orange Poppyseed Vinaigrette](./pear-and-pomegranate-salad-with-orange-poppyseed-vinaigrette.md)<br><br>

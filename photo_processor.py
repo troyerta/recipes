@@ -305,6 +305,7 @@ Worker function for the script. Runs the 3 major tasks of the photo processor
 def proc_photos():
     # Make a list of every md file in the src dir, a list of their basenames, and a list of each jpg file in the assets dir
     image_files = list_files(PHOTO_DIR, ".jpg")
+    image_files.remove("src/assets/404.jpg")
     md_files = list_files("src", ".md")
     md_file_basenames = [os.path.basename(fi) for fi in md_files]
 
@@ -365,7 +366,7 @@ def proc_photos():
 
     print("Looking for unreferenced photos..")
     if len(image_files) > 0:
-        print("\tWarning - unreferenced images found:")
+        print("\tWarning - unreferenced images found")
         for image in image_files:
             print("\t\t" + image)
             possible_recipe = os.path.splitext(os.path.basename(image))[0] + ".md"

@@ -12,7 +12,7 @@
 [Homemade Animal Crackers](./homemade-animal-crackers.md)<br><br>
 [Jalapeno Popper Pretzel Bites](./jalapeno-popper-pretzel-bites.md)<br><br>
 [No Bake Chewy Granola Bars](./no-bake-chewy-granola-bars.md)<br><br>
-[Peanut Butter and Jelly Granola (Whole Foods Copycat)](./peanut-butter-and-jelly-granola-(whole-foods-copycat).md)<br><br>
+[Peanut Butter and Jelly Granola](./peanut-butter-and-jelly-granola.md)<br><br>
 [Pub Style Soft Pretzels with Ipa Cheese Dip](./pub-style-soft-pretzels-with-ipa-cheese-dip.md)<br><br>
 [Road Trip Energy Bar](./road-trip-energy-bar.md)<br><br>
 [Spicy Ranch Crackers](./spicy-ranch-crackers.md)<br><br>
