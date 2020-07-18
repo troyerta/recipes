@@ -38,8 +38,6 @@ def list_files(rootdir, ext):
 """
 Downscales the image target image size if necessary
 """
-
-
 def enforce_image_width(image_filepath, target_width):
     img = Image.open(image_filepath)
     # print(img.format)
@@ -55,16 +53,12 @@ def enforce_image_width(image_filepath, target_width):
 """
 Get something like "pork-brownies.jpg" from "src/desserts/pork-brownies.md"
 """
-
-
 def recipe_filename_from_photo_filename(path):
     return os.path.splitext(os.path.basename(path))[0] + ".md"
 
 """
 Get something like "pork-brownies.jpg" from "src/desserts/pork-brownies.md"
 """
-
-
 def photo_filename_from_recipe_path(path):
     return os.path.splitext(os.path.basename(path))[0] + ".jpg"
 
@@ -136,7 +130,6 @@ def find(root, file, first=True):
 Search for the img <p> in a recipe file, returning the match object
 The match object has two groups: the image title and rel link
 """
-
 def search_img_link_in_file(file):
     with open(file, "r") as fi:
         file_data = fi.read()
@@ -168,10 +161,19 @@ Ensures a linked image actually exists (only use after all links are added)
 """
 def enforce_linked_image_exists( file, photo_dir ):
     img_match = search_img_link_in_file(file)
-    asset_img = os.path.join(photo_dir, photo_filename_from_recipe_path(md_file))
-    if img_match and not isfile(asset_img):
-        print("Could not find", asset_img, "for", md_file)
-        quit()
+    asset_img = os.path.join(photo_dir, photo_filename_from_recipe_path(file))
+    if img_match:
+        # Search within the entire link tag to verify the written file's existence
+        link_data_match = re.search( r"<(?:.*title\s*=\s*\")(.+)(?:\"\s*src\s*=\s*\")(.*)(?:\"\s*>)", img_match.group(1), flags=re.MULTILINE )
+        title = link_data_match.group(1)
+        rel_link = link_data_match.group(2)
+        abs_link = os.path.join( photo_dir, os.path.basename(rel_link) )
+        if not isfile(abs_link):
+            print("Could not find", asset_img, "for", file)
+            quit()
+        if asset_img != abs_link:
+            print("Link appears to be incorrect")
+            quit()
 
 """
 Main photo processing function
@@ -197,16 +199,13 @@ def photo_processor( src_path, src_excludes, assets_dir, target_width_px, photo_
     # Open each theretical recipe file, and look inside it, check for correct link, add if not present, correct if wrong
     recipes_to_check = [find(src_path, recipe_filename_from_photo_filename(img)) for img in image_files]
     assert(len(recipes_to_check) == len(image_files))
-
     [enforce_image_link_exists(recipe, assets_dir) for recipe in recipes_to_check]
 
+    # Do these things for all md files in the book with an image link
     photod_recipes = [file for file in md_files if search_img_link_in_file( file )]
-    # [print(rp) for rp in photod_recipes]
-
-    # These need to be done for ALL md files
     [enforce_image_link_correct(recipe, assets_dir) for recipe in photod_recipes]
+    [enforce_linked_image_exists(recipe, assets_dir) for recipe in photod_recipes]
 
-    # [enforce_linked_image_exists(recipe) for recipe in photod_recipes]
     #
     # Open open every recipe with a image link at all, and do the same thing, but also check that each photo exists
 
