@@ -8,6 +8,8 @@ import shutil
 # import subprocess
 import argparse
 
+from photoProc import photo_processor
+
 # TODO: Fix and simplify summary generator to accept a single ignore list of files and dirs
 
 '''
@@ -110,13 +112,14 @@ Generate the SUMMARY.md file
 Write all the TOCs and the about file
 '''
 
-SRC_DIR = "src"
-DRAFTS_DIR = "drafts"
-PHOTO_DIR = "src/assets"
+SRC_DIR = "./fsrc"
+SUMMARY_FILE = "SUMMARY.md"
+DRAFTS_DIR = "./fdrafts"
+ABOUT_FILE = "about.md"
+REDIR_404_FILE = "404.md"
+REDIR_404_PHOTO = "404.jpg"
+PHOTO_DIR = "./fsrc/assets"
 PHOTO_WIDTH = 600
-IMAGE_STRUCT = '<p align="center">\n\
-<img title="{}" src="{}">\n\
-</p>\n'
 
 def error( indentation, msg ):
     print( (" " * indentation) + "\033[91m " + msg + "\033[00m" )
@@ -144,23 +147,21 @@ def print_done():
 class Rbook:
     def __init__( self, assets_dir, drafts_dir, src_dir, dry_run ):
 
-        self.assets_path = os.path.normpath( assets_dir )
-        self.drafts_path = os.path.normpath( drafts_dir )
-        self.src_path = os.path.normpath( src_dir )
+        self.assets_path = assets_dir
+        self.drafts_path = drafts_dir
+        self.src_path = src_dir
         self.dry_update = dry_run
         self.photo_files = list_files(assets_dir, ".jpg")
         self.md_files = list_files("src", ".md")
 
-    def add_new_photo_links( self ):
-        print("Checking for new photo links..")
-
-
-    def update_stale_photo_links( self ):
-        print("Testing image links..")
-
-
-    def check_for_unreferenced_photos( self ):
-        print("Looking for unreferenced photos..")
+    def proc_photos( self ):
+        photo_processor(
+                        self.src_path,
+                        [REDIR_404_FILE, ABOUT_FILE, SUMMARY_FILE],
+                        self.assets_path,
+                        PHOTO_WIDTH,
+                        [REDIR_404_PHOTO]
+                        )
 
     def generate_summary( self ):
         # open_file()
@@ -178,39 +179,44 @@ def workerFunction():
     args = parser.parse_args(sys.argv[1:])
 
     book = Rbook( PHOTO_DIR, DRAFTS_DIR, SRC_DIR, args.f )
-
-    # Modify md files
-        # Handle new photos, and add links to recipes
-        # Test all photo links in the book
-        # Check for orphaned photos
-        # Enforce "verified" tags
-    book.proc_new_photos()
-    book.update_photo_links()
-    book.check_orphan_photos()
-    book.enforce_verify_tags()
-
+    '''
+    Modify md files
+    '''
+    book.proc_photos()
+        # Get list of all photos, minus non-recipe-specific photos
+        # Make sure each photo is a specific size, resize if not.
+        # Make sure a matching recipe file exists, throw error if not
+        # If recipe file exists, open and check for photo link, add one if not present
+        # If already present, test the image title and link, to make sure they're valid (does photo exist, etc.)
+        # If photo tag is present and valid, make sure the verified tag is in place
+        # Now get all recipes that have photo links, and make sure the photos exist and enforce "verified" tags.
+    '''
+    Modify recipe database
+    '''
     # All recipe file modification is done by now
         # Get a list of modifed recipes using timestamps
         # Update those entries in the DB, adding if necessary, adding all fields for each recipe
         # Look for any recipes in the DB, not found as an md file - delete from DB.
-    modified = book.get_modified_recipes()
-    book.add_update_db( modifed )
-    orphaned = book.get_orphaned_recipes_db()
-    book.trim_db( orphaned )
-
-    # Mdbook and DB are now up-to date with each other
+    # modified = book.get_modified_recipes()
+    # book.add_update_db( modifed )
+    # orphaned = book.get_orphaned_recipes_db()
+    # book.trim_db( orphaned )
+    '''
+    Generate mdbook artifacts
+    '''
+    # Mdbook and DB are now synced
         # Collect lists of books files - recipes, chapters, sections, dirfiles, summary exclusions, etc.
         # Generate the SUMMARY.md file
         # Write all the TOCs and the about file
-    book.get_objects()
-    book.update_summary()
-    book.update_tocs()
-    book.update_about()
+    # book.get_objects() - keep this internal
+    # book.update_summary()
+    # book.update_tocs()
+    # book.update_about()
     # A new page that shows how many recipes are verified, how many total, current update rate, etc.
-    book.update_stats()
+    # book.update_stats()
 
-    age = os.stat("links_and_times.txt").st_mtime
-    print(age)
+    # age = os.stat("links_and_times.txt").st_mtime
+    # print(age)
 
     print( "end of update" )
 

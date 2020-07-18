@@ -8,12 +8,11 @@ import re
 import shutil
 import fnmatch
 
-
+SRC_DIR = "./src"
 PHOTO_DIR = "./src/assets"
 SUMMARY_PATH = "./src/SUMMARY.md"
-
-
-f = open(SUMMARY_PATH, "w")
+ABOUT_FILE = os.path.join( SRC_DIR, "about.md" )
+REDIR_404_FILE = os.path.join( SRC_DIR, "404.md")
 
 
 def splitpath(path, maxdepth=20):
@@ -49,17 +48,9 @@ def dirfile_from_dir(dir):
     return os.path.join(dir, base)
 
 
-# def section_line( path ):
-#     return "[" + title_from_path( path ) + "](" + path + ")\n"
-
-
 def recipe_line(path):
     file_base, ext = os.path.splitext(path)
     return "[" + title_from_path(file_base) + "](" + path + ")\n"
-
-
-# def write_ch_contents( file, chapter ):
-#     pass
 
 
 def path_rel_to_summary(path):
@@ -83,16 +74,7 @@ def order_files_then_dirs(dir, paths):
     return output
 
 
-def print_tree(
-    dir,
-    padding,
-    fPadding,
-    dirfiles,
-    about_file,
-    not_found_file,
-    print_files=False,
-    isLast=False,
-    isFirst=False,
+def print_tree( dir, summary_file, padding, fPadding, dirfiles, about_file, not_found_file, print_files=False, isLast=False, isFirst=False,
 ):
     if isFirst:
         pass
@@ -105,12 +87,12 @@ def print_tree(
             # print( padding[:-1] + '└── ' + title_from_path(dir) )
             # if dir in chapter_dirs:
                 # f.write("\n# " + title_from_path(dir) + "\n\n")
-            f.write(fPadding[:-1] + "- [" + re.sub("-", " ", title_from_path(dir)) + "](" + dfile + ")\n")
+            summary_file.write(fPadding[:-1] + "- [" + re.sub("-", " ", title_from_path(dir)) + "](" + dfile + ")\n")
         else:
             # print( padding[:-1] + '├── ' + basename(abspath(dir)) )
             # if dir in chapter_dirs:
                 # f.write("\n# " + title_from_path(dir) + "\n\n")
-            f.write(fPadding[:-1] + "- [" + re.sub("-", " ", title_from_path(dir)) + "](" + dfile + ")\n")
+            summary_file.write(fPadding[:-1] + "- [" + re.sub("-", " ", title_from_path(dir)) + "](" + dfile + ")\n")
     files = []
     if print_files:
         files = listdir(dir)
@@ -132,43 +114,15 @@ def print_tree(
         path = os.path.join(dir, file)
         isLast = i == last  # Marks the last file in the entire list
         if isdir(path) and not path.startswith(PHOTO_DIR):
-            # if isdir(path):
             if count == len(files):
                 if isFirst:
-                    print_tree(
-                        path,
-                        padding + " ",
-                        fPadding + " ",
-                        dirfiles,
-                        about_file,
-                        not_found_file,
-                        print_files,
-                        isLast,
-                        False,
+                    print_tree( path, summary_file, padding + " ", fPadding + " ", dirfiles, about_file, not_found_file, print_files, isLast, False,
                     )
                 else:
-                    print_tree(
-                        path,
-                        padding + " ",
-                        fPadding + " ",
-                        dirfiles,
-                        about_file,
-                        not_found_file,
-                        print_files,
-                        isLast,
-                        False,
+                    print_tree( path, summary_file, padding + " ", fPadding + " ", dirfiles, about_file, not_found_file, print_files, isLast, False,
                     )
             else:
-                print_tree(
-                    path,
-                    padding + "│",
-                    fPadding + " ",
-                    dirfiles,
-                    about_file,
-                    not_found_file,
-                    print_files,
-                    isLast,
-                    False,
+                print_tree( path, summary_file, padding + "│", fPadding + " ", dirfiles, about_file, not_found_file, print_files, isLast, False,
                 )
         else:
             if isLast:
@@ -186,7 +140,7 @@ def print_tree(
                 fpath = path_rel_to_summary(path)
 
                 if path == about_file:
-                    f.write(fPadding + recipe_line(fpath))
+                    summary_file.write(fPadding + recipe_line(fpath))
                 elif path == not_found_file:
                     pass
                 elif path == SUMMARY_PATH:
@@ -194,7 +148,7 @@ def print_tree(
                 elif path.startswith(PHOTO_DIR):
                     pass
                 else:
-                    f.write(fPadding + "- " + recipe_line(fpath))
+                    summary_file.write(fPadding + "- " + recipe_line(fpath))
 
 
 def isDirFile(path, file):
@@ -207,28 +161,16 @@ def isDirFile(path, file):
 
 
 def get_all_things():
-    rootpath = "./src"
-    rootpath_depth = len(splitpath(rootpath))
+    rootpath_depth = len(splitpath(SRC_DIR))
 
-    root_list = list()
     dir_list = list()
     file_list = list()
 
-    for root, dirs, files in os.walk(rootpath):
-        # print( "root", root )
-        root_list.append(root)
+    for root, dirs, files in os.walk(SRC_DIR):
         for dir in dirs:
-            # print( "dir", os.path.join(root, dir) )
             dir_list.append(os.path.join(root, dir))
         for file in files:
-            # print( "file", os.path.join(root, file) )
             file_list.append(os.path.join(root, file))
-
-    # print("")
-    # [print(x) for x in dir_list]
-    # print("")
-    # [print(x) for x in file_list]
-    # print("")
 
     # Create sorted lists: chapter_dirs, section_dirs, dirfiles, recipes
     chapter_dirs = list()
@@ -269,27 +211,20 @@ def get_all_things():
         dirfile = produce_dirfile_name(dir)
         ensure_dirfile(dirfile)
         dirfiles.append(dirfile)
-    # print('')
-    # [print(x) for x in section_dirs]
 
-    # From the files list, make sure the about.md file exists, make it if it does not
+    # From the files list, make sure the ABOUT_FILE exists, make it if it does not
     # Remove it from the files list otherwise
-    about_file = os.path.join(rootpath, "about.md")
-    # print("About", about_file)
-    if about_file in file_list:
-        file_list.remove(about_file)
+    if ABOUT_FILE in file_list:
+        file_list.remove(ABOUT_FILE)
+    else:
+        print( "No about.md found. Generating", ABOUT_FILE )
+        with open( ABOUT_FILE, 'w' ) as fi:
+            fi.write( "# About" )
 
-    not_found_file = os.path.join(rootpath, "404.md")
-
-    if not_found_file in file_list:
-        file_list.remove(not_found_file)
-    # else:
-    #     print( "No about.md found. Generating", about_file )
-    #     with open( about_file, 'w' ) as fi:
-    #         fi.write( "# About" )
+    if REDIR_404_FILE in file_list:
+        file_list.remove(REDIR_404_FILE)
 
     file_list.remove(SUMMARY_PATH)
-    # [print(f) for f in file_list]
 
     # Add files from files list to the recipe list, if it is of a ".md" extension
     [recipes.append(path) for path in file_list if path.endswith(".md") and path not in dirfiles]
@@ -300,29 +235,20 @@ def get_all_things():
 
     print("Found", str(len(recipes)), "recipes in", str(len(chapter_dirs)), "chapters")
 
-    # print('')
-    # [print(x) for x in chapter_dirs]
-    # print('')
-    # [print(x) for x in section_dirs]
-    # print('')
-    # [print(x) for x in dirfiles]
-    # print('')
-    # [print(x) for x in recipes]
-
     assert len(dirfiles) == (len(chapter_dirs) + len(section_dirs))
 
-    f.write(
-        "# Summary - This file is automatically generated by " + os.path.normpath(sys.argv[0]) + " - do not edit\n\n"
-    )
-
-    print_tree(
-        rootpath, "", "", dirfiles, about_file, not_found_file, True, False, True,
-    )
+    with open(SUMMARY_PATH, "w") as summary:
+        summary.write(
+            "# Summary - This file is automatically generated by " + \
+            os.path.normpath(sys.argv[0]) + \
+            " - do not edit\n\n"
+        )
+        print_tree(
+            SRC_DIR, summary, "", "", dirfiles, ABOUT_FILE, REDIR_404_FILE, True, False, True,
+        )
 
     # Post process the Book
-
     # Generate TOCs for each Chapter and Section dirfile
-
     # If file is in chapter dir root, then back button should point back to about file
     # Else, point back up to the containing chapter or section dirfile
     ch = None
@@ -339,8 +265,8 @@ def get_all_things():
             # print( "# " + contents + "\n" )
 
             if ch:
-                fi.write("[<--- Home](../about.md)\n\n")
-                # print( "[<--- Home](../about.md)" )
+                fi.write("[<--- Home](../" + os.path.basename(ABOUT_FILE) + ")\n\n")
+                # print( "[<--- Home](../" + os.path.basename(ABOUT_FILE) + ")" )
 
             else:
                 # Get the pretty title of the parent section/chapter
@@ -355,12 +281,9 @@ def get_all_things():
                 # print( "[<--- " + parent_base_pretty + "](../" + os.path.basename(par_dirfile) + ")" )
 
             # Now print a TOC for the current chapter/section, just 1 layer deep is all
-            # Each things is either a link to a file in the current dir
+            # Each thing is either a link to a file in the current dir
             # Or a link to a dirfile in a lower dir
             # Don't print a link to the dirfile of the current dir
-            # print('')
-            # print(dirfile)
-            # print('')
             dir_listing = os.listdir(os.path.dirname(dirfile))
 
             # Get a sorted mini list of recipes - minus current dirfile
@@ -389,20 +312,17 @@ def get_all_things():
                 # print( '- [' + re.sub( '-', ' ', title_from_path( file_base ) ) + '](./' + curr_fi + ')<br><br>\n' )
                 fi.write("[" + re.sub("-", " ", title_from_path(file_base)) + "](./" + curr_fi + ")<br><br>\n")
 
-    # Lastly, open the about.md file and make a TOC in it
-    with open(about_file, "w") as fi:
-        fi.write("# About\n\n")
+    # Lastly, open the ABOUT_FILE file and make a TOC in it
+    with open( ABOUT_FILE, "w" ) as fi:
+        fi.write( "# About\n\n" )
 
         """
         Write some tips and tools here if necessary
         """
-
         for ch in chapter_dirs:
             rel_path = "./" + os.path.join(
-                os.path.basename(ch), re.sub("\d+-", "", os.path.basename(ch).lower()) + ".md",
-            )
-
-            # print( '- [' + re.sub( '-', ' ', title_from_path( ch ) ) + '](' + produce_dirfile_name( ch ) + ')<br><br>\n' )
+                os.path.basename(ch),
+                re.sub( "\d+-", "", os.path.basename(ch).lower()) + ".md" )
             fi.write("[" + re.sub("-", " ", title_from_path(ch)) + "](" + rel_path + ")<br><br>\n")
 
 
@@ -412,5 +332,3 @@ def workerFunction():
 
 if __name__ == "__main__":
     workerFunction()
-
-f.close()

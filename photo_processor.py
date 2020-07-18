@@ -95,7 +95,7 @@ The match object has two groups: the image title and rel link
 def search_img_link_in_file(file):
     with open(file, "r") as fi:
         file_data = fi.read()
-        img_match = re.search(r".*\n<p.*\n<img title=\"(.*)\" src=\"(.*)\">\n</p>\n", file_data, flags=re.MULTILINE,)
+        img_match = re.search(r"^<p.*\s<img title=\"(.*)\" src=\"(.*)\">\s</p>$", file_data, flags=re.MULTILINE,)
         if img_match:
             return img_match
         else:
