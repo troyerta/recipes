@@ -77,8 +77,6 @@ def photo_relpath_from_recipe_path(path, photo_dir):
 """
 Generate the image structure that can be pasted into a recipe.
 """
-
-
 def image_struct_from_file(target_file, photo_dir):
     rel_path = photo_relpath_from_recipe_path(target_file, photo_dir)
     title = re.sub(r"-", " ", os.path.splitext(os.path.basename(target_file))[0])
@@ -176,9 +174,99 @@ def enforce_linked_image_exists( file, photo_dir ):
             quit()
 
 """
+Just determine if a recipe has a tags section header or not
+"""
+def get_recipe_tag_section(file):
+    with open(file, "r") as fi:
+        file_data = fi.read()
+        # Add a newline to the data to handle files without an empty line at the end of the file
+        return re.search(r"^#*\s*[tT]ags:?\n*(^\w.+\s{0,2})*", file_data + "\n", flags=re.MULTILINE)
+
+
+"""
+Return a list of tags, empty if no tags present in file
+"""
+def get_recipe_tags(file):
+    tag_list = list()
+
+    tag_section = get_recipe_tag_section(file)
+    if tag_section:
+        # Found the tags section, now return a list of the tags. Return an empty list is no tags are present
+        tags_text_match = re.search(r"^([^#].+\s)+", tag_section.group(0), flags=re.MULTILINE)
+        if tags_text_match:
+            tag_list = tags_text_match.group(0).splitlines()
+            tag_list = [tag for tag in tag_list if tag != ""]
+    return tag_list
+
+
+"""
+Always normalizes the tag section text
+"""
+def add_recipe_tags(file, tag_list):
+    curr_tag_section = get_recipe_tag_section(file)
+    curr_tags = list()
+    new_tag_section = "## Tags\n"
+
+    # Get current tags
+    if curr_tag_section:
+        curr_tags = get_recipe_tags(file)
+
+    [curr_tags.append(tag) for tag in tag_list if tag not in curr_tags]
+    curr_tags.sort()
+
+    for tag in curr_tags:
+        new_tag_section += tag + "\n"
+
+    # Write back to the recipe file
+    with open(file, "r") as fi:
+        file_data = fi.read().rstrip("\n")
+
+    if curr_tag_section:
+        new_data = re.sub(r"^#*\s*[tT]ags:?\n*(^\w.+\s{0,2})*", new_tag_section, file_data + "\n", flags=re.MULTILINE,)
+    else:
+        new_data = file_data + "\n\n" + new_tag_section
+
+    print("  adding", tag_list, "to", file)
+    with open(file, "w") as fi:
+        fi.write(new_data)
+
+    return curr_tags
+
+
+"""
+Always normalizes the tag section text - UNTESTED
+"""
+def remove_recipe_tags(file, tag_list):
+    curr_tag_section = get_recipe_tag_section(file)
+    curr_tags = list()
+    new_tag_section = "## Tags\n"
+
+    # Get current tags
+    if curr_tag_section:
+        curr_tags = get_recipe_tags(file)
+        [curr_tags.remove(tag) for tag in tag_list if tag in curr_tags]
+        curr_tags.sort()
+
+    for tag in curr_tags:
+        new_tag_section += tag + "\n"
+
+    # Write back to the recipe file
+    with open(file, "r") as fi:
+        file_data = fi.read().rstrip("\n")
+
+    new_data = re.sub(curr_tag_section.group(0), new_tag_section, file_data + "\n", flags=re.MULTILINE)
+    print("Untested function, exiting..")
+    sys.exit()
+
+    with open(file, "w") as fi:
+        fi.write(new_data)
+
+    return curr_tags
+
+"""
 Main photo processing function
 """
-def photo_processor( src_path, src_excludes, assets_dir, target_width_px, photo_excludes ):
+def photo_processor( src_path, src_excludes, assets_dir, photo_excludes, target_width_px ):
 
     print( "Collecting photos from", assets_dir )
     image_files = list_files(assets_dir, ".jpg")
@@ -188,9 +276,11 @@ def photo_processor( src_path, src_excludes, assets_dir, target_width_px, photo_
     md_file_basenames = [os.path.basename(fi) for fi in md_files]
     photo_exclude_paths = [os.path.join( assets_dir, img ) for img in photo_excludes]
     [image_files.remove( img ) for img in photo_exclude_paths if img in image_files]
+
     print( "Checking photo sizes" )
     [enforce_image_width( img, target_width_px ) for img in image_files ]
-    print( "Verifying recipes for photos" )
+
+    print( "Checking for unreferenced photos" )
     orphaned_photos = [img for img in image_files if recipe_filename_from_photo_filename(img) not in md_file_basenames ]
     if orphaned_photos:
         quit( "Error: these photos are orphaned: " + str(orphaned_photos) )
@@ -205,37 +295,4 @@ def photo_processor( src_path, src_excludes, assets_dir, target_width_px, photo_
     photod_recipes = [file for file in md_files if search_img_link_in_file( file )]
     [enforce_image_link_correct(recipe, assets_dir) for recipe in photod_recipes]
     [enforce_linked_image_exists(recipe, assets_dir) for recipe in photod_recipes]
-
-    #
-    # Open open every recipe with a image link at all, and do the same thing, but also check that each photo exists
-
-    # TODO
-    # [add_tags( recipe, ["verified"]) for recipe in photod_recipes]
-
-'''
-    # This can find all the rows of the image tag exactly - g1 has the image tag
-    ^(?:#.+)\n+((?:<.+>\s)+)
-
-    # This gets the title and the image tag in groups 1 and 2
-    ^(#.+)\n+((?:<.+>\s)+)
-
-    # This searches within an img tag and finds the title and the rel link
-    <(?:.*title\s*=\s*\")(.+)(?:\"\s*src\s*=\s*\")(.*)(?:\"\s*>)
-
-    # This grabs the entire img tag along with it's surrounding whitepsace, so it can be trimmed
-    ^(?:#.+)\n((?:\s*<.+>\s*)+)(?:## \S*)
-
-    # This grabs all the whitespace rows between the title and the next section
-    ^(?:#.+)\n((?:\s*)+)(?:## \S*)
-
-    # This grabs the title, img link, and next header section in groups 1,2,3. All white space included in full match
-    ^(#.+)\n+((?:<.+>\s)+)\n+(#.+)
-
-    # This grabs the title, whitespace and next header in groups 1,2,3
-    ^(#.+)\n((?:\s)*)(#.+)
-'''
-    # print( "If already present, test the image title and link, to make sure they're valid (does photo exist, etc.)" )
-    # print( "If photo tag is present and valid, make sure the verified tag is in place" )
-    # print( "Now get all recipes that have photo links, and make sure the photos exist and enforce \"verified\" tags." )
-
-
+    [add_recipe_tags(recipe, ["verified"]) for recipe in photod_recipes]

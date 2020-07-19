@@ -2,15 +2,10 @@
 
 import os
 import sys
-# from pathlib import *
 import re
 import shutil
-# import subprocess
 import argparse
-
 from photoProc import photo_processor
-
-# TODO: Fix and simplify summary generator to accept a single ignore list of files and dirs
 
 '''
 Usage:
@@ -159,8 +154,8 @@ class Rbook:
                         self.src_path,
                         [REDIR_404_FILE, ABOUT_FILE, SUMMARY_FILE],
                         self.assets_path,
-                        PHOTO_WIDTH,
-                        [REDIR_404_PHOTO]
+                        [REDIR_404_PHOTO],
+                        PHOTO_WIDTH
                         )
 
     def generate_summary( self ):
@@ -182,14 +177,12 @@ def workerFunction():
     '''
     Modify md files
     '''
+    #TODO - Convert copymethat text files, url list file to md files, and place them in /staged. Use links_and_times.txt to fill in Overview fields if necessary
+    # book.convert_copymethat()
+    # book.convert_url_files()
+    # book.add_overviews()
     book.proc_photos()
-        # Get list of all photos, minus non-recipe-specific photos
-        # Make sure each photo is a specific size, resize if not.
-        # Make sure a matching recipe file exists, throw error if not
-        # If recipe file exists, open and check for photo link, add one if not present
-        # If already present, test the image title and link, to make sure they're valid (does photo exist, etc.)
-        # If photo tag is present and valid, make sure the verified tag is in place
-        # Now get all recipes that have photo links, and make sure the photos exist and enforce "verified" tags.
+
     '''
     Modify recipe database
     '''

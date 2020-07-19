@@ -267,8 +267,6 @@ def add_recipe_tags(file, tag_list):
 """
 Always normalizes the tag section text - UNTESTED
 """
-
-
 def remove_recipe_tags(file, tag_list):
     curr_tag_section = get_recipe_tag_section(file)
     curr_tags = list()
@@ -300,8 +298,6 @@ def remove_recipe_tags(file, tag_list):
 """
 Worker function for the script. Runs the 3 major tasks of the photo processor
 """
-
-
 def proc_photos():
     # Make a list of every md file in the src dir, a list of their basenames, and a list of each jpg file in the assets dir
     image_files = list_files(PHOTO_DIR, ".jpg")
