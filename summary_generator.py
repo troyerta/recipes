@@ -74,8 +74,7 @@ def order_files_then_dirs(dir, paths):
     return output
 
 
-def print_tree( dir, summary_file, padding, fPadding, dirfiles, about_file, not_found_file, print_files=False, isLast=False, isFirst=False,
-):
+def print_tree( dir, summary_file, padding, fPadding, dirfiles, about_file, not_found_file, print_files=False, isLast=False, isFirst=False ):
     if isFirst:
         pass
         # print( padding[:-1] + dir )
@@ -234,7 +233,6 @@ def get_all_things():
     section_dirs = sorted(section_dirs)
 
     print("Found", str(len(recipes)), "recipes in", str(len(chapter_dirs)), "chapters")
-
     assert len(dirfiles) == (len(chapter_dirs) + len(section_dirs))
 
     with open(SUMMARY_PATH, "w") as summary:

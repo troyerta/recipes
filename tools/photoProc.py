@@ -11,7 +11,7 @@ IMAGE_STRUCT = '<p align="center">\n\
 <img title="{}" src="{}">\n\
 </p>'
 
-def quit( msg ):
+def quit( msg=None ):
     if msg:
         print( "  " + "\033[91m " + msg + "\033[00m" )
     print("Exiting..")
@@ -171,6 +171,8 @@ def enforce_linked_image_exists( file, photo_dir ):
             quit()
         if asset_img != abs_link:
             print("Link appears to be incorrect")
+            print("asset_img", asset_img)
+            print("abs_link", abs_link)
             quit()
 
 """
@@ -226,7 +228,7 @@ def add_recipe_tags(file, tag_list):
     else:
         new_data = file_data + "\n\n" + new_tag_section
 
-    print("  adding", tag_list, "to", file)
+    # print("  adding", tag_list, "to", file)
     with open(file, "w") as fi:
         fi.write(new_data)
 

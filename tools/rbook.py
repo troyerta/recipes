@@ -1,11 +1,13 @@
 #!./venv/bin/python3
 
 import os
+from os.path import isdir, isfile
 import sys
 import re
 import shutil
 import argparse
 from photoProc import photo_processor
+from summary import Summary, splitpath
 
 '''
 Usage:
@@ -113,7 +115,7 @@ DRAFTS_DIR = "./fdrafts"
 ABOUT_FILE = "about.md"
 REDIR_404_FILE = "404.md"
 REDIR_404_PHOTO = "404.jpg"
-PHOTO_DIR = "./fsrc/assets"
+PHOTO_DIR = os.path.join( SRC_DIR, "assets" )
 PHOTO_WIDTH = 600
 
 def error( indentation, msg ):
@@ -123,11 +125,17 @@ def error_quit( indentation, msg ):
     print( (" " * indentation) + "\033[91m " + msg + "\033[00m" )
     sys.exit(1)
 
-"""
-Recursively find all files of a certain type under some root directory
-"""
+def produce_dirfile_name(dir):
+    return os.path.join(dir, re.sub("\d+-", "", os.path.basename(dir).lower()) + ".md")
 
-def list_files(rootdir, ext):
+def ensure_dirfile(dirfile):
+    if not isfile(dirfile):
+        base, ext = os.path.splitext(os.path.basename(dirfile))
+        contents = re.sub("-", " ", base.title())
+        with open(dirfile, "w") as fi:
+            fi.write("# " + contents)
+
+def list_files( rootdir, ext ):
     file_list = list()
     for root, dirs, files in os.walk(rootdir):
         [file_list.append(os.path.join(root, file)) for file in files if file.endswith(ext)]
@@ -139,7 +147,7 @@ def print_warning( indentation, msg ):
 def print_done():
     print( "\033[92m " + "DONE!" + "\033[00m" )
 
-class Rbook:
+class RBook:
     def __init__( self, assets_dir, drafts_dir, src_dir, dry_run ):
 
         self.assets_path = assets_dir
@@ -148,6 +156,15 @@ class Rbook:
         self.dry_update = dry_run
         self.photo_files = list_files(assets_dir, ".jpg")
         self.md_files = list_files("src", ".md")
+        self.dir_list = list()
+        self.file_list = list()
+        self.chapter_dirs = list()
+        self.section_dirs = list()
+        self.dirfiles = list()
+        self.recipes = list()
+        self.prefix_pages = list()
+        self.summary_ignore_pages = list()
+        self.suffix_pages = list()
 
     def proc_photos( self ):
         photo_processor(
@@ -158,11 +175,82 @@ class Rbook:
                         PHOTO_WIDTH
                         )
 
+    def collect_objects( self ):
+
+        # Get everything under the src dir
+        for root, dirs, files in os.walk( self.src_path ):
+            [self.dir_list.append(os.path.join(root, dir)) for dir in dirs]
+            [self.file_list.append(os.path.join(root, file)) for file in files]
+
+        # Collect the chapter dirs
+        for dir in self.dir_list:
+            if ((len(splitpath(dir)) - len(splitpath(self.assets_path))) == 1) and not dir.startswith(self.assets_path):
+                self.chapter_dirs.append(dir)
+                self.dir_list.remove(dir)
+
+        # Collect the section dirs
+        [self.section_dirs.append(dir) for dir in self.dir_list if not dir.startswith(self.assets_path)]
+
+        # For each dir that exists, there must be a dirfile. Create it if it does not exist
+        for dir in self.chapter_dirs:
+            dirfile = produce_dirfile_name(dir)
+            ensure_dirfile(dirfile)
+            self.dirfiles.append(dirfile)
+
+        for dir in self.section_dirs:
+            dirfile = produce_dirfile_name(dir)
+            ensure_dirfile(dirfile)
+            self.dirfiles.append(dirfile)
+
+        # From the files list, make sure the ABOUT_FILE exists, make it if it does not
+        # Remove it from the files list otherwise
+        about_file = os.path.join( self.src_path, ABOUT_FILE )
+        if about_file in self.file_list:
+            self.file_list.remove(about_file)
+        else:
+            print( "No about.md found. Generating", about_file )
+            with open( about_file, 'w' ) as fi:
+                fi.write( "# About" )
+        self.prefix_pages.append( about_file )
+
+        redirect_file = os.path.join( self.src_path, REDIR_404_FILE )
+        if redirect_file in self.file_list:
+            self.file_list.remove(redirect_file)
+        self.summary_ignore_pages.append(redirect_file)
+
+        summary_file = os.path.join( self.src_path, SUMMARY_FILE )
+        if summary_file in self.file_list:
+            self.file_list.remove(summary_file)
+
+        # Everything else is a recipe file
+        [self.recipes.append(path) for path in self.file_list if path.endswith(".md") and path not in self.dirfiles]
+
+        # Sort everything
+        self.recipes = sorted( self.recipes )
+        self.dirfiles = sorted( self.dirfiles )
+        self.chapter_dirs = sorted( self.chapter_dirs )
+        self.section_dirs = sorted( self.section_dirs )
+        assert len(self.dirfiles) == (len(self.chapter_dirs) + len(self.section_dirs))
+
+    def chapter_cnt( self ):
+        return len(self.chapter_dirs)
+
+    def section_cnt( self ):
+        return len(self.section_dirs)
+
+    def recipe_cnt( self ):
+        return len(self.recipes)
+
     def generate_summary( self ):
-        # open_file()
-        # tree()
-        # close_file()
-        pass
+        ignored_dirs = list()
+        summary = Summary(  self.src_path,
+                            self.dirfiles,
+                            self.prefix_pages,
+                            self.summary_ignore_pages,
+                            [self.assets_path],
+                            ignored_dirs
+                            )
+        summary.print_summary( False )
 
 
 def workerFunction():
@@ -173,7 +261,7 @@ def workerFunction():
     parser.add_argument('-f', action='store_true')
     args = parser.parse_args(sys.argv[1:])
 
-    book = Rbook( PHOTO_DIR, DRAFTS_DIR, SRC_DIR, args.f )
+    book = RBook( PHOTO_DIR, DRAFTS_DIR, SRC_DIR, args.f )
     '''
     Modify md files
     '''
@@ -182,6 +270,11 @@ def workerFunction():
     # book.convert_url_files()
     # book.add_overviews()
     book.proc_photos()
+
+    # Run formatting sanity checks on each recipe using new regexes
+      # Report possible issues in a recipe by printing a warning message
+      # This might happen if we don't end up matching for something we expect to find
+      # Or if sections are out of order, since many sections are optional
 
     '''
     Modify recipe database
@@ -198,11 +291,11 @@ def workerFunction():
     Generate mdbook artifacts
     '''
     # Mdbook and DB are now synced
-        # Collect lists of books files - recipes, chapters, sections, dirfiles, summary exclusions, etc.
-        # Generate the SUMMARY.md file
-        # Write all the TOCs and the about file
-    # book.get_objects() - keep this internal
-    # book.update_summary()
+    book.collect_objects()
+    print("Found", str(book.recipe_cnt()), "recipes in", str(book.chapter_cnt()), "chapters")
+    book.generate_summary()
+
+    # Write all the TOCs and the about file
     # book.update_tocs()
     # book.update_about()
     # A new page that shows how many recipes are verified, how many total, current update rate, etc.
