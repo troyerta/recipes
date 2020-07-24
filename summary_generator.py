@@ -249,34 +249,27 @@ def get_all_things():
     # Generate TOCs for each Chapter and Section dirfile
     # If file is in chapter dir root, then back button should point back to about file
     # Else, point back up to the containing chapter or section dirfile
-    ch = None
-    # sect = None
     for dirfile in dirfiles:
-
-        # ch will contain a result if this dirfile is a chapter dirfile
-        ch = [dir for dir in chapter_dirs if os.path.dirname(dirfile) == dir]
-        # print("")
         base, ext = os.path.splitext(os.path.basename(dirfile))
         contents = re.sub("-", " ", base.title())
-        with open(dirfile, "w") as fi:
+        with open( dirfile, "w" ) as fi:
+
+            # Write a title line for the dirfile TOC page
             fi.write("# " + contents + "\n\n")
-            # print( "# " + contents + "\n" )
 
-            if ch:
+            # If this is a chapter dirfile
+            if os.path.dirname(dirfile) in chapter_dirs:
                 fi.write("[<--- Home](../" + os.path.basename(ABOUT_FILE) + ")\n\n")
-                # print( "[<--- Home](../" + os.path.basename(ABOUT_FILE) + ")" )
 
+            # This is a section dirfile
             else:
                 # Get the pretty title of the parent section/chapter
                 parent_base, ext = os.path.splitext(os.path.basename(os.path.dirname(os.path.dirname(dirfile))))
-                # parent_base_pretty = re.sub('-', ' ', parent_base.title() )
-                parent_base_pretty = title_from_path(parent_base.title())
 
                 # Get that parent section/chapter's dirfile name
                 par_dirfile = produce_dirfile_name(os.path.dirname(os.path.dirname(dirfile)))
 
-                fi.write("[<--- " + parent_base_pretty + "](../" + os.path.basename(par_dirfile) + ")\n\n")
-                # print( "[<--- " + parent_base_pretty + "](../" + os.path.basename(par_dirfile) + ")" )
+                fi.write("[<--- " + title_from_path(parent_base.title()) + "](../" + os.path.basename(par_dirfile) + ")\n\n")
 
             # Now print a TOC for the current chapter/section, just 1 layer deep is all
             # Each thing is either a link to a file in the current dir
@@ -288,15 +281,12 @@ def get_all_things():
             curr_files = [f for f in dir_listing if isfile(os.path.join(os.path.dirname(dirfile), f))]
             curr_files.remove(os.path.basename(dirfile))
             curr_files.sort()
-            # print(curr_files)
 
             # Get a list of the subsections
             curr_subsections = [f for f in dir_listing if isdir(os.path.join(os.path.dirname(dirfile), f))]
             curr_subsections.sort()
-            # print(curr_subsections)
 
             for sub_sect in curr_subsections:
-                # print( '- [' + re.sub( '-', ' ', title_from_path( sub_sect ) ) + '](./' + produce_dirfile_name( sub_sect ) + ')<br><br>\n' )
                 fi.write(
                     "["
                     + re.sub("-", " ", title_from_path(sub_sect))

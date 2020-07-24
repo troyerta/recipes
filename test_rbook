@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec ./venv/bin/python3 ./tools/test_md_recipe_parser.py

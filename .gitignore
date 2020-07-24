@@ -1,2 +1,4 @@
 book
 venv
+__pycache__
+.vscode

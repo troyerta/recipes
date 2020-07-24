@@ -8,6 +8,7 @@ import shutil
 import argparse
 from photoProc import photo_processor
 from summary import Summary, splitpath
+from toc import produce_dirfile_name, update_sub_level_toc, write_top_level_toc
 
 '''
 Usage:
@@ -109,7 +110,7 @@ Generate the SUMMARY.md file
 Write all the TOCs and the about file
 '''
 
-SRC_DIR = "./fsrc"
+SRC_DIR = "./test/fake_book_src"
 SUMMARY_FILE = "SUMMARY.md"
 DRAFTS_DIR = "./fdrafts"
 ABOUT_FILE = "about.md"
@@ -124,9 +125,6 @@ def error( indentation, msg ):
 def error_quit( indentation, msg ):
     print( (" " * indentation) + "\033[91m " + msg + "\033[00m" )
     sys.exit(1)
-
-def produce_dirfile_name(dir):
-    return os.path.join(dir, re.sub("\d+-", "", os.path.basename(dir).lower()) + ".md")
 
 def ensure_dirfile(dirfile):
     if not isfile(dirfile):
@@ -184,7 +182,8 @@ class RBook:
 
         # Collect the chapter dirs
         for dir in self.dir_list:
-            if ((len(splitpath(dir)) - len(splitpath(self.assets_path))) == 1) and not dir.startswith(self.assets_path):
+            # Chapter dir paths are 1-deeper than the assets dir
+            if ((len(splitpath(dir)) - len(splitpath(SRC_DIR))) == 1) and not dir.startswith(self.assets_path):
                 self.chapter_dirs.append(dir)
                 self.dir_list.remove(dir)
 
@@ -192,12 +191,7 @@ class RBook:
         [self.section_dirs.append(dir) for dir in self.dir_list if not dir.startswith(self.assets_path)]
 
         # For each dir that exists, there must be a dirfile. Create it if it does not exist
-        for dir in self.chapter_dirs:
-            dirfile = produce_dirfile_name(dir)
-            ensure_dirfile(dirfile)
-            self.dirfiles.append(dirfile)
-
-        for dir in self.section_dirs:
+        for dir in self.chapter_dirs + self.section_dirs:
             dirfile = produce_dirfile_name(dir)
             ensure_dirfile(dirfile)
             self.dirfiles.append(dirfile)
@@ -252,6 +246,13 @@ class RBook:
                             )
         summary.print_summary( False )
 
+    def update_ch_section_tocs( self ):
+        about_path = os.path.join( self.src_path, ABOUT_FILE )
+        [update_sub_level_toc( dir, self.chapter_dirs, about_path ) for dir in self.dirfiles]
+
+    def update_top_level_toc( self ):
+        about_path = os.path.join( self.src_path, ABOUT_FILE )
+        write_top_level_toc( self.chapter_dirs, about_path )
 
 def workerFunction():
     print( "Looking for things to do.." )
@@ -296,13 +297,10 @@ def workerFunction():
     book.generate_summary()
 
     # Write all the TOCs and the about file
-    # book.update_tocs()
-    # book.update_about()
+    book.update_ch_section_tocs()
+    book.update_top_level_toc()
     # A new page that shows how many recipes are verified, how many total, current update rate, etc.
     # book.update_stats()
-
-    # age = os.stat("links_and_times.txt").st_mtime
-    # print(age)
 
     print( "end of update" )
 

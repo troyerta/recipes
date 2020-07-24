@@ -68,8 +68,9 @@ Get something like "../../assets/port-brownies.jpg" from "src/desserts/pork-brow
 def photo_relpath_from_recipe_path(path, photo_dir):
     image_rel_link = str()
     filename = photo_filename_from_recipe_path(path)
+    depth_diff = len(splitpath(os.path.normpath(path))) - len(splitpath(os.path.normpath(photo_dir)))
 
-    for num in range(len(splitpath(os.path.normpath(path))) - 2):
+    for num in range(depth_diff):
         image_rel_link = os.path.join("..", image_rel_link)
     rel_path = os.path.join(image_rel_link, os.path.basename(photo_dir), filename)
     return rel_path
