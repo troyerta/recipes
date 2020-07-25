@@ -1,25 +1,20 @@
 #!./venv/bin/python3
 
 import os
+from os.path import isfile
 import sys
 import re
 from parser import *
 from photoProc import *
 
+
 SRC_DIR = "./test/fake_book_src"
 TEST_RECIPES = "./test/fake_test_recipes"
 FAKE_RECIPE_1 = os.path.join( TEST_RECIPES, "apple-pie.md" )
-# SUMMARY_FILE = "SUMMARY.md"
-# DRAFTS_DIR = "./fdrafts"
-# ABOUT_FILE = "about.md"
-# REDIR_404_FILE = "404.md"
-# REDIR_404_PHOTO = "404.jpg"
-# PHOTO_DIR = os.path.join( SRC_DIR, "assets" )
-# PHOTO_WIDTH = 600
 
-def require_equal( a, b ):
+def expect_equal( a, b ):
     if a != b:
-        msg = a + " != " + b
+        msg = str(a) + " != " + str(b)
         print("\033[91m" + msg + "\033[00m")
 
 def title_from_filename( md_file ):
@@ -36,44 +31,191 @@ def title_from_filename( md_file ):
     comma_temp = re.sub(",", "", recipe_temp)
     return comma_temp.strip()
 
-# Opens and reads a recipe file for internal consistency
-# and correct formatting
-# Can be ran in "warn" mode, which prints potential problems
-# or in "repair" mode, which tries for fix problems
-def workerFunction():
-    print("Running tests..")
-    print("Testing", FAKE_RECIPE_1)
-    txt = None
-    correct_title = title_from_filename(FAKE_RECIPE_1)
+"""
+This encapsulates a test recipe with the expected results of it's tests
+"""
+class RecipeTestGroup:
+    def __init__( self, recipe_file ):
+        self.recipe_file = recipe_file
+        self.exp_title = title_from_filename( recipe_file )
 
+        self.exp_img_section = False
+        self.exp_img_title = None
+        self.exp_img_link = None
+
+        self.exp_overview_section = False
+        self.exp_overview_lines = list()
+        self.exp_overview_lines_count = 0
+
+        self.exp_ingredients_sections = list()
+        self.exp_ingredients_sections_count = 0
+        self.exp_ingredients_multisection_lines = list()
+
+        self.exp_method_sections = list()
+        self.exp_method_sections_count = 0
+        self.exp_method_multisection_lines = list()
+
+        self.exp_notes_section = False
+        self.exp_notes_lines = list()
+        self.exp_notes_lines_count = 0
+
+        self.exp_reference_section = False
+        self.exp_reference_title = None
+        self.exp_reference_link = None
+
+        self.exp_tag_section = False
+        self.exp_tag_lines = list()
+        self.exp_tag_lines_count = 0
+
+    def valid_txt_list( self, input: items ) -> bool:
+        if input is not None and len(input) > 0 and "" not in input:
+            return True
+        else:
+            return False
+
+    def expect_img( self, title: str = None, link: str = None ):
+        if title or link:
+            self.exp_img_section = True
+            self.exp_img_title = title
+            self.exp_img_link = link
+
+    def expect_overview( self, lines: items = None ):
+        if self.valid_txt_list(lines):
+            self.exp_overview_section = True
+            self.exp_overview_lines = lines
+            self.exp_overview_lines_count = len( lines )
+
+    def expect_ingredients( self,  ):
+        self.exp_ingredients_sections = list()
+        self.exp_ingredients_sections_count = 0
+        self.exp_ingredients_multisection_lines = list()
+
+    def expect_method( self,  ):
+        self.exp_method_sections = list()
+        self.exp_method_sections_count = 0
+        self.exp_method_multisection_lines = list()
+
+    def expect_notes( self, lines: items = None ):
+        if self.valid_txt_list(lines):
+            self.exp_notes_section = True
+            self.exp_notes_lines_count = len( lines )
+            self.exp_notes_lines = lines
+
+    def expect_reference( self, title_link_tuple: tuple = (None, None) ):
+        if title_link_tuple[0] or title_link_tuple[1]:
+            self.exp_reference_section = True
+            self.exp_reference_title = title_link_tuple[0]
+            self.exp_reference_link = title_link_tuple[1]
+
+    def expect_tags( self, tags_list: items = None ):
+        if self.valid_txt_list( tags_list ):
+            self.exp_tag_section = True
+            self.exp_tag_lines = tags_list
+            self.exp_tag_lines_count = len( tags_list )
+
+requirements = RecipeTestGroup( "./test/fake_test_recipes/apple-pie.md" )
+requirements.expect_img( "Apple Pie", "../assets/apple-pie.jpg" )
+requirements.expect_overview( [ "Yield: 4 servings",
+                         "Prep Time: 15 mins",
+                         "Cook Time: 20 mins"] )
+# requirements.expect_ingredients()
+# requirements.expect_method()
+requirements.expect_notes( [   "You can add salt and pepper to the filling for even more flavor.",
+                        "If you like it on the fruitier side, add more apples to the filling."] )
+requirements.expect_reference( ( "Apple Pie", "https://www.applepies.com/best-apple-pie" ) )
+requirements.expect_tags( [ "fruity", "verified" ] )
+
+
+
+
+
+def test_recipe( recipe_file: str(), reqs: RecipeTestGroup):
+    print("Testing", FAKE_RECIPE_1)
+    assert( isfile(recipe_file) )
+    txt = None
+
+    """
+    File must exist and be read correctly
+    """
     with open( FAKE_RECIPE_1, 'r') as f:
         txt = f.read()
-
-    # File must be readable
     assert(txt)
+
+    """
+    A title must present
+    The title must be correctly named after the filename
+    """
     title = get_title( txt )
-    # Recipe MUST have a Printed title
     assert(title)
-    # Recipes' title MUST be consistent with the filename
-    require_equal( title, correct_title )
-    assert(title == correct_title)
+    expect_equal( title, reqs.exp_title )
+    assert( title == reqs.exp_title )
 
-    (ref_title, ref_link) = get_img_link( txt )
-    if ref_title:
-        require_equal(ref_title, correct_title)
-        assert(ref_title == correct_title)
-    if ref_link:
-        ref_link_basename = os.path.splitext( os.path.basename(ref_link) )[0]
-        recipe_basename = os.path.splitext( os.path.basename(FAKE_RECIPE_1) )[0]
-        require_equal( ref_link_basename, recipe_basename )
-        assert( ref_link_basename == recipe_basename )
+    """
+    THe image link is optional
+    """
+    img_title, img_link = get_img_link( txt )
+    if reqs.exp_img_section:
+        expect_equal(img_title, reqs.exp_img_title)
+        assert(img_title == reqs.exp_img_title)
+        expect_equal(img_link, reqs.exp_img_link)
+        assert(img_link == reqs.exp_img_link)
+    else:
+        assert( img_title is None )
+        assert( img_link is None )
 
-    # Overview section is optional
-    # But if the ## Overview header is present:
-    # At least one line with .*:.* must be present
+    # Each line of the Overview section must be correctly collected
+    # here in a list 3 elements long. Bullet points should be gone.
     overview = get_overview( txt )
-    if overview:
-        print(overview)
+    if reqs.exp_overview_section:
+        assert( overview is not None )
+        expect_equal( len(overview), reqs.exp_overview_lines_count )
+        assert( len(overview) == reqs.exp_overview_lines_count )
+        for line in range( reqs.exp_overview_lines_count ):
+            expect_equal( overview[line], reqs.exp_overview_lines[line] )
+            assert( overview[line] == reqs.exp_overview_lines[line] )
+    else:
+        assert( overview is None )
+
+    # ingredients = get_ingredients( txt )
+    # method = get_method( txt )
+
+    notes = get_notes( txt )
+    if reqs.exp_notes_section:
+        assert( notes is not None )
+        expect_equal( len(notes), reqs.exp_notes_lines_count )
+        assert( len(notes) == reqs.exp_notes_lines_count )
+        for line in range( reqs.exp_notes_lines_count ):
+            expect_equal( notes[line], reqs.exp_notes_lines[line] )
+            assert( notes[line] == reqs.exp_notes_lines[line] )
+    else:
+        assert( notes is None )
+
+    ref_title, ref_link = get_reference( txt )
+    if reqs.exp_reference_section:
+        expect_equal(ref_title, reqs.exp_reference_title)
+        assert(ref_title == reqs.exp_reference_title)
+        expect_equal(ref_link, reqs.exp_reference_link)
+        assert(ref_link == reqs.exp_reference_link)
+    else:
+        assert( ref_title is None )
+        assert( ref_link is None )
+
+    tags = get_tags( txt )
+    if reqs.exp_tag_section:
+        assert( tags is not None )
+        expect_equal( len(tags), reqs.exp_tag_lines_count )
+        assert( len(tags) == reqs.exp_tag_lines_count )
+        for line in range( reqs.exp_tag_lines_count ):
+            expect_equal( tags[line], reqs.exp_tag_lines[line] )
+            assert( tags[line] == reqs.exp_tag_lines[line] )
+    else:
+        assert( tags is None )
+
+def workerFunction():
+    print("Running tests..")
+
+    # [test_recipe( recipe, requirements ) for recipe in test_recipes]
+    test_recipe( FAKE_RECIPE_1, requirements )
 
 
 if __name__ == "__main__":

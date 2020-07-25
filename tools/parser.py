@@ -14,7 +14,7 @@ Get the overview section rows in a single group
 Get the entire ingredients sections, including blanks rows, and all sub lists of ingredients
 (?:^## Ingredients\s+)(^(?:.*\s)*?)\s*(?:##[^#])
 
-# Requires a '## ' afterwards - otherwise backtracks... need to fix
+# This method capture REQUIRES a '## ' afterwards - otherwise backtracks... need to fix
 Get the entire methods section including blank rows, '---' rows, and sub method rows and titles
 # Since there might be nothing after this section, just try to remove them after grabbing the entire methods block
 (?:^## Method\s+)(^(?:.*\s*?)*?)\s*(?:##[^#])
@@ -81,10 +81,12 @@ def get_title( txt ):
 # The title attribute is optional
 def get_img_link( txt ):
     match = re.search( r'(?:^# .*\s*)(^(?:<.+>\s*?)*?)\s*(?:##[^#])', txt, flags=re.MULTILINE )
-    ret = (None,None)
+    ret_title = None
+    ret_link = None
     title = None
     link = None
-    if match and valid( match.group(1) ):
+    if match:
+        assert( valid( match.group(1) ) )
         # TODO: Read lines and return a tuple
         link_section = match.group(1)
         link_data_match = re.search( r"<(?:.*title\s*=\s*\")(.+)(?:\"\s*src\s*=\s*\")(.*)(?:\"\s*>)", link_section, flags=re.MULTILINE )
@@ -101,22 +103,24 @@ def get_img_link( txt ):
 
         if valid( link ):
             if valid( title ):
-                ret = (title,link)
+                ret_title = title
+                ret_link = link
         else:
             assert( valid(link) )
-    return ret
+    return ret_title, ret_link
 
-# Returns a tuple ("prep time", "cook time", "total time")
+# Returns a list of the lines in the Overview ["Servings: 4", "prep time", "cook time", "total time", .. ]
 def get_overview( txt ):
     ret = None
-    ov_lines = None
-    ov_hdr_match = re.search( r'(?:^## Overview\s+)', txt, flags=re.MULTILINE )
+    ov_lines_blk_match = None
+    filled_lines = list()
+    final_lines = list()
 
-    if ov_hdr_match:
-        ov_lines = re.search( r'(?:^## Overview\s+)(^(?:.*\s*?)*?)\s*(?:##[^#])', txt, flags=re.MULTILINE )
+    if re.search( r'(?:^## Overview\s+)', txt, flags=re.MULTILINE ):
+        ov_lines_blk_match = re.search( r'(?:^## Overview\s+)(^(?:.*\s*?)*?)\s*(?:##[^#])', txt, flags=re.MULTILINE )
 
-        if ov_lines:
-            lines = ov_lines.group(1).splitlines()
+        if ov_lines_blk_match:
+            lines = ov_lines_blk_match.group(1).splitlines()
             filled_lines = [line for line in lines if line != ""]
             assert( len(filled_lines) > 0 )
 
@@ -129,9 +133,6 @@ def get_overview( txt ):
                 assert( line != "" )
 
             ret = final_lines
-    # if match and valid( match.group(1) ):
-    #     # TODO: Read lines and return a tuple
-    #     ret = match.group(1)
     return ret
 
 #
@@ -142,13 +143,70 @@ def get_ingredients( txt ):
 def get_method( txt ):
     pass
 
-
 def get_notes( txt ):
-    pass
+    ret = None
+    notes_lines_blk_match = None
+    filled_lines = list()
+    final_lines = list()
+
+    if re.search( r'(?:^## Notes\s+)', txt, flags=re.MULTILINE ):
+        notes_lines_blk_match = re.search( r'(?:^## Notes\s*)(^(?:.*\s)*?)\s*(?:##[^#])', txt, flags=re.MULTILINE )
+
+        if notes_lines_blk_match:
+            lines = notes_lines_blk_match.group(1).splitlines()
+            filled_lines = [line for line in lines if line != ""]
+            assert( len(filled_lines) > 0 )
+
+            # Strip any bullet points, or number prefixes in the lines
+            final_lines = [re.sub( r"\W*\d*\.?\W*(.*)", r"\g<1>", line, flags=re.MULTILINE) for line in filled_lines]
+            assert( len(final_lines) > 0 )
+
+            for line in final_lines:
+                assert( len(line) > 0 )
+                assert( line != "" )
+
+            ret = final_lines
+    return ret
 
 
 def get_reference( txt ):
-    pass
+    match = re.search( r'(?:^## (?:(?:Ref)|(?:Ack)).*\s*)(^(?:.*\s)*?)\s*(?:##[^#])', txt, flags=re.MULTILINE )
+    title = None
+    link = None
+    if match:
+        assert( valid( match.group(1) ) )
+        details_match = re.search( r'^(?:\[(.*)\])(?:\((.*)\))$', match.group(1), flags=re.MULTILINE )
+        if details_match:
+            assert( valid( details_match.group(1) ) )
+            assert( valid( details_match.group(2) ) )
+            title = details_match.group(1)
+            link = details_match.group(2)
+        else:
+            assert( False )
+    return title, link
+
 
 def get_tags( txt ):
-    pass
+    ret = None
+    tags_lines_blk_match = None
+    filled_lines = list()
+    final_lines = list()
+
+    if re.search( r'(?:^## Tags\s+)', txt, flags=re.MULTILINE ):
+        tags_lines_blk_match = re.search( r'(?:^## Tags\s*)(^(?:.*\s)*)', txt, flags=re.MULTILINE )
+
+        if tags_lines_blk_match:
+            lines = tags_lines_blk_match.group(1).splitlines()
+            filled_lines = [line for line in lines if line != ""]
+            assert( len(filled_lines) > 0 )
+
+            # Strip any bullet points, or number prefixes in the lines
+            final_lines = [re.sub( r"\W*\d*\.?\W*(.*)", r"\g<1>", line, flags=re.MULTILINE) for line in filled_lines]
+            assert( len(final_lines) > 0 )
+
+            for line in final_lines:
+                assert( len(line) > 0 )
+                assert( line != "" )
+
+            ret = final_lines
+    return ret
