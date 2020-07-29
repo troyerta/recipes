@@ -47,13 +47,13 @@ class RecipeTestGroup:
         self.exp_overview_lines = list()
         self.exp_overview_lines_count = 0
 
-        self.exp_ingredients_sections = list()
-        self.exp_ingredients_sections_count = 0
-        self.exp_ingredients_multisection_lines = list()
+        self.exp_ingredients_sublists = list()
+        self.exp_ingredients_sublist_count = 0
+        self.exp_ingredients_section_lines = list()
 
-        self.exp_method_sections = list()
-        self.exp_method_sections_count = 0
-        self.exp_method_multisection_lines = list()
+        self.exp_method_lists = list()
+        self.exp_method_list_count = 0
+        self.exp_method_section_lines = list()
 
         self.exp_notes_section = False
         self.exp_notes_lines = list()
@@ -86,14 +86,14 @@ class RecipeTestGroup:
             self.exp_overview_lines_count = len( lines )
 
     def expect_ingredients( self,  ):
-        self.exp_ingredients_sections = list()
-        self.exp_ingredients_sections_count = 0
-        self.exp_ingredients_multisection_lines = list()
+        self.exp_ingredients_sublists = list()
+        self.exp_ingredients_sublist_count = 0
+        self.exp_ingredients_section_lines = list()
 
     def expect_method( self,  ):
-        self.exp_method_sections = list()
-        self.exp_method_sections_count = 0
-        self.exp_method_multisection_lines = list()
+        self.exp_method_sublists = list()
+        self.exp_method_sublist_count = 0
+        self.exp_method_section_lines = list()
 
     def expect_notes( self, lines: items = None ):
         if self.valid_txt_list(lines):
@@ -176,7 +176,20 @@ def test_recipe( recipe_file: str(), reqs: RecipeTestGroup):
     else:
         assert( overview is None )
 
-    # ingredients = get_ingredients( txt )
+    ingredients = get_ingredients( txt )
+    assert(ingredients)
+    assert( ingredients.num_items() == 10 )
+    assert(ingredients.num_sublists() == 3)
+    assert( len(ingredients.sections[0]) == 1 )
+    assert( len(ingredients.sections[1]) == 5 )
+    assert( len(ingredients.sections[2]) == 4 )
+
+    # for sublist in ingredients.sections:
+    #     if sublist.title:
+    #         print(sublist.title + ":")
+    #     for item in sublist.items:
+    #         print("- " + item)
+
     # method = get_method( txt )
 
     notes = get_notes( txt )

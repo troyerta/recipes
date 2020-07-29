@@ -45,21 +45,34 @@ Functions that "perfectly" extract recipe info from md files
 """
 
 """
-A Subsection must have at least 1 item, but the title is optional
+A sublist must have at least 1 item, but the title is optional
 """
-class Subsection:
+class Sublist:
     def __init__( self, items: items = None, title: str = None ):
         self.title = title
         self.items = items
 
-Sections = List[Subsection]
+    def __len__( self ):
+        return len(self.items)
 
-class Multisection:
-    def __init__( self, sections: Sections = None ):
+Sections = List[Sublist]
+
+class Section:
+    def __init__( self, sections: Sections = list() ):
         self.sections = sections
 
-    def append_subsection( self, section: Subsection ):
+    def append_sublist( self, section: Sublist ):
         self.sections.append( section )
+
+    def num_sublists( self ):
+        return len(self.sections)
+
+    def num_items( self ):
+        sl = [ sublist for sublist in self.sections ]
+        total = 0
+        for sl in sl:
+            total += len(sl.items)
+        return total
 
 def valid( txt ):
     return txt != ""
@@ -137,7 +150,44 @@ def get_overview( txt ):
 
 #
 def get_ingredients( txt ):
-    pass
+    ret = None
+    ing_section = Section()
+    in_sublist = False
+
+    match = re.search( r'(?:^## Ingredients\s+)(^(?:.*\s)*?)\s*(?:##[^#])', txt, flags=re.MULTILINE )
+    if match:
+        # print("Found\n" + match.group(1))
+        for line_num, line in enumerate(match.group(1).split('\n')):
+            # print("Num: " + "\"" + str(line_num) + "\", " + "Line: \"" + line + "\"" )
+
+            item_match = re.search( r'^\W\s*([\w].+)$', line, flags=re.MULTILINE)
+            heading_match = re.search( r'^#+\s*([\w].+)$', line, flags=re.MULTILINE )
+            blank_match = re.search( r'^\s*$', line, flags=re.MULTILINE )
+
+            # Grab regular items in a simple list
+            if item_match and not in_sublist:
+                # print(f"item: {item_match.group(1)}")
+                stripped_item = re.sub( r'^\s*([- \*]*\s*)?([\w].+)$', r"\g<2>", item_match.group(1), flags=re.MULTILINE )
+                ing_section.append_sublist( Sublist( items = [item_match.group(1)] ) )
+                ret = ing_section
+
+            # Everything after this is in a sublist
+            elif heading_match:
+                sublist_matches = re.finditer( r'^#+\s*([\w].+)$\s*((?:[-\d\(].*\s*)+)', match.group(1)[line_num:], flags=re.MULTILINE )
+                in_sublist = True
+                for subsection in sublist_matches:
+                    subsection_items = list()
+                    # print(f"\"{subsection.group(1)}\"")
+                    stripped_subsection_title = re.sub( r'^([\w].*?)(\W*)?$', r"\g<1>", subsection.group(1), flags=re.MULTILINE )
+                    for line in re.split( r'\n', subsection.group(2), 20, flags=re.MULTILINE ):
+                        if line != "":
+                            stripped_item = re.sub( r'^\s*([- \*]*\s*)?([\w].+)$', r"\g<2>", line, flags=re.MULTILINE )
+                            subsection_items.append(stripped_item)
+                            # print(f"{stripped_subsection_title}: {subsection_items}")
+                    ing_section.append_sublist( Sublist( items = subsection_items, title = stripped_subsection_title ) )
+                    ret = ing_section
+                break
+    return ret
 
 
 def get_method( txt ):
