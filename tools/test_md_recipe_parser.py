@@ -184,13 +184,33 @@ def test_recipe( recipe_file: str(), reqs: RecipeTestGroup):
     assert( len(ingredients.sections[1]) == 5 )
     assert( len(ingredients.sections[2]) == 4 )
 
-    # for sublist in ingredients.sections:
-    #     if sublist.title:
-    #         print(sublist.title + ":")
-    #     for item in sublist.items:
-    #         print("- " + item)
+    for num, sublist in enumerate(ingredients.sections):
+        # Just single item
+        if len(sublist.items) == 1:
+            assert(sublist.title is None)
+            # print(num+1, sublist.items[0])
+        # A sublist of items
+        else:
+            assert(len(sublist.items) > 1)
+            assert(sublist.title is not None)
+            # print(num+1, sublist.title + ":")
+            # for nu, item in enumerate( sublist.items ):
+                # print( " ", nu+1, "- " + item )
 
-    # method = get_method( txt )
+    method = get_method( txt )
+    assert(method)
+    for num, sublist in enumerate(method.sections):
+    #     # Just single item
+        if len(sublist.items) == 1:
+            assert(sublist.title is None)
+            # print(str(num+1)+")", sublist.items[0])
+        # A sublist of items
+        else:
+            assert(len(sublist.items) > 1)
+            assert(sublist.title is not None)
+            # print(str(num+1)+")", sublist.title + ":")
+            # for nu, item in enumerate( sublist.items ):
+                # print( "   " + str(nu+1)+".", item )
 
     notes = get_notes( txt )
     if reqs.exp_notes_section:
