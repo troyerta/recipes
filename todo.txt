@@ -1,0 +1,15 @@
+
+
+
+
+
+
+- Write the book enforcer
+- Write the book database routines
+- Write a copymethat parser
+- Write the recipe processor pipeline for adding photos and overview sections
+- Write more tests
+- Write a tutorial
+- Push up a sample book, and attach to the project
+
+

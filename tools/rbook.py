@@ -269,13 +269,21 @@ def workerFunction():
     #TODO - Convert copymethat text files, url list file to md files, and place them in /staged. Use links_and_times.txt to fill in Overview fields if necessary
     # book.convert_copymethat()
     # book.convert_url_files()
-    # book.add_overviews()
+    # book.update_overview_worksheet() # Checks for new user entries marked done [x], and updates overview section of associated recipe
+    # book.add_overviews() # Any new files from copymethat get added to the worksheet, marked as not done [ ]
     book.proc_photos()
 
-    # Run formatting sanity checks on each recipe using new regexes
+    # Run formatting sanity checks (Book Enforcer/Police) on each recipe using new regexes
       # Report possible issues in a recipe by printing a warning message
       # This might happen if we don't end up matching for something we expect to find
       # Or if sections are out of order, since many sections are optional
+    # book.enforce_newlines()
+    # book.enforce_sections() # Must have ingredients and methods, no empty sections, spacing between sections
+    # book.enforce_titles()
+    # book.enforce_bullets()
+    # book.enforce_numbering() # Some of these rules can work according to user .ini settings
+    # book.enforce_filenames()
+    # book.update_review_stage_dir()
 
     '''
     Modify recipe database

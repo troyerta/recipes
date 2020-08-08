@@ -37,6 +37,7 @@ Get the tags section, including any blank lines. Must be last section
 """
 
 import re
+import sys
 from typing import List
 
 items = List[str]
@@ -49,7 +50,7 @@ Functions that "perfectly" extract recipe info from md files
 A sublist must have at least 1 item, but the title is optional
 """
 class Sublist:
-    def __init__( self, items: items = None, title: str = None ):
+    def __init__( self, items: items, title: str = None ):
         self.title = title
         self.items = items
 
@@ -59,23 +60,34 @@ class Sublist:
         else:
             return 0
 
-Sections = List[Sublist]
-
 class Section:
-    def __init__( self ):
-        self.sections = list()
+    def __init__( self, sublists = list().clear() ):
+        if sublists is not None:
+            self.sublists = sublists
+        else:
+            self.sublists = []
+
+        # if not sublists:
+        #     self.sublists = []
+        # else:
+        #     self.sublists = sublists
 
     def append_sublist( self, section: Sublist ):
-        self.sections.append( section )
+        if self.sublists is None:
+           self.sublists = list()
+        self.sublists.append( section )
+        return self
 
     def num_sublists( self ):
-        return len(self.sections)
+        return len(self.sublists)
 
     def num_items( self ):
-        sl = [ sublist for sublist in self.sections ]
         total = 0
-        for sl in sl:
-            total += len(sl.items)
+        if self.sublists is not None:
+            sl = [ sublist for sublist in self.sublists ]
+            total = 0
+            for sl in sl:
+                total += len(sl.items)
         return total
 
 def valid( txt ):
@@ -102,8 +114,7 @@ def get_img_link( txt ):
     ret_link = None
     title = None
     link = None
-    if match:
-        assert( valid( match.group(1) ) )
+    if match and valid( match.group(1) ):
         # TODO: Read lines and return a tuple
         link_section = match.group(1)
         link_data_match = re.search( r"<(?:.*title\s*=\s*\")(.+)(?:\"\s*src\s*=\s*\")(.*)(?:\"\s*>)", link_section, flags=re.M )
@@ -330,7 +341,7 @@ def get_tags( txt ):
     final_lines = list()
 
     if re.search( r'(?:^## Tags\s+)', txt, flags=re.MULTILINE ):
-        tags_lines_blk_match = re.search( r'(?:^## Tags\s*)(^(?:.*\s)*)', txt, flags=re.MULTILINE )
+        tags_lines_blk_match = re.search( r'(?:^## Tags\s*)(^(?:.*\s*)*)', txt, flags=re.MULTILINE )
 
         if tags_lines_blk_match:
             lines = tags_lines_blk_match.group(1).splitlines()

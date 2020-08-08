@@ -4,146 +4,66 @@ import os
 from os.path import isfile
 import sys
 import re
+import copy
 from parser import *
-from photoProc import *
-
+from test_requirements import *
 
 SRC_DIR = "./test/fake_book_src"
 TEST_RECIPES = "./test/fake_test_recipes"
-FAKE_RECIPE_1 = os.path.join( TEST_RECIPES, "apple-pie.md" )
 
-def expect_equal( a, b ):
+# test_list = [
+# os.path.join( TEST_RECIPES, "apple-pie.md" ),
+# os.path.join( TEST_RECIPES, "apple-pie-compressed.md" ),
+# os.path.join( TEST_RECIPES, "apple-pie-weirdly-spaced.md" )
+# ]
+
+# Expected value is a, tested value is b
+def expect_equal( a, b, description:str="" ):
+    if description != "":
+        description += " "
     if a != b:
-        msg = str(a) + " != " + str(b)
-        print("\033[91m" + msg + "\033[00m")
+        print("\033[91m" + description + "FAIL: expected \033[93m\"" + str(b) + "\"\033[91m" + " but got \033[92m\"" + str(a) + "\"\033[00m")
 
-def title_from_filename( md_file ):
-    base_temp = os.path.splitext(os.path.basename(md_file))[0]
-    num_temp = re.sub("\d+-", "", os.path.basename(base_temp).title())
-    with_temp = re.sub("with", "with", num_temp, flags=re.IGNORECASE)
-    and_temp = re.sub("and", "and", with_temp, flags=re.IGNORECASE)
-    the_temp = re.sub("the", "", and_temp, flags=re.IGNORECASE)
-    best_temp = re.sub("best", "", the_temp, flags=re.IGNORECASE)
-    u_score_temp = re.sub("_", " ", best_temp)
-    hyphen_temp = re.sub("-", " ", u_score_temp)
-    tasty_temp = re.sub("by tasty", "", hyphen_temp, flags=re.IGNORECASE)
-    recipe_temp = re.sub("recipes?", "", tasty_temp, flags=re.IGNORECASE)
-    comma_temp = re.sub(",", "", recipe_temp)
-    return comma_temp.strip()
+def compare_multisections( expected_section, section_under_test ):
+    assert(expected_section)
+    expect_equal( expected_section.num_items(), section_under_test.num_items() )
+    assert( expected_section.num_items() == section_under_test.num_items() )
+    expect_equal( expected_section.num_sublists(), section_under_test.num_sublists() )
+    assert( expected_section.num_sublists() == section_under_test.num_sublists() )
 
-"""
-This encapsulates a test recipe with the expected results of it's tests
-"""
-class RecipeTestGroup:
-    def __init__( self, recipe_file ):
-        self.recipe_file = recipe_file
-        self.exp_title = title_from_filename( recipe_file )
+    # Make sure each sublist is correct
+    for num, sublist in enumerate( expected_section.sublists ):
+        expect_equal( len(sublist), len(section_under_test.sublists[num]) )
+        assert( len(sublist) == len(section_under_test.sublists[num]) )
 
-        self.exp_img_section = False
-        self.exp_img_title = None
-        self.exp_img_link = None
-
-        self.exp_overview_section = False
-        self.exp_overview_lines = list()
-        self.exp_overview_lines_count = 0
-
-        self.exp_ingredients_sublists = list()
-        self.exp_ingredients_sublist_count = 0
-        self.exp_ingredients_section_lines = list()
-
-        self.exp_method_lists = list()
-        self.exp_method_list_count = 0
-        self.exp_method_section_lines = list()
-
-        self.exp_notes_section = False
-        self.exp_notes_lines = list()
-        self.exp_notes_lines_count = 0
-
-        self.exp_reference_section = False
-        self.exp_reference_title = None
-        self.exp_reference_link = None
-
-        self.exp_tag_section = False
-        self.exp_tag_lines = list()
-        self.exp_tag_lines_count = 0
-
-    def valid_txt_list( self, input: items ) -> bool:
-        if input is not None and len(input) > 0 and "" not in input:
-            return True
+        if len(sublist.items) == 1:
+            assert(sublist.title is None)
         else:
-            return False
+            assert(len(sublist.items) > 1)
+            assert(sublist.title is not None)
 
-    def expect_img( self, title: str = None, link: str = None ):
-        if title or link:
-            self.exp_img_section = True
-            self.exp_img_title = title
-            self.exp_img_link = link
-
-    def expect_overview( self, lines: items = None ):
-        if self.valid_txt_list(lines):
-            self.exp_overview_section = True
-            self.exp_overview_lines = lines
-            self.exp_overview_lines_count = len( lines )
-
-    def expect_ingredients( self,  ):
-        self.exp_ingredients_sublists = list()
-        self.exp_ingredients_sublist_count = 0
-        self.exp_ingredients_section_lines = list()
-
-    def expect_method( self,  ):
-        self.exp_method_sublists = list()
-        self.exp_method_sublist_count = 0
-        self.exp_method_section_lines = list()
-
-    def expect_notes( self, lines: items = None ):
-        if self.valid_txt_list(lines):
-            self.exp_notes_section = True
-            self.exp_notes_lines_count = len( lines )
-            self.exp_notes_lines = lines
-
-    def expect_reference( self, title_link_tuple: tuple = (None, None) ):
-        if title_link_tuple[0] or title_link_tuple[1]:
-            self.exp_reference_section = True
-            self.exp_reference_title = title_link_tuple[0]
-            self.exp_reference_link = title_link_tuple[1]
-
-    def expect_tags( self, tags_list: items = None ):
-        if self.valid_txt_list( tags_list ):
-            self.exp_tag_section = True
-            self.exp_tag_lines = tags_list
-            self.exp_tag_lines_count = len( tags_list )
-
-requirements = RecipeTestGroup( "./test/fake_test_recipes/apple-pie.md" )
-requirements.expect_img( "Apple Pie", "../assets/apple-pie.jpg" )
-requirements.expect_overview( [ "Yield: 4 servings",
-                         "Prep Time: 15 mins",
-                         "Cook Time: 20 mins"] )
-# requirements.expect_ingredients()
-# requirements.expect_method()
-requirements.expect_notes( [   "You can add salt and pepper to the filling for even more flavor.",
-                        "If you like it on the fruitier side, add more apples to the filling."] )
-requirements.expect_reference( ( "Apple Pie", "https://www.applepies.com/best-apple-pie" ) )
-requirements.expect_tags( [ "fruity", "verified" ] )
+        expect_equal( sublist.title, section_under_test.sublists[num].title )
+        assert( sublist.title == section_under_test.sublists[num].title )
+        for idx, item in enumerate( sublist.items ):
+            # print("Testing", item, section_under_test.sublists[num].items[idx])
+            expect_equal( item, section_under_test.sublists[num].items[idx] )
+            assert( item == section_under_test.sublists[num].items[idx] )
 
 
-
-
-
-def test_recipe( recipe_file: str(), reqs: RecipeTestGroup):
-    print("Testing", FAKE_RECIPE_1)
+def test_recipe( recipe_file: str(), reqs: TestRequirement):
+    print("Testing", recipe_file)
     assert( isfile(recipe_file) )
     txt = None
 
     """
-    File must exist and be read correctly
+    File
     """
-    with open( FAKE_RECIPE_1, 'r') as f:
+    with open( recipe_file, 'r') as f:
         txt = f.read()
     assert(txt)
 
     """
-    A title must present
-    The title must be correctly named after the filename
+    Title
     """
     title = get_title( txt )
     assert(title)
@@ -151,7 +71,7 @@ def test_recipe( recipe_file: str(), reqs: RecipeTestGroup):
     assert( title == reqs.exp_title )
 
     """
-    THe image link is optional
+    Image reference
     """
     img_title, img_link = get_img_link( txt )
     if reqs.exp_img_section:
@@ -163,8 +83,9 @@ def test_recipe( recipe_file: str(), reqs: RecipeTestGroup):
         assert( img_title is None )
         assert( img_link is None )
 
-    # Each line of the Overview section must be correctly collected
-    # here in a list 3 elements long. Bullet points should be gone.
+    """
+    Overview
+    """
     overview = get_overview( txt )
     if reqs.exp_overview_section:
         assert( overview is not None )
@@ -176,42 +97,23 @@ def test_recipe( recipe_file: str(), reqs: RecipeTestGroup):
     else:
         assert( overview is None )
 
+    """
+    Ingredients
+    """
     ingredients = get_ingredients( txt )
-    assert(ingredients)
-    assert( ingredients.num_items() == 10 )
-    assert(ingredients.num_sublists() == 3)
-    assert( len(ingredients.sections[0]) == 1 )
-    assert( len(ingredients.sections[1]) == 5 )
-    assert( len(ingredients.sections[2]) == 4 )
+    expected_ings = reqs.exp_ingredients_sublists
+    compare_multisections( expected_ings, ingredients )
 
-    for num, sublist in enumerate(ingredients.sections):
-        # Just single item
-        if len(sublist.items) == 1:
-            assert(sublist.title is None)
-            # print(num+1, sublist.items[0])
-        # A sublist of items
-        else:
-            assert(len(sublist.items) > 1)
-            assert(sublist.title is not None)
-            # print(num+1, sublist.title + ":")
-            # for nu, item in enumerate( sublist.items ):
-                # print( " ", nu+1, "- " + item )
-
+    """
+    Method
+    """
     method = get_method( txt )
-    assert(method)
-    for num, sublist in enumerate(method.sections):
-    #     # Just single item
-        if len(sublist.items) == 1:
-            assert(sublist.title is None)
-            # print(str(num+1)+")", sublist.items[0])
-        # A sublist of items
-        else:
-            assert(len(sublist.items) > 1)
-            assert(sublist.title is not None)
-            # print(str(num+1)+")", sublist.title + ":")
-            # for nu, item in enumerate( sublist.items ):
-                # print( "   " + str(nu+1)+".", item )
+    expected_mthd = reqs.exp_method_sublists
+    compare_multisections(expected_mthd, method)
 
+    """
+    Notes
+    """
     notes = get_notes( txt )
     if reqs.exp_notes_section:
         assert( notes is not None )
@@ -223,6 +125,9 @@ def test_recipe( recipe_file: str(), reqs: RecipeTestGroup):
     else:
         assert( notes is None )
 
+    """
+    Recipe Reference / link
+    """
     ref_title, ref_link = get_reference( txt )
     if reqs.exp_reference_section:
         expect_equal(ref_title, reqs.exp_reference_title)
@@ -233,10 +138,13 @@ def test_recipe( recipe_file: str(), reqs: RecipeTestGroup):
         assert( ref_title is None )
         assert( ref_link is None )
 
+    """
+    Tags
+    """
     tags = get_tags( txt )
     if reqs.exp_tag_section:
         assert( tags is not None )
-        expect_equal( len(tags), reqs.exp_tag_lines_count )
+        expect_equal( len(tags), reqs.exp_tag_lines_count, "Num tags" )
         assert( len(tags) == reqs.exp_tag_lines_count )
         for line in range( reqs.exp_tag_lines_count ):
             expect_equal( tags[line], reqs.exp_tag_lines[line] )
@@ -247,12 +155,61 @@ def test_recipe( recipe_file: str(), reqs: RecipeTestGroup):
 def workerFunction():
     print("Running tests..")
 
-    # [test_recipe( recipe, requirements ) for recipe in test_recipes]
-    test_recipe( FAKE_RECIPE_1, requirements )
+    requirements = TestRequirement( "./test/fake_test_recipes/apple-pie.md" )
+    requirements.expect_title( "Apple Pie" )
+    requirements.expect_img( "Apple Pie", "../assets/apple-pie.jpg" )
+    requirements.expect_overview( [ "Yield: 4 servings",
+                            "Prep Time: 15 mins",
+                            "Cook Time: 20 mins"] )
 
+    ing_first_sublist = Sublist( ["Flour for dough work surface"] )
+    ing_second_sublist = Sublist( title = "Crust",
+                                items = [
+                                    "2 cups Flour",
+                                    "2 eggs",
+                                    "2 tps baking powder",
+                                    "1 tsp salt",
+                                    "1 cup water"
+                                    ] )
+    ing_third_sublist = Sublist( title = "Filling",
+                                items = [
+                                    "Some apples",
+                                    "10 cups Sugar",
+                                    "2 cups hot water",
+                                    "Pinch of molasses"
+                                    ] )
+    ing_section = Section( sublists = [ing_first_sublist, ing_second_sublist, ing_third_sublist] )
+    requirements.expect_ingredients( ing_section )
+
+    mtd_first_sublist = Sublist( ["Preheat the oven to 42523 deg C"] )
+    mtd_second_sublist = Sublist( title = "Crust",
+                                items = [
+                                    "Gather crust ingredients",
+                                    "Mix them together",
+                                    "Flatten out formed dough and knead it up"
+                                    ] )
+    mtd_third_sublist = Sublist( title = "Filling",
+                                items = [
+                                    "Mix filling ingredients together",
+                                    "Dump them into the formed pie crust"
+                                    ] )
+    method_sect = Section( sublists = [mtd_first_sublist, mtd_second_sublist, mtd_third_sublist] )
+    requirements.expect_method( method_sect )
+
+    requirements.expect_notes( [ "You can add salt and pepper to the filling for even more flavor.",
+                                "If you like it on the fruitier side, add more apples to the filling."] )
+
+    requirements.expect_reference( ( "Apple Pie", "https://www.applepies.com/best-apple-pie" ) )
+
+    requirements.expect_tags( [ "fruity", "verified" ] )
+
+    modded_requirements = copy.deepcopy(requirements)
+    modded_requirements.exp_img_section = False
+
+    test_recipe( os.path.join( TEST_RECIPES, "apple-pie.md" ), requirements )
+    test_recipe( os.path.join( TEST_RECIPES, "apple-pie-compressed.md" ), requirements )
+    test_recipe( os.path.join( TEST_RECIPES, "apple-pie-weirdly-spaced.md" ), requirements )
+    test_recipe( os.path.join( TEST_RECIPES, "apple-pie-no-img.md" ), modded_requirements )
 
 if __name__ == "__main__":
     workerFunction()
-
-
-
