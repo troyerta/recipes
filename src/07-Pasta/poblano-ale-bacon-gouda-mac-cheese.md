@@ -36,7 +36,7 @@
 
 - 3 - Cup, Cheese, parmesan, shredded
 
-## Directions
+## Method
 
 1. Wash poblano peppers and pat dry. Toss with oil, salt and pepper.
 ---

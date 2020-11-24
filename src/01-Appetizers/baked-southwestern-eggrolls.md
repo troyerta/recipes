@@ -4,7 +4,7 @@
 
 - Yield: 19-21 egg rolls
 - Prep Time: 10 mins
-- Cookt Time: 15 mins
+- Cook Time: 15 mins
 - Total Time: 25 mins
 
 ## Ingredients
@@ -35,7 +35,7 @@
 
 - 1 package (21) egg roll wrappers
 
-- **1 egg beaten for sealing egg roll (can substitute water)
+- 1 egg beaten for sealing egg roll (can substitute water)
 
 - Guacamole (optional)
 

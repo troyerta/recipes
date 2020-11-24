@@ -26,7 +26,7 @@
 
 - Canola oil, for frying
 
-#### Glaze:
+#### Glaze
 
 - 350g powdered sugar, sifted
 

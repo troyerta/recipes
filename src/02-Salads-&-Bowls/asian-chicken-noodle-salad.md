@@ -24,7 +24,7 @@
 
 - 2 oz sesame dressing
 
-## Directions
+## Method
 
 1. Marinade chicken in soy sauce for 2 hours.
 ---

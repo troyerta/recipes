@@ -12,7 +12,7 @@ Four different pasta recipes with a shared process. They all use the same master
 
 ## Ingredients
 
-Egg Pasta
+#### Egg Pasta
 
 - 2 cups all-purpose flour, plus more for rolling and dusting
 
@@ -20,7 +20,7 @@ Egg Pasta
 
 - 2 tablespoons olive oil
 
-Herb Pasta
+#### Herb Pasta
 
 - 2 cups all-purpose flour, plus more for rolling and dusting
 
@@ -30,7 +30,7 @@ Herb Pasta
 
 - 2 tablespoons olive oil
 
-Vegetable Pasta
+#### Vegetable Pasta
 
 - 2 cups all-purpose flour, plus more for rolling and dusting
 
@@ -40,7 +40,7 @@ Vegetable Pasta
 
 - 1 1/2 tablespoons olive oil
 
-Squid Ink Pasta
+#### Squid Ink Pasta
 
 - 2 cups all-purpose flour, plus more for rolling and dusting
 

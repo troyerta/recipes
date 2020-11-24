@@ -18,7 +18,7 @@
 
 - 2 - tbsp , Oil, Olive
 
-## Directions
+## Method
 
 1. To roast beets, cut stems and clean them, wrap them in foil and roast at 350 degrees for about 1 hr and 20 mins. The longer they cook, the easier they are to peel and chop.
 ---

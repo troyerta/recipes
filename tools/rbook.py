@@ -9,6 +9,8 @@ import argparse
 from photoProc import photo_processor
 from summary import Summary, splitpath
 from toc import produce_dirfile_name, update_sub_level_toc, write_top_level_toc
+from checkboxes import generate_html_checkboxes
+import subprocess
 
 '''
 Usage:
@@ -24,11 +26,11 @@ Looking for URL lists in ./imports/urls..
   Would generate ./ready/url2.md
 Processing photos..
   For 'potato-soup.jpg':
-    Warning: photo has no matching recipe: "potato-soup.md"
+	Warning: photo has no matching recipe: "potato-soup.md"
   For 'ordinary-pizza.jpg':
-    Would adjust photo link from '../../assets/ordinary-pizza.jpg' to '../assets/ordinary-pizza.jpg'
+	Would adjust photo link from '../../assets/ordinary-pizza.jpg' to '../assets/ordinary-pizza.jpg'
   For 'cheeto-dip.md':
-    Warning: Would remove photo reference '../../assets/cheeto-dip.jpg - No photo './src/assets/cheeto-dip.jpg' found
+	Warning: Would remove photo reference '../../assets/cheeto-dip.jpg - No photo './src/assets/cheeto-dip.jpg' found
   Would resize src/assets/pesto-chicken.jpg to 600 x 400
 Processing tags
   Would tag "pork-meat.md" with "verified" (auto-verify photo's recipes)
@@ -110,7 +112,8 @@ Generate the SUMMARY.md file
 Write all the TOCs and the about file
 '''
 
-SRC_DIR = "./test/fake_book_src"
+SRC_DIR = "./src"
+BOOK_DIR = "./book"
 SUMMARY_FILE = "SUMMARY.md"
 DRAFTS_DIR = "./fdrafts"
 ABOUT_FILE = "about.md"
@@ -120,203 +123,232 @@ PHOTO_DIR = os.path.join( SRC_DIR, "assets" )
 PHOTO_WIDTH = 600
 
 def error( indentation, msg ):
-    print( (" " * indentation) + "\033[91m " + msg + "\033[00m" )
+	print( (" " * indentation) + "\033[91m " + msg + "\033[00m" )
 
 def error_quit( indentation, msg ):
-    print( (" " * indentation) + "\033[91m " + msg + "\033[00m" )
-    sys.exit(1)
+	print( (" " * indentation) + "\033[91m " + msg + "\033[00m" )
+	sys.exit(1)
 
 def ensure_dirfile(dirfile):
-    if not isfile(dirfile):
-        base, ext = os.path.splitext(os.path.basename(dirfile))
-        contents = re.sub("-", " ", base.title())
-        with open(dirfile, "w") as fi:
-            fi.write("# " + contents)
+	if not isfile(dirfile):
+		base, ext = os.path.splitext(os.path.basename(dirfile))
+		contents = re.sub("-", " ", base.title())
+		with open(dirfile, "w") as fi:
+			fi.write("# " + contents)
 
 def list_files( rootdir, ext ):
-    file_list = list()
-    for root, dirs, files in os.walk(rootdir):
-        [file_list.append(os.path.join(root, file)) for file in files if file.endswith(ext)]
-    return file_list
+	file_list = list()
+	for root, dirs, files in os.walk(rootdir):
+		[file_list.append(os.path.join(root, file)) for file in files if file.endswith(ext)]
+	return file_list
 
 def print_warning( indentation, msg ):
-    print( (" " * indentation) + "\033[93m " + msg + "\033[00m" )
+	print( (" " * indentation) + "\033[93m " + msg + "\033[00m" )
 
 def print_done():
-    print( "\033[92m " + "DONE!" + "\033[00m" )
+	print( "\033[92m" + "DONE!" + "\033[00m" )
+
+def md_path_2_html( md_file_path ):
+	return os.path.join( BOOK_DIR, re.sub( r'^./src/(.*).md$', '\g<1>', md_file_path, flags=re.MULTILINE )  + ".html" )
+
 
 class RBook:
-    def __init__( self, assets_dir, drafts_dir, src_dir, dry_run ):
+	def __init__( self, assets_dir, drafts_dir, src_dir, dry_run ):
 
-        self.assets_path = assets_dir
-        self.drafts_path = drafts_dir
-        self.src_path = src_dir
-        self.dry_update = dry_run
-        self.photo_files = list_files(assets_dir, ".jpg")
-        self.md_files = list_files("src", ".md")
-        self.dir_list = list()
-        self.file_list = list()
-        self.chapter_dirs = list()
-        self.section_dirs = list()
-        self.dirfiles = list()
-        self.recipes = list()
-        self.prefix_pages = list()
-        self.summary_ignore_pages = list()
-        self.suffix_pages = list()
+		self.assets_path = assets_dir
+		self.drafts_path = drafts_dir
+		self.src_path = src_dir
+		self.dry_update = dry_run
+		self.photo_files = list_files(assets_dir, ".jpg")
+		self.md_files = list_files("src", ".md")
+		self.dir_list = list()
+		self.file_list = list()
+		self.chapter_dirs = list()
+		self.section_dirs = list()
+		self.dirfiles = list()
+		self.recipes = list()
+		self.prefix_pages = list()
+		self.summary_ignore_pages = list()
+		self.suffix_pages = list()
 
-    def proc_photos( self ):
-        photo_processor(
-                        self.src_path,
-                        [REDIR_404_FILE, ABOUT_FILE, SUMMARY_FILE],
-                        self.assets_path,
-                        [REDIR_404_PHOTO],
-                        PHOTO_WIDTH
-                        )
+	def proc_photos( self ):
+		photo_processor(
+						self.src_path,
+						[REDIR_404_FILE, ABOUT_FILE, SUMMARY_FILE],
+						self.assets_path,
+						[REDIR_404_PHOTO],
+						PHOTO_WIDTH
+						)
 
-    def collect_objects( self ):
+	def collect_objects( self ):
 
-        # Get everything under the src dir
-        for root, dirs, files in os.walk( self.src_path ):
-            [self.dir_list.append(os.path.join(root, dir)) for dir in dirs]
-            [self.file_list.append(os.path.join(root, file)) for file in files]
+		# Get everything under the src dir
+		for root, dirs, files in os.walk( self.src_path ):
+			[self.dir_list.append(os.path.join(root, dir)) for dir in dirs]
+			[self.file_list.append(os.path.join(root, file)) for file in files]
 
-        # Collect the chapter dirs
-        for dir in self.dir_list:
-            # Chapter dir paths are 1-deeper than the assets dir
-            if ((len(splitpath(dir)) - len(splitpath(SRC_DIR))) == 1) and not dir.startswith(self.assets_path):
-                self.chapter_dirs.append(dir)
-                self.dir_list.remove(dir)
+		# Collect the chapter dirs
+		for dir in self.dir_list:
+			# Chapter dir paths are 1-deeper than the assets dir
+			if ((len(splitpath(dir)) - len(splitpath(SRC_DIR))) == 1) and not dir.startswith(self.assets_path):
+				self.chapter_dirs.append(dir)
+				self.dir_list.remove(dir)
 
-        # Collect the section dirs
-        [self.section_dirs.append(dir) for dir in self.dir_list if not dir.startswith(self.assets_path)]
+		# Collect the section dirs
+		[self.section_dirs.append(dir) for dir in self.dir_list if not dir.startswith(self.assets_path)]
 
-        # For each dir that exists, there must be a dirfile. Create it if it does not exist
-        for dir in self.chapter_dirs + self.section_dirs:
-            dirfile = produce_dirfile_name(dir)
-            ensure_dirfile(dirfile)
-            self.dirfiles.append(dirfile)
+		# For each dir that exists, there must be a dirfile. Create it if it does not exist
+		for dir in self.chapter_dirs + self.section_dirs:
+			dirfile = produce_dirfile_name(dir)
+			ensure_dirfile(dirfile)
+			self.dirfiles.append(dirfile)
 
-        # From the files list, make sure the ABOUT_FILE exists, make it if it does not
-        # Remove it from the files list otherwise
-        about_file = os.path.join( self.src_path, ABOUT_FILE )
-        if about_file in self.file_list:
-            self.file_list.remove(about_file)
-        else:
-            print( "No about.md found. Generating", about_file )
-            with open( about_file, 'w' ) as fi:
-                fi.write( "# About" )
-        self.prefix_pages.append( about_file )
+		# From the files list, make sure the ABOUT_FILE exists, make it if it does not
+		# Remove it from the files list otherwise
+		about_file = os.path.join( self.src_path, ABOUT_FILE )
+		if about_file in self.file_list:
+			self.file_list.remove(about_file)
+		else:
+			print( "No about.md found. Generating", about_file )
+			with open( about_file, 'w' ) as fi:
+				fi.write( "# About" )
+		self.prefix_pages.append( about_file )
 
-        redirect_file = os.path.join( self.src_path, REDIR_404_FILE )
-        if redirect_file in self.file_list:
-            self.file_list.remove(redirect_file)
-        self.summary_ignore_pages.append(redirect_file)
+		redirect_file = os.path.join( self.src_path, REDIR_404_FILE )
+		if redirect_file in self.file_list:
+			self.file_list.remove(redirect_file)
+		self.summary_ignore_pages.append(redirect_file)
 
-        summary_file = os.path.join( self.src_path, SUMMARY_FILE )
-        if summary_file in self.file_list:
-            self.file_list.remove(summary_file)
+		summary_file = os.path.join( self.src_path, SUMMARY_FILE )
+		if summary_file in self.file_list:
+			self.file_list.remove(summary_file)
 
-        # Everything else is a recipe file
-        [self.recipes.append(path) for path in self.file_list if path.endswith(".md") and path not in self.dirfiles]
+		# Everything else is a recipe file
+		[self.recipes.append(path) for path in self.file_list if path.endswith(".md") and path not in self.dirfiles]
 
-        # Sort everything
-        self.recipes = sorted( self.recipes )
-        self.dirfiles = sorted( self.dirfiles )
-        self.chapter_dirs = sorted( self.chapter_dirs )
-        self.section_dirs = sorted( self.section_dirs )
-        assert len(self.dirfiles) == (len(self.chapter_dirs) + len(self.section_dirs))
+		# Sort everything
+		self.recipes = sorted( self.recipes )
+		self.dirfiles = sorted( self.dirfiles )
+		self.chapter_dirs = sorted( self.chapter_dirs )
+		self.section_dirs = sorted( self.section_dirs )
+		assert len(self.dirfiles) == (len(self.chapter_dirs) + len(self.section_dirs))
 
-    def chapter_cnt( self ):
-        return len(self.chapter_dirs)
+	def chapter_cnt( self ):
+		return len(self.chapter_dirs)
 
-    def section_cnt( self ):
-        return len(self.section_dirs)
+	def section_cnt( self ):
+		return len(self.section_dirs)
 
-    def recipe_cnt( self ):
-        return len(self.recipes)
+	def recipe_cnt( self ):
+		return len(self.recipes)
 
-    def generate_summary( self ):
-        ignored_dirs = list()
-        summary = Summary(  self.src_path,
-                            self.dirfiles,
-                            self.prefix_pages,
-                            self.summary_ignore_pages,
-                            [self.assets_path],
-                            ignored_dirs
-                            )
-        summary.print_summary( False )
+	def generate_summary( self ):
+		ignored_dirs = list()
+		summary = Summary(  self.src_path,
+							self.dirfiles,
+							self.prefix_pages,
+							self.summary_ignore_pages,
+							[self.assets_path],
+							ignored_dirs
+							)
+		summary.print_summary( False )
 
-    def update_ch_section_tocs( self ):
-        about_path = os.path.join( self.src_path, ABOUT_FILE )
-        [update_sub_level_toc( dir, self.chapter_dirs, about_path ) for dir in self.dirfiles]
+	def recipe_list( self ):
+		return self.recipes
 
-    def update_top_level_toc( self ):
-        about_path = os.path.join( self.src_path, ABOUT_FILE )
-        write_top_level_toc( self.chapter_dirs, about_path )
+	def update_ch_section_tocs( self ):
+		about_path = os.path.join( self.src_path, ABOUT_FILE )
+		[update_sub_level_toc( dir, self.chapter_dirs, about_path ) for dir in self.dirfiles]
+
+	def update_top_level_toc( self ):
+		about_path = os.path.join( self.src_path, ABOUT_FILE )
+		write_top_level_toc( self.chapter_dirs, about_path )
 
 def workerFunction():
-    print( "Looking for things to do.." )
+	print( "Looking for things to do.." )
 
-    # Collect the dry run flag from passed in args
-    parser = argparse.ArgumentParser(prog='RBook')
-    parser.add_argument('-f', action='store_true')
-    args = parser.parse_args(sys.argv[1:])
+	# Collect the dry run flag from passed in args
+	parser = argparse.ArgumentParser(prog='RBook')
+	parser.add_argument('-f', action='store_true')
+	args = parser.parse_args(sys.argv[1:])
 
-    book = RBook( PHOTO_DIR, DRAFTS_DIR, SRC_DIR, args.f )
-    '''
-    Modify md files
-    '''
-    #TODO - Convert copymethat text files, url list file to md files, and place them in /staged. Use links_and_times.txt to fill in Overview fields if necessary
-    # book.convert_copymethat()
-    # book.convert_url_files()
-    # book.update_overview_worksheet() # Checks for new user entries marked done [x], and updates overview section of associated recipe
-    # book.add_overviews() # Any new files from copymethat get added to the worksheet, marked as not done [ ]
-    book.proc_photos()
+	book = RBook( PHOTO_DIR, DRAFTS_DIR, SRC_DIR, args.f )
+	'''
+	Modify md files
+	'''
+	#TODO - Convert copymethat text files, url list file to md files, and place them in /staged. Use links_and_times.txt to fill in Overview fields if necessary
+	# book.convert_copymethat()
+	# book.convert_url_files()
+	# book.update_overview_worksheet() # Checks for new user entries marked done [x], and updates overview section of associated recipe
+	# book.add_overviews() # Any new files from copymethat get added to the worksheet, marked as not done [ ]
+	print("Processing photos")
+	book.proc_photos()
 
-    # Run formatting sanity checks (Book Enforcer/Police) on each recipe using new regexes
-      # Report possible issues in a recipe by printing a warning message
-      # This might happen if we don't end up matching for something we expect to find
-      # Or if sections are out of order, since many sections are optional
-    # book.enforce_newlines()
-    # book.enforce_sections() # Must have ingredients and methods, no empty sections, spacing between sections
-    # book.enforce_titles()
-    # book.enforce_bullets()
-    # book.enforce_numbering() # Some of these rules can work according to user .ini settings
-    # book.enforce_filenames()
-    # book.update_review_stage_dir()
+	# Run formatting sanity checks (Book Enforcer/Police) on each recipe using new regexes
+	  # Report possible issues in a recipe by printing a warning message
+	  # This might happen if we don't end up matching for something we expect to find
+	  # Or if sections are out of order, since many sections are optional
+	# book.enforce_newlines()
+	# book.enforce_sections() # Must have ingredients and methods, no empty sections, spacing between sections
+	# book.enforce_titles()
+	# book.enforce_bullets()
+	# book.enforce_numbering() # Some of these rules can work according to user .ini settings
+	# book.enforce_filenames()
+	# book.update_review_stage_dir()
 
-    '''
-    Modify recipe database
-    '''
-    # All recipe file modification is done by now
-        # Get a list of modifed recipes using timestamps
-        # Update those entries in the DB, adding if necessary, adding all fields for each recipe
-        # Look for any recipes in the DB, not found as an md file - delete from DB.
-    # modified = book.get_modified_recipes()
-    # book.add_update_db( modifed )
-    # orphaned = book.get_orphaned_recipes_db()
-    # book.trim_db( orphaned )
-    '''
-    Generate mdbook artifacts
-    '''
-    # Mdbook and DB are now synced
-    book.collect_objects()
-    print("Found", str(book.recipe_cnt()), "recipes in", str(book.chapter_cnt()), "chapters")
-    book.generate_summary()
+	'''
+	Modify recipe database
+	'''
+	# All recipe file modification is done by now
+		# Get a list of modifed recipes using timestamps
+		# Update those entries in the DB, adding if necessary, adding all fields for each recipe
+		# Look for any recipes in the DB, not found as an md file - delete from DB.
+	# modified = book.get_modified_recipes()
+	# book.add_update_db( modifed )
+	# orphaned = book.get_orphaned_recipes_db()
+	# book.trim_db( orphaned )
+	'''
+	Generate mdbook artifacts
+	'''
+	# Mdbook and DB are now synced
+	print("Gathering book resources")
+	book.collect_objects()
+	print("Found", str(book.recipe_cnt()), "recipes in", str(book.chapter_cnt()), "chapters")
+	print("Generating summary")
+	book.generate_summary()
 
-    # Write all the TOCs and the about file
-    book.update_ch_section_tocs()
-    book.update_top_level_toc()
-    # A new page that shows how many recipes are verified, how many total, current update rate, etc.
-    # book.update_stats()
+	# Write all the TOCs and the about file
+	print("Generating TOCs")
+	book.update_ch_section_tocs()
+	book.update_top_level_toc()
+	# A new page that shows how many recipes are verified, how many total, current update rate, etc.
+	# book.update_stats()
 
-    print( "end of update" )
+	# Run mdbook build, and wait for successful result
+	print("Rendering book..")
+	try:
+		output = subprocess.check_output(['mdbook', 'build'], stderr= subprocess.STDOUT)
+		[print(line) for line in output.splitlines()]
+		# print "here"
+	except subprocess.CalledProcessError as e:
+		print("Called proc err")
 
-    print_done()
+	# If successful, run the post-processor here
+	print("Generating checkboxes..")
+	counter = 1
+	for test_md in book.recipe_list():
+		# print( str(int(100*counter/book.recipe_cnt())), os.path.basename( test_md ) )
+		test_html = md_path_2_html( test_md )
+		generate_html_checkboxes( test_md, test_html )
+		counter += 1
+
+	print( "end of update" )
+
+	print_done()
 
 
 if __name__ == "__main__":
-    workerFunction()
+	workerFunction()
 
 
 

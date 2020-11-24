@@ -16,7 +16,7 @@
 
 - 8 - oz , Roasted Red Peppers
 
-## Directions
+## Method
 
 1. Roast garlic on stove top with a little bit of oil. Allow garlic & oil to cool.
 ---

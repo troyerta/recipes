@@ -10,25 +10,19 @@
 
 ## Ingredients
 
-⅓ cup simple syrup
-
-¾ cup lime juice, preferably freshly squeezed
-
-½ cup vodka
-
-2 cups tonic water
-
-2 cups raspberries
-
-1 lime, sliced
-
-1 bottle Champagne or sparkling white wine
+- 1/3 cup simple syrup
+- 3/4 cup lime juice, preferably freshly squeezed
+- 1/2 cup vodka
+- 2 cups tonic water
+- 2 cups raspberries
+- 1 lime, sliced
+- 1 bottle Champagne or sparkling white wine
 
 ## Method
 
-2. In a large pitcher, stir the simple syrup with the lime juice, vodka and tonic water to combine. Stir in the raspberries and lime slices.
+1. In a large pitcher, stir the simple syrup with the lime juice, vodka and tonic water to combine. Stir in the raspberries and lime slices.
 ---
-3. Just before you’re ready to serve, add the Champagne. Serve chilled.
+2. Just before you’re ready to serve, add the Champagne. Serve chilled.
 
 
 ## References and Acknowledgments

@@ -1,6 +1,6 @@
 # Mexican
 
-[<--- Main Dishes](../main-dishes.md)
+[<--- Home](../about.md)
 
 [Baked Creamy Cheesy Chicken Flautas Guacamole](./baked-creamy-cheesy-chicken-flautas-guacamole.md)<br><br>
 [Baked Creamy Chicken Taquitos](./baked-creamy-chicken-taquitos.md)<br><br>

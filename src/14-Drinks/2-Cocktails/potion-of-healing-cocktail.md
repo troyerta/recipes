@@ -6,15 +6,15 @@
 
 ## Ingredients
 
-- 1oz white rum
+- 1 oz white rum
 
-- .5oz coconut rum
+- 1/2 oz coconut rum
 
-- .5oz lemon juice
+- 1/2 oz lemon juice
 
-- 1.5oz cranberry juice
+- 1-1/2 oz cranberry juice
 
-- 1.5oz orange juice
+- 1-1/2 oz orange juice
 
 - Raspberry cordial
 

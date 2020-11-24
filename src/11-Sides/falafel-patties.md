@@ -32,7 +32,7 @@
 
 - 1 - cup, oil, olive, salad or cooking
 
-## Directions
+## Method
 
 1. Pulse chickpeas, tahini, egg, lemon zest, cumin, garlic, lemon juice, coriander, sriracha, and salt in blender or food processor until mostly smooth, but still chunky.
 ---

@@ -4,10 +4,15 @@
 
 - 1-½ oz Mean Mule (Silver or Gold) American White Agave Spirit
 
-- ½ oz Simple Syrup
+- 1/2 oz Simple Syrup
 
-- ¾ oz Lime Juice
+- 3/4 oz Lime Juice
 
-- ¾ oz Dry Curacao
+- 3/4 oz Dry Curacao
 
 - Garnish with a Lime Wedge
+
+## Method
+
+1. Mix and serve
+---

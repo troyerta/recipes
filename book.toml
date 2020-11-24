@@ -14,7 +14,7 @@ create-missing = false
 # command = "python3 summary_gen.py"
 
 [output.html]
-additional-js = ["js/enable-checkboxes.js"]
+additional-js = ["js/enable-checkboxes.js", "js/handle-checkboxes.js"]
 no-section-label = true
 google-analytics = "UA-164779968-1"
 site-url = "/recipes/"

@@ -18,7 +18,7 @@
 
 - 3 - tbsp, Rosemary, fresh
 
-## Directions
+## Method
 
 1. Roast the garlic in the olive oil until tender. Cool.
 ---

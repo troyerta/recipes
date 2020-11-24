@@ -1,6 +1,6 @@
 # Hummus
 
-[<--- Dips & Sauces](../dips-&-sauces.md)
+[<--- Home](../about.md)
 
 [Chipotle Lime Hummus](./chipotle-lime-hummus.md)<br><br>
 [Curry Hummus](./curry-hummus.md)<br><br>

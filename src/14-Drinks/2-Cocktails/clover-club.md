@@ -8,9 +8,9 @@
 
 - 2oz (60ml) dry gin
 
-- .75oz (22ml) simple syrup
+- 3/4oz (22ml) simple syrup
 
-- .75oz (22ml) fresh lemon juice
+- 3/4oz (22ml) fresh lemon juice
 
 - 5 raspberries
 

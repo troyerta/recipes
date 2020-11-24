@@ -8,7 +8,7 @@
 
 - 1 Breast of Chicken
 
-- [Teriyaki Sauce Recipe from this post]
+- Teriyaki Sauce Recipe from this post
 
 - 4 tortillas Uncooked Flour Tortillas
 

@@ -16,7 +16,7 @@
 
 - 1/2 - tsp, Spices, pepper, red or cayenne
 
-## Directions
+## Method
 
 1. With a immersion blender, blend 5 ozv Tahini, 6ozv Lemon juice, & 1 cup of whole garlic cloves until light in color and well blended.
 ---

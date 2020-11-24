@@ -36,7 +36,7 @@ This recipe is designed for a 5 gallon bucket of curry sauce. Huge portions! A 1
 
 - 6 - cup, Peas, green, frozen, unprepared
 
-## Directions
+## Method
 
 In a steam jacket kettle or large pot, heat oil on high. When oil is hot, add the garlic, Serrano pepper, carrot and onions. Sauté until onions are translucent.
 

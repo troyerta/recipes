@@ -184,6 +184,7 @@ def get_ingredients( txt ):
             item_match = re.search( r'^\W\s*([\w].+)$', line, flags=re.M)
             heading_match = re.search( r'^#+\s*([\w].+)$', line, flags=re.M )
             blank_match = re.search( r'^\s*$', line, flags=re.M )
+            # print("    " + line)
             assert(item_match or heading_match or blank_match)
 
             # Grab regular items in a simple list
@@ -227,7 +228,7 @@ def get_method( txt ):
     assert( mtd_section.num_items() == 0 )
 
     # Get all the text under the methods header in group 1
-    match = re.search( r'(?:^## Method\s+)(^(?:.*\s)+)', txt, flags=re.M )
+    match = re.search( r'(?:^## Method.*\s+)(^(?:.*\s)+)', txt, flags=re.M )
     assert(match)
     if match:
         # Remove all the sections under the methods section
@@ -270,8 +271,7 @@ def get_method( txt ):
 
                 for subsection in sublist_matches:
                     subsection_items = list()
-                    stripped_subsection_title = re.sub( r'^[^a-zA-Z#]+\d*\s*(.*)$', r"\g<1>", subsection.group(1), flags=re.M )
-                    # print(stripped_subsection_title+":")
+                    stripped_subsection_title = re.sub( r'^[^\w#]+\d*\s*(.*)$', r"\g<1>", subsection.group(1), flags=re.M )
                     for ln in re.split( r'\n', subsection.group(2).strip(), 50, flags=re.M ):
                         if ln != "":
                             stripped_item = re.sub( r'(?:^[\d\-\.\s]*)(.*)$', r"\g<1>", ln, flags=re.M )

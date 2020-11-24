@@ -6,9 +6,9 @@
 - Prep Time: 15 mins
 - Cook Time: 10 mins
 
-## Ingredients:
+## Ingredients
 
-#### Dry Ingredients
+#### Dry Ingredients:
 
 - 3/4 cup all-purpose flour
 

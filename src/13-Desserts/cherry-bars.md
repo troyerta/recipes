@@ -45,14 +45,13 @@
 ---
 5. In a separate bowl combine flour and salt. Add to the creamed mixture. Mix until combined.
 ---
-6. Spread 3 cups batter into a greased 15x10x1-in baking pan (Also works with 9x13 - baking time will be at
---- 7. least 35 minutes). Spread with pie filling.
+6. Spread 3 cups batter into a greased 15x10x1-in baking pan (Also works with 9x13 - baking time will be at least 35 minutes). Spread with pie filling.
 ---
-8. Drop the remaining batter by teaspoonfuls over pie filling.
+7. Drop the remaining batter by teaspoonfuls over pie filling.
 ---
-9. Bake for 30 to 35 minutes, or until toothpick comes out clean. Cool on wire rack.
+8. Bake for 30 to 35 minutes, or until toothpick comes out clean. Cool on wire rack.
 ---
-10. Combine glaze ingredients, and drizzle over cooled bars.
+9. Combine glaze ingredients, and drizzle over cooled bars.
 ---
 
 ## References and Acknowledgments

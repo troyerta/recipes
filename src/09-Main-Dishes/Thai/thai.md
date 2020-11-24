@@ -1,6 +1,6 @@
 # Thai
 
-[<--- Main Dishes](../main-dishes.md)
+[<--- Home](../about.md)
 
 [Authentic Pad Thai](./authentic-pad-thai.md)<br><br>
 [Brussel Sprout Pad Thai](./brussel-sprout-pad-thai.md)<br><br>

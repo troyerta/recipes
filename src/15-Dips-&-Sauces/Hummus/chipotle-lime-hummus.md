@@ -18,7 +18,7 @@
 
 - 5 - each, Chipotle Pepper, canned in Adobo Sauce
 
-## Directions
+## Method
 
 With a immersion blender, blend 5 ozv Tahini, 6ozv Limejuice, & 1/2 cup of whole garlic cloves until light in color and well blended.
 ---

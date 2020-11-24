@@ -20,9 +20,7 @@
 
 - 2 Cups Mozzarella Cheese, Shredded
 
-- 1 Package sliced Mozzarella Cheese
-
-- (the sliced cheese makes the sour cream easier to spread and makes it oh so ooey gooey)
+- 1 Package sliced Mozzarella Cheese (the sliced cheese makes the sour cream easier to spread and makes it oh so ooey gooey)
 
 - Grated Parmesan Cheese on top
 

@@ -4,25 +4,33 @@
 
 - Yield: 12 big muffins or 24 smaller muffins
 
-- Prep Time:
-
-- Total Time:
-
 ## Ingredients
 
-1 3/4 cup oats
-3 egg whites
-3/4 cup unsweetened cocoa
-1/2 cup unsweetened applesauce
-1 tsp. vanilla extract
-1/2 cup plain Greek yogurt (or regular plain low fat yogurt)
-1/2 tsp cream of tartar (or 1-1/2 Tbsp. vinegar)
-1-1/2 tsp. baking powder
-1-1/2 tsp. baking soda
-1/4 tsp. salt
-1 cup hot water
-1 cup sugar substitute (like Splenda granular) OR 1/4 cup + 2 tbs stevia
-1/2 cup semi-sweet chocolate chips (or use white chocolate or peanut butter chips!)
+- 1 3/4 cup oats
+
+- 3 egg whites
+
+- 3/4 cup unsweetened cocoa
+
+- 1/2 cup unsweetened applesauce
+
+- 1 tsp. vanilla extract
+
+- 1/2 cup plain Greek yogurt (or regular plain low fat yogurt)
+
+- 1/2 tsp cream of tartar (or 1-1/2 Tbsp. vinegar)
+
+- 1-1/2 tsp. baking powder
+
+- 1-1/2 tsp. baking soda
+
+- 1/4 tsp. salt
+
+- 1 cup hot water
+
+- 1 cup sugar substitute (like Splenda granular) OR 1/4 cup + 2 tbs stevia
+
+- 1/2 cup semi-sweet chocolate chips (or use white chocolate or peanut butter chips!)
 
 ## Method
 
@@ -37,20 +45,6 @@
 5. Place  the muffins back into the oven and bake for an additional 2-5 minutes, or until a toothpick comes out clean. *Note, you could skip this step by putting all of the chips in the batter, and baking the muffins for 12-15 min straight, but this method gives the muffins the traditional ‘VitaTop Muffin’ look with the chocolate chips on top!Cool muffins before removing from pan.
 ---
 
-## Notes
-
-- Tip on serving
-
-- Tip on storing
-
-- Tip for reheating
-
-- Tips if missing ingredients or equipment
-
 ## References and Acknowledgments
 
 [Powerforce Apparel - Triple Chocolate Chunk Muffin](http://powerforceapparel.blogspot.com/2012/03/58-calorie-triple-chocolate-chunk.html)
-
-## Tags
-
-

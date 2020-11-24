@@ -20,7 +20,7 @@
 
 - 11 - oz , Sour Cream, Crowley
 
-## Directions
+## Method
 
 1. If your food processor is not large enough to process the entire recipe, split it up into several small batches.
 ---

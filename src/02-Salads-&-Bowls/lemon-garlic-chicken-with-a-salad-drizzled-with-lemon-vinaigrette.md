@@ -6,7 +6,7 @@
 
 - Half a chicken breast
 
-- Minced garlic (I used 5 cloves because I love garlic but you adjust to your own taste)
+- Minced garlic
 
 - Squeeze of lemon
 

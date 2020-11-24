@@ -1,6 +1,6 @@
 # American
 
-[<--- Main Dishes](../main-dishes.md)
+[<--- Home](../about.md)
 
 [Apple Gouda Stuffed Chicken Breasts with Smoky Roasted Sweet Potatoes](./apple-gouda-stuffed-chicken-breasts-with-smoky-roasted-sweet-potatoes.md)<br><br>
 [Baked Spicy Honey Bbq Cauliflower Wings](./baked-spicy-honey-bbq-cauliflower-wings.md)<br><br>

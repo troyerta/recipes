@@ -2,23 +2,23 @@
 
 ## Ingredients
 
-1/2 cup unsalted butter at room temperature
+- 1/2 cup unsalted butter at room temperature
 
-3/4 cup brown sugar light or dark brown sugar
+- 3/4 cup brown sugar light or dark brown sugar
 
-1 large egg at room temperature
+- 1 large egg at room temperature
 
-1 teaspoon pure vanilla extract
+- 1 teaspoon pure vanilla extract
 
-1 and ½ cup all-purpose flour
+- 1 and ½ cup all-purpose flour
 
-1/2 cup unsweetened dark cocoa powder like Hershey's Special Dark (regular cocoa powder or Dutch-processed may be substituted, but have a slightly different taste)
+- 1/2 cup unsweetened dark cocoa powder like Hershey's Special Dark (regular cocoa powder or Dutch-processed may be substituted, but have a slightly different taste)
 
-1 teaspoon cornstarch
+- 1 teaspoon cornstarch
 
-3/4 teaspoon baking soda
+- 3/4 teaspoon baking soda
 
-1/8 teaspoon salt optional
+- 1/8 teaspoon salt optional
 
 ## Method
 

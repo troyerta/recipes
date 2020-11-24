@@ -16,7 +16,7 @@
 
 - 16 - oz , Basil Pesto
 
-## Directions
+## Method
 
 1. With a immersion blender, blend 5 ozv Tahini, 16 oz Pesto, 6ozv Lemon juice, & 1 cup of whole garlic cloves until light in color and well blended.
 ---

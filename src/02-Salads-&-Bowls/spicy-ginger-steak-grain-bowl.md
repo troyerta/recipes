@@ -2,31 +2,32 @@
 
 ## Ingredients
 
-1 - cup, chopped, Kale, raw Shredded
+- 1 - cup, chopped, Kale, raw Shredded
 
-1 - cup, Rice noodles, cooked
+- 1 - cup, Rice noodles, cooked
 
-3 - oz, thin-sliced beef, cooked
+- 3 - oz, thin-sliced beef, cooked
 
-1/4 - cup, pared, chopped, Cucumber, peeled, raw Chopped
+- 1/4 - cup, pared, chopped, Cucumber, peeled, raw Chopped
 
-1 - oz, Peppers, sweet, red, raw
+- 1 - oz, Peppers, sweet, red, raw
 
-1 - oz, Carrots, raw Shredded
+- 1 - oz, Carrots, raw Shredded
 
-1/4 - tsp, Ginger root, raw Minced
+- 1/4 - tsp, Ginger root, raw Minced
 
-1/4 - 0.5 oz, Chili Garlic Paste
+- 1/4 - 0.5 oz, Chili Garlic Paste
 
-1/2 - oz, Onions, raw Sliced Thin
+- 1/2 - oz, Onions, raw Sliced Thin
 
-3/4 - 2 oz, Miso Ginger Sauce
+- 3/4 - 2 oz, Miso Ginger Sauce
 
-1/8 - tbsp, Seeds, sesame seeds, whole, dried
+- 1/8 - tbsp, Seeds, sesame seeds, whole, dried
 
-## Directions
+## Method
 
-Combine the ingredients
+1. Combine the ingredients
+---
 
 ## Serve
 

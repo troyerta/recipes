@@ -1,6 +1,6 @@
 # Dips & Sauces
 
-[<--- Home](../about.md)
+[<--- Src](../src.md)
 
 [Hummus --->](./Hummus/hummus.md)<br><br>
 [Buffalo Chicken Dip](./Buffalo-Chicken-Dip.md)<br><br>
@@ -14,7 +14,6 @@
 [Copycat Chick Fil A Sauce](./copycat-chick-fil-a-sauce.md)<br><br>
 [Creamy Avocado Cilantro Lime Dressing](./creamy-avocado-cilantro-lime-dressing.md)<br><br>
 [Creamy Corn and Bacon Cheese Dip](./creamy-corn-and-bacon-cheese-dip.md)<br><br>
-[Crock Pot Queso Blanco Dip](./crock-pot-queso-blanco-dip.md)<br><br>
 [Dreamsicle Fruit Dip Recipe](./dreamsicle-fruit-dip-recipe.md)<br><br>
 [Easy Feta Spread with Rosemary and Lemon](./easy-feta-spread-with-rosemary-and-lemon.md)<br><br>
 [Everything Bagel Hummus](./everything-bagel-hummus.md)<br><br>

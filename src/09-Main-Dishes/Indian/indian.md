@@ -1,6 +1,6 @@
 # Indian
 
-[<--- Main Dishes](../main-dishes.md)
+[<--- Home](../about.md)
 
 [Grilled Chicken Shawarma](./grilled-chicken-shawarma.md)<br><br>
 [Harissa Chicken](./harissa-chicken.md)<br><br>

@@ -22,7 +22,6 @@
 
 ## Method
 
----
 1. Combine all of the ingredients in a bowl or shallow dish and mix well. Use as a marinade for about 1 pound of meat.
 ---
 

@@ -6,27 +6,28 @@ This recipe makes 1X single-serving entree salad - not a side dish
 
 ## Ingredients
 
-3/4 - cup, chopped, Kale, raw Shredded
+- 3/4 - cup, chopped, Kale, raw Shredded
 
-1/4 - cup, shredded, Cabbage, savoy, raw Shredded
+- 1/4 - cup, shredded, Cabbage, savoy, raw Shredded
 
-1 - cup, Rice noodles, cooked
+- 1 - cup, Rice noodles, cooked
 
-3 - oz, Chicken Breast
+- 3 - oz, Chicken Breast
 
-1 - oz, Peppers, sweet, red, raw Diced
+- 1 - oz, Peppers, sweet, red, raw Diced
 
-2 - oz, Thai Peanut Sauce
+- 2 - oz, Thai Peanut Sauce
 
-1/8 - cup chopped, Onions, young green, tops only Cut into ¼” Pieces
+- 1/8 - cup chopped, Onions, young green, tops only Cut into ¼” Pieces
 
-1/4 - tbsp , Cilantro, Fresh, with Stem
+- 1/4 - tbsp , Cilantro, Fresh, with Stem
 
-1 - oz (22 whole kernels), Nuts, almonds, dry roasted, without salt added Sliced
+- 1 - oz (22 whole kernels), Nuts, almonds, dry roasted, without salt added Sliced
 
 ## Method
 
-Combine all the ingredients
+1. Combine all the ingredients
+---
 
 ## Serve
 
