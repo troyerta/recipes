@@ -1,6 +1,6 @@
 # Cocktails
 
-[<--- Home](../about.md)
+[<--- Drinks](../drinks.md)
 
 [Apple and Pear White Sangria](./apple-and-pear-white-sangria.md)<br><br>
 [Black Widow Smash](./black-widow-smash.md)<br><br>

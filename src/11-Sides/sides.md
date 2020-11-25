@@ -1,6 +1,6 @@
 # Sides
 
-[<--- Src](../src.md)
+[<--- Home](../about.md)
 
 [Baked Falafel](./baked-falafel.md)<br><br>
 [Baked Kale Gratin](./baked-kale-gratin.md)<br><br>

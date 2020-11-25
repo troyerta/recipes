@@ -21,7 +21,7 @@ def print_recipe_link( file, path ):
 
 def print_parent_link( target_file, dirfile, chapter_dirs, about_file ):
     # If this is a chapter dirfile
-    if os.path.dirname(dirfile) not in chapter_dirs:
+    if os.path.dirname(dirfile) in chapter_dirs:
         target_file.write("[<--- Home](../" + os.path.basename(about_file) + ")\n\n")
     # This is a section dirfile
     else:
@@ -74,6 +74,7 @@ def update_sub_level_toc( dirfile, chapter_dirs, about_file ):
         [print_recipe_link( fi, recipe ) for recipe in file_list]
 
 def write_top_level_toc( chapter_dirs, target_file ):
+    # print(chapter_dirs, target_file)
     with open( target_file, "w" ) as fi:
         fi.write( "# About\n\n" )
 

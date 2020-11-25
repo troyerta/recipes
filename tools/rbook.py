@@ -190,11 +190,14 @@ class RBook:
 		# Collect the chapter dirs
 		for dir in self.dir_list:
 			# Chapter dir paths are 1-deeper than the assets dir
-			if ((len(splitpath(dir)) - len(splitpath(SRC_DIR))) == 1) and not dir.startswith(self.assets_path):
+			# print("Considering " + dir)
+			match = re.search( r'\d\d-.*', os.path.basename(dir) )
+			if match:
 				self.chapter_dirs.append(dir)
-				self.dir_list.remove(dir)
+		# [print(ch) for ch in self.chapter_dirs]
 
 		# Collect the section dirs
+		[self.dir_list.remove(dir) for dir in self.chapter_dirs]
 		[self.section_dirs.append(dir) for dir in self.dir_list if not dir.startswith(self.assets_path)]
 
 		# For each dir that exists, there must be a dirfile. Create it if it does not exist

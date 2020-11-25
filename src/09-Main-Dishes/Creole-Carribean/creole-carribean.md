@@ -1,6 +1,6 @@
 # Creole Carribean
 
-[<--- Home](../about.md)
+[<--- Main Dishes](../main-dishes.md)
 
 [Cajun Chicken](./cajun-chicken.md)<br><br>
 [Caribbean Grilled Prawns](./caribbean-grilled-prawns.md)<br><br>

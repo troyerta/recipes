@@ -1,6 +1,6 @@
 # Pasta
 
-[<--- Src](../src.md)
+[<--- Home](../about.md)
 
 [Baked Penne](./baked-penne.md)<br><br>
 [Brown Butter Brussels Sprout and Bacon Ravioli](./brown-butter-brussels-sprout-and-bacon-ravioli.md)<br><br>

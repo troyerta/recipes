@@ -1,6 +1,6 @@
 # Non Alcoholic
 
-[<--- Home](../about.md)
+[<--- Drinks](../drinks.md)
 
 [Apple Cider Floats](./apple-cider-floats.md)<br><br>
 [Bright and Bitter Mocktail](./bright-and-bitter-mocktail.md)<br><br>
