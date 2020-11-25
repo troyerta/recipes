@@ -4,10 +4,7 @@ save:
 	@echo "====> saving changes"
 	@git checkout -b save
 	@echo "====> generating SUMMARY.md"
-	@./venv/bin/python3 summary_generator.py
-	@./venv/bin/python3 photo_processor.py
-	@echo "====> rebuilding the book.."
-	@mdbook build
+	./rbook
 	@echo "====> done"
 	@echo "====> adding tracked files"
 	@git add -u
