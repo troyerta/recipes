@@ -84,5 +84,7 @@ def write_top_level_toc( chapter_dirs, target_file ):
         for ch in chapter_dirs:
             # Chapter dirs might already be prefixed with './'
             # Normalize, then prefix with './'
-            rel_path = "./" + os.path.normpath(produce_dirfile_name(ch))
+            # print(ch)
+            rel_path = "./" + os.path.normpath(produce_dirfile_name(os.path.basename(ch)))
+            # print(rel_path)
             fi.write("[" + re.sub("-", " ", title_from_path(ch)) + "](" + rel_path + ")<br><br>\n")
