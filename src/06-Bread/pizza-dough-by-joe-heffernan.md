@@ -1,4 +1,4 @@
-# Recipe Name
+# Pizza Dough by Joe Heffernan
 
 ## Overview
 

@@ -8,6 +8,7 @@
 [Bang Bang Cauliflower](./bang-bang-cauliflower.md)<br><br>
 [Chicken and Asparagus Lemon Stir Fry](./chicken-and-asparagus-lemon-stir-fry.md)<br><br>
 [Chinese Honey Garlic Chicken](./chinese-honey-garlic-chicken.md)<br><br>
+[Dan Dan Noodles](./dan-dan-noodles.md)<br><br>
 [Easy Kimchi Fried Rice](./easy-kimchi-fried-rice.md)<br><br>
 [Ginger Basil Noodles](./ginger-basil-noodles.md)<br><br>
 [Gobi Manchurian](./gobi-manchurian.md)<br><br>

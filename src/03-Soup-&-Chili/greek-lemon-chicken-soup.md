@@ -1,4 +1,4 @@
-# Recipe Name
+# Greek Lemon Chicken Soup
 
 <p align="center">
 <img title="Greek Lemon Chicken Soup" src="../assets/greek-lemon-chicken-soup.jpg">

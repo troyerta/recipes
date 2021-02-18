@@ -11,7 +11,6 @@
 [Garlic Butter Shrimp Parmesan with Cauliflower Rice](./garlic-butter-shrimp-parmesan-with-cauliflower-rice.md)<br><br>
 [Garlic Parmesan Roasted Shrimp](./garlic-parmesan-roasted-shrimp.md)<br><br>
 [Garlic Rosemary Balsamic Roasted Pork Loin](./garlic-rosemary-balsamic-roasted-pork-loin.md)<br><br>
-[Ground Turkey Sweet Potato Skillet](./ground-turkey-sweet-potato-skillet.md)<br><br>
 [Ham and Cheese Croissant Bake](./ham-and-cheese-croissant-bake.md)<br><br>
 [Healthy Slow Cooker Buffalo Chicken Stuffed Sweet Potatoes](./healthy-slow-cooker-buffalo-chicken-stuffed-sweet-potatoes.md)<br><br>
 [Herb Roasted Chicken Breasts](./herb-roasted-chicken-breasts.md)<br><br>
