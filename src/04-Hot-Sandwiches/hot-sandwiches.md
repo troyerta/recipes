@@ -8,7 +8,6 @@
 [Buffalo Chicken Grilled Cheese](./buffalo-chicken-grilled-cheese.md)<br><br>
 [Calzones](./calzones.md)<br><br>
 [Caramel Apple Brie Quesadillas](./caramel-apple-brie-quesadillas.md)<br><br>
-[Cauliflower Tikka Gyros](./cauliflower-tikka-gyros.md)<br><br>
 [Cheeseburger Quesadillas](./cheeseburger-quesadillas.md)<br><br>
 [Chicken Gyros with Tzatziki Sauce](./chicken-gyros-with-tzatziki-sauce.md)<br><br>
 [Chicken Satay Pitas](./chicken-satay-pitas.md)<br><br>

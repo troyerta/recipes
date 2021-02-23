@@ -6,7 +6,6 @@
 [Bazlama Turkish Flatbread](./bazlama-turkish-flatbread.md)<br><br>
 [Black Pepper Cheddar Bacon Biscuits](./black-pepper-cheddar-bacon-biscuits.md)<br><br>
 [Buttery Beer Bread](./buttery-beer-bread.md)<br><br>
-[Cauliflower Pizza Base](./cauliflower-pizza-base.md)<br><br>
 [Cheesy Bacon Biscuit Pull Aparts](./cheesy-bacon-biscuit-pull-aparts.md)<br><br>
 [Chocolate Banana Bread](./chocolate-banana-bread.md)<br><br>
 [Cinnamon Crunch Knots](./cinnamon-crunch-knots.md)<br><br>

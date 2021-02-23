@@ -291,6 +291,7 @@ def photo_processor( src_path, src_excludes, assets_dir, photo_excludes, target_
     # print( "If recipe file exists, open and check for photo link, add one if not present" )
     # Open each theretical recipe file, and look inside it, check for correct link, add if not present, correct if wrong
     recipes_to_check = [find(src_path, recipe_filename_from_photo_filename(img)) for img in image_files]
+    print(recipes_to_check)
     assert(len(recipes_to_check) == len(image_files))
     [enforce_image_link_exists(recipe, assets_dir) for recipe in recipes_to_check]
 

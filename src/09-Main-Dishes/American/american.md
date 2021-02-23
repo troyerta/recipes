@@ -3,7 +3,6 @@
 [<--- Main Dishes](../main-dishes.md)
 
 [Apple Gouda Stuffed Chicken Breasts with Smoky Roasted Sweet Potatoes](./apple-gouda-stuffed-chicken-breasts-with-smoky-roasted-sweet-potatoes.md)<br><br>
-[Baked Spicy Honey Bbq Cauliflower Wings](./baked-spicy-honey-bbq-cauliflower-wings.md)<br><br>
 [Bourbon Sweet Potato Casserole](./bourbon-sweet-potato-casserole.md)<br><br>
 [Cheesy Chicken and Rice Bake](./cheesy-chicken-and-rice-bake.md)<br><br>
 [Cod with Confetti Coconut Rice](./cod-with-confetti-coconut-rice.md)<br><br>

@@ -1,6 +1,8 @@
 # Asiago Roasted Garlic Cauliflower Soup
 
-A creamy roasted garlic cauliflower soup with plenty of asiago cheese and a crunchy popped quinoa and chia seed topping.
+<p align="center">
+<img title="Asiago Roasted Garlic Cauliflower Soup" src="../assets/asiago-roasted-garlic-cauliflower-soup.jpg">
+</p>
 
 ## Overview
 
@@ -99,5 +101,4 @@ Add 1/4 cup tahini to the soup to make it extra creamy.
 [Closet Cooking - Asiago Roasted Garlic Cauliflower Soup](http://www.closetcooking.com/2017/03/asiago-roasted-garlic-cauliflower-soup.html)
 
 ## Tags
-
-
+verified
