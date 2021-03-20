@@ -16,7 +16,6 @@
 [Crash Hot Sweet Potatoes](./crash-hot-sweet-potatoes.md)<br><br>
 [Creamy Potato Stacks with Garlic Thyme and Parmesan](./creamy-potato-stacks-with-garlic-thyme-and-parmesan.md)<br><br>
 [Curried Chickpea Stuffed Sweet Potatoes](./curried-chickpea-stuffed-sweet-potatoes.md)<br><br>
-[Easy Crispy Parmesan Garlic Roasted Baby Potatoes](./easy-crispy-parmesan-garlic-roasted-baby-potatoes.md)<br><br>
 [Falafel Patties](./falafel-patties.md)<br><br>
 [Garlic Parmesan Bacon Brussels Sprouts](./garlic-parmesan-bacon-brussels-sprouts.md)<br><br>
 [Grilled Pineapple with Coconut Rum Sauce](./grilled-pineapple-with-coconut-rum-sauce.md)<br><br>
