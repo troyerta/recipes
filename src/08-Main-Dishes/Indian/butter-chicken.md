@@ -1,7 +1,7 @@
 # Butter Chicken
 
 <p align="center">
-<img title="Butter Chicken" src="../assets/butter-chicken.jpg">
+<img title="Butter Chicken" src="../../assets/butter-chicken.jpg">
 </p>
 
 ## Overview:

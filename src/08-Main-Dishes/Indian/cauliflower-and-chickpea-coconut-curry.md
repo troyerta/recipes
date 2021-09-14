@@ -1,7 +1,7 @@
 # Cauliflower and Chickpea Coconut Curry
 
 <p align="center">
-<img title="Cauliflower And Chickpea Coconut Curry" src="../assets/cauliflower-and-chickpea-coconut-curry.jpg">
+<img title="Cauliflower And Chickpea Coconut Curry" src="../../assets/cauliflower-and-chickpea-coconut-curry.jpg">
 </p>
 
 ## Overview

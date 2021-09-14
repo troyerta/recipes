@@ -26,4 +26,6 @@
 [Sticky Chilli Beef](./sticky-chilli-beef.md)<br><br>
 [Sweet and Spicy Chicken](./sweet-and-spicy-chicken.md)<br><br>
 [Teriyaki Ginger Shrimp](./teriyaki-ginger-shrimp.md)<br><br>
+[Wagamama Chicken Katsu Curry with Rice](./wagamama-chicken-katsu-curry-with-rice.md)<br><br>
+[Wagamamas Surendras Curry](./wagamamas-surendras-curry.md)<br><br>
 [Weekday Meal Prep Chicken Teriyaki Stir Fry](./weekday-meal-prep-chicken-teriyaki-stir-fry.md)<br><br>
