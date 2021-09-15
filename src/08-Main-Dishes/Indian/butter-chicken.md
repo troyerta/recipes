@@ -92,7 +92,7 @@
 ---
 11. Finish the dish: Return the paste to the cooking pan over medium heat. Add the water to the paste and stir to make a smooth sauce.
 ---
-12. As the sauce begins to boil, add the grilled chicken and heavy cream. Stir well. Cover the pan and simmer for 5 minutes.
+12. As the sauce starts to boil, add the grilled chicken and heavy cream. Stir well. Cover the pan and simmer for 5 minutes.
 ---
 13. Rest the butter chicken: Turn off the heat and uncover the pan.
 ---
