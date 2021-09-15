@@ -161,48 +161,64 @@
 <li>Yield: 6</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4358" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4358"> 1/3 cup mayonnaise</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4359" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4359"> 1/3 cup sour cream</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4360" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4360"> 2 teaspoons chipotle in adobo sauce</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4361" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4361"> 4 ounces pepper jack cheese, cut into 2- by 1/4- inch sticks</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4362" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4362"> 6 large jalapenos, halved, stemmed, ribs and seeds removed</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4363" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4363"> 8 ounces fresh hot Italian sausage, casings removed (from about 2 sausages)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4364" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4364"> 12 strips bacon</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4365" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4365"> 6 hot dog buns</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4366" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4366"> Chopped scallions, for topping</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1/3 cup mayonnaise</p>
+<input disabled="" type="checkbox" id="chkbx_4367" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_4367"> Prepare an outdoor grill for medium heat. Stir together the mayonnaise, sour cream and chipotle in a adobo in a small bowl. Refrigerate it while you make the danger dogs.</label>
 </li>
-<li>
-<p>1/3 cup sour cream</p>
-</li>
-<li>
-<p>2 teaspoons chipotle in adobo sauce</p>
-</li>
-<li>
-<p>4 ounces pepper jack cheese, cut into 2- by 1/4- inch sticks</p>
-</li>
-<li>
-<p>6 large jalapenos, halved, stemmed, ribs and seeds removed</p>
-</li>
-<li>
-<p>8 ounces fresh hot Italian sausage, casings removed (from about 2 sausages)</p>
-</li>
-<li>
-<p>12 strips bacon</p>
-</li>
-<li>
-<p>6 hot dog buns</p>
-</li>
-<li>
-<p>Chopped scallions, for topping</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Prepare an outdoor grill for medium heat. Stir together the mayonnaise, sour cream and chipotle in a adobo in a small bowl. Refrigerate it while you make the danger dogs.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Put 1 cheese stick into each jalapeno half, then fill with some sausage, pressing in and making sure the cheese is fully covered. Tightly wrap each jalapeno half in a strip of bacon, pressing it firmly so the bacon sticks to the chorizo.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_4368" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_4368"> Put 1 cheese stick into each jalapeno half, then fill with some sausage, pressing in and making sure the cheese is fully covered. Tightly wrap each jalapeno half in a strip of bacon, pressing it firmly so the bacon sticks to the chorizo.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Grill the jalapenos cut-side down, moving as needed to avoid flareups, until the bacon on the bottom is brown and crispy and the sausage is cooked, about 10 minutes. Flip and continue to cook until the bacon on the other side is brown and crispy, another 10 minutes (to keep the melted cheese from leaking out, do not flip again). Put 2 grilled jalapenos in each bun, top with the spicy mayonaise and sprinkle with scallions.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_4369" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_4369"> Grill the jalapenos cut-side down, moving as needed to avoid flareups, until the bacon on the bottom is brown and crispy and the sausage is cooked, about 10 minutes. Flip and continue to cook until the bacon on the other side is brown and crispy, another 10 minutes (to keep the melted cheese from leaking out, do not flip again). Put 2 grilled jalapenos in each bun, top with the spicy mayonaise and sprinkle with scallions.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.foodnetwork.com/recipes/food-network-kitchen/jalapeno-danger-dog-3810987">Jalapeno Danger Dog</a></p>
 
@@ -243,21 +259,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

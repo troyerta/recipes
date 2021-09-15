@@ -164,43 +164,59 @@
 <li>Total Time: 30 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_194" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_194"> 3 cups shredded smoked gouda (or cheese of your choice)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_195" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_195"> 1 teaspoon baking powder</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_196" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_196"> Kosher salt, to taste (optional)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_197" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_197"> 2 large eggs</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_198" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_198"> 1/2 cup flour, or as needed</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_199" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_199"> Oil for frying</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>3 cups shredded smoked gouda (or cheese of your choice)</p>
+<input disabled="" type="checkbox" id="chkbx_200" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_200"> In a large bowl, mix together the shredded cheese, baking powder, salt, and eggs. Then sprinkle over a bit of flour at a time and knead until a barely-sticky dough forms.</label>
 </li>
-<li>
-<p>1 teaspoon baking powder</p>
-</li>
-<li>
-<p>Kosher salt, to taste (optional)</p>
-</li>
-<li>
-<p>2 large eggs</p>
-</li>
-<li>
-<p>1/2 cup flour, or as needed</p>
-</li>
-<li>
-<p>Oil for frying</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a large bowl, mix together the shredded cheese, baking powder, salt, and eggs. Then sprinkle over a bit of flour at a time and knead until a barely-sticky dough forms.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Roll into small, ping-pong sized balls, keeping in mind that the cheese balls puff up a bit as they fry.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_201" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_201"> Roll into small, ping-pong sized balls, keeping in mind that the cheese balls puff up a bit as they fry.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Fry in a high-walled, heavy bottomed skillet or pot with nearly enough oil to cover the cheese balls until golden. Set on a paper towel lined plate briefly to absorb excess oil.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_202" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_202"> Fry in a high-walled, heavy bottomed skillet or pot with nearly enough oil to cover the cheese balls until golden. Set on a paper towel lined plate briefly to absorb excess oil.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Serve warm.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_203" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_203"> Serve warm.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.reddit.com/r/GifRecipes/comments/ci4hda/crispy_smoked_gouda_cheese_balls/ev1o9z5/">Crispy Smoked Gouda Cheese Balls</a></p>
 
@@ -241,21 +257,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

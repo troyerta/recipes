@@ -169,25 +169,33 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9322" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9322"> 1 750ml bottle of Prosecco, chilled</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9323" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9323"> 3-3.5 cups of fresh grapefruit juice (~4 very large grapefruit), chilled</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9324" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9324"> Sweetener or simple syrup (optional)</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 750ml bottle of Prosecco, chilled</p>
+<input disabled="" type="checkbox" id="chkbx_9325" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9325"> Add the chilled Prosecco and grapefruit juice in a large pitcher (one that can handle 8 cups of liquid + a couple inches of Prosecco foam)</label>
 </li>
-<li>
-<p>3-3.5 cups of fresh grapefruit juice (~4 very large grapefruit), chilled</p>
-</li>
-<li>
-<p>Sweetener or simple syrup (optional)</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Add the chilled Prosecco and grapefruit juice in a large pitcher (one that can handle 8 cups of liquid + a couple inches of Prosecco foam)</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Gently stir in your favorite sweetener to-taste, if desired</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9326" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9326"> Gently stir in your favorite sweetener to-taste, if desired</label>
+</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://www.jasonandshawnda.com/foodiebride/archives/17945/">Grapefruit Mimosas</a></p>
 <h2><a class="header" href="#tags" id="tags">Tags</a></h2>
@@ -230,21 +238,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

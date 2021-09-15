@@ -161,53 +161,69 @@
 <li>Yield: 4</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_444" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_444"> 2 cups leftover rotisserie chicken</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_445" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_445"> 1/2 cup diced red onion</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_446" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_446"> 1/2 cup diced apple</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_447" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_447"> 1/2 cup grapes, halved</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_448" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_448"> 1/4 cup dried cranberries</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_449" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_449"> 1/4 cup slivered almonds</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_450" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_450"> 1/2 cup plain Greek yogurt</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_451" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_451"> 1 tablespoon freshly squeezed lemon juice, or more, to taste</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_452" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_452"> 1/2 teaspoon garlic powder</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_453" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_453"> Kosher salt and freshly ground black pepper</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_454" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_454"> 8 slices bread</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_455" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_455"> 4 leaves Boston bibb lettuce</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>2 cups leftover rotisserie chicken</p>
+<input disabled="" type="checkbox" id="chkbx_456" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_456"> In a large bowl, combine chicken, red onion, apple, grapes, dried cranberries, sliced almonds, Greek yogurt, lemon juice, garlic powder, salt and pepper, to taste.</label>
 </li>
-<li>
-<p>1/2 cup diced red onion</p>
-</li>
-<li>
-<p>1/2 cup diced apple</p>
-</li>
-<li>
-<p>1/2 cup grapes, halved</p>
-</li>
-<li>
-<p>1/4 cup dried cranberries</p>
-</li>
-<li>
-<p>1/4 cup slivered almonds</p>
-</li>
-<li>
-<p>1/2 cup plain Greek yogurt</p>
-</li>
-<li>
-<p>1 tablespoon freshly squeezed lemon juice, or more, to taste</p>
-</li>
-<li>
-<p>1/2 teaspoon garlic powder</p>
-</li>
-<li>
-<p>Kosher salt and freshly ground black pepper</p>
-</li>
-<li>
-<p>8 slices bread</p>
-</li>
-<li>
-<p>4 leaves Boston bibb lettuce</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a large bowl, combine chicken, red onion, apple, grapes, dried cranberries, sliced almonds, Greek yogurt, lemon juice, garlic powder, salt and pepper, to taste.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Serve sandwiches on bread with chicken mixture and lettuce.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_457" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_457"> Serve sandwiches on bread with chicken mixture and lettuce.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://damndelicious.net/2012/11/07/lightened-up-greek-yogurt-chicken-salad-sandwich/">Greek Yogurt Chicken Salad Sandwich</a></p>
 
@@ -248,21 +264,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

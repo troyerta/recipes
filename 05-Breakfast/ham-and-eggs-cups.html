@@ -161,41 +161,58 @@
 <li>Yield: 3</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_2374" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2374"> 6 slices of of deli-style ham</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_2375" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2375"> 6 eggs</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_2376" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2376"> 1/2 cup shredded cheddar cheese</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_2377" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2377"> black pepper, to taste preference</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>6 slices of of deli-style ham</p>
+<input disabled="" type="checkbox" id="chkbx_2378" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_2378"> Preheat oven to 375 degrees. Spray muffin tin pan with non stick cooking spray.</label>
 </li>
-<li>
-<p>6 eggs</p>
-</li>
-<li>
-<p>1/2 cup shredded cheddar cheese</p>
-</li>
-<li>
-<p>black pepper, to taste preference</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Preheat oven to 375 degrees. Spray muffin tin pan with non stick cooking spray.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Line bottom of of muffin tin with individual slices of ham.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_2379" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_2379"> Line bottom of of muffin tin with individual slices of ham.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>In a skillet, scramble 6 eggs as desired. Scoop scrambled eggs evenly on top of each slice of ham.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_2380" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_2380"> In a skillet, scramble 6 eggs as desired. Scoop scrambled eggs evenly on top of each slice of ham.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Sprinkle with cheddar cheese and black pepper.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_2381" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_2381"> Sprinkle with cheddar cheese and black pepper.</label>
+</li>
 </ol>
 <hr />
 <ol start="5">
-<li>Bake 10-12 minutes or until cheese is melted and ham is baked.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_2382" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_2382"> Bake 10-12 minutes or until cheese is melted and ham is baked.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://recipes-yummy.com/ham-and-eggs-cups/">Ham and Eggs Cups</a></p>
 
@@ -236,21 +253,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

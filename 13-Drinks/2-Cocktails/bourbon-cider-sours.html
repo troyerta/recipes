@@ -169,32 +169,52 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9166" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9166"> 3 ounces of bourbon, 2 shots</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9167" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9167"> 1 cup apple cider</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9168" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9168"> 1/2 cup orange juice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9169" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9169"> 1/4 cup sugar</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9170" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9170"> Crushed or cubed ice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9171" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9171"> 1 gala or honeycrisp apple, sliced for garnish</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>3 ounces of bourbon, 2 shots</p>
+<input disabled="" type="checkbox" id="chkbx_9172" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9172"> Mix the bourbon, apple cider, orange juice, and sugar together.</label>
 </li>
-<li>
-<p>1 cup apple cider</p>
-</li>
-<li>
-<p>1/2 cup orange juice</p>
-</li>
-<li>
-<p>1/4 cup sugar</p>
-</li>
-<li>
-<p>Crushed or cubed ice</p>
-</li>
-<li>
-<p>1 gala or honeycrisp apple, sliced for garnish</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Mix the bourbon, apple cider, orange juice, and sugar together.</li>
-<li>Place the ice in the serving cups and pour the liquid over the ice.</li>
-<li>Garnish with apple slices.</li>
 </ol>
+<hr />
+<ol start="2">
+<li>
+<input disabled="" type="checkbox" id="chkbx_9173" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9173"> Place the ice in the serving cups and pour the liquid over the ice.</label>
+</li>
+</ol>
+<hr />
+<ol start="3">
+<li>
+<input disabled="" type="checkbox" id="chkbx_9174" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9174"> Garnish with apple slices.</label>
+</li>
+</ol>
+<hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://blessherheartyall.com/bourbon-cider-sours">Bourbon Cider Sours</a></p>
 <h2><a class="header" href="#tags" id="tags">Tags</a></h2>
@@ -236,21 +256,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

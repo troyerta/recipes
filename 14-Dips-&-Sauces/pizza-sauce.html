@@ -162,44 +162,57 @@
 <li>Yield: 24 Servings (2 14&quot; round pizzas)</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10082" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10082"> 6 oz tomato paste (1 -6 oz can)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10083" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10083"> 15 oz tomato sauce (1 - 15 oz can)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10084" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10084"> 1-2 Tbs oregano to taste</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10085" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10085"> 2 Tbs Italian seasoning</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10086" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10086"> ½ tsp garlic powder</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10087" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10087"> ½ tsp onion powder</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10088" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10088"> ½ Tbs garlic salt</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10089" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10089"> ¼ tsp freshly ground black pepper</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10090" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10090"> 1 tsp sugar* coconut sugar for paleo or omit</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>6 oz tomato paste (1 -6 oz can)</p>
+<input disabled="" type="checkbox" id="chkbx_10091" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10091"> Mix tomato paste and sauce together in a medium size bowl until well combined. All the lumps of paste should be smoothed out.</label>
 </li>
-<li>
-<p>15 oz tomato sauce (1 - 15 oz can)</p>
-</li>
-<li>
-<p>1-2 Tbs oregano to taste</p>
-</li>
-<li>
-<p>2 Tbs Italian seasoning</p>
-</li>
-<li>
-<p>½ tsp garlic powder</p>
-</li>
-<li>
-<p>½ tsp onion powder</p>
-</li>
-<li>
-<p>½ Tbs garlic salt</p>
-</li>
-<li>
-<p>¼ tsp freshly ground black pepper</p>
-</li>
-<li>
-<p>1 tsp sugar* coconut sugar for paleo or omit</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Mix tomato paste and sauce together in a medium size bowl until well combined. All the lumps of paste should be smoothed out.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Add the seasonings and sugar and mix well.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10092" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10092"> Add the seasonings and sugar and mix well.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>
@@ -252,21 +265,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

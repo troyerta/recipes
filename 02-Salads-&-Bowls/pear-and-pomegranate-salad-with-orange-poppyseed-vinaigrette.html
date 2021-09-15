@@ -161,61 +161,76 @@
 <li>Yield: 2</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_689" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_689"> 3 cups baby spinach, packed</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_690" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_690"> 1 pear , sliced or chopped</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_691" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_691"> ¼ cup pomegranate arils</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_692" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_692"> ¼ cup feta cheese, crumbled</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_693" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_693"> ¼ cup pecans, halved</label>
+<br>
+<h4><a class="header" href="#orange-poppyseed-vinaigrette" id="orange-poppyseed-vinaigrette">Orange Poppyseed Vinaigrette</a></h4><br>
+<input disabled="" type="checkbox" id="chkbx_694" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_694"> ⅓ cup orange juice, freshly squeezed</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_695" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_695"> ¼ cup extra virgin olive oil</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_696" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_696"> 1 tbsp dijon mustard</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_697" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_697"> 1 tbsp apple cider vinegar</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_698" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_698"> ¼ tsp salt</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_699" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_699"> 1 tbsp poppyseed</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_700" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_700"> 1 tbsp honey</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>3 cups baby spinach, packed</p>
+<input disabled="" type="checkbox" id="chkbx_701" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_701"> For the salad, add the spinach to a large bowl and layer the remaining ingredients on top.</label>
 </li>
-<li>
-<p>1 pear , sliced or chopped</p>
-</li>
-<li>
-<p>¼ cup pomegranate arils</p>
-</li>
-<li>
-<p>¼ cup feta cheese, crumbled</p>
-</li>
-<li>
-<p>¼ cup pecans, halved</p>
-</li>
-</ul>
-<h4><a class="header" href="#orange-poppyseed-vinaigrette" id="orange-poppyseed-vinaigrette">Orange Poppyseed Vinaigrette:</a></h4>
-<ul>
-<li>
-<p>⅓ cup orange juice, freshly squeezed</p>
-</li>
-<li>
-<p>¼ cup extra virgin olive oil</p>
-</li>
-<li>
-<p>1 tbsp dijon mustard</p>
-</li>
-<li>
-<p>1 tbsp apple cider vinegar</p>
-</li>
-<li>
-<p>¼ tsp salt</p>
-</li>
-<li>
-<p>1 tbsp poppyseed</p>
-</li>
-<li>
-<p>1 tbsp honey</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>For the salad, add the spinach to a large bowl and layer the remaining ingredients on top.</li>
 </ol>
 <hr />
-<h4><a class="header" href="#orange-poppyseed-vinaigrette-1" id="orange-poppyseed-vinaigrette-1">Orange Poppyseed Vinaigrette:</a></h4>
-<ol>
-<li>Add all ingredients to a medium size jar. Tighten the lid and shake until thoroughly mixed.</li>
+<h4><a class="header" href="#orange-poppyseed-vinaigrette:" id="orange-poppyseed-vinaigrette:">Orange Poppyseed Vinaigrette:</a></h4><ol start="2">
+<li>
+<input disabled="" type="checkbox" id="chkbx_702" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_702"> Add all ingredients to a medium size jar. Tighten the lid and shake until thoroughly mixed.</label>
+</li>
 </ol>
 <hr />
-<ol start="2">
-<li>Drizzle over salad. Toss to combine. Serve immediately and enjoy!</li>
+<ol start="3">
+<li>
+<input disabled="" type="checkbox" id="chkbx_703" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_703"> Drizzle over salad. Toss to combine. Serve immediately and enjoy!</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://houseofyumm.com/pear-pomegranate-salad-with-orange-poppyseed-vinaigrette/">Pear &amp; Pomegranate Salad with Orange Poppyseed Vinaigrette</a></p>
 
@@ -256,21 +271,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

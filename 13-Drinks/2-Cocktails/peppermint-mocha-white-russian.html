@@ -169,28 +169,37 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9432" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9432"> 1.5 ounce Vodka</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9433" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9433"> 1.5 ounce Peppermint Kahula</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9434" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9434"> 2 ounces Milk of choice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9435" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9435"> Whipped cream and crushed candy canes for garnish</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1.5 ounce Vodka</p>
+<input disabled="" type="checkbox" id="chkbx_9436" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9436"> In a cocktail glass, filled half way with ice, add a 1:1 ratio of vodka and Kahula.</label>
 </li>
-<li>
-<p>1.5 ounce Peppermint Kahula</p>
-</li>
-<li>
-<p>2 ounces Milk of choice</p>
-</li>
-<li>
-<p>Whipped cream and crushed candy canes for garnish</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a cocktail glass, filled half way with ice, add a 1:1 ratio of vodka and Kahula.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Top with milk. Stir to combine. Garnish with whipped cream and crushed candy canes.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9437" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9437"> Top with milk. Stir to combine. Garnish with whipped cream and crushed candy canes.</label>
+</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>If you don't want ice in the drink, you can premix them and store in the fridge until ready to consume. Then top with whipped cream, if desired!</li>
@@ -236,21 +245,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

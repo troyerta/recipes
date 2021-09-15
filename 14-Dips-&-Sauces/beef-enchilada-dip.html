@@ -172,38 +172,49 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9823" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9823"> 1 1/2 - 2 pounds ground beef</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9824" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9824"> 1/2 medium onion diced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9825" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9825"> 2 cloves garlic minced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9826" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9826"> 2 cups enchilada sauce</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9827" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9827"> 2 cups grated Monterrey Jack or cheddar cheese</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9828" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9828"> Sour Cream (optional)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9829" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9829"> Tortilla Chips (optional)</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 1/2 - 2 pounds ground beef</p>
+<input disabled="" type="checkbox" id="chkbx_9830" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9830"> Brown ground beef in a large skillet. Drain. Add in onion and garlic and cook until tender, about 3 minutes. Stir in enchilada sauce and top with grated cheese. Cover and allow cheese to melt, about 3 more minutes.</label>
 </li>
-<li>
-<p>1/2 medium onion diced</p>
-</li>
-<li>
-<p>2 cloves garlic minced</p>
-</li>
-<li>
-<p>2 cups enchilada sauce</p>
-</li>
-<li>
-<p>2 cups grated Monterrey Jack or cheddar cheese</p>
-</li>
-<li>
-<p>Sour Cream (optional)</p>
-</li>
-<li>
-<p>Tortilla Chips (optional)</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Brown ground beef in a large skillet. Drain. Add in onion and garlic and cook until tender, about 3 minutes. Stir in enchilada sauce and top with grated cheese. Cover and allow cheese to melt, about 3 more minutes.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Top with sour cream and serve with tortilla chips.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9831" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9831"> Top with sour cream and serve with tortilla chips.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://addapinch.com/cooking/2013/10/09/beef-enchilada-dip-recipe/#.Ul2EcXxxl8N">Add a Pinch - Beef Enchilada Dip</a></p>
 
@@ -244,21 +255,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

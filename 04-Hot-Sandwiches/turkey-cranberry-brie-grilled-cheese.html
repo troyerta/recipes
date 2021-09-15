@@ -161,41 +161,58 @@
 <li>Yield: 1 sandwich</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1952" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1952"> 2 slices of seedless Rye bread</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1953" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1953"> 3-4 slices of roasted turkey breast</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1954" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1954"> 3 oz Brie cheese rind cut off, thinly sliced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1955" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1955"> 2 Tbsp cranberry sauce</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>2 slices of seedless Rye bread</p>
+<input disabled="" type="checkbox" id="chkbx_1956" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1956"> Preheat a medium saute pan over medium heat and lightly grease it.</label>
 </li>
-<li>
-<p>3-4 slices of roasted turkey breast</p>
-</li>
-<li>
-<p>3 oz Brie cheese rind cut off, thinly sliced</p>
-</li>
-<li>
-<p>2 Tbsp cranberry sauce</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Preheat a medium saute pan over medium heat and lightly grease it.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Place bread in the pan and separate brie slices among the two slices of bread. Let it start melting.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1957" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1957"> Place bread in the pan and separate brie slices among the two slices of bread. Let it start melting.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Layer turkey breast over one slice of bread and then cranberry sauce on top of turkey.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1958" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1958"> Layer turkey breast over one slice of bread and then cranberry sauce on top of turkey.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Cover with second slice of bread and press lightly.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1959" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1959"> Cover with second slice of bread and press lightly.</label>
+</li>
 </ol>
 <hr />
 <ol start="5">
-<li>Finish the grilled cheese until bread is golden and cheese is melted.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1960" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1960"> Finish the grilled cheese until bread is golden and cheese is melted.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.willcookforsmiles.com/turkey-cranberry-brie-grilled-cheese">Turkey Cranberry Brie Grilled Cheese</a></p>
 <h2><a class="header" href="#tags" id="tags">Tags</a></h2>
@@ -238,21 +255,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

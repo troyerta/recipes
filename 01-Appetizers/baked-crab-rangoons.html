@@ -161,46 +161,63 @@
 <li>Yield: 12 servings</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_12" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_12"> 1 can (6 oz.) white crabmeat, drained and chopped</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_13" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_13"> 4 oz. (1/2 of 8-oz. pkg.) cream cheese, softened</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_14" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_14"> 2 tablespoons light mayonaise</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_15" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_15"> ½ teaspoon Sriracha</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_16" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_16"> 2 teaspoons finely slice chives, plus more for garnish</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_17" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_17"> fresh ground pepper to taste</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_18" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_18"> 12 won ton wrappers</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 can (6 oz.) white crabmeat, drained and chopped</p>
+<input disabled="" type="checkbox" id="chkbx_19" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_19"> Preheat oven to 350°F. Spray a mini muffin tin with nonstick cooking spray.</label>
 </li>
-<li>
-<p>4 oz. (1/2 of 8-oz. pkg.) cream cheese, softened</p>
-</li>
-<li>
-<p>2 tablespoons light mayonaise</p>
-</li>
-<li>
-<p>½ teaspoon Sriracha</p>
-</li>
-<li>
-<p>2 teaspoons finely slice chives, plus more for garnish</p>
-</li>
-<li>
-<p>fresh ground pepper to taste</p>
-</li>
-<li>
-<p>12 won ton wrappers</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Preheat oven to 350°F. Spray a mini muffin tin with nonstick cooking spray.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>In a medium bowl, combine crab meat, cream cheese, mayonaise, Sriracha, chives, and pepper. Mix until well combined.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_20" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_20"> In a medium bowl, combine crab meat, cream cheese, mayonaise, Sriracha, chives, and pepper. Mix until well combined.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Place 1 won ton wrapper in each 12 mini muffin cups. The edges of the won ton wrappers will extend beyond the mini muffin tin cups and may need to be folded slightly. Fill the center of each won ton cup with crab mixture.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_21" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_21"> Place 1 won ton wrapper in each 12 mini muffin cups. The edges of the won ton wrappers will extend beyond the mini muffin tin cups and may need to be folded slightly. Fill the center of each won ton cup with crab mixture.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Bake 15 to 20 minutes or until edges of cups are golden brown and filling is heated through. Garnish with reserved chives.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_22" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_22"> Bake 15 to 20 minutes or until edges of cups are golden brown and filling is heated through. Garnish with reserved chives.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://www.mybakingaddiction.com/baby-shower-crab-rangoons/">Baked Crab Rangoons</a></p>
 
@@ -241,21 +258,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

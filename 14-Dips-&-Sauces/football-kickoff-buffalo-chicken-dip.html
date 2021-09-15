@@ -164,39 +164,52 @@
 <li>Total Time: 20 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9954" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9954"> 1 1/2 cups cooked and shredded chicken or 1 (12 ounce can chunk chicken, drained)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9955" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9955"> 1 (8 ounce) package cream cheese softened</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9956" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9956"> 1/2 cup Ranch dressing</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9957" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9957"> 1/2 cup Buffalo wing sauce (such as Frank's Red Hot, not to be confused with their pepper sauce. Start with less if you want and add more to your desired hotness.)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9958" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9958"> 3/4 cup shredded Cheddar cheese</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9959" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9959"> blue cheese crumbles (optional)</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 1/2 cups cooked and shredded chicken or 1 (12 ounce can chunk chicken, drained)</p>
+<input disabled="" type="checkbox" id="chkbx_9960" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9960"> Heat chicken and Buffalo sauce in a skillet over medium heat, until heated through. Make sure to break up the chicken so there are no big chunks. Stir in cream cheese and ranch dressing. Cook, stirring until well blended and warm.</label>
 </li>
-<li>
-<p>1 (8 ounce) package cream cheese softened</p>
-</li>
-<li>
-<p>1/2 cup Ranch dressing</p>
-</li>
-<li>
-<p>1/2 cup Buffalo wing sauce (such as Frank's Red Hot, not to be confused with their pepper sauce. Start with less if you want and add more to your desired hotness.)</p>
-</li>
-<li>
-<p>3/4 cup shredded Cheddar cheese</p>
-</li>
-<li>
-<p>blue cheese crumbles (optional)</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Heat chicken and Buffalo sauce in a skillet over medium heat, until heated through. Make sure to break up the chicken so there are no big chunks. Stir in cream cheese and ranch dressing. Cook, stirring until well blended and warm.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Mix in shredded cheese. Pour into a shallow dish or pie pan and sprinkle with blue cheese crumbles. We usually only sprinkle blue cheese on half of it for those who aren’t blue cheese fans.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9961" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9961"> Mix in shredded cheese. Pour into a shallow dish or pie pan and sprinkle with blue cheese crumbles. We usually only sprinkle blue cheese on half of it for those who aren’t blue cheese fans.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Bake in a preheated oven to 350 for 15-20 minutes or microwave it until the cheese melts. Serve with chips for dipping.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9962" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9962"> Bake in a preheated oven to 350 for 15-20 minutes or microwave it until the cheese melts. Serve with chips for dipping.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://www.the-girl-who-ate-everything.com/2009/09/football-kickoff-buffalo-chicken-dip.html">Football Kickoff Buffalo Chicken Dip</a></p>
 
@@ -237,21 +250,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

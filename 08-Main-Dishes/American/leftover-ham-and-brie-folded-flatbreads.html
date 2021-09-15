@@ -161,40 +161,55 @@
 <li>Yield: 4 servings</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4370" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4370"> 200g Brie</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4371" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4371"> 4-5 Slices of Leftover Ham</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4372" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4372"> 4 Tbsp Caramelised Onion Chutney</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4373" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4373"> 4 Deli Kitchen Brioche Folded Flatbreads</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4374" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4374"> 1 Knob of Butter</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>200g Brie</p>
+<input disabled="" type="checkbox" id="chkbx_4375" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_4375"> Open up your Deli Kitchen Brioche Folded Flatbreads and spread 1 tbsp of chutney over each flatbread.</label>
 </li>
-<li>
-<p>4-5 Slices of Leftover Ham</p>
-</li>
-<li>
-<p>4 Tbsp Caramelised Onion Chutney</p>
-</li>
-<li>
-<p>4 Deli Kitchen Brioche Folded Flatbreads</p>
-</li>
-<li>
-<p>1 Knob of Butter</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Open up your Deli Kitchen Brioche Folded Flatbreads and spread 1 tbsp of chutney over each flatbread.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Add 3 slices of brie to one side,  top with a slice of ham and then another layer of brie. Fold the Deli Kitchen Brioche Folded Flatbread over and repeat with the other 3.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_4376" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_4376"> Add 3 slices of brie to one side,  top with a slice of ham and then another layer of brie. Fold the Deli Kitchen Brioche Folded Flatbread over and repeat with the other 3.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Heat the frying pan to a medium heat and add a knob of butter. Once melted, add your Deli Kitchen Flatbreads. Cook for 2-3 minutes on each side, until they are nice and golden and the brie is gooey and melting.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_4377" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_4377"> Heat the frying pan to a medium heat and add a knob of butter. Once melted, add your Deli Kitchen Flatbreads. Cook for 2-3 minutes on each side, until they are nice and golden and the brie is gooey and melting.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Remove the Deli Kitchen Flatbreads from the heat and allow to cool for 1 minute before tucking in!</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_4378" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_4378"> Remove the Deli Kitchen Flatbreads from the heat and allow to cool for 1 minute before tucking in!</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://www.mobkitchen.co.uk/recipes/ham-brie-flatbreads">Leftover Ham and Brie Folded Flatbreads</a></p>
 
@@ -235,21 +250,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

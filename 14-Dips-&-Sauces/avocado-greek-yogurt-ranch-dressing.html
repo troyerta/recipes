@@ -163,47 +163,68 @@
 <li>Total Time: 15 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9810" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9810"> 1 cup plain fat free or low-fat Greek yogurt</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9811" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9811"> 1 medium avocado , peeled and cored</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9812" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9812"> 1 1/2 Tbsp fresh lime juice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9813" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9813"> 1 garlic clove</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9814" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9814"> 2 Tbsp chopped fresh parsley (or 2 tsp dried)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9815" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9815"> 1 - 2 tsp chopped fresh dill , to taste (or 1/2 tsp dried)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9816" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9816"> 2 tsp chopped fresh chives (or 3/4 tsp dried)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9817" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9817"> 1/2 tsp onion powder</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9818" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9818"> Salt and freshly ground black pepper , to taste</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9819" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9819"> Up to 6 Tbsp milk , as needed (for a slightly richer dressing sub 2 Tbsp olive oil for some of the milk)</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 cup plain fat free or low-fat Greek yogurt</p>
+<input disabled="" type="checkbox" id="chkbx_9820" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9820"> Add all dressing ingredients except for milk to a food processor. Pulse until well blended.</label>
 </li>
-<li>
-<p>1 medium avocado , peeled and cored</p>
-</li>
-<li>
-<p>1 1/2 Tbsp fresh lime juice</p>
-</li>
-<li>
-<p>1 garlic clove</p>
-</li>
-<li>
-<p>2 Tbsp chopped fresh parsley (or 2 tsp dried)</p>
-</li>
-<li>
-<p>1 - 2 tsp chopped fresh dill , to taste (or 1/2 tsp dried)</p>
-</li>
-<li>
-<p>2 tsp chopped fresh chives (or 3/4 tsp dried)</p>
-</li>
-<li>
-<p>1/2 tsp onion powder</p>
-</li>
-<li>
-<p>Salt and freshly ground black pepper , to taste</p>
-</li>
-<li>
-<p>Up to 6 Tbsp milk , as needed (for a slightly richer dressing sub 2 Tbsp olive oil for some of the milk)</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Add all dressing ingredients except for milk to a food processor. Pulse until well blended.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Add in milk 1 Tbsp at a time to reach desired thickness. Store in refrigerator in an airtight container.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9821" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9821"> Add in milk 1 Tbsp at a time to reach desired thickness. Store in refrigerator in an airtight container.</label>
+</li>
 </ol>
 <hr />
+<h4><a class="header" href="#notes" id="notes">Notes</a></h4><ol start="3">
+<li>
+<input disabled="" type="checkbox" id="chkbx_9822" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9822"> Add milk a tablespoon at a time so that you don't make these homemade ranch dressing to thin.</label>
+</li>
+</ol>
+<hr />
+
 <h4><a class="header" href="#notes" id="notes">Notes</a></h4>
 <ul>
 <li>Add milk a tablespoon at a time so that you don't make these homemade ranch dressing to thin.</li>
@@ -248,21 +269,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

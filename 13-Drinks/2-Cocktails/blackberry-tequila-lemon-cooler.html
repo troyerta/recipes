@@ -169,31 +169,41 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9086" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9086"> 1/4 cup fresh blackberries, plus more for serving</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9087" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9087"> 2 teaspoons fresh thyme leaves, plus more for serving</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9088" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9088"> 1/4 cup (2 ounces) silver tequila</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9089" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9089"> 1 cup Florida's Natural® Brand Lemonade</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9090" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9090"> sparkling water, for topping</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1/4 cup fresh blackberries, plus more for serving</p>
+<input disabled="" type="checkbox" id="chkbx_9091" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9091"> Fill a cocktail glass with ice.</label>
 </li>
-<li>
-<p>2 teaspoons fresh thyme leaves, plus more for serving</p>
-</li>
-<li>
-<p>1/4 cup (2 ounces) silver tequila</p>
-</li>
-<li>
-<p>1 cup Florida's Natural® Brand Lemonade</p>
-</li>
-<li>
-<p>sparkling water, for topping</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Fill a cocktail glass with ice.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>In a cocktail shaker or glass jar, add blackberries and thyme and muddle together, squashing the berries to release the juices from the fruit. Add the tequila and strain into the prepared glass. Add the lemonade. Top off with sparkling water. Serve with fresh berries and thyme. Drink!</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9092" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9092"> In a cocktail shaker or glass jar, add blackberries and thyme and muddle together, squashing the berries to release the juices from the fruit. Add the tequila and strain into the prepared glass. Add the lemonade. Top off with sparkling water. Serve with fresh berries and thyme. Drink!</label>
+</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.halfbakedharvest.com/blackberry-tequila-lemon-cooler/#bo-recipe">Blackberry Tequila Lemon Cooler</a></p>
 <h2><a class="header" href="#tags" id="tags">Tags</a></h2>
@@ -235,21 +245,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

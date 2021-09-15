@@ -169,31 +169,41 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9362" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9362"> 3 ounces gin</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9363" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9363"> 1/2 – 1 ounce honey sage syrup (1/2 C honey and water each, 5-6 fresh sage leaves)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9364" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9364"> 1/2 ounce fresh lime juice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9365" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9365"> 5 ounces club soda</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9366" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9366"> fresh sage leaves for garnish</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>3 ounces gin</p>
+<input disabled="" type="checkbox" id="chkbx_9367" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9367"> Combine all syrup ingredients in a saucepan and bring to a boil, stirring constantly. Reduce heat to low and stir until it appears that all of the honey has dissolved. Remove from heat and let sit until completely cooled to room temperature. Remove sage leaves before using. This can be made well ahead of time and store in a jar in the fridge.</label>
 </li>
-<li>
-<p>1/2 – 1 ounce honey sage syrup (1/2 C honey and water each, 5-6 fresh sage leaves)</p>
-</li>
-<li>
-<p>1/2 ounce fresh lime juice</p>
-</li>
-<li>
-<p>5 ounces club soda</p>
-</li>
-<li>
-<p>fresh sage leaves for garnish</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Combine all syrup ingredients in a saucepan and bring to a boil, stirring constantly. Reduce heat to low and stir until it appears that all of the honey has dissolved. Remove from heat and let sit until completely cooled to room temperature. Remove sage leaves before using. This can be made well ahead of time and store in a jar in the fridge.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Fill the glass with a few sage leaves and ice cubes, then add gin, 1/2 ounce of syrup and lime juice, stirring well. Pour in club soda, stirring a bit more, then taste and determine if the drink has enough sweetness. If not, add a bit more syrup.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9368" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9368"> Fill the glass with a few sage leaves and ice cubes, then add gin, 1/2 ounce of syrup and lime juice, stirring well. Pour in club soda, stirring a bit more, then taste and determine if the drink has enough sweetness. If not, add a bit more syrup.</label>
+</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>You may want less gin to make a weaker drink.</li>
@@ -239,21 +249,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

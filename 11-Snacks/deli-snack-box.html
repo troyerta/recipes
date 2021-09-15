@@ -163,30 +163,38 @@
 <li>Total Time: 15 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_7306" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_7306"> 2 ounces thinly sliced turkey breast</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_7307" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_7307"> 1 large egg, hard boiled</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_7308" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_7308"> 1/4 cup cherry tomatoes</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_7309" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_7309"> 1 ounce sharp cheddar cheese, cubed</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_7310" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_7310"> 4 pita bites crackers</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_7311" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_7311"> 2 tablespoons raw almonds</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>2 ounces thinly sliced turkey breast</p>
+<input disabled="" type="checkbox" id="chkbx_7312" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_7312"> Place turkey, egg, tomatoes, cheese, crackers and almonds into meal prep containers.</label>
 </li>
-<li>
-<p>1 large egg, hard boiled</p>
-</li>
-<li>
-<p>1/4 cup cherry tomatoes</p>
-</li>
-<li>
-<p>1 ounce sharp cheddar cheese, cubed</p>
-</li>
-<li>
-<p>4 pita bites crackers</p>
-</li>
-<li>
-<p>2 tablespoons raw almonds</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Place turkey, egg, tomatoes, cheese, crackers and almonds into meal prep containers.</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://damndelicious.net/2017/02/06/deli-snack-box/">Deli Snack Box</a></p>
 
@@ -227,21 +235,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

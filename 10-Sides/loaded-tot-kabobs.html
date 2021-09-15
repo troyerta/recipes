@@ -157,39 +157,52 @@
                     <main>
                         <h1><a class="header" href="#loaded-tot-kabobs" id="loaded-tot-kabobs">Loaded Tot Kabobs</a></h1>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_7143" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_7143"> Ore-Ida® Tater Tots®</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_7144" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_7144"> Colby jack shredded cheese</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_7145" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_7145"> Real bacon bits</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_7146" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_7146"> Sour cream</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_7147" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_7147"> Chives (optional)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_7148" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_7148"> Skewers</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>Ore-Ida® Tater Tots®</p>
+<input disabled="" type="checkbox" id="chkbx_7149" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_7149"> Start by cooking your Ore-Ida® Tater Tots® according to the package directions.</label>
 </li>
-<li>
-<p>Colby jack shredded cheese</p>
-</li>
-<li>
-<p>Real bacon bits</p>
-</li>
-<li>
-<p>Sour cream</p>
-</li>
-<li>
-<p>Chives (optional)</p>
-</li>
-<li>
-<p>Skewers</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Start by cooking your Ore-Ida® Tater Tots® according to the package directions.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Allow to cool just long enough so you don’t burn your fingers. Loosen Tater Tots® potatoes from pan and begin to thread them six at a time onto the skewers. Place skewers on baking sheet and top with cheese and bacon bits (as much as you desire).</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_7150" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_7150"> Allow to cool just long enough so you don’t burn your fingers. Loosen Tater Tots® potatoes from pan and begin to thread them six at a time onto the skewers. Place skewers on baking sheet and top with cheese and bacon bits (as much as you desire).</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Return pan to oven and bake until cheese is melted. Serve up with sour cream topped with chives as a dip.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_7151" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_7151"> Return pan to oven and bake until cheese is melted. Serve up with sour cream topped with chives as a dip.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.thecountrychiccottage.net/loaded-tot-kabobs">Loaded Tot Kabobs</a></p>
 
@@ -230,21 +243,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

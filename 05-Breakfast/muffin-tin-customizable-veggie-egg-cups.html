@@ -164,63 +164,85 @@
 <li>Total Time: 30 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_2491" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2491"> 5 eggs</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_2492" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2492"> salt, to taste</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_2493" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2493"> pepper, to taste</label>
+<br>
+<h4><a class="header" href="#mix-and-match-fillings" id="mix-and-match-fillings">Mix and Match Fillings</a></h4><br>
+<input disabled="" type="checkbox" id="chkbx_2494" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2494"> fresh spinach, chopped</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_2495" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2495"> tomato, diced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_2496" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2496"> onion, finely diced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_2497" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2497"> bell pepper, finely diced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_2498" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2498"> broccoli, cut into small florets</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_2499" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2499"> cheddar cheese</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>5 eggs</p>
+<input disabled="" type="checkbox" id="chkbx_2500" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_2500"> Preheat oven to 350ºF (180ºC).</label>
 </li>
-<li>
-<p>salt, to taste</p>
-</li>
-<li>
-<p>pepper, to taste</p>
-</li>
-</ul>
-<h4><a class="header" href="#mix-and-match-fillings" id="mix-and-match-fillings">Mix and Match Fillings:</a></h4>
-<ul>
-<li>
-<p>fresh spinach, chopped</p>
-</li>
-<li>
-<p>tomato, diced</p>
-</li>
-<li>
-<p>onion, finely diced</p>
-</li>
-<li>
-<p>bell pepper, finely diced</p>
-</li>
-<li>
-<p>broccoli, cut into small florets</p>
-</li>
-<li>
-<p>cheddar cheese</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Preheat oven to 350ºF (180ºC).</li>
 </ol>
 <hr />
 <ol start="2">
-<li>In a greased muffin tin, place your desired combination of fillings into each muffin cup.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_2501" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_2501"> In a greased muffin tin, place your desired combination of fillings into each muffin cup.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>In a measuring cup, add salt and pepper to eggs and beat the eggs until smooth.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_2502" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_2502"> In a measuring cup, add salt and pepper to eggs and beat the eggs until smooth.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Season each cup with salt and pepper.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_2503" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_2503"> Season each cup with salt and pepper.</label>
+</li>
 </ol>
 <hr />
 <ol start="5">
-<li>Pour the beaten eggs into each muffin cup until the liquid almost reaches the top.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_2504" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_2504"> Pour the beaten eggs into each muffin cup until the liquid almost reaches the top.</label>
+</li>
 </ol>
 <hr />
 <ol start="6">
-<li>Bake at 350°F (180°C) for 20 minutes, until set.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_2505" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_2505"> Bake at 350°F (180°C) for 20 minutes, until set.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://tasty.co/recipe/muffin-tin-customizable-veggie-egg-cups">Muffin Tin Customizable Veggie Egg Cups</a></p>
 
@@ -261,21 +283,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

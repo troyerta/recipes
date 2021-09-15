@@ -161,35 +161,45 @@
 <li>Yield: 12</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_212" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_212"> 2 (8 ounce) packages cream cheese, softened</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_213" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_213"> 1 (8 ounce) can crushed pineapple, well drained</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_214" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_214"> 1/4 cup finely chopped green or red bell pepper (or a mix of both)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_215" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_215"> 3 Tablespoons finely chopped green onion</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_216" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_216"> 2 teaspoons seasoned salt</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_217" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_217"> 2 cups chopped pecans, divided</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>2 (8 ounce) packages cream cheese, softened</p>
+<input disabled="" type="checkbox" id="chkbx_218" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_218"> In a large bowl, mix all of the ingredients (only 1 cup of the pecans) together until well combined. Shape into a ball. Place the remaining 1 cup of pecans on a plate and roll the ball in the pecans covering well.</label>
 </li>
-<li>
-<p>1 (8 ounce) can crushed pineapple, well drained</p>
-</li>
-<li>
-<p>1/4 cup finely chopped green or red bell pepper (or a mix of both)</p>
-</li>
-<li>
-<p>3 Tablespoons finely chopped green onion</p>
-</li>
-<li>
-<p>2 teaspoons seasoned salt</p>
-</li>
-<li>
-<p>2 cups chopped pecans, divided</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a large bowl, mix all of the ingredients (only 1 cup of the pecans) together until well combined. Shape into a ball. Place the remaining 1 cup of pecans on a plate and roll the ball in the pecans covering well.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Refrigerate until ready to serve. Serve with crackers: wheat thins, Ritz, or Triscuits work well.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_219" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_219"> Refrigerate until ready to serve. Serve with crackers: wheat thins, Ritz, or Triscuits work well.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.the-girl-who-ate-everything.com/hawaiian-cheese-ball">Hawaiian Cheese Ball</a></p>
 
@@ -230,21 +240,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

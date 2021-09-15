@@ -169,35 +169,48 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9396" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9396"> 2 oz lime juice fresh</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9397" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9397"> 4 oz tequila silver</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9398" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9398"> 4 tsp agave nectar</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9399" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9399"> Ice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9400" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9400"> Champagne or sparkling wine</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>2 oz lime juice fresh</p>
+<input disabled="" type="checkbox" id="chkbx_9401" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9401"> In a shaker, place lime juice, tequila, and agave nectar. Fill shaker halfway with ice. Shake ingredients for 15-20 seconds, or until chilled.</label>
 </li>
-<li>
-<p>4 oz tequila silver</p>
-</li>
-<li>
-<p>4 tsp agave nectar</p>
-</li>
-<li>
-<p>Ice</p>
-</li>
-<li>
-<p>Champagne or sparkling wine</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a shaker, place lime juice, tequila, and agave nectar. Fill shaker halfway with ice. Shake ingredients for 15-20 seconds, or until chilled.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Strain tequila mixture evenly between two 8 oz. champagne flutes. Top each flute with champagne or sparkling wine.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9402" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9402"> Strain tequila mixture evenly between two 8 oz. champagne flutes. Top each flute with champagne or sparkling wine.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Garnish with salt or sugar and a lime and enjoy!</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9403" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9403"> Garnish with salt or sugar and a lime and enjoy!</label>
+</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://glutenfreewithlb.com/mexican-75-tequila-champagne-cocktail/">Mexican 75 Tequila Champagne Cocktail</a></p>
 <h2><a class="header" href="#tags" id="tags">Tags</a></h2>
@@ -239,21 +252,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

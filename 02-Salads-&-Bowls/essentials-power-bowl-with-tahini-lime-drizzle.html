@@ -163,40 +163,55 @@
 <li>Cook Time: 20 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_435" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_435"> 1 medium sweet potato (orange yam)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_436" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_436"> 2 Cups greens, washed and de-stemmed</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_437" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_437"> 1/2 Cup black beans, drained & rinsed</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_438" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_438"> 1 Tbsp tahini lime drizzle (recipe above)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_439" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_439"> Salt & pepper to taste</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 medium sweet potato (orange yam)</p>
+<input disabled="" type="checkbox" id="chkbx_440" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_440"> Preheat your oven to 400 degrees. Wash the sweet potato and the kale. Poke a few holes in the potato with a fork and microwave for about 2 minutes.</label>
 </li>
-<li>
-<p>2 Cups greens, washed and de-stemmed</p>
-</li>
-<li>
-<p>1/2 Cup black beans, drained &amp; rinsed</p>
-</li>
-<li>
-<p>1 Tbsp tahini lime drizzle (recipe above)</p>
-</li>
-<li>
-<p>Salt &amp; pepper to taste</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Preheat your oven to 400 degrees. Wash the sweet potato and the kale. Poke a few holes in the potato with a fork and microwave for about 2 minutes.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Slice the potato into bite size peices. Roast the potatoes for 20 minutes or until edges are brown and crispy.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_441" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_441"> Slice the potato into bite size peices. Roast the potatoes for 20 minutes or until edges are brown and crispy.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>When the potatoes are almost done baking, steam the greens with a splash of water for about 5 minutes or until soft and bright green. If using brussel sprouts, roast with a little balsamic vinegar for at least 20 minutes. Drain and rinse the black beans.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_442" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_442"> When the potatoes are almost done baking, steam the greens with a splash of water for about 5 minutes or until soft and bright green. If using brussel sprouts, roast with a little balsamic vinegar for at least 20 minutes. Drain and rinse the black beans.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Plate your dish with each of the three cooked ingredients and add about a tablespoon of the Tahini Lime Drizzle.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_443" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_443"> Plate your dish with each of the three cooked ingredients and add about a tablespoon of the Tahini Lime Drizzle.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://educating-earthlings.com/essentials-power-bowl-w-tahini-lime-drizzle/">Essentials Power Bowl with Tahini Lime Drizzle</a></p>
 
@@ -237,21 +252,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

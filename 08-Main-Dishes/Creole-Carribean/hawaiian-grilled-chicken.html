@@ -161,47 +161,63 @@
 <li>Yield: 12</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
-<li>3 pounds of boneless skinless chicken thighs</li>
-</ul>
-<h4><a class="header" href="#1-cup-low-sodium-soy-sauce-see-note-the-soy-sauce-and-water-just-needs-to-be-a-1" id="1-cup-low-sodium-soy-sauce-see-note-the-soy-sauce-and-water-just-needs-to-be-a-1">1 Cup Low-Sodium Soy Sauce (See Note; the Soy Sauce and Water Just Needs To Be A 1:</a></h4>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5311" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5311"> 3 pounds of boneless skinless chicken thighs</label>
+<br>
+<h4><a class="header" href="#1-cup-low-sodium-soy-sauce-see-note-the-soy-sauce-and-water-just-needs-to-be-a-1" id="1-cup-low-sodium-soy-sauce-see-note-the-soy-sauce-and-water-just-needs-to-be-a-1">1 Cup Low-Sodium Soy Sauce (See Note; the Soy Sauce and Water Just Needs To Be A 1</a></h4><br>
+<input disabled="" type="checkbox" id="chkbx_5312" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5312"> 1 cup water</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5313" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5313"> 1 - 1 1/2 cups brown sugar</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5314" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5314"> 1/2 bunch of green onions , chopped (reserve the other half for garnish)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5315" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5315"> 1/2 teaspoon minced garlic</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5316" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5316"> 1 teaspoon of sesame oil (not essential but add it if you have it)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5317" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5317"> 1 13.5 ounce can of coconut milk</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 cup water</p>
+<input disabled="" type="checkbox" id="chkbx_5318" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_5318"> Trim chicken thighs of any visible fat. Mix soy sauce, water, brown sugar, onions, garlic, sesame oil, and coconut milk in a large bowl. Marinade chicken for at least 8 hours or overnight to make sure the flavor gets infused.</label>
 </li>
-<li>
-<p>1 - 1 1/2 cups brown sugar</p>
-</li>
-<li>
-<p>1/2 bunch of green onions , chopped (reserve the other half for garnish)</p>
-</li>
-<li>
-<p>1/2 teaspoon minced garlic</p>
-</li>
-<li>
-<p>1 teaspoon of sesame oil (not essential but add it if you have it)</p>
-</li>
-<li>
-<p>1 13.5 ounce can of coconut milk</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Trim chicken thighs of any visible fat. Mix soy sauce, water, brown sugar, onions, garlic, sesame oil, and coconut milk in a large bowl. Marinade chicken for at least 8 hours or overnight to make sure the flavor gets infused.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Grill chicken at a low heat so that the marinade does not burn for 5-7 minutes per side or until done. If you do not have a grill you can use a indoor grill pan.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_5319" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_5319"> Grill chicken at a low heat so that the marinade does not burn for 5-7 minutes per side or until done. If you do not have a grill you can use a indoor grill pan.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Serve over a platter of coconut rice and garnish with green onions and a drizzle of additional soy sauce.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_5320" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_5320"> Serve over a platter of coconut rice and garnish with green onions and a drizzle of additional soy sauce.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Coconut rice can be made by just replacing half of the water in your rice recipe with coconut milk. A trick my SIL told me! So good with just the right amount of coconut flavor.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_5321" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_5321"> Coconut rice can be made by just replacing half of the water in your rice recipe with coconut milk. A trick my SIL told me! So good with just the right amount of coconut flavor.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.the-girl-who-ate-everything.com/hawaiian-grilled-chicken">Hawaiian Grilled Chicken</a></p>
 
@@ -242,21 +258,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

@@ -161,32 +161,41 @@
 <li>Yield: 6</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9383" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9383"> 1 bottle sparkling white wine, half frozen</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9384" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9384"> 1 ½ cups apple juice, frozen</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9385" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9385"> 1 cup frozen mango</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9386" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9386"> 1 cup frozen pineapple</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9387" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9387"> ⅓ cup triple sec</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 bottle sparkling white wine, half frozen</p>
+<input disabled="" type="checkbox" id="chkbx_9388" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9388"> Combine all ingredients in a blender, and mix until fully blended.</label>
 </li>
-<li>
-<p>1 ½ cups apple juice, frozen</p>
-</li>
-<li>
-<p>1 cup frozen mango</p>
-</li>
-<li>
-<p>1 cup frozen pineapple</p>
-</li>
-<li>
-<p>⅓ cup triple sec</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Combine all ingredients in a blender, and mix until fully blended.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Serve and garnish with a pineapple wedge.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9389" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9389"> Serve and garnish with a pineapple wedge.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://tasty.co/recipe/mango-pineapple-frozen-sangria">Mango Pineapple Frozen Sangria</a></p>
 
@@ -227,21 +236,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

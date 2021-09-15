@@ -163,39 +163,59 @@
 <li>Total Time: 10 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_41" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_41"> 25 mini fresh mozzarella balls</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_42" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_42"> 25 blackberries</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_43" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_43"> 25 basil leaves</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_44" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_44"> 25 cucumber chunks</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_45" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_45"> Balsamic glaze</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_46" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_46"> Bamboo skewers</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>25 mini fresh mozzarella balls</p>
+<input disabled="" type="checkbox" id="chkbx_47" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_47"> Using 3″ bamboo skewers or similar, layer your ingredients starting with the mozzarella balls, then a folded basil leaf followed by a blackberry and a chunk of cucumber.</label>
 </li>
-<li>
-<p>25 blackberries</p>
-</li>
-<li>
-<p>25 basil leaves</p>
-</li>
-<li>
-<p>25 cucumber chunks</p>
-</li>
-<li>
-<p>Balsamic glaze</p>
-</li>
-<li>
-<p>Bamboo skewers</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Using 3″ bamboo skewers or similar, layer your ingredients starting with the mozzarella balls, then a folded basil leaf followed by a blackberry and a chunk of cucumber.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Line a tray with your finished skewers and refrigerate or serve right away.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_48" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_48"> Line a tray with your finished skewers and refrigerate or serve right away.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Drizzle with balsamic glaze right before serving.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_49" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_49"> Drizzle with balsamic glaze right before serving.</label>
+</li>
 </ol>
 <hr />
+<h4><a class="header" href="#notes" id="notes">Notes</a></h4><ol start="4">
+<li>
+<input disabled="" type="checkbox" id="chkbx_50" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_50"> If you're serving these as a party appetizer, maximize your prep time by preparing these the night before or earlier in the day. Hold off on adding the balsamic drizzle until just before serving.</label>
+</li>
+</ol>
+<hr />
+
 <h4><a class="header" href="#notes" id="notes">Notes</a></h4>
 <ul>
 <li>If you're serving these as a party appetizer, maximize your prep time by preparing these the night before or earlier in the day. Hold off on adding the balsamic drizzle until just before serving.</li>
@@ -240,21 +260,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

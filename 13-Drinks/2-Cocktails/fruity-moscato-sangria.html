@@ -169,45 +169,63 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9295" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9295"> ½ cup simple syrup</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9296" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9296"> 1 cup raspberries</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9297" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9297"> ½ cup blueberries</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9298" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9298"> 1 orange, thinly sliced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9299" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9299"> 1 grapefruit, thinly sliced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9300" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9300"> ¼ cup (60ml) triple sec</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9301" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9301"> 1 bottle (750ml) rose Moscato</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>½ cup simple syrup</p>
+<input disabled="" type="checkbox" id="chkbx_9302" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9302"> Put the fruits in a large pitcher.</label>
 </li>
-<li>
-<p>1 cup raspberries</p>
-</li>
-<li>
-<p>½ cup blueberries</p>
-</li>
-<li>
-<p>1 orange, thinly sliced</p>
-</li>
-<li>
-<p>1 grapefruit, thinly sliced</p>
-</li>
-<li>
-<p>¼ cup (60ml) triple sec</p>
-</li>
-<li>
-<p>1 bottle (750ml) rose Moscato</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Put the fruits in a large pitcher.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Add triple sec and simple syrup, then fill the pitcher with Moscato.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9303" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9303"> Add triple sec and simple syrup, then fill the pitcher with Moscato.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Stir everything and taste. If needed, add more simple syrup to taste.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9304" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9304"> Stir everything and taste. If needed, add more simple syrup to taste.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Refrigerate for at least 2 hours, or overnight, before serving.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9305" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9305"> Refrigerate for at least 2 hours, or overnight, before serving.</label>
+</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>This sangria can be prepared up to 12 hours before serving. Keep refrigerated.</li>
@@ -253,21 +271,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

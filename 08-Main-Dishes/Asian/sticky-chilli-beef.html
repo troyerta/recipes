@@ -161,51 +161,68 @@
 <li>Yield: 2</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5106" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5106"> 200 grams thinly sliced beef strips</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5107" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5107"> 1 teaspoon Chinese five spice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5108" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5108"> 1 1/2 tablespoons cornflour</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5109" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5109"> 1 tablespoon garlic puree</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5110" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5110"> 2 spring onions sliced, reserve a few for garnishing</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5111" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5111"> 1 peeled carrots, finely sliced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5112" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5112"> 1 red chilli, sliced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5113" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5113"> 3 tablespoons light soy sauce</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5114" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5114"> 1 tablespoon sweet chilli sauce</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5115" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5115"> 1 tablespoon rice wine vinegar</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>200 grams thinly sliced beef strips</p>
+<input disabled="" type="checkbox" id="chkbx_5116" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_5116"> Toss the meat in the cornflour and the Chinese five spice until it's evenly coated. Fry in a very hot wok or frying pan for 2-3 minutes.</label>
 </li>
-<li>
-<p>1 teaspoon Chinese five spice</p>
-</li>
-<li>
-<p>1 1/2 tablespoons cornflour</p>
-</li>
-<li>
-<p>1 tablespoon garlic puree</p>
-</li>
-<li>
-<p>2 spring onions sliced, reserve a few for garnishing</p>
-</li>
-<li>
-<p>1 peeled carrots, finely sliced</p>
-</li>
-<li>
-<p>1 red chilli, sliced</p>
-</li>
-<li>
-<p>3 tablespoons light soy sauce</p>
-</li>
-<li>
-<p>1 tablespoon sweet chilli sauce</p>
-</li>
-<li>
-<p>1 tablespoon rice wine vinegar</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Toss the meat in the cornflour and the Chinese five spice until it's evenly coated. Fry in a very hot wok or frying pan for 2-3 minutes.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Add the garlic and chilli and vegetables and coat for a minute with the beef. Quickly add in the soy sauce, sweet chilli sauce and rice wine vinegar. The sauce should start to bubble and darken. Turn the heat down and ensure the beef is totally coated.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_5117" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_5117"> Add the garlic and chilli and vegetables and coat for a minute with the beef. Quickly add in the soy sauce, sweet chilli sauce and rice wine vinegar. The sauce should start to bubble and darken. Turn the heat down and ensure the beef is totally coated.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Serve the beef with a sprinkle of the reserved spring onions.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_5118" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_5118"> Serve the beef with a sprinkle of the reserved spring onions.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.tastemade.co.uk/videos/sticky-chilli-beef">Sticky Chilli Beef</a></p>
 
@@ -246,21 +263,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

@@ -161,46 +161,63 @@
 <li>Yield: 24 Triangles</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_6406" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_6406"> 15 flour tortillas, 6 inch size</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_6407" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_6407"> 8 oz cream cheese, softened</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_6408" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_6408"> 8 oz sour cream</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_6409" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_6409"> 1 envelope taco mix (or 3 Tbsp homemade taco seasoning)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_6410" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_6410"> 1 can (2.25oz) chopped black olives, drained</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_6411" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_6411"> 1 can (4oz) chopped green chilies</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_6412" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_6412"> 1 cup salsa, for serving</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>15 flour tortillas, 6 inch size</p>
+<input disabled="" type="checkbox" id="chkbx_6413" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_6413"> In a large bowl, combine cream cheese with sour cream and taco seasoning until fully blended. Add in black olives and green chilies. Mix until combined.</label>
 </li>
-<li>
-<p>8 oz cream cheese, softened</p>
-</li>
-<li>
-<p>8 oz sour cream</p>
-</li>
-<li>
-<p>1 envelope taco mix (or 3 Tbsp homemade taco seasoning)</p>
-</li>
-<li>
-<p>1 can (2.25oz) chopped black olives, drained</p>
-</li>
-<li>
-<p>1 can (4oz) chopped green chilies</p>
-</li>
-<li>
-<p>1 cup salsa, for serving</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a large bowl, combine cream cheese with sour cream and taco seasoning until fully blended. Add in black olives and green chilies. Mix until combined.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Spread cream cheese mixture onto one tortilla in a thin layer. Top with a tortilla and repeat 3 times (until you have 4 tortillas with spread stacked up). Top with a 5th tortilla.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_6414" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_6414"> Spread cream cheese mixture onto one tortilla in a thin layer. Top with a tortilla and repeat 3 times (until you have 4 tortillas with spread stacked up). Top with a 5th tortilla.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Wrap entire stack in foil and refrigerate at least one hour. Repeat for remaining 2 stacks.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_6415" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_6415"> Wrap entire stack in foil and refrigerate at least one hour. Repeat for remaining 2 stacks.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>When ready to serve, cut tortilla stack into 8 triangles. Serve with a bowl of your favorite salsa.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_6416" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_6416"> When ready to serve, cut tortilla stack into 8 triangles. Serve with a bowl of your favorite salsa.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.shugarysweets.com/taco-tortilla-stacks/">Taco Tortilla Stacks</a></p>
 
@@ -241,21 +258,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

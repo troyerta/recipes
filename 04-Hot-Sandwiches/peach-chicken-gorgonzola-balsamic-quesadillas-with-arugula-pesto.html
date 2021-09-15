@@ -161,38 +161,49 @@
 <li>Yield: 1</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1834" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1834"> 2 (6-8 inch) tortillas</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1835" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1835"> 2 tablespoons gorgonzola dolce, crumbled</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1836" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1836"> 1/2 cup mozzarella, shredded</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1837" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1837"> 1 peach, sliced thinly</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1838" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1838"> 1/4 cup chicken, cooked and shredded</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1839" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1839"> 1 tablespoon arugula pesto (see below) or arugula (optional)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1840" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1840"> 1 teaspoon balsamic reduction</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>2 (6-8 inch) tortillas</p>
+<input disabled="" type="checkbox" id="chkbx_1841" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1841"> Heat a pan over medium heat, place a tortilla in the pan, sprinkle half of the cheese over the tortilla, followed by the peach, chicken, balsamic reduction, pesto, the remaining cheese and tortilla.</label>
 </li>
-<li>
-<p>2 tablespoons gorgonzola dolce, crumbled</p>
-</li>
-<li>
-<p>1/2 cup mozzarella, shredded</p>
-</li>
-<li>
-<p>1 peach, sliced thinly</p>
-</li>
-<li>
-<p>1/4 cup chicken, cooked and shredded</p>
-</li>
-<li>
-<p>1 tablespoon arugula pesto (see below) or arugula (optional)</p>
-</li>
-<li>
-<p>1 teaspoon balsamic reduction</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Heat a pan over medium heat, place a tortilla in the pan, sprinkle half of the cheese over the tortilla, followed by the peach, chicken, balsamic reduction, pesto, the remaining cheese and tortilla.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Cook until the quesadilla is golden brown on both sides and the cheese is melted, about 2-4 minutes per side.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1842" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1842"> Cook until the quesadilla is golden brown on both sides and the cheese is melted, about 2-4 minutes per side.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>Note: To make balsamic reduction Simmer 1/2 cup balsamic vinegar and 1 tablespoon brown sugar until reduced by half.</li>
@@ -237,21 +248,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

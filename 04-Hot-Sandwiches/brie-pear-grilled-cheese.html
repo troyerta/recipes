@@ -164,37 +164,51 @@
 <li>Total Time: 15 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1573" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1573"> Raisin Cinnamon Bread</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1574" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1574"> Brie Cheese</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1575" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1575"> A few thick slices of a pear</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1576" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1576"> Butter</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>Raisin Cinnamon Bread</p>
+<input disabled="" type="checkbox" id="chkbx_1577" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1577"> Start by warming up a frying pan to on low-medium heat</label>
 </li>
-<li>
-<p>Brie Cheese</p>
-</li>
-<li>
-<p>A few thick slices of a pear</p>
-</li>
-<li>
-<p>Butter</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Start by warming up a frying pan to on low-medium heat</li>
 </ol>
 <hr />
 <ol start="2">
-<li>On one slice of bread, layer down your brie cheese, followed by slick slices of pear</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1578" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1578"> On one slice of bread, layer down your brie cheese, followed by slick slices of pear</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Sandwiches the bread slices together, and generous coat each exterior side of bread with butter</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1579" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1579"> Sandwiches the bread slices together, and generous coat each exterior side of bread with butter</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Fry on each side until a nice golden crust forms.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1580" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1580"> Fry on each side until a nice golden crust forms.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://bsinthekitchen.com/brie-pear-grilled-cheese/">Brie Pear Grilled Cheese</a></p>
 
@@ -235,21 +249,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

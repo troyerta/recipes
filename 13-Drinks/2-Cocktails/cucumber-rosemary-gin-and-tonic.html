@@ -172,34 +172,45 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9232" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9232"> 1 cucumber</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9233" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9233"> 1 lime</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9234" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9234"> 2 sprigs rosemary</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9235" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9235"> 2 oz. Gin</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9236" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9236"> 4 oz. tonic water</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9237" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9237"> Ice</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 cucumber</p>
+<input disabled="" type="checkbox" id="chkbx_9238" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9238"> Peel one half of a cucumber, and slice a lime into eight wedges. In a highball glass, add three slices of peeled cucumber, 1 sprig rosemary, juice from a lime wedge and 1 ounce gin and muddle.</label>
 </li>
-<li>
-<p>1 lime</p>
-</li>
-<li>
-<p>2 sprigs rosemary</p>
-</li>
-<li>
-<p>2 oz. Gin</p>
-</li>
-<li>
-<p>4 oz. tonic water</p>
-</li>
-<li>
-<p>Ice</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Peel one half of a cucumber, and slice a lime into eight wedges. In a highball glass, add three slices of peeled cucumber, 1 sprig rosemary, juice from a lime wedge and 1 ounce gin and muddle.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Strain through a mesh strainer into a second highball glass. Add several cubes of ice, and three slices of unpeeled cucumber. Top with remaining gin and tonic, and serve garnished with rosemary sprigs.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9239" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9239"> Strain through a mesh strainer into a second highball glass. Add several cubes of ice, and three slices of unpeeled cucumber. Top with remaining gin and tonic, and serve garnished with rosemary sprigs.</label>
+</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.thekitchn.com/recipe-cucumberrosemary-gin-an-124907">Cucumber Rosemary Gin &amp; Tonic</a></p>
 <h2><a class="header" href="#tags" id="tags">Tags</a></h2>
@@ -242,21 +253,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

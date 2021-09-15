@@ -169,27 +169,34 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9249" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9249"> 6 ounces gin</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9250" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9250"> 2 wedges of lime</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9251" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9251"> 1 can of Dry Cucumber Soda or other cucumber soda</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9252" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9252"> 4 cucumber slices, sliced from the cucumber lengthwise and as thin as possible</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9253" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9253"> 2 to 4 fresh mint leaves</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>6 ounces gin</p>
+<input disabled="" type="checkbox" id="chkbx_9254" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9254"> In two tall glasses filled with ice, combine the gin, cucumber soda and cucumber slices. Squeeze a wedge of lime into each glass and stir. Bruise a mint leaf or two and drop into each glass.</label>
 </li>
-<li>
-<p>2 wedges of lime</p>
-</li>
-<li>
-<p>1 can of Dry Cucumber Soda or other cucumber soda</p>
-</li>
-<li>
-<p>4 cucumber slices, sliced from the cucumber lengthwise and as thin as possible</p>
-</li>
-<li>
-<p>2 to 4 fresh mint leaves</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In two tall glasses filled with ice, combine the gin, cucumber soda and cucumber slices. Squeeze a wedge of lime into each glass and stir. Bruise a mint leaf or two and drop into each glass.</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>If you can't find cucumber soda, you can use a cucumber gin like Hendricks, club soda, and increase your cucumber peels to 3 per glass.</li>
@@ -235,21 +242,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

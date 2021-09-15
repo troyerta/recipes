@@ -169,31 +169,41 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9544" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9544"> 2 apples, peeled, cored and thinly sliced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9545" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9545"> 1/2 cup cognac</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9546" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9546"> 2 cups apple cider</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9547" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9547"> 750ml bottle cava (or other dry sparkling wine), chilled</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9548" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9548"> 1/4 cup pomegranate seeds</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>2 apples, peeled, cored and thinly sliced</p>
+<input disabled="" type="checkbox" id="chkbx_9549" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9549"> Add the apples to a large pitcher reserving about 1/2 cup for garnishing. Add the cognac, apple cider, and chilled cava. Stir.</label>
 </li>
-<li>
-<p>1/2 cup cognac</p>
-</li>
-<li>
-<p>2 cups apple cider</p>
-</li>
-<li>
-<p>750ml bottle cava (or other dry sparkling wine), chilled</p>
-</li>
-<li>
-<p>1/4 cup pomegranate seeds</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Add the apples to a large pitcher reserving about 1/2 cup for garnishing. Add the cognac, apple cider, and chilled cava. Stir.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Fill the pitcher with ice. Pour the sangria into glasses filled with ice and top with sliced apple and pomegranate seeds.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9550" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9550"> Fill the pitcher with ice. Pour the sangria into glasses filled with ice and top with sliced apple and pomegranate seeds.</label>
+</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>Non-Alcoholic Version: You can easily make this a non-alcoholic sangria by removing the cognac and replacing the cava with seltzer water or club soda.</li>
@@ -239,21 +249,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

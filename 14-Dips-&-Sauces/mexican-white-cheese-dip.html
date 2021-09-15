@@ -163,49 +163,67 @@
 <li>Total Time: 15 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10028" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10028"> 1 pound white American cheese, cubed</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10029" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10029"> 1/2 cup milk, or as needed</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10030" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10030"> 1 tablespoon butter or margarine</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10031" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10031"> 2 (4 ounce) cans chopped green chilies</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10032" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10032"> 2 teaspoons cumin</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10033" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10033"> 2 teaspoons garlic powder</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10034" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10034"> 2 teaspoons onion powder</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10035" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10035"> Cayenne pepper to taste</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 pound white American cheese, cubed</p>
+<input disabled="" type="checkbox" id="chkbx_10036" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10036"> Place cheese, milk, and butter in a medium saucepan over low heat.</label>
 </li>
-<li>
-<p>1/2 cup milk, or as needed</p>
-</li>
-<li>
-<p>1 tablespoon butter or margarine</p>
-</li>
-<li>
-<p>2 (4 ounce) cans chopped green chilies</p>
-</li>
-<li>
-<p>2 teaspoons cumin</p>
-</li>
-<li>
-<p>2 teaspoons garlic powder</p>
-</li>
-<li>
-<p>2 teaspoons onion powder</p>
-</li>
-<li>
-<p>Cayenne pepper to taste</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Place cheese, milk, and butter in a medium saucepan over low heat.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Cook until cheese has melted, stirring frequently.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10037" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10037"> Cook until cheese has melted, stirring frequently.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Stir in green chilies, cumin, garlic powder, onion powder, and cayenne pepper to taste.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10038" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10038"> Stir in green chilies, cumin, garlic powder, onion powder, and cayenne pepper to taste.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Add more milk if dip is too thick. Heat through and serve immediately.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10039" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10039"> Add more milk if dip is too thick. Heat through and serve immediately.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://allrecipes.com/Recipe/Mexican-White-Cheese-DipSauce/Detail.aspx">Mexican White Cheese Dip</a></p>
 
@@ -246,21 +264,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

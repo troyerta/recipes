@@ -162,59 +162,78 @@
 <li>Total Time: 15 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9093" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9093"> 2.5 cups fresh blackberries</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9094" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9094"> 1 cup sugar</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9095" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9095"> 1 cup water</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9096" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9096"> 2 cups lemon juice, from about 6 lemons</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9097" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9097"> 2 cups whiskey</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9098" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9098"> 4 cups club soda</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9099" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9099"> ice, for serving</label>
+<br>
+<h4><a class="header" href="#garnish" id="garnish">Garnish</a></h4><br>
+<input disabled="" type="checkbox" id="chkbx_9100" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9100"> 1 cup blackberries</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9101" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9101"> 1 lemon, sliced</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>2.5 cups fresh blackberries</p>
+<input disabled="" type="checkbox" id="chkbx_9102" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9102"> In a medium pot, combine the blackberries, sugar and water. Bring to a boil, then reduce the heat to medium and cook for 1-2 minutes, until the berries break down. Remove from the heat.</label>
 </li>
-<li>
-<p>1 cup sugar</p>
-</li>
-<li>
-<p>1 cup water</p>
-</li>
-<li>
-<p>2 cups lemon juice, from about 6 lemons</p>
-</li>
-<li>
-<p>2 cups whiskey</p>
-</li>
-<li>
-<p>4 cups club soda</p>
-</li>
-<li>
-<p>ice, for serving</p>
-</li>
-</ul>
-<h4><a class="header" href="#garnish" id="garnish">Garnish:</a></h4>
-<ul>
-<li>
-<p>1 cup blackberries</p>
-</li>
-<li>
-<p>1 lemon, sliced</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a medium pot, combine the blackberries, sugar and water. Bring to a boil, then reduce the heat to medium and cook for 1-2 minutes, until the berries break down. Remove from the heat.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Strain the syrup through a fine-mesh sieve to remove the pulp and seeds. Set aside to cool.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9103" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9103"> Strain the syrup through a fine-mesh sieve to remove the pulp and seeds. Set aside to cool.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>In a large pitcher, combine the lemon juice, blackberry simple syrup, and whiskey. Chill until ready to serve.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9104" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9104"> In a large pitcher, combine the lemon juice, blackberry simple syrup, and whiskey. Chill until ready to serve.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Before serving, add the club soda and stir to combine.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9105" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9105"> Before serving, add the club soda and stir to combine.</label>
+</li>
 </ol>
 <hr />
 <ol start="5">
-<li>Serve over ice, garnished with a few blackberries and a slice of lemon.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9106" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9106"> Serve over ice, garnished with a few blackberries and a slice of lemon.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://tasty.co/recipe/blackberry-whiskey-lemonade">Blackberry Whiskey Lemonade</a></p>
 
@@ -255,21 +274,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

@@ -162,36 +162,48 @@
 <li>Total Time: 5 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8925" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8925"> 2 chocolate cookies, crushed</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8926" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8926"> 4 scoops cookies and cream ice cream</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8927" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8927"> 2 cup International Delight Cookies and Cream Iced Coffee</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8928" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8928"> whipped cream, for garnish</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8929" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8929"> chocolate syrup, for garnish</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>2 chocolate cookies, crushed</p>
+<input disabled="" type="checkbox" id="chkbx_8930" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_8930"> In the bottom of two large sundae glasses, add crushed cookies.</label>
 </li>
-<li>
-<p>4 scoops cookies and cream ice cream</p>
-</li>
-<li>
-<p>2 cup International Delight Cookies and Cream Iced Coffee</p>
-</li>
-<li>
-<p>whipped cream, for garnish</p>
-</li>
-<li>
-<p>chocolate syrup, for garnish</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In the bottom of two large sundae glasses, add crushed cookies.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Place two scoops of ice cream in each glass. Pour about 1 cup of Iced Coffee over ice cream (into each glass).</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_8931" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_8931"> Place two scoops of ice cream in each glass. Pour about 1 cup of Iced Coffee over ice cream (into each glass).</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Top with whipped cream and chocolate syrup.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_8932" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_8932"> Top with whipped cream and chocolate syrup.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.shugarysweets.com/cookies-cream-iced-coffee-float/">Cookies and Cream Iced Coffee Float</a></p>
 
@@ -232,21 +244,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

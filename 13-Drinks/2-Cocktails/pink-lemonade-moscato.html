@@ -169,28 +169,37 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9438" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9438"> 1 bottle of Pink Moscato Champagne</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9439" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9439"> 1 liter bottle of sparkling Strawberry lemonade</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9440" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9440"> fresh lemons, for garnish</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9441" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9441"> sugar, for garnish</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 bottle of Pink Moscato Champagne</p>
+<input disabled="" type="checkbox" id="chkbx_9442" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9442"> In a gallon pitcher, mix the moscato with the pink lemonade.</label>
 </li>
-<li>
-<p>1 liter bottle of sparkling Strawberry lemonade</p>
-</li>
-<li>
-<p>fresh lemons, for garnish</p>
-</li>
-<li>
-<p>sugar, for garnish</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a gallon pitcher, mix the moscato with the pink lemonade.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Rim each glass with sugar. Top with fresh lemons.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9443" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9443"> Rim each glass with sugar. Top with fresh lemons.</label>
+</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>Ensure the moscato and lemonade are chilled so the drink is cold. Otherwise, make ahead and refrigerate.</li>
@@ -236,21 +245,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

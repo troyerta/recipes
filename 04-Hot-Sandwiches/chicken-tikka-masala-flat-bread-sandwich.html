@@ -159,146 +159,59 @@
 <h2><a class="header" href="#overview" id="overview">Overview</a></h2>
 <p>This recipe relies on pre-made ingredients, so this is more of an assembly guide for a single sandwich.</p>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1689" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1689"> 1/2 - each, Flatbread, Rich's 5.3oz</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1690" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1690"> 1 - 4 oz , Grilled Chicken Tikka Masala</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1691" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1691"> 1/2 - cup, Arugula, raw</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1692" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1692"> 3 - slice, Cucumber, peeled, raw</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1693" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1693"> 2 - oz , Tzatziki Sauce</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1/2 - each, Flatbread, Rich's 5.3oz</p>
+<input disabled="" type="checkbox" id="chkbx_1694" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1694"> Prepare Grilled Chicken Tikka Masala and the Tzatziki Sauce, Cerner according to sub recipe directions.</label>
 </li>
-<li>
-<p>1 - 4 oz , Grilled Chicken Tikka Masala</p>
-</li>
-<li>
-<p>1/2 - cup, Arugula, raw</p>
-</li>
-<li>
-<p>3 - slice, Cucumber, peeled, raw</p>
-</li>
-<li>
-<p>2 - oz , Tzatziki Sauce</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Prepare Grilled Chicken Tikka Masala and the Tzatziki Sauce, Cerner according to sub recipe directions.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Cut the flatbread in half on a diagonal.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1695" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1695"> Cut the flatbread in half on a diagonal.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Slice the Grilled Chicken Tikka Masala into small nibble-size chunks, and spread it over half of the flatbread.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1696" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1696"> Slice the Grilled Chicken Tikka Masala into small nibble-size chunks, and spread it over half of the flatbread.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Stack on the arugula, cucumber, and Tzaziki sauce.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1697" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1697"> Stack on the arugula, cucumber, and Tzaziki sauce.</label>
+</li>
 </ol>
 <hr />
 <ol start="5">
-<li>Fold the one corner of the flatbread over the filling and serve.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1698" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1698"> Fold the one corner of the flatbread over the filling and serve.</label>
+</li>
 </ol>
 <hr />
 
-                    </main>
-
-                    <nav class="nav-wrapper" aria-label="Page navigation">
-                        <!-- Mobile navigation buttons -->
-                        
-                            <a rel="prev" href="../04-Hot-Sandwiches/chicken-satay-pitas.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                                <i class="fa fa-angle-left"></i>
-                            </a>
-                        
-
-                        
-                            <a rel="next" href="../04-Hot-Sandwiches/crispy-breakfast-quesadillas.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        
-
-                        <div style="clear: both"></div>
-                    </nav>
-                </div>
-            </div>
-
-            <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
-                    <a rel="prev" href="../04-Hot-Sandwiches/chicken-satay-pitas.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-                
-
-                
-                    <a rel="next" href="../04-Hot-Sandwiches/crispy-breakfast-quesadillas.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
-                
-            </nav>
-
-        </div>
-
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
-        
-
-        
-        <!-- Google Analytics Tag -->
-        <script type="text/javascript">
-            var localAddrs = ["localhost", "127.0.0.1", ""];
-
-            // make sure we don't activate google analytics if the developer is
-            // inspecting the book locally...
-            if (localAddrs.indexOf(document.location.hostname) === -1) {
-                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-                ga('create', 'UA-164779968-1', 'auto');
-                ga('send', 'pageview');
-            }
-        </script>
-        
-
-        
-
-        
-        <script type="text/javascript">
-            window.playground_copyable = true;
-        </script>
-        
-
-        
-
-        
-        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
-        
-
-        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
-
-        <!-- Custom JS scripts -->
-        
-        <script type="text/javascript" src="../js/enable-checkboxes.js"></script>
-        
-        <script type="text/javascript" src="../js/handle-checkboxes.js"></script>
-        
-
-        
-
-    </body>
-</html>

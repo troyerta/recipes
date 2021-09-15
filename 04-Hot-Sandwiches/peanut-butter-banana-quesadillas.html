@@ -161,33 +161,44 @@
 <li>Yield: 1</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1843" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1843"> 1 8-inch whole wheat tortilla</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1844" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1844"> 2 Tbsp natural peanut butter</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1845" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1845"> 1/2 medium banana</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1846" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1846"> 1 Tbsp semi-sweet chocolate chips</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 8-inch whole wheat tortilla</p>
+<input disabled="" type="checkbox" id="chkbx_1847" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1847"> Spread the peanut butter over the surface of the tortilla.</label>
 </li>
-<li>
-<p>2 Tbsp natural peanut butter</p>
-</li>
-<li>
-<p>1/2 medium banana</p>
-</li>
-<li>
-<p>1 Tbsp semi-sweet chocolate chips</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Spread the peanut butter over the surface of the tortilla.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Slice the banana very thinly and then arrange the slices over half of the tortilla. Sprinkle the chocolate chips over the banana slices and then fold the tortilla in half.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1848" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1848"> Slice the banana very thinly and then arrange the slices over half of the tortilla. Sprinkle the chocolate chips over the banana slices and then fold the tortilla in half.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Cook the quesadilla in a skillet over medium-low heat until golden brown and crispy on both sides.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1849" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1849"> Cook the quesadilla in a skillet over medium-low heat until golden brown and crispy on both sides.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.budgetbytes.com/peanut-butter-banana-quesadillas/">Peanut Butter Banana Quesadillas</a></p>
 
@@ -228,21 +239,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

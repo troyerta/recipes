@@ -169,21 +169,26 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9502" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9502"> 1 1/2 cup milk</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9503" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9503"> 1 cup red wine</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9504" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9504"> 1/3 cup dark chocolate chunks</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 1/2 cup milk</p>
+<input disabled="" type="checkbox" id="chkbx_9505" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9505"> In a saucepan over medium heat, combine milk and chocolate chips.  Whisking constantly until chocolate is melted into milk and you have a thick and creamy chocolate milk. Pour in red wine and heat until everything is hot. Pour into 6-8 small glasses.</label>
 </li>
-<li>
-<p>1 cup red wine</p>
-</li>
-<li>
-<p>1/3 cup dark chocolate chunks</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a saucepan over medium heat, combine milk and chocolate chips.  Whisking constantly until chocolate is melted into milk and you have a thick and creamy chocolate milk. Pour in red wine and heat until everything is hot. Pour into 6-8 small glasses.</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://immaeatthat.com/2014/11/24/red-wine-hot-chocolate/">Red Wine Hot Chocolate</a></p>
 <h2><a class="header" href="#tags" id="tags">Tags</a></h2>
@@ -225,21 +230,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

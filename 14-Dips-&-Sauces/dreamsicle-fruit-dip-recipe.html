@@ -164,36 +164,48 @@
 <li>Total Time:</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9925" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9925"> 12 ounces cream cheese, softened</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9926" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9926"> 1 (7 ounce) jar marshmallow crème</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9927" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9927"> 1/3 cup confectioners’ sugar</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9928" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9928"> 1 tablespoon orange zest</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9929" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9929"> 2 tablespoons, fresh orange juice</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>12 ounces cream cheese, softened</p>
+<input disabled="" type="checkbox" id="chkbx_9930" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9930"> In a large bowl, use an electric mixer to blend all ingredients until well combined.</label>
 </li>
-<li>
-<p>1 (7 ounce) jar marshmallow crème</p>
-</li>
-<li>
-<p>1/3 cup confectioners’ sugar</p>
-</li>
-<li>
-<p>1 tablespoon orange zest</p>
-</li>
-<li>
-<p>2 tablespoons, fresh orange juice</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a large bowl, use an electric mixer to blend all ingredients until well combined.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Refrigerate Dreamsicle Fruit Dip for at least 3 hours before serving.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9931" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9931"> Refrigerate Dreamsicle Fruit Dip for at least 3 hours before serving.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Serve with a variety of fresh fruit.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9932" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9932"> Serve with a variety of fresh fruit.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://www.mybakingaddiction.com/dreamsicle-fruit-dip-recipe/">Dreamsicle Fruit Dip Recipe</a></p>
 
@@ -234,21 +246,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

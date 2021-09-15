@@ -161,45 +161,60 @@
 <li>Yield: 4</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_757" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_757"> 4 scallions, thinly sliced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_758" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_758"> 2 cups cooked brown rice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_759" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_759"> 1 teaspoon red wine vinegar</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_760" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_760"> Kosher salt, freshly ground pepper</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_761" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_761"> 3 tablespoons olive oil</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_762" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_762"> 4 large eggs</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_763" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_763"> 1 avocado, chopped</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_764" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_764"> Hot sauce (for serving)</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>4 scallions, thinly sliced</p>
+<input disabled="" type="checkbox" id="chkbx_765" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_765"> Mix scallions, rice, and vinegar in a small bowl; season with salt and pepper.</label>
 </li>
-<li>
-<p>2 cups cooked brown rice</p>
-</li>
-<li>
-<p>1 teaspoon red wine vinegar</p>
-</li>
-<li>
-<p>Kosher salt, freshly ground pepper</p>
-</li>
-<li>
-<p>3 tablespoons olive oil</p>
-</li>
-<li>
-<p>4 large eggs</p>
-</li>
-<li>
-<p>1 avocado, chopped</p>
-</li>
-<li>
-<p>Hot sauce (for serving)</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Mix scallions, rice, and vinegar in a small bowl; season with salt and pepper.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Heat oil in a nonstick skillet over medium-high heat. Crack eggs into skillet; season with salt and pepper and cook until whites are set around the edges, about 1 minute. Flip eggs and cook to desired doneness, about 30 seconds for a runny yolk.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_766" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_766"> Heat oil in a nonstick skillet over medium-high heat. Crack eggs into skillet; season with salt and pepper and cook until whites are set around the edges, about 1 minute. Flip eggs and cook to desired doneness, about 30 seconds for a runny yolk.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Divide rice among bowls; top with eggs, avocado, and hot sauce.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_767" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_767"> Divide rice among bowls; top with eggs, avocado, and hot sauce.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.bonappetit.com/recipe/rice-bowl-fried-egg-avocado">Rice Bowl with Fried Egg and Avocado</a></p>
 
@@ -240,21 +255,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

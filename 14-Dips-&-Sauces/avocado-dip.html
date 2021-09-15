@@ -163,32 +163,41 @@
 <li>Total Time: 15 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9803" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9803"> 6 avocados (peeled, pit removed, and chunked small)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9804" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9804"> 1 can (15 oz) corn (drained well)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9805" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9805"> 1 can (15 oz) black beans (drained & rinsed)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9806" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9806"> 1/4 cup finely chopped red onion</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9807" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9807"> 1 cup salsa verde</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>6 avocados (peeled, pit removed, and chunked small)</p>
+<input disabled="" type="checkbox" id="chkbx_9808" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9808"> Combine all ingredients into a mixing bowl and gently stir together.</label>
 </li>
-<li>
-<p>1 can (15 oz) corn (drained well)</p>
-</li>
-<li>
-<p>1 can (15 oz) black beans (drained &amp; rinsed)</p>
-</li>
-<li>
-<p>1/4 cup finely chopped red onion</p>
-</li>
-<li>
-<p>1 cup salsa verde</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Combine all ingredients into a mixing bowl and gently stir together.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Serve right away or let chill in the fridge for 1-3 hours.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9809" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9809"> Serve right away or let chill in the fridge for 1-3 hours.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>
@@ -241,21 +250,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

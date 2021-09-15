@@ -169,37 +169,49 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9059" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9059"> 8 fresh blackberries, plus more for topping</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9060" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9060"> 1-2 teaspoons fresh rosemary, plus a sprig for serving</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9061" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9061"> Juice from half of a lemon</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9062" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9062"> 1-2 tablespoons honey</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9063" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9063"> 1 1/2 - 2 ounces tequila or Mezcal</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9064" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9064"> a couple dashes of orange bitters</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9065" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9065"> sparkling water, for topping</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>8 fresh blackberries, plus more for topping</p>
+<input disabled="" type="checkbox" id="chkbx_9066" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9066"> In a cocktail shaker or glass jar, add blackberries, rosemary, lemon juice and honey. Muddle all of the ingredients together, squishing everything to release the juices. Add the tequila and orange bitters.</label>
 </li>
-<li>
-<p>1-2 teaspoons fresh rosemary, plus a sprig for serving</p>
-</li>
-<li>
-<p>Juice from half of a lemon</p>
-</li>
-<li>
-<p>1-2 tablespoons honey</p>
-</li>
-<li>
-<p>1 1/2 - 2 ounces tequila or Mezcal</p>
-</li>
-<li>
-<p>a couple dashes of orange bitters</p>
-</li>
-<li>
-<p>sparkling water, for topping</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a cocktail shaker or glass jar, add blackberries, rosemary, lemon juice and honey. Muddle all of the ingredients together, squishing everything to release the juices. Add the tequila and orange bitters.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Add ice to your glass and strain the drink over the ice. Top the glass with a little more ice, pour the sparkling water over, and gently stir to combine. Garnish with fresh rosemary. DRINK!</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9067" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9067"> Add ice to your glass and strain the drink over the ice. Top the glass with a little more ice, pour the sparkling water over, and gently stir to combine. Garnish with fresh rosemary. DRINK!</label>
+</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.halfbakedharvest.com/the-black-widow-smash/">Black Widow Smash</a></p>
 <h2><a class="header" href="#tags" id="tags">Tags</a></h2>
@@ -241,21 +253,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

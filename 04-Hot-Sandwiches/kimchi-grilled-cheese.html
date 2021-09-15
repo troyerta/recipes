@@ -164,54 +164,72 @@
 <li>Total Time: 20 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1796" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1796"> 2 tablespoons salted butter, at room temperature</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1797" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1797"> 1 clove garlic, grated</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1798" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1798"> 1 tablespoon raw sesame seeds</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1799" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1799"> 1-2 tablespoons Gochujang (Korean chili paste)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1800" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1800"> 4 slices thick cut sourdough bread</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1801" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1801"> 1 cup kimchi, roughly chopped</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1802" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1802"> 1/4 cup fresh basil leaves</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1803" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1803"> 1 cup sharp cheddar cheese, shredded</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1804" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1804"> 1/2 cup Havarti or fontina cheese, shredded</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1805" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1805"> fresh chives, for serving</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1806" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1806"> honey, for serving</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>2 tablespoons salted butter, at room temperature</p>
+<input disabled="" type="checkbox" id="chkbx_1807" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1807"> In a small bowl, mix together the butter, sesame seeds, and garlic.</label>
 </li>
-<li>
-<p>1 clove garlic, grated</p>
-</li>
-<li>
-<p>1 tablespoon raw sesame seeds</p>
-</li>
-<li>
-<p>1-2 tablespoons Gochujang (Korean chili paste)</p>
-</li>
-<li>
-<p>4 slices thick cut sourdough bread</p>
-</li>
-<li>
-<p>1 cup kimchi, roughly chopped</p>
-</li>
-<li>
-<p>1/4 cup fresh basil leaves</p>
-</li>
-<li>
-<p>1 cup sharp cheddar cheese, shredded</p>
-</li>
-<li>
-<p>1/2 cup Havarti or fontina cheese, shredded</p>
-</li>
-<li>
-<p>fresh chives, for serving</p>
-</li>
-<li>
-<p>honey, for serving</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a small bowl, mix together the butter, sesame seeds, and garlic.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Spread the outside of each slice of bread with sesame garlic butter. On the inside of half of the slices of bread, spread with Gochujang, then evenly layer the cheeses, kimchi, and basil. Add the top piece of bread, buttered side facing up.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1808" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1808"> Spread the outside of each slice of bread with sesame garlic butter. On the inside of half of the slices of bread, spread with Gochujang, then evenly layer the cheeses, kimchi, and basil. Add the top piece of bread, buttered side facing up.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Place the sandwiches, one at a time, in the skillet and cook until golden on each side, about 3-5 minutes per side. Serve topped with chives, honey, and sea salt.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1809" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1809"> Place the sandwiches, one at a time, in the skillet and cook until golden on each side, about 3-5 minutes per side. Serve topped with chives, honey, and sea salt.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.halfbakedharvest.com/kimchi-grilled-cheese/#bo-recipe">Kimchi Grilled Cheese</a></p>
 
@@ -252,21 +270,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

@@ -162,25 +162,30 @@
 <li>Prep Time: 5 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10467" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10467"> 1 boneless skinless chicken breast</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10468" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10468"> 3 tablespoons sweet chili sauce</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10469" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10469"> 1 1/2 tablespoons soy sauce (reduced sodium recommended)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10470" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10470"> 2 tablespoons water</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 boneless skinless chicken breast</p>
+<input disabled="" type="checkbox" id="chkbx_10471" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10471"> Combine ingredients, marinate for 2 - 24 hours</label>
 </li>
-<li>
-<p>3 tablespoons sweet chili sauce</p>
-</li>
-<li>
-<p>1 1/2 tablespoons soy sauce (reduced sodium recommended)</p>
-</li>
-<li>
-<p>2 tablespoons water</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Combine ingredients, marinate for 2 - 24 hours</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://sweetpeasandsaffron.com/7-chicken-marinade-recipes-freezer-friendly/#wprm-recipe-container-18563">Sweet Chili Chicken Marinade</a></p>
 <h2><a class="header" href="#tag" id="tag">Tag</a></h2>
@@ -223,21 +228,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

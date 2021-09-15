@@ -161,49 +161,67 @@
 <li>Yield: 6</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9668" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9668"> 1 cup strawberry, thinly sliced, plus whole strawberries for garnish</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9669" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9669"> 1 cup blackberry</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9670" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9670"> 1 cup raspberry</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9671" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9671"> 1 cup blueberry</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9672" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9672"> 1 bottle brut rosé</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9673" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9673"> ½ cup triple sec</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9674" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9674"> 2 cups lemon-lime soda</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9675" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9675"> 1 qt blackberry sorbet</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 cup strawberry, thinly sliced, plus whole strawberries for garnish</p>
+<input disabled="" type="checkbox" id="chkbx_9676" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9676"> In a large pitcher, combine the strawberries, blackberries, raspberries, blueberries, brut rosé, and triple sec. Stir and refrigerate for at least 3 hours, or overnight.</label>
 </li>
-<li>
-<p>1 cup blackberry</p>
-</li>
-<li>
-<p>1 cup raspberry</p>
-</li>
-<li>
-<p>1 cup blueberry</p>
-</li>
-<li>
-<p>1 bottle brut rosé</p>
-</li>
-<li>
-<p>½ cup triple sec</p>
-</li>
-<li>
-<p>2 cups lemon-lime soda</p>
-</li>
-<li>
-<p>1 qt blackberry sorbet</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a large pitcher, combine the strawberries, blackberries, raspberries, blueberries, brut rosé, and triple sec. Stir and refrigerate for at least 3 hours, or overnight.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>When ready to serve, remove the pitcher from the refrigerator and add the lemon lime soda. Gently stir to combine.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9677" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9677"> When ready to serve, remove the pitcher from the refrigerator and add the lemon lime soda. Gently stir to combine.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Place 1-2 small scoops of blackberry sorbet in a glass. Pour the sangria over the sorbet and stir with a spoon.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9678" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9678"> Place 1-2 small scoops of blackberry sorbet in a glass. Pour the sangria over the sorbet and stir with a spoon.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Garnish with a fresh strawberry.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9679" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9679"> Garnish with a fresh strawberry.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://tasty.co/recipe/very-berry-sangria-float">Very Berry Sangria Float</a></p>
 
@@ -244,21 +262,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

@@ -164,29 +164,37 @@
 <li>Total Time: 2 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8919" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8919"> 1 cup milk use your favorite dairy or plant-based</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8920" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8920"> ½ teaspoon ground cinnamon</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8921" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8921"> ½ teaspoon powdered ginger</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8922" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8922"> 1 tablespoon mild tasting honey</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 cup milk use your favorite dairy or plant-based</p>
+<input disabled="" type="checkbox" id="chkbx_8923" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_8923"> Place milk in a small saucepan and scald (heat) on low until hot but not boiling. Stir in the cinnamon, ginger, and honey until well mixed. Sip to soothe.</label>
 </li>
-<li>
-<p>½ teaspoon ground cinnamon</p>
-</li>
-<li>
-<p>½ teaspoon powdered ginger</p>
-</li>
-<li>
-<p>1 tablespoon mild tasting honey</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Place milk in a small saucepan and scald (heat) on low until hot but not boiling. Stir in the cinnamon, ginger, and honey until well mixed. Sip to soothe.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Or, place all ingredients in a microwave safe cup and microwave on high for 1-1 ½ minutes (microwave times will vary), or until hot. Stir, and sip.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_8924" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_8924"> Or, place all ingredients in a microwave safe cup and microwave on high for 1-1 ½ minutes (microwave times will vary), or until hot. Stir, and sip.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://lifecurrents.dw2.net/cinnamon-sore-throat-tea/">Cinnamon Sore Throat Tea</a></p>
 
@@ -227,21 +235,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

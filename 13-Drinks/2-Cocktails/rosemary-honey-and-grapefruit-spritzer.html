@@ -169,38 +169,52 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9522" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9522"> 2/3 cup honey</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9523" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9523"> 4 sprigs rosemary</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9524" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9524"> 1 1/4 cups freshly squeezed grapefruit juice (from about 5 grapefruit)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9525" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9525"> crushed ice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9526" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9526"> soda water</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9527" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9527"> rosemary sprigs and grapefruit wedges to garnish</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>2/3 cup honey</p>
+<input disabled="" type="checkbox" id="chkbx_9528" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9528"> Combine the honey and rosemary in a small pot and gently heat over medium-low until the honey just begins to bubble around the edges, about 5 minutes. Remove from the heat and let steep for 5-10 minutes.</label>
 </li>
-<li>
-<p>4 sprigs rosemary</p>
-</li>
-<li>
-<p>1 1/4 cups freshly squeezed grapefruit juice (from about 5 grapefruit)</p>
-</li>
-<li>
-<p>crushed ice</p>
-</li>
-<li>
-<p>soda water</p>
-</li>
-<li>
-<p>rosemary sprigs and grapefruit wedges to garnish</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Combine the honey and rosemary in a small pot and gently heat over medium-low until the honey just begins to bubble around the edges, about 5 minutes. Remove from the heat and let steep for 5-10 minutes.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Meanwhile fill 4 glasses with crushed ice. Once the honey has cooled slightly, remove the sprigs of rosemary and transfer 1/4 cup of the infused honey to a jar with a tight fitting lid, add the grapefruit juice and shake vigorously until combined and frothy.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9529" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9529"> Meanwhile fill 4 glasses with crushed ice. Once the honey has cooled slightly, remove the sprigs of rosemary and transfer 1/4 cup of the infused honey to a jar with a tight fitting lid, add the grapefruit juice and shake vigorously until combined and frothy.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Divide the mixture between the glasses and top with soda water. Garnish with rosemary sprigs and grapefruit wedges.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9530" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9530"> Divide the mixture between the glasses and top with soda water. Garnish with rosemary sprigs and grapefruit wedges.</label>
+</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>Add gin or tequila to your taste to make it alcoholic.</li>
@@ -247,21 +261,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

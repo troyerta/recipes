@@ -163,37 +163,49 @@
 <li>Total Time: 5 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8910" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8910"> 6 cups cranberry juice or pomegranate cranberry juice*</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8911" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8911"> 3 cups pineapple juice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8912" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8912"> 1 Tbsp almond extract</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8913" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8913"> 3 liters ginger ale</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8914" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8914"> 1 12 oz. bag fresh cranberries (optional)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8915" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8915"> 2 fresh limes, sliced (optional)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8916" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8916"> Ice</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>6 cups cranberry juice or pomegranate cranberry juice*</p>
+<input disabled="" type="checkbox" id="chkbx_8917" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_8917"> Pour cranberry juice, pineapple juice, and almond extract into a large drink dispenser and mix. Pour in ginger ale and give it one quick stir.</label>
 </li>
-<li>
-<p>3 cups pineapple juice</p>
-</li>
-<li>
-<p>1 Tbsp almond extract</p>
-</li>
-<li>
-<p>3 liters ginger ale</p>
-</li>
-<li>
-<p>1 12 oz. bag fresh cranberries (optional)</p>
-</li>
-<li>
-<p>2 fresh limes, sliced (optional)</p>
-</li>
-<li>
-<p>Ice</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Pour cranberry juice, pineapple juice, and almond extract into a large drink dispenser and mix. Pour in ginger ale and give it one quick stir.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Add in cranberries, ice and ginger ale. Serve within a few hours for best results as it will start to go flat.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_8918" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_8918"> Add in cranberries, ice and ginger ale. Serve within a few hours for best results as it will start to go flat.</label>
+</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>
@@ -245,21 +257,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

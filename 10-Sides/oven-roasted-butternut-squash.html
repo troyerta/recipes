@@ -161,49 +161,72 @@
 <li>Yield: 4</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_7181" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_7181"> 1 medium to large butternut squash</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_7182" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_7182"> 3-4 tablespoons extra-virgin olive oil</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_7183" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_7183"> Generous sprinkle of salt and pepper</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_7184" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_7184"> About 1/4 cup water</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 medium to large butternut squash</p>
+<input disabled="" type="checkbox" id="chkbx_7185" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_7185"> Preheat the oven to 375°F</label>
 </li>
-<li>
-<p>3-4 tablespoons extra-virgin olive oil</p>
-</li>
-<li>
-<p>Generous sprinkle of salt and pepper</p>
-</li>
-<li>
-<p>About 1/4 cup water</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Preheat the oven to 375°F</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Cut the butternut squash in half and scoop out the guts and seeds with a spoon; discard.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_7186" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_7186"> Cut the butternut squash in half and scoop out the guts and seeds with a spoon; discard.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Place both squash halves in a dark roasting pan* and drizzle them with a generous amount of extra-virgin olive oil, then sprinkle liberally with salt and pepper.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_7187" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_7187"> Place both squash halves in a dark roasting pan* and drizzle them with a generous amount of extra-virgin olive oil, then sprinkle liberally with salt and pepper.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Turn the squash flesh side down and pour about 1/4 cup of water in the bottom of the pan.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_7188" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_7188"> Turn the squash flesh side down and pour about 1/4 cup of water in the bottom of the pan.</label>
+</li>
 </ol>
 <hr />
 <ol start="5">
-<li>Bake in the oven, uncovered, for about 40-45 minutes, until the squash becomes really soft and can easily be pierced with the tip of a sharp knife. Check from time to time to make sure the squash isn't burning. You want the water to eventually completely evaporate, which will allow the squash to caramelize, but you don't want things to burn. Add a little bit more water if you feel things are getting a tad too dry and dark...</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_7189" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_7189"> Bake in the oven, uncovered, for about 40-45 minutes, until the squash becomes really soft and can easily be pierced with the tip of a sharp knife. Check from time to time to make sure the squash isn't burning. You want the water to eventually completely evaporate, which will allow the squash to caramelize, but you don't want things to burn. Add a little bit more water if you feel things are getting a tad too dry and dark...</label>
+</li>
 </ol>
 <hr />
 <ol start="6">
-<li>When the squash is fully cooked, remove it from the oven and allow it to cool for a few minutes until you can safely handle it, then scoop out the flesh with a spoon.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_7190" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_7190"> When the squash is fully cooked, remove it from the oven and allow it to cool for a few minutes until you can safely handle it, then scoop out the flesh with a spoon.</label>
+</li>
 </ol>
 <hr />
 <ol start="7">
-<li>Serve as is or mash roughly with a fork or potato masher.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_7191" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_7191"> Serve as is or mash roughly with a fork or potato masher.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>Dark metal pans absorb and spread heat more quickly and efficiently than lighter-colored ones, which plays a big role in the browning and caramelizing process. If you didn’t have a dark roasting pan, crank up the oven heat to 425°F and make sure to keep an extra close eye on the water situation.</li>
@@ -248,21 +271,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

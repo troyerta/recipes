@@ -169,37 +169,49 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9118" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9118"> 8 blueberries (fresh or frozen and thawed), plus more for serving</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9119" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9119"> 2 tablespoons (1 ounce) fresh squeezed lime juice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9120" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9120"> 2 teaspoons sugar 8 fresh mint leaves, plus more for serving</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9121" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9121"> 1/4 cup (2 ounces) white rum</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9122" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9122"> 2 tablespoons (1 ounce) club soda</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9123" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9123"> Ice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9124" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9124"> Lime slice for serving</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>8 blueberries (fresh or frozen and thawed), plus more for serving</p>
+<input disabled="" type="checkbox" id="chkbx_9125" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9125"> Add blueberries, lime juice, sugar and eight mint leaves to a cocktail shaker. Use the end of a wooden spoon or cocktail muddler to bash (or muddle) the mint into the lime juice and sugar. This releases oils from the mint, breaks up the blueberries and helps the sugar dissolve into the lime juice.</label>
 </li>
-<li>
-<p>2 tablespoons (1 ounce) fresh squeezed lime juice</p>
-</li>
-<li>
-<p>2 teaspoons sugar 8 fresh mint leaves, plus more for serving</p>
-</li>
-<li>
-<p>1/4 cup (2 ounces) white rum</p>
-</li>
-<li>
-<p>2 tablespoons (1 ounce) club soda</p>
-</li>
-<li>
-<p>Ice</p>
-</li>
-<li>
-<p>Lime slice for serving</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Add blueberries, lime juice, sugar and eight mint leaves to a cocktail shaker. Use the end of a wooden spoon or cocktail muddler to bash (or muddle) the mint into the lime juice and sugar. This releases oils from the mint, breaks up the blueberries and helps the sugar dissolve into the lime juice.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Add rum, stir well, and then pour into a glass filled with ice, leaving about an inch of room then top with club soda. Serve with extra blueberries, mint leaves, and a lime slice.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9126" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9126"> Add rum, stir well, and then pour into a glass filled with ice, leaving about an inch of room then top with club soda. Serve with extra blueberries, mint leaves, and a lime slice.</label>
+</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>To make enough for four people follow these amounts: 1/2 cup blueberries, 1/2 cup freshly squeezed lime juice, 3 tablespoons sugar, 32 fresh mint leaves, plus more for garnish, 1 cup white rum, 4 cups ice, 1/2 cup club soda, and 4 lime slices for garnish.</li>
@@ -245,21 +257,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

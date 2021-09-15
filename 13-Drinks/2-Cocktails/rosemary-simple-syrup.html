@@ -169,29 +169,40 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9531" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9531"> 1 cup water</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9532" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9532"> 1 cup of sugar</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9533" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9533"> 4 fresh rosemary sprigs (you may express or chop sprigs to increase potency)</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 cup water</p>
+<input disabled="" type="checkbox" id="chkbx_9534" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9534"> In medium saucepan bring ingredients to a boil, stirring occasionally, and boil for 1 minute or until sugar is dissolved.</label>
 </li>
-<li>
-<p>1 cup of sugar</p>
-</li>
-<li>
-<p>4 fresh rosemary sprigs (you may express or chop sprigs to increase potency)</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In medium saucepan bring ingredients to a boil, stirring occasionally, and boil for 1 minute or until sugar is dissolved.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Remove from heat and let stand 30 mins.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9535" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9535"> Remove from heat and let stand 30 mins.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>pour liquid through a wire-mesh strainer into a cruet or airtight container, discarding rosemary sprigs. Cover and chill 4 hours.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9536" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9536"> pour liquid through a wire-mesh strainer into a cruet or airtight container, discarding rosemary sprigs. Cover and chill 4 hours.</label>
+</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>Syrup may be stored in refrigerator up to 1 month.</li>
@@ -237,21 +248,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

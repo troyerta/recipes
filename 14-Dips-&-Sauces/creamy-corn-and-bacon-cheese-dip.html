@@ -164,40 +164,55 @@
 <li>Total Time: 50 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9916" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9916"> 8 oz cream cheese at room temperature</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9917" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9917"> 1/2 pound bacon cut into small pieces and cooked</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9918" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9918"> 4.5 oz can diced jalapenos or green chiles</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9919" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9919"> 14 oz cream corn</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9920" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9920"> 2 cups pepper jack cheese divided</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>8 oz cream cheese at room temperature</p>
+<input disabled="" type="checkbox" id="chkbx_9921" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9921"> Preheat your oven to 375.</label>
 </li>
-<li>
-<p>1/2 pound bacon cut into small pieces and cooked</p>
-</li>
-<li>
-<p>4.5 oz can diced jalapenos or green chiles</p>
-</li>
-<li>
-<p>14 oz cream corn</p>
-</li>
-<li>
-<p>2 cups pepper jack cheese divided</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Preheat your oven to 375.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Use a hand mixer to blend the cream corn and cream cheese. Mix in the bacon and jalapeños, 1 cup of cheese, cover and bake for 30 minutes.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9922" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9922"> Use a hand mixer to blend the cream corn and cream cheese. Mix in the bacon and jalapeños, 1 cup of cheese, cover and bake for 30 minutes.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Remove the cover, top with the remaining cheese, and return to the oven and continue baking for 15 minutes.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9923" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9923"> Remove the cover, top with the remaining cheese, and return to the oven and continue baking for 15 minutes.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Serve with tortilla chips</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9924" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9924"> Serve with tortilla chips</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.simplejoy.com/creamy-corn-and-bacon-cheese-dip/">Creamy Corn and Bacon Cheese Dip</a></p>
 
@@ -238,21 +253,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

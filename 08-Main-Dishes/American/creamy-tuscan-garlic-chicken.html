@@ -163,44 +163,57 @@
 <li>Cook Time: 15 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4175" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4175"> 1 1/2 pounds chicken breast sliced thin</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4176" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4176"> 2 Tbsp olive oil</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4177" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4177"> 1 cup heavy cream</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4178" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4178"> 1/2 cup chicken broth</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4179" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4179"> 1 tsp garlic powder</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4180" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4180"> 1 tsp italian seasoning</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4181" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4181"> 1/2 cup Parmesan cheese</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4182" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4182"> 1/2 cup sun dried tomatoes</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4183" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4183"> 1 cup spinach</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 1/2 pounds chicken breast sliced thin</p>
+<input disabled="" type="checkbox" id="chkbx_4184" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_4184"> In a large skillet add olive oil and cook the chicken on medium high heat for 3-5 minutes on each side or until brown on each side and cooked until no longer pink in center. Remove chicken and set aside on a plate.</label>
 </li>
-<li>
-<p>2 Tbsp olive oil</p>
-</li>
-<li>
-<p>1 cup heavy cream</p>
-</li>
-<li>
-<p>1/2 cup chicken broth</p>
-</li>
-<li>
-<p>1 tsp garlic powder</p>
-</li>
-<li>
-<p>1 tsp italian seasoning</p>
-</li>
-<li>
-<p>1/2 cup Parmesan cheese</p>
-</li>
-<li>
-<p>1/2 cup sun dried tomatoes</p>
-</li>
-<li>
-<p>1 cup spinach</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a large skillet add olive oil and cook the chicken on medium high heat for 3-5 minutes on each side or until brown on each side and cooked until no longer pink in center. Remove chicken and set aside on a plate.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Add the heavy cream, chicken broth, garlic powder, italian seasoning, and parmesan cheese. Whisk over medium high heat until it starts to thicken. Add the spinach and sundried tomatoes and let it simmer until the spinach starts to wilt. Add the chicken back to the pan and serve over pasta if desired.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_4185" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_4185"> Add the heavy cream, chicken broth, garlic powder, italian seasoning, and parmesan cheese. Whisk over medium high heat until it starts to thicken. Add the spinach and sundried tomatoes and let it simmer until the spinach starts to wilt. Add the chicken back to the pan and serve over pasta if desired.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>Double the recipe if you choose to add pasta*</li>
@@ -245,21 +258,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

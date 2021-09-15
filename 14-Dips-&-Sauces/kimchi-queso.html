@@ -161,51 +161,73 @@
 <li>Yield: 4</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10007" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10007"> 1 ½ cups kimchi, chopped</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10008" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10008"> 2 tablespoons korean red pepper powder, 3 tbsp if you like it spicy</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10009" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10009"> 5 cups shredded cheddar cheese</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10010" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10010"> 1 cup sour cream</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10011" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10011"> 1 green onion, chopped</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10012" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10012"> torilla chip, optional, to taste</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 ½ cups kimchi, chopped</p>
+<input disabled="" type="checkbox" id="chkbx_10013" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10013"> Chop kimchi and place in bowl, set aside.</label>
 </li>
-<li>
-<p>2 tablespoons korean red pepper powder, 3 tbsp if you like it spicy</p>
-</li>
-<li>
-<p>5 cups shredded cheddar cheese</p>
-</li>
-<li>
-<p>1 cup sour cream</p>
-</li>
-<li>
-<p>1 green onion, chopped</p>
-</li>
-<li>
-<p>torilla chip, optional, to taste</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Chop kimchi and place in bowl, set aside.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>In a medium saucepan, melt cheddar cheese part way (until it’s mostly soft but still clumpy).</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10014" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10014"> In a medium saucepan, melt cheddar cheese part way (until it’s mostly soft but still clumpy).</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Add the sour cream. Melt and stir until the mixture is smooth.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10015" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10015"> Add the sour cream. Melt and stir until the mixture is smooth.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Add the red pepper powder and stir until evenly integrated.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10016" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10016"> Add the red pepper powder and stir until evenly integrated.</label>
+</li>
 </ol>
 <hr />
 <ol start="5">
-<li>Add kimchi and simmer until evenly mixed and smooth. The liquid from the kimchi may give the appearance that the queso is chunky, continue heating and stirring 5-10 minutes and it will smooth out.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10017" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10017"> Add kimchi and simmer until evenly mixed and smooth. The liquid from the kimchi may give the appearance that the queso is chunky, continue heating and stirring 5-10 minutes and it will smooth out.</label>
+</li>
 </ol>
 <hr />
 <ol start="6">
-<li>Serve garnished with chopped green onion. Goes great with chips, raw vegetables, or straight into the mouth via spoon.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10018" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10018"> Serve garnished with chopped green onion. Goes great with chips, raw vegetables, or straight into the mouth via spoon.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://tasty.co/recipe/kimchi-queso">Kimchi Queso</a></p>
 
@@ -246,21 +268,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

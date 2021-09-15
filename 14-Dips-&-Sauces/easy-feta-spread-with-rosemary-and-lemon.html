@@ -161,36 +161,45 @@
 <li>Yield: 8 -12 (makes about 1 cup)</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9933" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9933"> 4 ounces cream cheese softened</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9934" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9934"> 1 cup feta cheese crumbled</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9935" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9935"> 3 tablespoons fresh rosemary finely chopped</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9936" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9936"> 2 tablespoons fresh lemon juice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9937" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9937"> 1 garlic clove minced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9938" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9938"> Salt & Pepper to taste</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>4 ounces cream cheese softened</p>
+<input disabled="" type="checkbox" id="chkbx_9939" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9939"> In a medium mixing bowl mix together cream cheese, feta, rosemary, lemon juice, and garlic until well combined (or place in a food processor and process several times until just combined). Add salt and pepper to taste.</label>
 </li>
-<li>
-<p>1 cup feta cheese crumbled</p>
-</li>
-<li>
-<p>3 tablespoons fresh rosemary finely chopped</p>
-</li>
-<li>
-<p>2 tablespoons fresh lemon juice</p>
-</li>
-<li>
-<p>1 garlic clove minced</p>
-</li>
-<li>
-<p>Salt &amp; Pepper to taste</p>
-</li>
-</ul>
-<h4><a class="header" href="#serving-suggestions" id="serving-suggestions">Serving Suggestions:</a></h4>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a medium mixing bowl mix together cream cheese, feta, rosemary, lemon juice, and garlic until well combined (or place in a food processor and process several times until just combined). Add salt and pepper to taste.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Refrigerate until ready to serve.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9940" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9940"> Refrigerate until ready to serve.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>
@@ -240,21 +249,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

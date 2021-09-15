@@ -161,45 +161,60 @@
 <li>Yield: 6</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4315" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4315"> 1 tablespoon salt</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4316" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4316"> 1 tablespoon pepper</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4317" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4317"> 1 tablespoon paprika</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4318" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4318"> 1 tablespoon chili powder</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4319" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4319"> 2 ½ lb rack of pork ribs, halved</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4320" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4320"> 1 cup honey</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4321" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4321"> ½ cup soy sauce</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4322" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4322"> 10 garlic cloves, minced</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 tablespoon salt</p>
+<input disabled="" type="checkbox" id="chkbx_4323" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_4323"> In a small bowl, mix together the salt, pepper, paprika, and chili powder. Season the ribs evenly with the mixture, making sure to rub it in on all sides.</label>
 </li>
-<li>
-<p>1 tablespoon pepper</p>
-</li>
-<li>
-<p>1 tablespoon paprika</p>
-</li>
-<li>
-<p>1 tablespoon chili powder</p>
-</li>
-<li>
-<p>2 ½ lb rack of pork ribs, halved</p>
-</li>
-<li>
-<p>1 cup honey</p>
-</li>
-<li>
-<p>½ cup soy sauce</p>
-</li>
-<li>
-<p>10 garlic cloves, minced</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a small bowl, mix together the salt, pepper, paprika, and chili powder. Season the ribs evenly with the mixture, making sure to rub it in on all sides.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Add the honey, soy sauce, and garlic to a large slow cooker. Transfer the ribs to slow cooker and turn them over in the sauce until coated. Position the ribs so they are standing up, with the meatier side down, and so the meat is against the walls of the slow cooker, with the bone sides facing in. Cover and cook on high for 4 hours, or low for 7-8 hours. Check after the allotted time to make sure the meat is cooked through and tender.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_4324" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_4324"> Add the honey, soy sauce, and garlic to a large slow cooker. Transfer the ribs to slow cooker and turn them over in the sauce until coated. Position the ribs so they are standing up, with the meatier side down, and so the meat is against the walls of the slow cooker, with the bone sides facing in. Cover and cook on high for 4 hours, or low for 7-8 hours. Check after the allotted time to make sure the meat is cooked through and tender.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Remove the ribs and transfer to cutting board. Cut between the bones to separate into individual ribs. Serve with additional sauce from the slow cooker, as needed</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_4325" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_4325"> Remove the ribs and transfer to cutting board. Cut between the bones to separate into individual ribs. Serve with additional sauce from the slow cooker, as needed</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://tasty.co/recipe/honey-garlic-slow-cooker-ribs">Honey Garlic Slow Cooker Ribs</a></p>
 
@@ -240,21 +255,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

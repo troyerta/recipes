@@ -169,38 +169,52 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9077" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9077"> 1.5 ounces Captain Morgan Spiced Rum</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9078" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9078"> 3 ounces ginger ale</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9079" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9079"> 1 tsp blackberry puree</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9080" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9080"> 1 lime, juiced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9081" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9081"> lime wedges</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9082" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9082"> ice</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1.5 ounces Captain Morgan Spiced Rum</p>
+<input disabled="" type="checkbox" id="chkbx_9083" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9083"> Combine 1/2 cup fresh blackberries with 1 tsp. granulated sugar in a food processor.</label>
 </li>
-<li>
-<p>3 ounces ginger ale</p>
-</li>
-<li>
-<p>1 tsp blackberry puree</p>
-</li>
-<li>
-<p>1 lime, juiced</p>
-</li>
-<li>
-<p>lime wedges</p>
-</li>
-<li>
-<p>ice</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Combine 1/2 cup fresh blackberries with 1 tsp. granulated sugar in a food processor.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Blend until smooth, then push through a fine-mesh strainer to remove large pieces of pulp and seeds.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9084" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9084"> Blend until smooth, then push through a fine-mesh strainer to remove large pieces of pulp and seeds.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Fill a glass with ice. Add rum, ginger ale, 1 tsp lime juice, and blackberry puree. Stir with spoon to combine. Garnish with a wedge of lime.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9085" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9085"> Fill a glass with ice. Add rum, ginger ale, 1 tsp lime juice, and blackberry puree. Stir with spoon to combine. Garnish with a wedge of lime.</label>
+</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://tideandthyme.com/blackberry-cream-soda/">Blackberry Cream Soda</a></p>
 <h2><a class="header" href="#tags" id="tags">Tags</a></h2>
@@ -242,21 +256,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

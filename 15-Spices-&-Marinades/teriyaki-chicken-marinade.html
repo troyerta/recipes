@@ -164,50 +164,70 @@
 <li>Total Time: 15 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10489" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10489"> 1/3 cup soy sauce (or tamari*)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10490" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10490"> 1/3 cup rice wine vinegar</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10491" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10491"> 2 tablespoons honey</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10492" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10492"> 3 tablespoons peanut oil (or olive oil)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10493" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10493"> 1 teaspoon sesame oil</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10494" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10494"> 1/2 teaspoon garlic powder</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10495" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10495"> 1/2 teaspoon ground ginger</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1/3 cup soy sauce (or tamari*)</p>
+<input disabled="" type="checkbox" id="chkbx_10496" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10496"> Whisk together the ingredients for (one) marinade in a small bowl until combined.</label>
 </li>
-<li>
-<p>1/3 cup rice wine vinegar</p>
-</li>
-<li>
-<p>2 tablespoons honey</p>
-</li>
-<li>
-<p>3 tablespoons peanut oil (or olive oil)</p>
-</li>
-<li>
-<p>1 teaspoon sesame oil</p>
-</li>
-<li>
-<p>1/2 teaspoon garlic powder</p>
-</li>
-<li>
-<p>1/2 teaspoon ground ginger</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Whisk together the ingredients for (one) marinade in a small bowl until combined.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Combine marinade with steak in a ziplock freezer bag, and toss until the steak is evenly coated in the marinade.  Carefully press out any extra air that might be in the bag, then seal.  (You will need 1/3 cup marinade per 1 pound of steak.)</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10497" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10497"> Combine marinade with steak in a ziplock freezer bag, and toss until the steak is evenly coated in the marinade.  Carefully press out any extra air that might be in the bag, then seal.  (You will need 1/3 cup marinade per 1 pound of steak.)</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>If using immediately: refrigerate the steak pack(s) for anywhere from 30 minutes to up to 1 day.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10498" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10498"> If using immediately: refrigerate the steak pack(s) for anywhere from 30 minutes to up to 1 day.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>If freezing: immediately transfer the steak pack(s) to the freezer, and freeze for up to 3 months.  Then when you’re ready to cook the steak, transfer the steak pack back to the refrigerator for 24 hours, or until it has thawed completely.  Or to speed up the process, you can submerge the sealed steak pack in a bowl of cold water in the refrigerator until it has thawed completely.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10499" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10499"> If freezing: immediately transfer the steak pack(s) to the freezer, and freeze for up to 3 months.  Then when you’re ready to cook the steak, transfer the steak pack back to the refrigerator for 24 hours, or until it has thawed completely.  Or to speed up the process, you can submerge the sealed steak pack in a bowl of cold water in the refrigerator until it has thawed completely.</label>
+</li>
 </ol>
 <hr />
 <ol start="5">
-<li>When ready to cook, remove the steak from the marinade, discard the remaining marinade, and let the steak rest on a plate for 20 minutes at room temperature.  (This will help it cook more evenly.)  Cook however you prefer.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10500" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10500"> When ready to cook, remove the steak from the marinade, discard the remaining marinade, and let the steak rest on a plate for 20 minutes at room temperature.  (This will help it cook more evenly.)  Cook however you prefer.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.gimmesomeoven.com/easy-chicken-marinade-recipes/">Gimme Some Oven - 5 Easy Chicken Marinades</a></p>
 <h2><a class="header" href="#tags" id="tags">Tags</a></h2>
@@ -255,21 +275,6 @@ meal-prep</p>
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

@@ -163,42 +163,56 @@
 <li>Total Time: 35 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_161" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_161"> 1 (8-oz.) tube crescent dough</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_162" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_162"> Cooking spray, for pan</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_163" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_163"> Flour, for surface</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_164" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_164"> 1 (8-oz.) wheel of brie</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_165" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_165"> 1/2 c. whole berry cranberry sauce</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_166" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_166"> 1/4 c. chopped pecans</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_167" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_167"> 6 sprigs of rosemary, cut into 1" pieces.</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 (8-oz.) tube crescent dough</p>
+<input disabled="" type="checkbox" id="chkbx_168" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_168"> Preheat oven to 375° and grease a mini muffin tin with cooking spray. On a lightly floured surface, roll out crescent dough, and pinch together seams. Cut into 24 squares. Place squares into muffin tin slots.</label>
 </li>
-<li>
-<p>Cooking spray, for pan</p>
-</li>
-<li>
-<p>Flour, for surface</p>
-</li>
-<li>
-<p>1 (8-oz.) wheel of brie</p>
-</li>
-<li>
-<p>1/2 c. whole berry cranberry sauce</p>
-</li>
-<li>
-<p>1/4 c. chopped pecans</p>
-</li>
-<li>
-<p>6 sprigs of rosemary, cut into 1&quot; pieces.</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Preheat oven to 375° and grease a mini muffin tin with cooking spray. On a lightly floured surface, roll out crescent dough, and pinch together seams. Cut into 24 squares. Place squares into muffin tin slots.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Cut brie into small pieces and place inside the crescent dough. Top with a spoonful of cranberry sauce, some chopped pecans, and one little sprig of rosemary.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_169" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_169"> Cut brie into small pieces and place inside the crescent dough. Top with a spoonful of cranberry sauce, some chopped pecans, and one little sprig of rosemary.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Bake until the crescent pastry is golden, about 15 minutes.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_170" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_170"> Bake until the crescent pastry is golden, about 15 minutes.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.delish.com/cooking/recipe-ideas/recipes/a56610/cranberry-brie-bites-recipe/">Delish - Cranberry Brie Bites</a></p>
 <h4><a class="header" href="#tags" id="tags">Tags</a></h4>
@@ -242,21 +256,6 @@ snack</p>
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

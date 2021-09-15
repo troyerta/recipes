@@ -162,40 +162,55 @@
 <li>Cook Time: 15 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_3251" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_3251"> 1 refrigerated biscuit, tube</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_3252" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_3252"> 3 tablespoons butter, melted</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_3253" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_3253"> ½ teaspoon garlic powder</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_3254" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_3254"> 2 tablespoons fresh parsley, minced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_3255" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_3255"> 1 cup shredded mozzarella cheese</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 refrigerated biscuit, tube</p>
+<input disabled="" type="checkbox" id="chkbx_3256" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_3256"> Preheat oven to 375°F (190°C).</label>
 </li>
-<li>
-<p>3 tablespoons butter, melted</p>
-</li>
-<li>
-<p>½ teaspoon garlic powder</p>
-</li>
-<li>
-<p>2 tablespoons fresh parsley, minced</p>
-</li>
-<li>
-<p>1 cup shredded mozzarella cheese</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Preheat oven to 375°F (190°C).</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Cut biscuits into fourths, and place in a large mixing bowl.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_3257" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_3257"> Cut biscuits into fourths, and place in a large mixing bowl.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Add the butter, garlic powder, parsley, and mozzarella, and mix with your hands, coating all of the biscuit pieces.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_3258" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_3258"> Add the butter, garlic powder, parsley, and mozzarella, and mix with your hands, coating all of the biscuit pieces.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Place the pieces in a muffin tin, 3 pieces per tin (you’ll have 2 extra—just use them in whichever tin you want). Bake for 15 minutes. Best served fresh out of the oven!</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_3259" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_3259"> Place the pieces in a muffin tin, 3 pieces per tin (you’ll have 2 extra—just use them in whichever tin you want). Bake for 15 minutes. Best served fresh out of the oven!</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://tasty.co/recipe/pull-apart-garlic-rolls">Pull-Apart Garlic Rolls</a></p>
 
@@ -236,21 +251,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

@@ -157,39 +157,52 @@
                     <main>
                         <h1><a class="header" href="#apple-tahini-toast-with-honey-and-thyme" id="apple-tahini-toast-with-honey-and-thyme">Apple Tahini Toast with Honey and Thyme</a></h1>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_2046" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2046"> 4 slices of your favorite bread</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_2047" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2047"> 1 apple, cored and thinly sliced, I prefer Honeycrisp Apples</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_2048" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2048"> 2 tablespoons organic tahini, your favorite brand or made - yourself</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_2049" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2049"> 2 tablespoons local raw honey</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_2050" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2050"> A few sprigs of fresh thyme</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_2051" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2051"> Sea salt, optional</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>4 slices of your favorite bread</p>
+<input disabled="" type="checkbox" id="chkbx_2052" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_2052"> Toast your bread accordingly.</label>
 </li>
-<li>
-<p>1 apple, cored and thinly sliced, I prefer Honeycrisp Apples</p>
-</li>
-<li>
-<p>2 tablespoons organic tahini, your favorite brand or made - yourself</p>
-</li>
-<li>
-<p>2 tablespoons local raw honey</p>
-</li>
-<li>
-<p>A few sprigs of fresh thyme</p>
-</li>
-<li>
-<p>Sea salt, optional</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Toast your bread accordingly.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Spread a layer of tahini on each slice of toast.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_2053" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_2053"> Spread a layer of tahini on each slice of toast.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Top with apple slices and a drizzle of honey, top with some fresh thyme and a little sprinkle of sea salt, optionally</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_2054" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_2054"> Top with apple slices and a drizzle of honey, top with some fresh thyme and a little sprinkle of sea salt, optionally</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>
@@ -242,21 +255,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

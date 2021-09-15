@@ -164,42 +164,56 @@
 <li>Total Time: 15 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10425" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10425"> 3 cups lightly-packed fresh basil leaves</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10426" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10426"> 1/2 cup freshly grated Parmesan</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10427" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10427"> 1/3 cup toasted pine nuts</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10428" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10428"> 3 cloves garlic</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10429" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10429"> 1 teaspoon fine sea salt</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10430" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10430"> 1/2 teaspoon freshly-cracked black pepper</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10431" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10431"> 1/2 cup extra-virgin olive oil</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>3 cups lightly-packed fresh basil leaves</p>
+<input disabled="" type="checkbox" id="chkbx_10432" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10432"> In a food processor or blender, pulse the basil, Parmesan, pine nuts, garlic, salt and pepper together until finely-chopped.</label>
 </li>
-<li>
-<p>1/2 cup freshly grated Parmesan</p>
-</li>
-<li>
-<p>1/3 cup toasted pine nuts</p>
-</li>
-<li>
-<p>3 cloves garlic</p>
-</li>
-<li>
-<p>1 teaspoon fine sea salt</p>
-</li>
-<li>
-<p>1/2 teaspoon freshly-cracked black pepper</p>
-</li>
-<li>
-<p>1/2 cup extra-virgin olive oil</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a food processor or blender, pulse the basil, Parmesan, pine nuts, garlic, salt and pepper together until finely-chopped.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>With the food processor or blender still running, slowly drizzle in the olive oil until it is completely combined.  Pause the food processor or blender and scrape down the sides, then pulse again until the mixture is smooth.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10433" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10433"> With the food processor or blender still running, slowly drizzle in the olive oil until it is completely combined.  Pause the food processor or blender and scrape down the sides, then pulse again until the mixture is smooth.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Serve immediately.  Or refrigerate in a sealed container for up to 3 days, or freeze for up to 3 months.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10434" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10434"> Serve immediately.  Or refrigerate in a sealed container for up to 3 days, or freeze for up to 3 months.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.gimmesomeoven.com/easy-chicken-marinade-recipes/">Gimme Some Oven - 5 Easy Chicken Marinades</a></p>
 <h2><a class="header" href="#tags" id="tags">Tags</a></h2>
@@ -247,21 +261,6 @@ meal-prep</p>
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

@@ -161,29 +161,37 @@
 <li>Yield: 4</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9471" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9471"> 8 oz Raspberry Syrup</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9472" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9472"> 4 oz Red Grapefruit juice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9473" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9473"> 4 cups club soda chilled</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9474" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9474"> 2 cups crushed ice</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>8 oz Raspberry Syrup</p>
+<input disabled="" type="checkbox" id="chkbx_9475" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9475"> In a pitcher add raspberry syrup, grapefruit juice, club soda and mix until raspberry syrup is diluted.</label>
 </li>
-<li>
-<p>4 oz Red Grapefruit juice</p>
-</li>
-<li>
-<p>4 cups club soda chilled</p>
-</li>
-<li>
-<p>2 cups crushed ice</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a pitcher add raspberry syrup, grapefruit juice, club soda and mix until raspberry syrup is diluted.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Add crushed ice and serve.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9476" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9476"> Add crushed ice and serve.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.jocooks.com/recipes/raspberry-fizz/">Raspberry Fizz</a></p>
 
@@ -224,21 +232,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

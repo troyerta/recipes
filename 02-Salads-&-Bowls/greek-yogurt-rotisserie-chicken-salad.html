@@ -163,50 +163,65 @@
 <li>Total Time: 10 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_458" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_458"> 3 cups rotisserie chicken, chopped and chilled</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_459" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_459"> 2/3 cup full-fat Greek yogurt</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_460" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_460"> 1 tablespoon dijon mustard</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_461" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_461"> Juice of 1/2 lemon</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_462" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_462"> 1/3 cup green onion, chopped</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_463" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_463"> 3/4 cup seedless cucumber, peeled and chopped</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_464" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_464"> 1/2 cup celery, chopped</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_465" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_465"> 1/4 cup fresh parsley, chopped</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_466" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_466"> 1 teaspoon (dried) dill</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_467" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_467"> 1 teaspoon sea salt</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_468" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_468"> 1/4 teaspoon freshly ground black pepper</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>3 cups rotisserie chicken, chopped and chilled</p>
+<input disabled="" type="checkbox" id="chkbx_469" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_469"> Mix all ingredients together in a large bowl and stir until completely combined.</label>
 </li>
-<li>
-<p>2/3 cup full-fat Greek yogurt</p>
-</li>
-<li>
-<p>1 tablespoon dijon mustard</p>
-</li>
-<li>
-<p>Juice of 1/2 lemon</p>
-</li>
-<li>
-<p>1/3 cup green onion, chopped</p>
-</li>
-<li>
-<p>3/4 cup seedless cucumber, peeled and chopped</p>
-</li>
-<li>
-<p>1/2 cup celery, chopped</p>
-</li>
-<li>
-<p>1/4 cup fresh parsley, chopped</p>
-</li>
-<li>
-<p>1 teaspoon (dried) dill</p>
-</li>
-<li>
-<p>1 teaspoon sea salt</p>
-</li>
-<li>
-<p>1/4 teaspoon freshly ground black pepper</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Mix all ingredients together in a large bowl and stir until completely combined.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Store any leftovers in an airtight container in the refrigerator.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_470" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_470"> Store any leftovers in an airtight container in the refrigerator.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>
@@ -259,21 +274,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

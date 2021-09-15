@@ -163,54 +163,68 @@
 <li>Total Time: 5 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9219" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9219"> 4 limes, quartered</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9220" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9220"> 1/2 cup fresh mint leaves</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9221" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9221"> 1-2 tablespoons granulated sugar (optional)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9222" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9222"> 4 ounces (1/2 cup) white rum</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9223" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9223"> 2 ounces (1/4 cup) coconut rum</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9224" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9224"> 1 cup canned full fat coconut milk well stirred</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9225" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9225"> 2-3 cans (12 ounce) ginger beer for topping</label>
+<br>
+<h4><a class="header" href="#lime-sugar" id="lime-sugar">Lime Sugar</a></h4><br>
+<input disabled="" type="checkbox" id="chkbx_9226" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9226"> zest of 1 lime</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9227" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9227"> 2 tablespoons granulated sugar</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9228" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9228"> flaky sea salt</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>4 limes, quartered</p>
+<input disabled="" type="checkbox" id="chkbx_9229" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9229"> To make the lime sugar. Combine the lime zest, sugar, and a pinch of salt on a shallow plate. Rim your glasses in sugar, then fill with ice.</label>
 </li>
-<li>
-<p>1/2 cup fresh mint leaves</p>
-</li>
-<li>
-<p>1-2 tablespoons granulated sugar (optional)</p>
-</li>
-<li>
-<p>4 ounces (1/2 cup) white rum</p>
-</li>
-<li>
-<p>2 ounces (1/4 cup) coconut rum</p>
-</li>
-<li>
-<p>1 cup canned full fat coconut milk well stirred</p>
-</li>
-<li>
-<p>2-3 cans (12 ounce) ginger beer for topping</p>
-</li>
-</ul>
-<h4><a class="header" href="#lime-sugar" id="lime-sugar">Lime Sugar:</a></h4>
-<ul>
-<li>
-<p>zest of 1 lime</p>
-</li>
-<li>
-<p>2 tablespoons granulated sugar</p>
-</li>
-<li>
-<p>flaky sea salt</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>To make the lime sugar. Combine the lime zest, sugar, and a pinch of salt on a shallow plate. Rim your glasses in sugar, then fill with ice.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Combine the lime juice, mint, and sugar (if using) in a large pitcher. Stir until the sugar is dissolved, about 2-3 minutes. Add the white rum, coconut rum, and coconut milk, stirring to evenly combine. Chill until ready to serve.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9230" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9230"> Combine the lime juice, mint, and sugar (if using) in a large pitcher. Stir until the sugar is dissolved, about 2-3 minutes. Add the white rum, coconut rum, and coconut milk, stirring to evenly combine. Chill until ready to serve.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>When ready to serve, pour into glasses and top off each glass with ginger beer, gently stirring to combine. Enjoy!</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9231" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9231"> When ready to serve, pour into glasses and top off each glass with ginger beer, gently stirring to combine. Enjoy!</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>
@@ -263,21 +277,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

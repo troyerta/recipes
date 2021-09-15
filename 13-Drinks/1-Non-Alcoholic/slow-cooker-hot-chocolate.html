@@ -164,42 +164,56 @@
 <li>Total Time: 2 hrs 10 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8995" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8995"> 1 1/2 cups semi-sweet chocolate chips</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8996" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8996"> 1/4 cup cocoa powder or dutch cocoa powder</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8997" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8997"> 1 (14 ounce) can sweetened condensed milk</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8998" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8998"> 6 cups half-and-half</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8999" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8999"> 1 teaspoon vanilla extract</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9000" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9000"> Flavored liqueur, to serve (optional)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9001" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9001"> Whipped cream, mini marshmallows, chocolate syrup, chocolate shavings, and/or candy canes, to serve (optional)</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 1/2 cups semi-sweet chocolate chips</p>
+<input disabled="" type="checkbox" id="chkbx_9002" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9002"> Combine the chocolate chips, cocoa powder, condensed milk, half-and-half, and vanilla extract in a slow cooker. Stir to combine.</label>
 </li>
-<li>
-<p>1/4 cup cocoa powder or dutch cocoa powder</p>
-</li>
-<li>
-<p>1 (14 ounce) can sweetened condensed milk</p>
-</li>
-<li>
-<p>6 cups half-and-half</p>
-</li>
-<li>
-<p>1 teaspoon vanilla extract</p>
-</li>
-<li>
-<p>Flavored liqueur, to serve (optional)</p>
-</li>
-<li>
-<p>Whipped cream, mini marshmallows, chocolate syrup, chocolate shavings, and/or candy canes, to serve (optional)</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Combine the chocolate chips, cocoa powder, condensed milk, half-and-half, and vanilla extract in a slow cooker. Stir to combine.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Cook, covered, until everything is melted, stirring occasionally, about 2 hours on low.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9003" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9003"> Cook, covered, until everything is melted, stirring occasionally, about 2 hours on low.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Set to warm. Serve with flavored liqueurs and toppings, if desired.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9004" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9004"> Set to warm. Serve with flavored liqueurs and toppings, if desired.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://hostthetoast.com/slow-cooker-hot-chocolate/">Slow Cooker Hot Chocolate</a></p>
 
@@ -240,21 +254,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

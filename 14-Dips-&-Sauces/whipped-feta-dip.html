@@ -163,39 +163,52 @@
 <li>Total Time: 5 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10156" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10156"> 1/2 cup ricotta</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10157" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10157"> 4 ounces feta crumbled</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10158" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10158"> 3 Tablespoons olive oil</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10159" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10159"> 1/4 cup good quality local honey</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10160" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10160"> 1 teaspoon cracked pepper</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10161" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10161"> 1 Tablespoon sliced green onions or chives</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1/2 cup ricotta</p>
+<input disabled="" type="checkbox" id="chkbx_10162" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10162"> Blend the ricotta, feta, and olive oil together in a food processor until smooth.</label>
 </li>
-<li>
-<p>4 ounces feta crumbled</p>
-</li>
-<li>
-<p>3 Tablespoons olive oil</p>
-</li>
-<li>
-<p>1/4 cup good quality local honey</p>
-</li>
-<li>
-<p>1 teaspoon cracked pepper</p>
-</li>
-<li>
-<p>1 Tablespoon sliced green onions or chives</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Blend the ricotta, feta, and olive oil together in a food processor until smooth.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Spread on a plate, pressing the center down to make a well. Fill the well with honey. Top with cracked pepper and green onions.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10163" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10163"> Spread on a plate, pressing the center down to make a well. Fill the well with honey. Top with cracked pepper and green onions.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Serve with pita bread or blanched carrots.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10164" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10164"> Serve with pita bread or blanched carrots.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://basilandbubbly.com/whipped-feta-dip/">Whipped Feta Dip</a></p>
 
@@ -236,21 +249,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

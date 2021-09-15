@@ -169,23 +169,49 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
-<li>1/3 cup simple syrup</li>
-<li>3/4 cup lime juice, preferably freshly squeezed</li>
-<li>1/2 cup vodka</li>
-<li>2 cups tonic water</li>
-<li>2 cups raspberries</li>
-<li>1 lime, sliced</li>
-<li>1 bottle Champagne or sparkling white wine</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a large pitcher, stir the simple syrup with the lime juice, vodka and tonic water to combine. Stir in the raspberries and lime slices.</li>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9486" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9486"> 1/3 cup simple syrup</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9487" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9487"> 3/4 cup lime juice, preferably freshly squeezed</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9488" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9488"> 1/2 cup vodka</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9489" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9489"> 2 cups tonic water</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9490" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9490"> 2 cups raspberries</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9491" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9491"> 1 lime, sliced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9492" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9492"> 1 bottle Champagne or sparkling white wine</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
+<li>
+<input disabled="" type="checkbox" id="chkbx_9493" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9493"> In a large pitcher, stir the simple syrup with the lime juice, vodka and tonic water to combine. Stir in the raspberries and lime slices.</label>
+</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Just before you’re ready to serve, add the Champagne. Serve chilled.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9494" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9494"> Just before you’re ready to serve, add the Champagne. Serve chilled.</label>
+</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://www.purewow.com/recipes/summer-champagne-punch-recipe?utm_source=pinterest&amp;utm_medium=social&amp;utm_content=SMP&amp;utm_campaign=pin_swap">Raspberry Lime Champagne Punch</a></p>
 <h2><a class="header" href="#tags" id="tags">Tags</a></h2>
@@ -227,21 +253,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

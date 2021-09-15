@@ -169,28 +169,37 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9551" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9551"> 1 (750ml) bottle of Riesling, can sub Pinot Grigio</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9552" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9552"> 1 red delicious apple, julienne</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9553" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9553"> 1 granny smith apple, julienne</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9554" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9554"> ½ (750ml) bottle of brut champagne or sparkling wine, chilled</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 (750ml) bottle of Riesling, can sub Pinot Grigio</p>
+<input disabled="" type="checkbox" id="chkbx_9555" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9555"> Pour Riesling into a large pitcher and stir in apples. Place in the refrigerator and allow to sit for at least 2 hours and up to 24 hours.</label>
 </li>
-<li>
-<p>1 red delicious apple, julienne</p>
-</li>
-<li>
-<p>1 granny smith apple, julienne</p>
-</li>
-<li>
-<p>½ (750ml) bottle of brut champagne or sparkling wine, chilled</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Pour Riesling into a large pitcher and stir in apples. Place in the refrigerator and allow to sit for at least 2 hours and up to 24 hours.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Add champagne/sparkling wine, stir and serve.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9556" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9556"> Add champagne/sparkling wine, stir and serve.</label>
+</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>If your apples brown or get limp while infusing into the wine, strain the apples out and replace them with fresh ones before adding the champagne and serving. The fresh apples WILL float to the top for a bit, but the sangria will stay just as delicious.</li>
@@ -236,21 +245,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

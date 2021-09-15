@@ -161,33 +161,44 @@
 <li>Yield: 1</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8943" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8943"> 4 ounces bittersweet chocolate 70% or higher</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8944" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8944"> 1 1/2 cups whole milk</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8945" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8945"> 2 tablespoons sugar</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8946" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8946"> 2 teaspoons corn starch</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>4 ounces bittersweet chocolate 70% or higher</p>
+<input disabled="" type="checkbox" id="chkbx_8947" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_8947"> Into a saucepan over LOW heat add chocolate and a smidge of milk. Stir with a wooden spoon until melted.</label>
 </li>
-<li>
-<p>1 1/2 cups whole milk</p>
-</li>
-<li>
-<p>2 tablespoons sugar</p>
-</li>
-<li>
-<p>2 teaspoons corn starch</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Into a saucepan over LOW heat add chocolate and a smidge of milk. Stir with a wooden spoon until melted.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>SLOWLY add remaining milk until it’s well combined. Add sugar. Mix to combine. Whisk in corn starch.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_8948" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_8948"> SLOWLY add remaining milk until it’s well combined. Add sugar. Mix to combine. Whisk in corn starch.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Continue cooking over LOW heat until it becomes thick, creamy and coats the back of the wooden spoon.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_8949" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_8949"> Continue cooking over LOW heat until it becomes thick, creamy and coats the back of the wooden spoon.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://bellalimento.com/2012/01/11/how-to-make-italian-hot-chocolate/">How To Make Italian Hot Chocolate</a></p>
 
@@ -228,21 +239,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

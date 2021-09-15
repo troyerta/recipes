@@ -164,46 +164,63 @@
 <li>Total Time: 30 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1"> 12 sheets frozen phyllo dough, thawed</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_2" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_2"> 4 tablespoons (1/2 stick) unsalted butter, melted</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_3" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_3"> 12 ounce Brie wheel, cut into 12 slices</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4"> 12 thin slices prosciutto</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5"> Honey, for drizzling</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_6" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_6"> Arils from 1 pomegranate</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_7" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_7"> Flaky sea salt and black pepper</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>12 sheets frozen phyllo dough, thawed</p>
+<input disabled="" type="checkbox" id="chkbx_8" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_8"> Preheat the oven to 350º F. Line a baking sheet with parchment paper.</label>
 </li>
-<li>
-<p>4 tablespoons (1/2 stick) unsalted butter, melted</p>
-</li>
-<li>
-<p>12 ounce Brie wheel, cut into 12 slices</p>
-</li>
-<li>
-<p>12 thin slices prosciutto</p>
-</li>
-<li>
-<p>Honey, for drizzling</p>
-</li>
-<li>
-<p>Arils from 1 pomegranate</p>
-</li>
-<li>
-<p>Flaky sea salt and black pepper</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Preheat the oven to 350º F. Line a baking sheet with parchment paper.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Place 1 sheet of phyllo dough on a clean surface and gently fold it in half crosswise. Brush the phyllo with a little melted butter, being sure to cover the entire top half.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9"> Place 1 sheet of phyllo dough on a clean surface and gently fold it in half crosswise. Brush the phyllo with a little melted butter, being sure to cover the entire top half.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>On the short end of the dough, place a piece of prosciutto, then a slice of Brie. Roll the phyllo up over the filling, folding the side edges in to seal, burrito style. Place the roll seam-side down on the prepared baking sheet and repeat to make 12 rolls total. Brush the tops of each phyllo roll generously with melted butter.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10"> On the short end of the dough, place a piece of prosciutto, then a slice of Brie. Roll the phyllo up over the filling, folding the side edges in to seal, burrito style. Place the roll seam-side down on the prepared baking sheet and repeat to make 12 rolls total. Brush the tops of each phyllo roll generously with melted butter.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Bake for 20 to 25 minutes, or until the rolls are golden brown on top. Remove and drizzle lightly with honey. Sprinkle with black pepper, pomegranates, and a little flaky sea salt. Serve warm.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_11" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_11"> Bake for 20 to 25 minutes, or until the rolls are golden brown on top. Remove and drizzle lightly with honey. Sprinkle with black pepper, pomegranates, and a little flaky sea salt. Serve warm.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.halfbakedharvest.com/baked-brie-and-prosciutto-rolls/">Baked Brie and Prosciutto Rolls</a></p>
 
@@ -244,21 +261,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

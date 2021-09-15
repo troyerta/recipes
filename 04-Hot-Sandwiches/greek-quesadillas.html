@@ -161,52 +161,71 @@
 <li>Yield: 4</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1731" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1731"> 8 whole wheat tortillas</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1732" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1732"> 2 cups fresh spinach</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1733" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1733"> 1 red onion</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1734" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1734"> 2 roasted red peppers from a jar</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1735" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1735"> 1/2 cup Kalamata or black olives</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1736" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1736"> 2 cups shredded mozzarella cheese</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1737" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1737"> 1/2 cup feta cheese crumbles</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1738" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1738"> 1 1/2 tablespoons fresh chopped oregano (or 2 teaspoons dried)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1739" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1739"> Red pepper flakes (optional)</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>8 whole wheat tortillas</p>
+<input disabled="" type="checkbox" id="chkbx_1740" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1740"> Thinly slice the spinach. Thinly slice the red onion, roasted red peppers and olives. Chop the fresh oregano (if using).</label>
 </li>
-<li>
-<p>2 cups fresh spinach</p>
-</li>
-<li>
-<p>1 red onion</p>
-</li>
-<li>
-<p>2 roasted red peppers from a jar</p>
-</li>
-<li>
-<p>1/2 cup Kalamata or black olives</p>
-</li>
-<li>
-<p>2 cups shredded mozzarella cheese</p>
-</li>
-<li>
-<p>1/2 cup feta cheese crumbles</p>
-</li>
-<li>
-<p>1 1/2 tablespoons fresh chopped oregano (or 2 teaspoons dried)</p>
-</li>
-<li>
-<p>Red pepper flakes (optional)</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Thinly slice the spinach. Thinly slice the red onion, roasted red peppers and olives. Chop the fresh oregano (if using).</li>
 </ol>
 <hr />
 <ol start="2">
-<li>For each quesadilla, place a tortilla on a plate and evenly spread with 1/4 of the spinach, red onion, roasted red peppers, black olives, mozzarella cheese, feta cheese, and oregano. Sprinkle with a few red pepper flakes (if using).</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1741" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1741"> For each quesadilla, place a tortilla on a plate and evenly spread with 1/4 of the spinach, red onion, roasted red peppers, black olives, mozzarella cheese, feta cheese, and oregano. Sprinkle with a few red pepper flakes (if using).</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Heat a large non-stick skillet over medium heat for a few minutes. Place the loaded tortilla on the griddle and place another tortilla on top. Cook until browned on the bottom, then flip and cook until browned on the other side, a few minutes per side.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1742" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1742"> Heat a large non-stick skillet over medium heat for a few minutes. Place the loaded tortilla on the griddle and place another tortilla on top. Cook until browned on the bottom, then flip and cook until browned on the other side, a few minutes per side.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Remove the tortilla and cut into wedges with a pizza cutter. If making several quesadillas at once, keep them warm in a 300°F oven.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1743" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1743"> Remove the tortilla and cut into wedges with a pizza cutter. If making several quesadillas at once, keep them warm in a 300°F oven.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.acouplecooks.com/greek-quesadillas/">Greek Quesadillas</a></p>
 
@@ -247,21 +266,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

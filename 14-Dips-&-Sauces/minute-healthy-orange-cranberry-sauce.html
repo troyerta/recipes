@@ -161,47 +161,66 @@
 <li>Yield: 6</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10040" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10040"> 1 pound fresh or frozen cranberries</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10041" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10041"> 1 cup freshly squeezed orange juice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10042" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10042"> 1/2 cup pure maple syrup (or honey)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10043" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10043"> 1 teaspoon vanilla extract</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10044" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10044"> 1 tablespoon whiskey, bourbon, brandy or scotch (optional)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10045" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10045"> zest from 1 orange</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 pound fresh or frozen cranberries</p>
+<input disabled="" type="checkbox" id="chkbx_10046" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10046"> Add cranberries, orange juice, maple syrup, vanilla extract and bourbon in a small pot and place over medium high heat.</label>
 </li>
-<li>
-<p>1 cup freshly squeezed orange juice</p>
-</li>
-<li>
-<p>1/2 cup pure maple syrup (or honey)</p>
-</li>
-<li>
-<p>1 teaspoon vanilla extract</p>
-</li>
-<li>
-<p>1 tablespoon whiskey, bourbon, brandy or scotch (optional)</p>
-</li>
-<li>
-<p>zest from 1 orange</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Add cranberries, orange juice, maple syrup, vanilla extract and bourbon in a small pot and place over medium high heat.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Once mixture begins to boil, cover, reduce heat to low, and cook for 10 minutes or until the sauce becomes nice and thick, coating the back of a spoon. You may notice a popping sound; this is the cranberries bursting so don't worry.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10047" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10047"> Once mixture begins to boil, cover, reduce heat to low, and cook for 10 minutes or until the sauce becomes nice and thick, coating the back of a spoon. You may notice a popping sound; this is the cranberries bursting so don't worry.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>After 10 minutes I recommend removing the lid and allowing cranberries to simmer a few minutes to thicken the sauce up. If you are using frozen cranberries, this may take a bit longer.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10048" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10048"> After 10 minutes I recommend removing the lid and allowing cranberries to simmer a few minutes to thicken the sauce up. If you are using frozen cranberries, this may take a bit longer.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Once the sauce is thick, remove from heat and set aside to cool.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10049" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10049"> Once the sauce is thick, remove from heat and set aside to cool.</label>
+</li>
 </ol>
 <hr />
 <ol start="5">
-<li>Refrigerate until ready to serve, then garnish with orange zest. Serves 6 (about 1/4 cup each). Feel free to double the recipe!</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10050" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10050"> Refrigerate until ready to serve, then garnish with orange zest. Serves 6 (about 1/4 cup each). Feel free to double the recipe!</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>
@@ -251,21 +270,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

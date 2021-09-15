@@ -164,41 +164,53 @@
 <li>Total Time: 20 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10165" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10165"> 1/2 tablespoon olive oil</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10166" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10166"> 1/4 cup sweet onion chopped</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10167" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10167"> 1/2 – 1 jalapeno minced (to taste)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10168" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10168"> 1 lb white American cheese shredded</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10169" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10169"> 1 cup milk</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10170" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10170"> 1/4 – 1/2 cup low sodium chicken broth</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10171" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10171"> 1/4 cup cilantro chopped</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10172" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10172"> 1/2 cup tomatoes finely diced</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1/2 tablespoon olive oil</p>
+<input disabled="" type="checkbox" id="chkbx_10173" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10173"> Add olive oil to a small skillet over medium low heat. Saute onion and minced jalapeno.  Turn heat to low and add shredded cheese and milk.  Stir continuously until cheese is melted.  Slowly stir in enough chicken broth to thin out to desired consistency.</label>
 </li>
-<li>
-<p>1/4 cup sweet onion chopped</p>
-</li>
-<li>
-<p>1/2 – 1 jalapeno minced (to taste)</p>
-</li>
-<li>
-<p>1 lb white American cheese shredded</p>
-</li>
-<li>
-<p>1 cup milk</p>
-</li>
-<li>
-<p>1/4 – 1/2 cup low sodium chicken broth</p>
-</li>
-<li>
-<p>1/4 cup cilantro chopped</p>
-</li>
-<li>
-<p>1/2 cup tomatoes finely diced</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Add olive oil to a small skillet over medium low heat. Saute onion and minced jalapeno.  Turn heat to low and add shredded cheese and milk.  Stir continuously until cheese is melted.  Slowly stir in enough chicken broth to thin out to desired consistency.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Stir in fresh chopped cilantro and finely diced sun ripened tomatoes.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_10174" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10174"> Stir in fresh chopped cilantro and finely diced sun ripened tomatoes.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.smalltownwoman.com/white-queso-dip/">White Queso Dip</a></p>
 
@@ -239,21 +251,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

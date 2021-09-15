@@ -169,23 +169,36 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9255" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9255"> 1 litre Eggnog Regular or Light will work</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9256" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9256"> 6 oz Bourbon</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 litre Eggnog Regular or Light will work</p>
+<input disabled="" type="checkbox" id="chkbx_9257" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9257"> Mix eggnog and bourbon together in a large pitcher. Add ice if desired.</label>
 </li>
-<li>
-<p>6 oz Bourbon</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Mix eggnog and bourbon together in a large pitcher. Add ice if desired.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Top with a pinch of nutmeg and/or cinnamon if desired.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9258" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9258"> Top with a pinch of nutmeg and/or cinnamon if desired.</label>
+</li>
 </ol>
-<h2><a class="header" href="#" id=""></a></h2>
+<hr />
+<ol start="3">
+<li>
+<input disabled="" type="checkbox" id="chkbx_9259" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9259"> ##</label>
+</li>
+</ol>
+<hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.mykitchenlove.com/easy-bourbon-eggnog/?utm_medium=social&amp;utm_source=pinterest&amp;utm_campaign=tailwind_tribes&amp;utm_content=tribes">Easy Bourbon Eggnog</a></p>
 <h2><a class="header" href="#tags" id="tags">Tags</a></h2>
@@ -228,21 +241,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

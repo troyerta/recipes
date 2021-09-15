@@ -167,42 +167,55 @@
 <li>Total Time: 20 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<h4><a class="header" href="#coconut-and-pineapple-sweet-chili-sauce" id="coconut-and-pineapple-sweet-chili-sauce">Coconut and Pineapple Sweet Chili Sauce:</a></h4>
-<ul>
+<h4><a class="header" href="#coconut-and-pineapple-sweet-chili-sauce" id="coconut-and-pineapple-sweet-chili-sauce">Coconut and Pineapple Sweet Chili Sauce</a></h4><br>
+<input disabled="" type="checkbox" id="chkbx_5269" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5269"> 3 tablespoons coconut cream</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5270" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5270"> 3 tablespoons pineapple sweet chili sauce*</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5271" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5271"> 1 teaspoon sriracha, or to taste</label>
+<br>
+<h4><a class="header" href="#grilled-shrimp" id="grilled-shrimp">Grilled Shrimp</a></h4><br>
+<input disabled="" type="checkbox" id="chkbx_5272" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5272"> 1 pound (20-25 or 16-20) shrimp, peeled and deveined</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5273" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5273"> 2 slices pineapple, cut into 1/2 inch pieces</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><h4><a class="header" href="#for-the-coconut-and-pineapple-sweet-chili-sauce:" id="for-the-coconut-and-pineapple-sweet-chili-sauce:">For the coconut and pineapple sweet chili sauce:</a></h4><ol start="1">
 <li>
-<p>3 tablespoons coconut cream</p>
+<input disabled="" type="checkbox" id="chkbx_5274" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_5274"> Mix everything.</label>
 </li>
-<li>
-<p>3 tablespoons pineapple sweet chili sauce*</p>
-</li>
-<li>
-<p>1 teaspoon sriracha, or to taste</p>
-</li>
-</ul>
-<h4><a class="header" href="#grilled-shrimp" id="grilled-shrimp">Grilled Shrimp:</a></h4>
-<ul>
-<li>
-<p>1 pound (20-25 or 16-20) shrimp, peeled and deveined</p>
-</li>
-<li>
-<p>2 slices pineapple, cut into 1/2 inch pieces</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<h4><a class="header" href="#for-the-coconut-and-pineapple-sweet-chili-sauce" id="for-the-coconut-and-pineapple-sweet-chili-sauce">For the coconut and pineapple sweet chili sauce:</a></h4>
-<ol>
-<li>Mix everything.</li>
 </ol>
 <hr />
-<h4><a class="header" href="#for-the-grilled-shrimp" id="for-the-grilled-shrimp">For the grilled shrimp:</a></h4>
-<ol>
-<li>Skewer the shrimp and pineapple and grill over medium-high heat until cooked, about 2-3 minutes per side.</li>
+<h4><a class="header" href="#for-the-grilled-shrimp:" id="for-the-grilled-shrimp:">For the grilled shrimp:</a></h4><ol start="2">
+<li>
+<input disabled="" type="checkbox" id="chkbx_5275" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_5275"> Skewer the shrimp and pineapple and grill over medium-high heat until cooked, about 2-3 minutes per side.</label>
+</li>
 </ol>
 <hr />
-<ol start="2">
-<li>Brush the sauce onto the shrimp and enjoy!</li>
+<ol start="3">
+<li>
+<input disabled="" type="checkbox" id="chkbx_5276" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_5276"> Brush the sauce onto the shrimp and enjoy!</label>
+</li>
 </ol>
 <hr />
+<h4><a class="header" href="#notes" id="notes">Notes</a></h4><ol start="4">
+<li>
+<input disabled="" type="checkbox" id="chkbx_5277" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_5277"> You can just puree the pineapple into the chili sauce for a smoother consistency.</label>
+</li>
+</ol>
+<hr />
+
 <h4><a class="header" href="#notes" id="notes">Notes</a></h4>
 <ul>
 <li>You can just puree the pineapple into the chili sauce for a smoother consistency.</li>
@@ -249,21 +262,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

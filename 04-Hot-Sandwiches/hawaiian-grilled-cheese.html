@@ -161,39 +161,52 @@
 <li>Yield: 1</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1787" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1787"> 2 slices of bread</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1788" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1788"> 3 slices of pineapple, fresh or canned</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1789" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1789"> 3 slices canadian bacon</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1790" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1790"> shredded Monterey Jack cheese</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1791" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1791"> butter</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1792" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1792"> oregano and parsley</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>2 slices of bread</p>
+<input disabled="" type="checkbox" id="chkbx_1793" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1793"> Butter one side of each slice of bread and sprinkle with parsley and oregano to taste</label>
 </li>
-<li>
-<p>3 slices of pineapple, fresh or canned</p>
-</li>
-<li>
-<p>3 slices canadian bacon</p>
-</li>
-<li>
-<p>shredded Monterey Jack cheese</p>
-</li>
-<li>
-<p>butter</p>
-</li>
-<li>
-<p>oregano and parsley</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Butter one side of each slice of bread and sprinkle with parsley and oregano to taste</li>
 </ol>
 <hr />
 <ol start="2">
-<li>On non buttered side of bread place the shredded cheese, then the canadian bacon, pineapple, and top with the other slice of bread, buttered side facing up.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1794" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1794"> On non buttered side of bread place the shredded cheese, then the canadian bacon, pineapple, and top with the other slice of bread, buttered side facing up.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Cook sandwich on stove top on a griddle or frying pan. Once bread is toasted on one side flip the sandwich to toast the other side. Cook on a low heat to allow the cheese to melt while the bread is toasting.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1795" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1795"> Cook sandwich on stove top on a griddle or frying pan. Once bread is toasted on one side flip the sandwich to toast the other side. Cook on a low heat to allow the cheese to melt while the bread is toasting.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://houseofyumm.com/hawaiian-grilled-cheese/">Hawaiian Grilled Cheese</a></p>
 
@@ -234,21 +247,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

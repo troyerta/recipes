@@ -164,40 +164,55 @@
 <li>Total Time: 20 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_171" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_171"> 1 sheet frozen puff pastry, thawed</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_172" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_172"> 3 tablespoons salted butter, melted</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_173" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_173"> 6 ounces Brie cheese, rind mostly removed and finely diced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_174" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_174"> 3/4 cup dried cranberries</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_175" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_175"> 2-4 tablespoons cinnamon sugar, using more or less to taste</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 sheet frozen puff pastry, thawed</p>
+<input disabled="" type="checkbox" id="chkbx_176" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_176"> Preheat oven to 375 degrees F. Line a baking sheet with parchment paper.</label>
 </li>
-<li>
-<p>3 tablespoons salted butter, melted</p>
-</li>
-<li>
-<p>6 ounces Brie cheese, rind mostly removed and finely diced</p>
-</li>
-<li>
-<p>3/4 cup dried cranberries</p>
-</li>
-<li>
-<p>2-4 tablespoons cinnamon sugar, using more or less to taste</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Preheat oven to 375 degrees F. Line a baking sheet with parchment paper.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Unroll the puff pastry on a clean work surface. Brush the pastry with 1 tablespoon melted butter and then sprinkle with 1-2 tablespoons cinnamon sugar. Sprinkle the diced brie and cranberries evenly over the pastry.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_177" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_177"> Unroll the puff pastry on a clean work surface. Brush the pastry with 1 tablespoon melted butter and then sprinkle with 1-2 tablespoons cinnamon sugar. Sprinkle the diced brie and cranberries evenly over the pastry.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Starting at the long end, roll the pastry up as tightly as possible (like a cinnamon roll). Brush the roll with the remaining melted butter and then sprinkle the roll with cinnamon sugar to coat. Using a sharp knife, cut into 16 swirls.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_178" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_178"> Starting at the long end, roll the pastry up as tightly as possible (like a cinnamon roll). Brush the roll with the remaining melted butter and then sprinkle the roll with cinnamon sugar to coat. Using a sharp knife, cut into 16 swirls.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Place the swirls on the prepared baking sheet and bake 15-25 minutes or until the cheese is bubbly and the pastry golden, these are a little messy. Allow to sit on the pan about two minutes and before transferring to a serving plate. Serve warm.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_179" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_179"> Place the swirls on the prepared baking sheet and bake 15-25 minutes or until the cheese is bubbly and the pastry golden, these are a little messy. Allow to sit on the pan about two minutes and before transferring to a serving plate. Serve warm.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>
@@ -247,21 +262,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

@@ -169,39 +169,55 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9210" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9210"> 2 ¼ oz. bourbon</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9211" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9211"> 1 ½ oz. 100% pure cranberry juice, unsweetened</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9212" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9212"> ½ oz. freshly squeezed lemon juice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9213" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9213"> 1 oz. simple syrup</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9214" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9214"> Lemon slices and cranberries, for garnish</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>2 ¼ oz. bourbon</p>
+<input disabled="" type="checkbox" id="chkbx_9215" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9215"> Fill a cocktail shaker with ice.</label>
 </li>
-<li>
-<p>1 ½ oz. 100% pure cranberry juice, unsweetened</p>
-</li>
-<li>
-<p>½ oz. freshly squeezed lemon juice</p>
-</li>
-<li>
-<p>1 oz. simple syrup</p>
-</li>
-<li>
-<p>Lemon slices and cranberries, for garnish</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Fill a cocktail shaker with ice.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Pour the bourbon, cranberry juice, freshly squeezed lemon juice and simple syrup into the cocktail shaker and shake vigorously.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9216" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9216"> Pour the bourbon, cranberry juice, freshly squeezed lemon juice and simple syrup into the cocktail shaker and shake vigorously.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Place spherical ice or whiskey stones in an old fashioned glass. Pour the drink over the ice cube/whiskey stones.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9217" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9217"> Place spherical ice or whiskey stones in an old fashioned glass. Pour the drink over the ice cube/whiskey stones.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Garnish with a slice of lemon or a couple of cranberries, and enjoy immediately.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9218" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9218"> Garnish with a slice of lemon or a couple of cranberries, and enjoy immediately.</label>
+</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://www.thespeckledpalate.com/2013/01/18/the-cocktail-chronicles-blizzard/">Blizzard Cranberry Bourbon Cocktail</a></p>
 <h2><a class="header" href="#tags" id="tags">Tags</a></h2>
@@ -243,21 +259,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

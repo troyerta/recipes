@@ -169,32 +169,48 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9339" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9339"> 1/3 cup freshly squeezed red grapefruit juice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9340" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9340"> 2 tablespoons good quality vodka</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9341" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9341"> course sea salt for rim</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9342" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9342"> grapefruit slice for garnish</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9343" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9343"> 1 cup crushed ice</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1/3 cup freshly squeezed red grapefruit juice</p>
+<input disabled="" type="checkbox" id="chkbx_9344" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9344"> Wet the rim of your glass with water or the grapefruit slice. Dip in sea salt and fill glass with crushed ice.</label>
 </li>
-<li>
-<p>2 tablespoons good quality vodka</p>
-</li>
-<li>
-<p>course sea salt for rim</p>
-</li>
-<li>
-<p>grapefruit slice for garnish</p>
-</li>
-<li>
-<p>1 cup crushed ice</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Wet the rim of your glass with water or the grapefruit slice. Dip in sea salt and fill glass with crushed ice.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Combine juice and vodka in shaker and shake or stir to combine.
-Pour over glass.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9345" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9345"> Combine juice and vodka in shaker and shake or stir to combine.</label>
+</li>
 </ol>
+<hr />
+<ol start="3">
+<li>
+<input disabled="" type="checkbox" id="chkbx_9346" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9346"> Pour over glass.</label>
+</li>
+</ol>
+<hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://www.thecookierookie.com/grapefruit-salty-dog/">Grapefruit Salty Dog</a></p>
 <h2><a class="header" href="#tags" id="tags">Tags</a></h2>
@@ -236,21 +252,6 @@ Pour over glass.</li>
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

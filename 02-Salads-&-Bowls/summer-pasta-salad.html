@@ -167,55 +167,71 @@
 <li>Total Time: 45 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_994" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_994"> 2 Cups pasta shells (usually < 1 lb)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_995" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_995"> 2 Cups carrots, chopped</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_996" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_996"> 2 Cups cucumber, quartered slices</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_997" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_997"> 1 medium onion, chopped, yellow/vidalia/sweet</label>
+<br>
+<h4><a class="header" href="#sauce" id="sauce">Sauce</a></h4><br>
+<input disabled="" type="checkbox" id="chkbx_998" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_998"> 1.5 Cups mayonnaise or miracle whip</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_999" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_999"> 1/3 Cup white vinegar</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1000" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1000"> 1 Cup white sugar</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1001" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1001"> 1 tsp salt</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1002" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1002"> 1/4 tsp ground pepper</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>2 Cups pasta shells (usually &lt; 1 lb)</p>
+<input disabled="" type="checkbox" id="chkbx_1003" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1003"> Cook pasta in boiling water to al dente. Drain and rinse to cool, then set aside.</label>
 </li>
-<li>
-<p>2 Cups carrots, chopped</p>
-</li>
-<li>
-<p>2 Cups cucumber, quartered slices</p>
-</li>
-<li>
-<p>1 medium onion, chopped, yellow/vidalia/sweet</p>
-</li>
-</ul>
-<h4><a class="header" href="#sauce" id="sauce">Sauce:</a></h4>
-<ul>
-<li>
-<p>1.5 Cups mayonnaise or miracle whip</p>
-</li>
-<li>
-<p>1/3 Cup white vinegar</p>
-</li>
-<li>
-<p>1 Cup white sugar</p>
-</li>
-<li>
-<p>1 tsp salt</p>
-</li>
-<li>
-<p>1/4 tsp ground pepper</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Cook pasta in boiling water to al dente. Drain and rinse to cool, then set aside.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>While pasta cooks, cut the veggies, then whisk together the sauce ingredients in a medium bowl.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1004" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1004"> While pasta cooks, cut the veggies, then whisk together the sauce ingredients in a medium bowl.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Gently combine the pasta, veggies, and sauce in a large serving bowl.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1005" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1005"> Gently combine the pasta, veggies, and sauce in a large serving bowl.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Cover salad and let it set in refrigerator before serving.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1006" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1006"> Cover salad and let it set in refrigerator before serving.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#tags" id="tags">Tags</a></h2>
 <p>verified</p>
 
@@ -256,21 +272,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

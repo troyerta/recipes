@@ -169,40 +169,53 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9049" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9049"> 1 bottle Moscato wine</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9050" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9050"> 1/2 cup lemon liqueur (I used Caravella)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9051" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9051"> Zest of 2 lemons</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9052" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9052"> 1/4 cup granulated sugar</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9053" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9053"> 1/4 cup fresh lemon juice (from two lemons)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9054" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9054"> 1 Granny Smith apple, cored, halved, and thinly sliced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9055" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9055"> 1 Bartlett pear, cored, halved, and thinly sliced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9056" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9056"> 1 can (12 ounces) seltzer</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 bottle Moscato wine</p>
+<input disabled="" type="checkbox" id="chkbx_9057" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9057"> In a large pitcher, combine wine, lemon liqueur, lemon zest, and sugar. Stir until sugar dissolves. Add lemon juice, apple slices, and pear slices and mix well.</label>
 </li>
-<li>
-<p>1/2 cup lemon liqueur (I used Caravella)</p>
-</li>
-<li>
-<p>Zest of 2 lemons</p>
-</li>
-<li>
-<p>1/4 cup granulated sugar</p>
-</li>
-<li>
-<p>1/4 cup fresh lemon juice (from two lemons)</p>
-</li>
-<li>
-<p>1 Granny Smith apple, cored, halved, and thinly sliced</p>
-</li>
-<li>
-<p>1 Bartlett pear, cored, halved, and thinly sliced</p>
-</li>
-<li>
-<p>1 can (12 ounces) seltzer</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In a large pitcher, combine wine, lemon liqueur, lemon zest, and sugar. Stir until sugar dissolves. Add lemon juice, apple slices, and pear slices and mix well.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Place pitcher in refrigerator for 4 hours to chill and allow flavors to blend. Just before serving, top sangria off with seltzer.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9058" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9058"> Place pitcher in refrigerator for 4 hours to chill and allow flavors to blend. Just before serving, top sangria off with seltzer.</label>
+</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#notes" id="notes">Notes</a></h2>
 <ul>
 <li>
@@ -253,21 +266,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

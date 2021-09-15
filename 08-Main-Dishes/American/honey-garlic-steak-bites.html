@@ -161,55 +161,80 @@
 <li>Yield: 3</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4326" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4326"> 1 1/2 lbs sirloin steak, cup into 1 inch pieces</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4327" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4327"> 3 tbsp honey</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4328" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4328"> 2 tbsp teriyaki sauce</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4329" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4329"> 1/3 cup low-sodium soy sauce</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4330" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4330"> 4 tbsp garlic cloves, minced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_4331" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_4331"> 2 tbsp olive oil or vegetable oil if you prefer</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 1/2 lbs sirloin steak, cup into 1 inch pieces</p>
+<input disabled="" type="checkbox" id="chkbx_4332" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_4332"> Cut sirloin steak into 1 inch pieces and place into a resealable gallon size bag.</label>
 </li>
-<li>
-<p>3 tbsp honey</p>
-</li>
-<li>
-<p>2 tbsp teriyaki sauce</p>
-</li>
-<li>
-<p>1/3 cup low-sodium soy sauce</p>
-</li>
-<li>
-<p>4 tbsp garlic cloves, minced</p>
-</li>
-<li>
-<p>2 tbsp olive oil or vegetable oil if you prefer</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Cut sirloin steak into 1 inch pieces and place into a resealable gallon size bag.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>In a mixing bowl whisk soy sauce, teriyaki sauce, honey,garlic and olive oil</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_4333" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_4333"> In a mixing bowl whisk soy sauce, teriyaki sauce, honey,garlic and olive oil</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Pour over steak pieces. Seal bag trying to press out any excess air. Massage marinade into steak pieces.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_4334" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_4334"> Pour over steak pieces. Seal bag trying to press out any excess air. Massage marinade into steak pieces.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Place in refrigerator for 1 1/2 to 2 hours.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_4335" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_4335"> Place in refrigerator for 1 1/2 to 2 hours.</label>
+</li>
 </ol>
 <hr />
 <ol start="5">
-<li>Heat 1 Tbsp oil in a non-stick skillet over medium-high heat.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_4336" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_4336"> Heat 1 Tbsp oil in a non-stick skillet over medium-high heat.</label>
+</li>
 </ol>
 <hr />
 <ol start="6">
-<li>Remove half the steak from marinade and let as much of the marinade drip off as possible. Place in skillet (do not overcrowd the pan) and let sear on one side for about 1 1/2 minutes the turn and cook to desired doneness. Usually this takes less than 3 minutes total for us</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_4337" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_4337"> Remove half the steak from marinade and let as much of the marinade drip off as possible. Place in skillet (do not overcrowd the pan) and let sear on one side for about 1 1/2 minutes the turn and cook to desired doneness. Usually this takes less than 3 minutes total for us</label>
+</li>
 </ol>
 <hr />
 <ol start="7">
-<li>Transfer to a plate to keep warm and repeat with second batch of steak pieces .</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_4338" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_4338"> Transfer to a plate to keep warm and repeat with second batch of steak pieces .</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://mariasmixingbowl.com/honey-garlic-steak-bites/">Honey Garlic Steak Bites</a></p>
 
@@ -250,21 +275,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

@@ -169,30 +169,38 @@
 </li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9027" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9027"> 1 quart almond milk, preferably homemade, or soy milk</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9028" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9028"> 6 ounces dark chocolate (at least 70 percent cacao), chopped</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9029" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9029"> 1/2 teaspoon ground cinnamon</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9030" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9030"> 1/8 to 1/4 teaspoon ground cardamom, to taste</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9031" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9031"> 1/8 teaspoon cayenne pepper</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9032" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9032"> 1/8 teaspoon coarse salt</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 quart almond milk, preferably homemade, or soy milk</p>
+<input disabled="" type="checkbox" id="chkbx_9033" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9033"> Heat all ingredients in a small saucepan over medium-low, whisking constantly, until chocolate has melted and mixture is steaming, about 5 minutes. Serve immediately.</label>
 </li>
-<li>
-<p>6 ounces dark chocolate (at least 70 percent cacao), chopped</p>
-</li>
-<li>
-<p>1/2 teaspoon ground cinnamon</p>
-</li>
-<li>
-<p>1/8 to 1/4 teaspoon ground cardamom, to taste</p>
-</li>
-<li>
-<p>1/8 teaspoon cayenne pepper</p>
-</li>
-<li>
-<p>1/8 teaspoon coarse salt</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Heat all ingredients in a small saucepan over medium-low, whisking constantly, until chocolate has melted and mixture is steaming, about 5 minutes. Serve immediately.</li>
 </ol>
+<hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.marthastewart.com/1098646/spiced-hot-dark-chocolate">Spiced Hot Dark Chocolate</a></p>
 <h2><a class="header" href="#tags" id="tags">Tags</a></h2>
@@ -235,21 +243,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

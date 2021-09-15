@@ -164,34 +164,47 @@
 <li>Total Time: 1 hr</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5291" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5291"> Sliced ham, cut in strips or squares</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5292" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5292"> Pineapple, cut in chunks</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_5293" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_5293"> Reserve pineapple juice from pineapple</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>Sliced ham, cut in strips or squares</p>
+<input disabled="" type="checkbox" id="chkbx_5294" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_5294"> Prepare grill.</label>
 </li>
-<li>
-<p>Pineapple, cut in chunks</p>
-</li>
-<li>
-<p>Reserve pineapple juice from pineapple</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Prepare grill.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Assemble ham and pineapple on skewers in alternating pattern.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_5295" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_5295"> Assemble ham and pineapple on skewers in alternating pattern.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Place skewers over indirect heat on grill, and baste occasionally with pineapple juice if desired, turning kabobs after 3-4 minutes on each side, or cooked to preference.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_5296" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_5296"> Place skewers over indirect heat on grill, and baste occasionally with pineapple juice if desired, turning kabobs after 3-4 minutes on each side, or cooked to preference.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>If using wooden skewers, soak for at least 30 minutes before using to reduce burning skewers.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_5297" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_5297"> If using wooden skewers, soak for at least 30 minutes before using to reduce burning skewers.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://shewearsmanyhats.com/2014/04/grilled-pineapple-ham-kabobs-recipe/">Grilled Pineapple Ham Kabobs Recipe</a></p>
 
@@ -232,21 +245,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

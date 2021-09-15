@@ -161,28 +161,34 @@
 <li>Yield: 2 servings</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8881" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8881"> 2 cups apple cider</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8882" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8882"> 1 cinnamon stick</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8883" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8883"> 1 cup vanilla ice cream</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8884" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8884"> 1 tablespoon caramel sauce</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8885" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8885"> Grated nutmeg</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>2 cups apple cider</p>
+<input disabled="" type="checkbox" id="chkbx_8886" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_8886"> In small saucepan, heat cider with cinnamon stick. Pour cider into 2 float glasses. Top with ice cream, caramel sauce and grating of nutmeg. Serve with spoon.</label>
 </li>
-<li>
-<p>1 cinnamon stick</p>
-</li>
-<li>
-<p>1 cup vanilla ice cream</p>
-</li>
-<li>
-<p>1 tablespoon caramel sauce</p>
-</li>
-<li>
-<p>Grated nutmeg</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>In small saucepan, heat cider with cinnamon stick. Pour cider into 2 float glasses. Top with ice cream, caramel sauce and grating of nutmeg. Serve with spoon.</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://www.rachaelraymag.com/recipes/rachael-ray-magazine-recipe-search/fast-recipes/apple-cider-floats">Rachel Ray - Apple Cider Floats</a></p>
 
@@ -223,21 +229,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

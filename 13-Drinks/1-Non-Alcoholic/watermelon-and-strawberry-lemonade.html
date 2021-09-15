@@ -164,32 +164,41 @@
 <li>Total Time:</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9042" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9042"> 8 cups cubed and seeded watermelon</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9043" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9043"> 1 cup strawberries, halved</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9044" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9044"> 1/2 cup fresh lemon juice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9045" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9045"> 1 cup white sugar</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9046" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9046"> 2 cups water (you may substitute Sprite or 7-up instead of water)</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>8 cups cubed and seeded watermelon</p>
+<input disabled="" type="checkbox" id="chkbx_9047" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9047"> Combine all the ingredients and blend until it is smooth (you may have to do it in 2 batches!)</label>
 </li>
-<li>
-<p>1 cup strawberries, halved</p>
-</li>
-<li>
-<p>1/2 cup fresh lemon juice</p>
-</li>
-<li>
-<p>1 cup white sugar</p>
-</li>
-<li>
-<p>2 cups water (you may substitute Sprite or 7-up instead of water)</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Combine all the ingredients and blend until it is smooth (you may have to do it in 2 batches!)</li>
 </ol>
 <hr />
 <ol start="2">
-<li>A fun trick I have learned, is to cube the watermelon and freeze it ahead of time.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9048" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9048"> A fun trick I have learned, is to cube the watermelon and freeze it ahead of time.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://frostedbakeshop.blogspot.com/search/label/drink">Watermelon and Strawberry Lemonade</a></p>
 
@@ -230,21 +239,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

@@ -163,35 +163,45 @@
 <li>Total Time: 5 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9896" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9896"> 1/4 cup mayonnaise</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9897" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9897"> 2 tablespoons honey</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9898" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9898"> 1 tablespoon yellow mustard</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9899" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9899"> 2 teaspoons Dijon mustard</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9900" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9900"> 2 teaspoons freshly squeezed lemon juice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9901" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9901"> 2 tablespoons BBQ sauce</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1/4 cup mayonnaise</p>
+<input disabled="" type="checkbox" id="chkbx_9902" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9902"> Whisk together mayonnaise, honey, mustards, lemon juice and BBQ sauce.</label>
 </li>
-<li>
-<p>2 tablespoons honey</p>
-</li>
-<li>
-<p>1 tablespoon yellow mustard</p>
-</li>
-<li>
-<p>2 teaspoons Dijon mustard</p>
-</li>
-<li>
-<p>2 teaspoons freshly squeezed lemon juice</p>
-</li>
-<li>
-<p>2 tablespoons BBQ sauce</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Whisk together mayonnaise, honey, mustards, lemon juice and BBQ sauce.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Store in refrigerator in a closed container.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9903" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9903"> Store in refrigerator in a closed container.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://houseofyumm.com/copycat-chick-fil-a-sauce/">Copycat Chick-Fil-A Sauce</a></p>
 
@@ -232,21 +242,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

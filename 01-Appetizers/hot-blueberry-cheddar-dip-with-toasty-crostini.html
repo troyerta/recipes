@@ -161,35 +161,45 @@
 <li>Yield: 2-4</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_220" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_220"> 1 (8-ounce) block of cream cheese, softened</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_221" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_221"> 8 ounces white cheddar cheese, freshly grated</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_222" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_222"> 1/4 teaspoon nutmeg</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_223" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_223"> 1 heaping cup of fresh blueberries</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_224" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_224"> 1 loaf of french bread, sliced</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_225" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_225"> 2-3 tablespoons olive oil</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 (8-ounce) block of cream cheese, softened</p>
+<input disabled="" type="checkbox" id="chkbx_226" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_226"> Preheat oven to 375 degrees F. Place two oven racks on the middle and lower level. Slice bread and place on a baking sheet, drizzling it with olive oil.</label>
 </li>
-<li>
-<p>8 ounces white cheddar cheese, freshly grated</p>
-</li>
-<li>
-<p>1/4 teaspoon nutmeg</p>
-</li>
-<li>
-<p>1 heaping cup of fresh blueberries</p>
-</li>
-<li>
-<p>1 loaf of french bread, sliced</p>
-</li>
-<li>
-<p>2-3 tablespoons olive oil</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Preheat oven to 375 degrees F. Place two oven racks on the middle and lower level. Slice bread and place on a baking sheet, drizzling it with olive oil.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>In a bowl, mix cream cheese with grated cheddar and nutmeg. Fold in blueberries. Place in an oven-safe dish, then set on the top oven rack. Bake for 30-35 minutes, or until cheese is hot, golden and bubbly, and blueberries and bursting. At the 20 minute mark, place baking sheet with bread on the lower rack  to toast, checking and tossing every 4-5 minutes. Serve immediately! With white wine, of course.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_227" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_227"> In a bowl, mix cream cheese with grated cheddar and nutmeg. Fold in blueberries. Place in an oven-safe dish, then set on the top oven rack. Bake for 30-35 minutes, or until cheese is hot, golden and bubbly, and blueberries and bursting. At the 20 minute mark, place baking sheet with bread on the lower rack  to toast, checking and tossing every 4-5 minutes. Serve immediately! With white wine, of course.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.howsweeteats.com/2012/07/hot-blueberry-cheddar-dip-with-toasty-bread/">Hot Blueberry Cheddar Dip with Toasty Crostini</a></p>
 
@@ -230,21 +240,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

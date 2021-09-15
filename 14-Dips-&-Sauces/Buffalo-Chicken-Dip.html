@@ -162,35 +162,45 @@
 <li>Total Time: 30 mins</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9707" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9707"> 1 package (8 ounces) cream cheese, softened</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9708" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9708"> 1 cup cooked chicken breast</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9709" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9709"> 1/2 cup Buffalo wing sauce</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9710" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9710"> 1/2 cup ranch or blue cheese salad dressing</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9711" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9711"> 2 cups shredded Colby-Monterey Jack cheese</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9712" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9712"> French bread baguette slices, celery ribs or tortilla chips</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 package (8 ounces) cream cheese, softened</p>
+<input disabled="" type="checkbox" id="chkbx_9713" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9713"> Preheat oven to 350°. Spread cream cheese into an ungreased shallow 1-qt. baking dish. Layer with chicken, wing sauce and salad dressing. Sprinkle with cheese.</label>
 </li>
-<li>
-<p>1 cup cooked chicken breast</p>
-</li>
-<li>
-<p>1/2 cup Buffalo wing sauce</p>
-</li>
-<li>
-<p>1/2 cup ranch or blue cheese salad dressing</p>
-</li>
-<li>
-<p>2 cups shredded Colby-Monterey Jack cheese</p>
-</li>
-<li>
-<p>French bread baguette slices, celery ribs or tortilla chips</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Preheat oven to 350°. Spread cream cheese into an ungreased shallow 1-qt. baking dish. Layer with chicken, wing sauce and salad dressing. Sprinkle with cheese.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Bake, uncovered, 20-25 minutes or until cheese is melted. Serve with baguette slices.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_9714" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9714"> Bake, uncovered, 20-25 minutes or until cheese is melted. Serve with baguette slices.</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://www.tasteofhome.com/recipes/Buffalo-Chicken-Dip">Buffalo Chicken Dip</a></p>
 
@@ -231,21 +241,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

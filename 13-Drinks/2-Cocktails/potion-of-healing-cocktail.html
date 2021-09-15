@@ -161,31 +161,38 @@
 <li>Yield: 1 drink</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9444" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9444"> 1 oz white rum</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9445" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9445"> 1/2 oz coconut rum</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9446" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9446"> 1/2 oz lemon juice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9447" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9447"> 1-1/2 oz cranberry juice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9448" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9448"> 1-1/2 oz orange juice</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_9449" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_9449"> Raspberry cordial</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1 oz white rum</p>
+<input disabled="" type="checkbox" id="chkbx_9450" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_9450"> Add all ingredients except the cordial to a shaker filled with ice. Shake thoroughly until chilled. Strain into your vessel. Add cordial to colour. Optionally, add some pearl lustre dust and swirl. Serve!</label>
 </li>
-<li>
-<p>1/2 oz coconut rum</p>
-</li>
-<li>
-<p>1/2 oz lemon juice</p>
-</li>
-<li>
-<p>1-1/2 oz cranberry juice</p>
-</li>
-<li>
-<p>1-1/2 oz orange juice</p>
-</li>
-<li>
-<p>Raspberry cordial</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Add all ingredients except the cordial to a shaker filled with ice. Shake thoroughly until chilled. Strain into your vessel. Add cordial to colour. Optionally, add some pearl lustre dust and swirl. Serve!</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.reddit.com/r/GifRecipes/comments/ddukm7/potion_of_healing_cocktail/f2nfj4z/">Potion Of Healing Cocktail</a></p>
 
@@ -226,21 +233,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

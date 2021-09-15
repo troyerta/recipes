@@ -161,58 +161,75 @@
 <li>Yield: 6 servings</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1104" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1104"> ½ cup uncooked quinoa, rinsed</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1105" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1105"> 6 cups chopped kale</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1106" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1106"> 1 cup pomegranate seeds</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1107" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1107"> ½ cup dried cranberries</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1108" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1108"> ½ cup walnuts, chopped</label>
+<br>
+<h4><a class="header" href="#for-the-dressing" id="for-the-dressing">For the dressing</a></h4><br>
+<input disabled="" type="checkbox" id="chkbx_1109" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1109"> ¼ cup olive oil</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1110" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1110"> 2 Tbsp apple cider vinegar</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1111" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1111"> 1½ tsp. Dijon mustard</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1112" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1112"> 1 Tbsp honey</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_1113" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_1113"> Salt and pepper, to taste</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>½ cup uncooked quinoa, rinsed</p>
+<input disabled="" type="checkbox" id="chkbx_1114" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1114"> To make the quinoa, add ½ cup of water to a small saucepan and add quinoa. Bring to a boil, cover and reduce heat and simmer for about 13 minutes. Remove from heat, keeping quinoa covered, and allow it to sit for about 5 minutes then fluff quinoa with a fork.</label>
 </li>
-<li>
-<p>6 cups chopped kale</p>
-</li>
-<li>
-<p>1 cup pomegranate seeds</p>
-</li>
-<li>
-<p>½ cup dried cranberries</p>
-</li>
-<li>
-<p>½ cup walnuts, chopped</p>
-</li>
-</ul>
-<h4><a class="header" href="#for-the-dressing" id="for-the-dressing">For the dressing:</a></h4>
-<ul>
-<li>
-<p>¼ cup olive oil</p>
-</li>
-<li>
-<p>2 Tbsp apple cider vinegar</p>
-</li>
-<li>
-<p>1½ tsp. Dijon mustard</p>
-</li>
-<li>
-<p>1 Tbsp honey</p>
-</li>
-<li>
-<p>Salt and pepper, to taste</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>To make the quinoa, add ½ cup of water to a small saucepan and add quinoa. Bring to a boil, cover and reduce heat and simmer for about 13 minutes. Remove from heat, keeping quinoa covered, and allow it to sit for about 5 minutes then fluff quinoa with a fork.</li>
 </ol>
 <hr />
 <ol start="2">
-<li>In a large bowl, mix together the kale, quinoa, pomegranate seeds, dried cranberries and walnuts.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1115" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1115"> In a large bowl, mix together the kale, quinoa, pomegranate seeds, dried cranberries and walnuts.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>To make the dressing, whisk together olive oil, apple cider vinegar, Dijon mustard, honey, salt and pepper in a small bowl.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1116" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1116"> To make the dressing, whisk together olive oil, apple cider vinegar, Dijon mustard, honey, salt and pepper in a small bowl.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Pour dressing over the salad and toss together until evenly coated. Top with additional pomegranates, cranberries and walnuts as desired, serve and enjoy!</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_1117" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_1117"> Pour dressing over the salad and toss together until evenly coated. Top with additional pomegranates, cranberries and walnuts as desired, serve and enjoy!</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://www.eatyourselfskinny.com/winter-kale-and-quinoa-salad/#_a5y_p=6015634">Eat Yourself Silly - Winter Kale and Quinoa Salad</a></p>
 
@@ -253,21 +270,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

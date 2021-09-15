@@ -161,22 +161,26 @@
 <li>Yield: 6</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10064" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10064"> 2 (5.3 oz) containers Vanilla Greek Yogurt (or 1 slightly heaping cup)</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10065" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10065"> 1/3 cup creamy peanut butter</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_10066" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_10066"> 1 Tbsp honey , or to taste</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>2 (5.3 oz) containers Vanilla Greek Yogurt (or 1 slightly heaping cup)</p>
+<input disabled="" type="checkbox" id="chkbx_10067" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_10067"> Add all ingredients to a bowl and whisk to blend until smooth. Serve with fruit (recommended bananas, apples, raspberries or strawberries). Store in refrigerator in an airtight container.</label>
 </li>
-<li>
-<p>1/3 cup creamy peanut butter</p>
-</li>
-<li>
-<p>1 Tbsp honey , or to taste</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Add all ingredients to a bowl and whisk to blend until smooth. Serve with fruit (recommended bananas, apples, raspberries or strawberries). Store in refrigerator in an airtight container.</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="https://www.cookingclassy.com/peanut-butter-fruit-dip/">Peanut Butter Fruit Dip</a></p>
 
@@ -217,21 +221,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

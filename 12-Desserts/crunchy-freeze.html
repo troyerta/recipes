@@ -161,40 +161,55 @@
 <li>Yield: 1 pan or cookie sheet</li>
 </ul>
 <h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
-<ul>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8064" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8064"> 1/2 C. Butter, melted</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8065" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8065"> 2-1/2 C. Rice Krispies</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8066" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8066"> 3/4 C Brown Sugar</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8067" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8067"> 1-1/4 C Shredded Coconut</label>
+<br>
+<br>
+<input disabled="" type="checkbox" id="chkbx_8068" onclick="ingToggleHandler(this)"/>
+<label for="chkbx_8068"> 1 C. Chopped Pecans</label>
+<br>
+<h2><a class="header" href="#method:" id="method:">Method:</a></h2><ol start="1">
 <li>
-<p>1/2 C. Butter, melted</p>
+<input disabled="" type="checkbox" id="chkbx_8069" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_8069"> Mix dry ingredients</label>
 </li>
-<li>
-<p>2-1/2 C. Rice Krispies</p>
-</li>
-<li>
-<p>3/4 C Brown Sugar</p>
-</li>
-<li>
-<p>1-1/4 C Shredded Coconut</p>
-</li>
-<li>
-<p>1 C. Chopped Pecans</p>
-</li>
-</ul>
-<h2><a class="header" href="#method" id="method">Method</a></h2>
-<ol>
-<li>Mix dry ingredients</li>
 </ol>
 <hr />
 <ol start="2">
-<li>Melt Butter, I did it in the microwave for 45 seconds on high. Pour butter over dry ingredients and mix well. Pour onto your cooking sheet. Use the kind with sides.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_8070" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_8070"> Melt Butter, I did it in the microwave for 45 seconds on high. Pour butter over dry ingredients and mix well. Pour onto your cooking sheet. Use the kind with sides.</label>
+</li>
 </ol>
 <hr />
 <ol start="3">
-<li>Oven at 300, cook for 20 minutes, check, the original recipe called for 30 minutes but I noticed in my oven there was some burning, for me 20 minutes worked well in my oven. You want a golden brown color. Let cool completely.</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_8071" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_8071"> Oven at 300, cook for 20 minutes, check, the original recipe called for 30 minutes but I noticed in my oven there was some burning, for me 20 minutes worked well in my oven. You want a golden brown color. Let cool completely.</label>
+</li>
 </ol>
 <hr />
 <ol start="4">
-<li>Using clean hands break up into smaller chunks</li>
+<li>
+<input disabled="" type="checkbox" id="chkbx_8072" style="display:none" onclick="methToggleHandler(this)"/>
+<label for="chkbx_8072"> Using clean hands break up into smaller chunks</label>
+</li>
 </ol>
 <hr />
+
 <h2><a class="header" href="#references-and-acknowledgments" id="references-and-acknowledgments">References and Acknowledgments</a></h2>
 <p><a href="http://thesundaysuppersisters.blogspot.com/2014/07/crunchy-freeze.html">Crunchy Freeze</a></p>
 
@@ -235,21 +250,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3000/__livereload");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         
