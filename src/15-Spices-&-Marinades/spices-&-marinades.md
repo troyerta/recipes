@@ -28,6 +28,7 @@
 [Peri Peri Chicken Marinade](./peri-peri-chicken-marinade.md)<br><br>
 [Pesto Chicken Marinade](./pesto-chicken-marinade.md)<br><br>
 [Pineapple Ginger Pork Marinade](./pineapple-ginger-pork-marinade.md)<br><br>
+[Ral El Hanout](./ral-el-hanout.md)<br><br>
 [Sriracha Maple Chicken Marinade](./sriracha-maple-chicken-marinade.md)<br><br>
 [Steak Fajita Marinade](./steak-fajita-marinade.md)<br><br>
 [Sweet Chili Chicken Marinade](./sweet-chili-chicken-marinade.md)<br><br>
