@@ -6,5 +6,6 @@
 [Chef Balvinder Pal Singh'S Butter Chicken](./chef-balvinder-pal-singh's-butter-chicken.md)<br><br>
 [Chicken Makhani](./chicken-makhani.md)<br><br>
 [Creamy Butter Chicken](./creamy-butter-chicken.md)<br><br>
+[Modified Butter Chicken](./modified-butter-chicken.md)<br><br>
 [Standard Butter Chicken](./standard-butter-chicken.md)<br><br>
 [Ultimate Butter Chicken](./ultimate-butter-chicken.md)<br><br>

@@ -347,6 +347,7 @@
       - [Chef Balvinder Pal Singh'S Butter Chicken](./08-Main-Dishes/Indian/Butter-Chicken/chef-balvinder-pal-singh's-butter-chicken.md)
       - [Chicken Makhani](./08-Main-Dishes/Indian/Butter-Chicken/chicken-makhani.md)
       - [Creamy Butter Chicken](./08-Main-Dishes/Indian/Butter-Chicken/creamy-butter-chicken.md)
+      - [Modified Butter Chicken](./08-Main-Dishes/Indian/Butter-Chicken/modified-butter-chicken.md)
       - [Standard Butter Chicken](./08-Main-Dishes/Indian/Butter-Chicken/standard-butter-chicken.md)
       - [Ultimate Butter Chicken](./08-Main-Dishes/Indian/Butter-Chicken/ultimate-butter-chicken.md)
   - [Mexican](./08-Main-Dishes/Mexican/mexican.md)
