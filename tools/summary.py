@@ -41,7 +41,7 @@ def order_files_then_dirs(dir, paths):
     dirs = [x for x in paths if isdir(os.path.join(dir, x))]
     files = sorted(files)
     dirs = sorted(dirs)
-    return files + dirs
+    return dirs + files
 
 class Summary:
     def __init__( self, src_dir, dirfiles, prefix_pages, ignored_pages, ignored_dirs, suffix_pages ):

@@ -53,8 +53,6 @@
 
 - 1/2 tsp black pepper
 
-- 1.5 cups water
-
 - 1/2 cup tomato paste (1x 6oz can)
 
 - 1 Tbsp of sugar

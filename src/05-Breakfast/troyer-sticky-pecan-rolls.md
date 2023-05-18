@@ -28,7 +28,7 @@
 ---
 3. Arrange dough balls on top.
 ---
-4. Melt butter and mix with brown sugar. Pour over rolls.
+4. Using microwave or stovetop, melt butter together with brown sugar, until sugar is fully dissolved. Pour over rolls.
 ---
 5. Cover overnight to let rise.
 ---
