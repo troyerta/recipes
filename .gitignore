@@ -1,4 +1,4 @@
 book
-venv
+.rbook-venv
 __pycache__
 .vscode

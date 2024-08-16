@@ -2,7 +2,7 @@
 
 ## Overview
 
-- Yield: 8
+- Yield: A butt ton
 
 ## Ingredients
 
@@ -91,3 +91,7 @@
 ## References and Acknowledgments
 
 [Slow Cooker Ethiopian Chicken Stew with Lentils and Sweet Potato](https://sweetpeasandsaffron.com/slow-cooker-ethiopian-chicken-lentil-stew/)
+
+## Tags
+
+verified

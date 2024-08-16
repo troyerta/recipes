@@ -1,3 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-exec .venv/bin/python3.9 ./tools/rbook.py "$@"
+echo_red() {
+    printf '\e[31m%s\e[0m\n' "$@" # Send red message
+}
+
+source rbook-py-venv.sh
+python tools/rbook.py "$@"

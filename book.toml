@@ -16,7 +16,6 @@ create-missing = false
 [output.html]
 additional-js = ["js/enable-checkboxes.js", "js/handle-checkboxes.js"]
 no-section-label = true
-google-analytics = "UA-164779968-1"
 site-url = "/recipes/"
 
 [output.html.fold]

@@ -21,7 +21,7 @@
 
 1. Start by warming up a frying pan to on low-medium heat
 ---
-2. On one slice of bread, layer down your brie cheese, followed by slick slices of pear
+2. On one slice of bread, layer down your brie cheese, followed by thick slices of pear
 ---
 3. Sandwiches the bread slices together, and generous coat each exterior side of bread with butter
 ---

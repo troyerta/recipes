@@ -8,7 +8,7 @@
 
 - 2 flour tortillas
 
-- 1/2 to 1 cup shredded Swiss cheese
+- 1/2 to 1 cup shredded Swiss cheese (or brie, if you want it sweeter)
 
 - 1/2 cup shredded Turkey
 

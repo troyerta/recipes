@@ -19,7 +19,7 @@
 
 - 1 bottle (12 ounces) beer
 
-- 1 stick unsalted butter, melted
+- 1 stick butter, melted (It calls for unsalted, but I only use salted)
 
 ## Method
 
