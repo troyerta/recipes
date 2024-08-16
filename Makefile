@@ -16,9 +16,9 @@ save:
 	@git push origin HEAD:master
 	@echo "====> resetting workspace"
 	@git checkout origin/master
-	@git delbr master
+	@git branch -d master
 	@git checkout -b master
-	@git delbr save
+	@git branch -d save
 	@echo "====> Done!"
 
 .PHONY: deploy
@@ -38,13 +38,13 @@ deploy: book
 		git commit -m "deployed on $(shell date) by ${USER}" && \
 		git push origin HEAD:gh-pages && \
 		git checkout origin/gh-pages && \
-		git delbr tmp
+		git branch -d tmp
 	@echo "====> pruning the worktree"
 	@rm -rf ./tmp_book
 	@git worktree prune
 	@echo "====> resetting the workspace"
 	@git checkout origin/master
-	@git delbr temp-deploy-branch
-	@git delbr master
+	@git branch -d temp-deploy-branch
+	@git branch -d master
 	@git checkout -b master
 	@echo "====> Done!"
